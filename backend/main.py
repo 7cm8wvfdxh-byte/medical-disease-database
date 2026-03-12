@@ -3,6 +3,7 @@ Tıbbi Hastalık Veritabanı - Backend API
 FastAPI ile RESTful API servisi
 """
 
+import os
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional, Dict
@@ -198,14 +199,20 @@ async def search_diseases(
 async def get_statistics():
     """Veritabanı istatistikleri"""
     all_branches = set()
+    branch_distribution = {}
+    
     for disease in diseases_db.values():
         if "branş_perspektifleri" in disease:
-            all_branches.update(disease["branş_perspektifleri"].keys())
+            for branch in disease["branş_perspektifleri"].keys():
+                all_branches.add(branch)
+                branch_distribution[branch] = branch_distribution.get(branch, 0) + 1
     
     return {
         "total_diseases": len(diseases_db),
         "total_unique_branches": len(all_branches),
+        "total_branch_perspectives": sum(branch_distribution.values()),
         "branches": sorted(list(all_branches)),
+        "branch_distribution": branch_distribution,
         "diseases_list": [
             {
                 "id": d.get("hastalık_id"),
@@ -236,8 +243,15 @@ class AIQuestionRequest(BaseModel):
 async def ai_ask(request: AIQuestionRequest):
     """AI'ye soru sor (Claude API üzerinden)"""
     
-    # Anthropic API Key
+    # Anthropic API Key - Environment variable'dan al
     api_key = os.getenv("ANTHROPIC_API_KEY", "")
+    
+    if not api_key:
+        return {
+            "success": False,
+            "answer": "AI servisi yapılandırılmamış. Lütfen sistem yöneticisine başvurun.",
+            "error": "API key not configured"
+        }
     
     try:
         async with httpx.AsyncClient(timeout=30.0) as client:
@@ -245,7 +259,7 @@ async def ai_ask(request: AIQuestionRequest):
                 "https://api.anthropic.com/v1/messages",
                 headers={
                     "Content-Type": "application/json",
-                    "x-api-key": API_KEY,
+                    "x-api-key": api_key,
                     "anthropic-version": "2023-06-01"
                 },
                 json={
