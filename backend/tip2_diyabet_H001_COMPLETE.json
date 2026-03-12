@@ -1,0 +1,1727 @@
+{
+  "hastalık_id": "H001",
+  "version": "1.0",
+  "son_güncelleme": "2026-01-18",
+  "temel_bilgi": {
+    "isim_tr": "Tip 2 Diabetes Mellitus",
+    "isim_en": "Type 2 Diabetes Mellitus",
+    "kısa_isim": "T2DM",
+    "diğer_isimler": [
+      "Adult-onset diabetes",
+      "Non-insulin dependent diabetes"
+    ],
+    "kodlama": {
+      "ICD_10": "E11",
+      "ICD_10_detay": {
+        "E11.9": "Komplikasyonsuz",
+        "E11.2": "Böbrek komplikasyonlu",
+        "E11.3": "Oftalmik komplikasyonlu",
+        "E11.4": "Nörolojik komplikasyonlu",
+        "E11.5": "Periferik dolaşım komplikasyonlu",
+        "E11.6": "Diğer özel komplikasyonlar",
+        "E11.7": "Multipl komplikasyonlar"
+      },
+      "SNOMED_CT": "44054006",
+      "LOINC": "44877-9"
+    },
+    "tanım": "İnsülin direnci ve progresif beta hücre disfonksiyonu ile karakterize kronik metabolik hastalık. Hiperglisemi ve buna bağlı mikro ve makrovasküler komplikasyonlar gelişir.",
+    "epidemiyoloji": {
+      "global_prevalans": "537 milyon yetişkin (20-79 yaş) - 2021 IDF verisi",
+      "türkiye_prevalans": "Yaklaşık %13-14 (TURDEP-II çalışması)",
+      "yaş_dağılımı": "Genellikle >40 yaş, son yıllarda gençlerde artış",
+      "cinsiyet": "Erkeklerde hafif yüksek",
+      "risk_grupları": [
+        "Obezite (BMI >30)",
+        "Sedanter yaşam",
+        "Ailede diyabet öyküsü",
+        "Gestasyonel diyabet geçmişi",
+        "Metabolik sendrom",
+        "PCOS",
+        "Etnik azınlıklar (Güney Asya, Afrika kökenli)"
+      ]
+    },
+    "patofizyoloji": {
+      "ana_mekanizmalar": [
+        "İnsülin direnci: Kas, karaciğer, yağ dokusunda insüline yanıt azalması",
+        "Beta hücre disfonksiyonu: Progresif insülin sekresyon bozukluğu",
+        "Artmış hepatik glukoz üretimi",
+        "İnkretin etkisinde azalma (GLP-1, GIP)",
+        "Artmış lipoliz ve serbest yağ asitleri"
+      ]
+    },
+    "prognoz": {
+      "mortalite": "Genel popülasyona göre 1.5-2 kat artmış",
+      "kardiyovasküler_risk": "2-4 kat artmış",
+      "komplikasyon_gelişme_riski": "İyi kontrol ile %25-50 azaltılabilir"
+    }
+  },
+  "branş_perspektifleri": {
+    "dahiliye": {
+      "rol": "Primer tanı, tedavi ve takip sorumlusu",
+      "klinik_prezentasyon": {
+        "klasik_semptomlar": [
+          "Poliüri (sık idrara çıkma)",
+          "Polidipsi (aşırı susama)",
+          "Polifaji (aşırı yeme isteği)",
+          "Açıklanamayan kilo kaybı",
+          "Yorgunluk, halsizlik"
+        ],
+        "asemptomatik": "Çoğu hasta rutin taramalarda saptanır",
+        "atipik_prezentasyonlar": [
+          "Tekrarlayan enfeksiyonlar",
+          "Yara iyileşmesinde gecikme",
+          "Görme bulanıklığı",
+          "Parestezi"
+        ]
+      },
+      "tanı_kriterleri": {
+        "ADA_2024": [
+          "Açlık plazma glukozu ≥126 mg/dL",
+          "2 saatlik OGTT ≥200 mg/dL",
+          "HbA1c ≥6.5%",
+          "Random glukoz ≥200 mg/dL + semptomlar"
+        ]
+      },
+      "tedavi_hedefleri": {
+        "HbA1c": "<7% (genel)",
+        "açlık_glukozu": "80-130 mg/dL",
+        "kan_basıncı": "<130/80 mmHg",
+        "LDL_kolesterol": "<70 mg/dL"
+      },
+      "farmakolojik_tedavi": {
+        "birinci_basamak": "Metformin 500-2000 mg/gün",
+        "ikinci_basamak": [
+          "GLP-1 agonistleri",
+          "SGLT2 inhibitörleri",
+          "DPP-4 inhibitörleri"
+        ],
+        "insülin": "HbA1c >10% veya hedef ulaşılamazsa"
+      },
+      "takip": {
+        "HbA1c": "3-6 ayda bir",
+        "retinopati_taraması": "Yıllık",
+        "nefropati_taraması": "Yıllık (eGFR + UACR)",
+        "ayak_muayenesi": "Her vizitte"
+      }
+    },
+    "radyoloji": {
+      "rol": "Komplikasyonların erken tespiti, ayırıcı tanı, izlem",
+      "görüntüleme_modaliteleri": {
+        "konvansiyonel_radyografi": {
+          "ayak_grafisi": {
+            "endikasyonlar": [
+              "Diyabetik ayak",
+              "Osteomyelit şüphesi",
+              "Charcot artropati"
+            ],
+            "bulgular": {
+              "osteomyelit": [
+                "Yumuşak doku şişliği",
+                "Periosteal reaksiyon",
+                "Kemik destrüksiyonu (2-4 hafta sonra)"
+              ],
+              "charcot": [
+                "Eklem subluksasyonu",
+                "Fragmentasyon",
+                "Deformite"
+              ]
+            }
+          },
+          "akciğer_grafisi": {
+            "endikasyonlar": [
+              "Pnömoni",
+              "Kalp yetmezliği"
+            ],
+            "bulgular": [
+              "Kardiyomegali",
+              "Pulmoner ödem"
+            ]
+          }
+        },
+        "ultrasonografi": {
+          "karotis_doppler": {
+            "endikasyon": "Ateroskleroz taraması",
+            "bulgular": [
+              "İntima-media kalınlığı >0.9 mm",
+              "Aterosklerotik plaklar",
+              "Stenoz değerlendirmesi"
+            ]
+          },
+          "renal_US": {
+            "bulgular": [
+              "Böbrek boyutları",
+              "Korteks ekogenitesi artışı",
+              "Hidronefroz"
+            ]
+          },
+          "karaciğer_US": {
+            "hepatosteatoz": [
+              "Ekogenite artışı",
+              "Posterior zayıflama",
+              "Hafif/orta/ağır derecelendirme"
+            ]
+          }
+        },
+        "bilgisayarlı_tomografi": {
+          "koroner_kalsiyum_skoru": {
+            "agatston_skoru": {
+              "0": "Minimal risk",
+              "1-99": "Hafif",
+              "100-399": "Orta",
+              "≥400": "Yüksek risk"
+            }
+          },
+          "beyin_BT": {
+            "iskemik_inme": "Hipodans alan",
+            "kronik_değişiklikler": "Beyaz cevher hastalığı, laküner infarktlar"
+          }
+        },
+        "MRI": {
+          "ayak_MRI": {
+            "osteomyelit": [
+              "Kemik iliği ödemi: T1 hipointens, T2 hiperintens",
+              "Post-kontrast enhancement",
+              "Yumuşak doku apse"
+            ],
+            "üstünlük": "Grafiye göre çok daha sensitif"
+          },
+          "kardiyak_MRI": {
+            "diyabetik_kardiyomiyopati": [
+              "Miyokardiyal fibrozis (T1 mapping)",
+              "Diyastolik disfonksiyon"
+            ]
+          },
+          "beyin_MRI": {
+            "mikroanjiopati": [
+              "Beyaz cevher hiperintensiteleri",
+              "Laküner infarktlar",
+              "Mikrokanamalar"
+            ]
+          }
+        },
+        "nükleer_tıp": {
+          "miyokard_perfüzyon": {
+            "endikasyon": "Sessiz iskemi taraması",
+            "bulgular": "Stres indüklü perfüzyon defekti"
+          }
+        }
+      },
+      "kontrast_güvenliği": {
+        "kontrast_nefropati_riski": "eGFR <30 dikkat",
+        "önlemler": [
+          "İzoosmolar kontrast tercih et",
+          "Metformin 48 saat önce kes",
+          "IV hidrasyon"
+        ]
+      }
+    },
+    "biyokimya_laboratuvar": {
+      "rol": "Tanı, tedavi takibi, komplikasyon taraması",
+      "tanı_testleri": {
+        "açlık_glukozu": {
+          "tanı_eşiği": "≥126 mg/dL",
+          "prediyabet": "100-125 mg/dL"
+        },
+        "HbA1c": {
+          "tanı_eşiği": "≥6.5%",
+          "prediyabet": "5.7-6.4%",
+          "avantajlar": "Açlık gerektirmez, 2-3 ay ortalama"
+        },
+        "OGTT": {
+          "2_saat": "≥200 mg/dL tanı koydurur"
+        }
+      },
+      "glisemik_kontrol_takibi": {
+        "HbA1c": {
+          "sıklık": "3 ayda bir (hedef dışı), 6 ayda bir (hedefteyse)",
+          "hedef": "<7%"
+        },
+        "CGM": {
+          "time_in_range": ">70% (70-180 mg/dL)",
+          "avantajlar": "Trend analizi, hipoglisemi alarmları"
+        }
+      },
+      "lipid_profili": {
+        "LDL_hedef": "<70 mg/dL",
+        "trigliserid": "<150 mg/dL",
+        "tarama": "Yıllık"
+      },
+      "böbrek_fonksiyonları": {
+        "eGFR": "CKD-EPI formülü",
+        "UACR": {
+          "normal": "<30 mg/g",
+          "albuminüri": "≥30 mg/g"
+        },
+        "tarama": "Yıllık"
+      },
+      "karaciğer_fonksiyonları": {
+        "ALT_AST": "NAFLD taraması",
+        "hepatosteatoz_prevalansı": "%50-70"
+      },
+      "diğer_testler": {
+        "TSH": "Yıllık",
+        "B12": "Metformin kullanımında yıllık",
+        "vitamin_D": "Risk faktörü varsa"
+      }
+    },
+    "patoloji": {
+      "rol": "Histopatolojik tanı, komplikasyon değerlendirmesi",
+      "pankreas_patolojisi": {
+        "makroskopik": "Adacık atrofisi, fibrozis",
+        "mikroskopik": [
+          "Beta hücre kaybı ve apoptozis",
+          "Amiloid birikimi (amilin depositleri)",
+          "İnflamatuar infiltrasyon (hafif)"
+        ],
+        "immünohistokimya": {
+          "insülin_boyaması": "Beta hücrelerde azalma",
+          "glukagon_boyaması": "Alfa hücrelerde artış"
+        }
+      },
+      "diyabetik_nefropati": {
+        "glomerüler_lezyonlar": {
+          "kimmelstiel_wilson_nodülleri": "Patognomonik, nodüler glomerüloskleroz",
+          "diffüz_glomerüloskleroz": "Daha sık",
+          "bazal_membran_kalınlaşması": "Erken bulgu",
+          "mesangial_ekspansiyon": "Matriks birikimi"
+        },
+        "tübülointerstisyel": [
+          "Tübüler atrofi",
+          "İnterstisyel fibrozis",
+          "Arteryolar hyalinozis"
+        ],
+        "immünfloresan": "Negatif (immün kompleks yok)"
+      },
+      "kardiyovasküler_patoloji": {
+        "ateroskleroz": {
+          "lokalizasyon": "Koroner, karotis, periferik arterler",
+          "özellikler": [
+            "Diffüz, yaygın tutulum",
+            "Kalsifiye plaklar",
+            "Medial kalsifikasyon (Mönckeberg)"
+          ]
+        },
+        "miyokard": {
+          "diyabetik_kardiyomiyopati": [
+            "Miyosit hipertrofi",
+            "İnterstisyel fibrozis",
+            "Mikrovasküler hastalık",
+            "AGEs (ileri glikasyon ürünleri) birikimi"
+          ]
+        }
+      },
+      "diyabetik_nöropati": {
+        "periferik_sinir": [
+          "Aksonal dejenerasyon",
+          "Segmental demiyelinizasyon",
+          "Endonöral mikroanjiopati",
+          "Epinöral vasküler sklerozu"
+        ]
+      },
+      "diyabetik_ayak_lezyonları": {
+        "osteomyelit": [
+          "Kemik nekrozu",
+          "Akut ve kronik inflamasyon",
+          "Sekestrum formasyonu",
+          "Reaktif kemik formasyonu"
+        ],
+        "yumuşak_doku": [
+          "Selülit",
+          "Abse formasyonu",
+          "Gangren (kuru/ıslak)"
+        ]
+      },
+      "karaciğer_patolojisi": {
+        "NAFLD": {
+          "basit_steatoz": ">5% hepatositlerde yağ",
+          "NASH": "Steatoz + lobüler inflamasyon + hepatosit balonlaşması",
+          "fibrozis_evreleri": "F0-F4 (siroza kadar)"
+        }
+      },
+      "özel_boyamalar": {
+        "PAS": "Bazal membran kalınlaşması, Kimmelstiel-Wilson nodülleri",
+        "Masson_trikrom": "Fibrozis",
+        "Kongo_kırmızısı": "Amiloid",
+        "Immünohistokimya": "İnsülin, glukagon, C-peptid"
+      }
+    },
+    "endokrinoloji": {
+      "rol": "İleri diyabet yönetimi, komplikasyonlar, özel durumlar",
+      "hormonal_değerlendirme": {
+        "insülin_sekresyonu": {
+          "C_peptid": "Beta hücre fonksiyonu göstergesi",
+          "HOMA_beta": "Beta hücre rezervi hesaplama"
+        },
+        "insülin_direnci": {
+          "HOMA_IR": ">2.5 insülin direnci",
+          "açlık_insülini": ">25 µU/mL yüksek"
+        }
+      },
+      "tip_1_vs_tip_2_ayırımı": {
+        "zor_olgular": [
+          "LADA (Latent Autoimmune Diabetes in Adults)",
+          "Ketoza meyilli Tip 2 DM",
+          "Obez Tip 1 DM"
+        ],
+        "otoimmün_belirteçler": [
+          "GAD65 antikorları",
+          "IA2 antikorları",
+          "İnsülin otoantikor (IAA)"
+        ],
+        "LADA": {
+          "tanım": "Yetişkinlerde yavaş otoimmün diyabet",
+          "klinik": "Başlangıçta Tip 2 gibi, 6-24 ay içinde insülin ihtiyacı",
+          "GAD_pozitif": "Tanı için yeterli",
+          "prevalans": "Yetişkin diyabetin %5-10'u"
+        }
+      },
+      "özel_tedavi_yaklaşımları": {
+        "teknoloji": {
+          "insülin_pompaları": "Multipl insülin gereken Tip 2'de",
+          "CGM": "Sık hipoglisemi, HbA1c hedefe ulaşılamıyor",
+          "hibrid_closed_loop": "Pompa + CGM entegrasyonu"
+        },
+        "GLP1_titrasyonu": {
+          "semaglutid": "0.25→0.5→1.0→2.0 mg haftalık",
+          "dulaglutid": "0.75→1.5→3.0→4.5 mg haftalık",
+          "yan_etki_yönetimi": "Yavaş titrasyon, antiemetik"
+        },
+        "insülin_optimizasyonu": {
+          "bazal_doz_ayarı": "Açlık glukozu 80-130 hedef",
+          "bolus_hesaplama": "Karbonhidrat sayımı, insülin/karbonhidrat oranı",
+          "düzeltme_faktörü": "1 Ü insülin kaç mg/dL düşürür"
+        }
+      },
+      "komplikasyon_yönetimi": {
+        "hipoglisemi": {
+          "farkındalık_azalması": "CGM, glukagon kit, hedef gevşetme",
+          "nokturnal_hipoglisemi": "Bazal insülin zamanı değiştir, CGM alarm"
+        },
+        "Dawn_fenomeni": "Sabah açlık glukozu yüksek → Akşam bazal insülin dozu artır",
+        "Somogyi_etkisi": "Gece hipoglisemi → Sabah rebound hiperglisemi → Akşam dozu azalt"
+      },
+      "eşlik_eden_endokrin_hastalıklar": {
+        "hipotiroidi": {
+          "prevalans": "Diyabette %10-15",
+          "tarama": "Yıllık TSH",
+          "tedavi": "Levotiroksin, glukoz kontrolünü iyileştirir"
+        },
+        "polikistik_over_sendromu": {
+          "ilişki": "İnsülin direnci ortak patofizyoloji",
+          "tedavi": "Metformin, kilo kaybı"
+        },
+        "cushing_sendromu": "Sekonder diyabet nedeni, tarama gerekir",
+        "akromegali": "İnsülin direncine neden olur"
+      },
+      "metabolik_cerrahi": {
+        "endikasyonlar": [
+          "BMI ≥40",
+          "BMI ≥35 + kontrolsüz diyabet",
+          "BMI ≥30 + metabolik komorbiditeler (seçilmiş hastalarda)"
+        ],
+        "prosedürler": {
+          "sleeve_gastrektomi": "En sık, %60-70 diyabet remisyonu",
+          "roux_en_Y_bypass": "%80-90 diyabet remisyonu",
+          "ayarlanabilir_gastrik_bant": "Düşük remisyon, artık az tercih ediliyor"
+        },
+        "remisyon": "İlaç kullanmadan HbA1c <6.5% (≥1 yıl)",
+        "mekanizmalar": [
+          "Kilo kaybı",
+          "GLP-1/GIP artışı (inkretin etkisi)",
+          "Safra asidi metabolizması değişimi",
+          "Barsak mikrobiyomu değişimi"
+        ]
+      },
+      "gebelik_ve_diyabet": {
+        "prekonsepsiyonel": {
+          "hedef_HbA1c": "<6.5% (ideal <6.0%)",
+          "folat_desteği": "5 mg/gün (nöral tüp defekti)",
+          "ilaç_değişiklikleri": "Oral ajanlar kes, insüline geç"
+        },
+        "gestasyonel_takip": {
+          "sıkı_glukoz_kontrolü": "Açlık <95, 1 saat postprandiyal <140, 2 saat <120 mg/dL",
+          "insülin_ihtiyacı": "Genellikle artar (özellikle 2-3. trimester)",
+          "komplikasyonlar": "Makrozomi, preeklampsi, konjenital anomaliler"
+        },
+        "postpartum": "Gestasyonel diyabet geçmişi → Tip 2 risk %50, takip"
+      }
+    },
+    "kardiyoloji": {
+      "rol": "Kardiyovasküler komplikasyonların önlenmesi ve tedavisi",
+      "kardiyovasküler_risk": {
+        "genel": "Diyabet = Koroner arter hastalığı eşdeğeri",
+        "ASCVD_riski": "2-4 kat artmış",
+        "risk_faktörleri": [
+          "Diyabet süresi >10 yıl",
+          "Albuminüri",
+          "eGFR <60",
+          "Yaş (erkek >45, kadın >55)",
+          "Aile öyküsü",
+          "Sigara",
+          "Hipertansiyon",
+          "Dislipidemi"
+        ]
+      },
+      "koroner_arter_hastalığı": {
+        "sessiz_iskemi": {
+          "prevalans": "%20-30",
+          "tarama": "Tipik göğüs ağrısı yoksa bile kardiyak stres testi düşünülmeli",
+          "endikasyonlar": [
+            "Periferik/karotis arter hastalığı",
+            "Efor kapasitesinde azalma",
+            "EKG anormallikleri",
+            "Yüksek risk profili (>10 yıl diyabet + risk faktörleri)"
+          ]
+        },
+        "akut_koroner_sendrom": {
+          "özellikler": [
+            "Atipik prezentasyon sık (göğüs ağrısız)",
+            "Daha kötü prognoz",
+            "Multipl damar tutulumu",
+            "Diffüz ateroskleroz"
+          ],
+          "tedavi": "Agresif medikal tedavi + erken invaziv strateji"
+        },
+        "revaskülarizasyon": {
+          "PCI_vs_CABG": "Multipl damar hastalığında CABG tercih edilir (FREEDOM çalışması)",
+          "DES": "Drug-eluting stent (sirolimus, everolimus)",
+          "komplikasyonlar": "Restenoze yatkınlık, kontrast nefropati riski"
+        }
+      },
+      "kalp_yetmezliği": {
+        "diyabetik_kardiyomiyopati": {
+          "tanım": "Koroner arter hastalığı olmaksızın miyokard disfonksiyonu",
+          "patofizyoloji": [
+            "Miyokardiyal fibrozis",
+            "Mikrovasküler hastalık",
+            "Mitokondriyal disfonksiyon",
+            "AGEs birikimi"
+          ],
+          "klinik": "Önce diyastolik disfonksiyon, sonra sistolik",
+          "tanı": "Ekokardiyografi, BNP/NT-proBNP yüksekliği, kardiyak MRI"
+        },
+        "HFrEF_vs_HFpEF": {
+          "HFrEF": "EF <40%, sistolik yetmezlik",
+          "HFpEF": "EF ≥50%, diyastolik yetmezlik (diyabette daha sık)"
+        },
+        "tedavi": {
+          "SGLT2i": "Empagliflozin, dapagliflozin → Kalp yetmezliği mortalitesini azaltır (+++)",
+          "GLP1_agonist": "Kardiyovasküler fayda",
+          "ACEi_ARB": "Standart kalp yetmezliği tedavisi",
+          "beta_bloker": "Bisoprolol, metoprolol, carvedilol",
+          "MRA": "Spironolakton, eplerenon (hiperkalemi riski)",
+          "diüretik": "Loop diüretik (furosemid) volüm yükü için"
+        }
+      },
+      "hipertansiyon": {
+        "prevalans": "Diyabetiklerin %60-80'i",
+        "hedef": "<130/80 mmHg",
+        "birinci_basamak": {
+          "ACEi_ARB": "Renoprotektif, kardiyoprotektif, tercih edilir",
+          "örnekler": "Ramipril, perindopril, losartan, valsartan"
+        },
+        "ikinci_basamak": {
+          "kalsiyum_kanal_blokeri": "Amlodipin, nifedipin",
+          "tiyazid_diüretik": "Klorotiazid, indapamid"
+        },
+        "yan_etkiler": {
+          "ACEi": "Kuru öksürük, hiperkalemi",
+          "ARB": "Hiperkalemi",
+          "CCB": "Ayak bilekleri ödemi"
+        },
+        "monitörizasyon": "Ev kan basıncı ölçümü önerilir"
+      },
+      "dislipidemi": {
+        "lipid_profili": {
+          "yüksek_trigliserid": "Sık, hipertrigliseridemik hiperlipidemi",
+          "düşük_HDL": "Kardiyovasküler risk artışı",
+          "small_dense_LDL": "Daha aterojenik"
+        },
+        "statin_tedavisi": {
+          "primer_korunma": "Tüm diyabetikler 40-75 yaş",
+          "sekonder_korunma": "ASCVD varsa yüksek doz statin",
+          "hedef_LDL": "<70 mg/dL (yüksek risk), <55 mg/dL (çok yüksek risk)",
+          "örnekler": "Atorvastatin 40-80 mg, rosuvastatin 20-40 mg"
+        },
+        "ezetimib": "Statin ile kombine edilir, LDL'yi %20 daha azaltır",
+        "PCSK9_inhibitörleri": {
+          "endikasyon": "Statin + ezetimib ile hedef LDL ulaşılamazsa",
+          "örnekler": "Evolocumab, alirocumab",
+          "etki": "LDL %50-60 azaltır"
+        },
+        "yüksek_trigliserid": {
+          "500_üstü": "Pankreatit riski → Fibrat (fenofibrat, gemfibrozil)",
+          "omega_3": "İkozapent etil (yüksek doz EPA) kardiyovasküler faydalı"
+        }
+      },
+      "aritmi": {
+        "atriyal_fibrilasyon": {
+          "prevalans": "Diyabette artmış",
+          "risk_faktörleri": "Kalp yetmezliği, hipertansiyon, yaş",
+          "antikoagülasyon": {
+            "CHA2DS2_VASc": "Diyabet 1 puan",
+            "NOAC": "Apixaban, rivaroxaban, dabigatran (warfarine tercih edilir)",
+            "kanama_riski": "HAS-BLED skoru"
+          }
+        }
+      },
+      "periferik_arter_hastalığı": {
+        "tarama": {
+          "ABI": "<0.9 tanı koydurur",
+          "semptomlar": "İntermittan klodikasyon, istirahat ağrısı"
+        },
+        "tedavi": {
+          "antiplatelet": "Aspirin 75-100 mg veya klopidogrel 75 mg",
+          "statin": "Yüksek doz",
+          "egzersiz": "Yürüme programı",
+          "revaskularizasyon": "Kritik ekstremite iskemisi → Endovasküler/cerrahi"
+        }
+      },
+      "antiplatelet_tedavi": {
+        "primer_korunma": {
+          "tartışmalı": "Aspirin rutin önerilmiyor (kanama riski > fayda)",
+          "yüksek_risk": "ASCVD riski >10% ve kanama riski düşükse düşünülebilir"
+        },
+        "sekonder_korunma": {
+          "aspirin": "75-100 mg/gün (zorunlu)",
+          "dual_antiplatelet": "AKS sonrası 1 yıl aspirin + klopidogrel/prasugrel/ticagrelor"
+        }
+      },
+      "kardiyovasküler_görüntüleme": {
+        "ekokardiyografi": "Diyabetik kardiyomiyopati, diyastolik disfonksiyon",
+        "stres_testi": "Egzersiz EKG veya miyokard perfüzyon sintigrafisi",
+        "koroner_anjiyografi": "Altın standart, invaziv",
+        "kardiyak_MRI": "Fibrozis tespiti"
+      }
+    },
+    "nefroloji": {
+      "rol": "Diyabetik nefropati tanı, evreleme ve tedavisi",
+      "diyabetik_nefropati": {
+        "tanım": "Kronik hiperglisemiye bağlı progresif böbrek hasarı",
+        "prevalans": "Diyabetiklerin %20-40'ında",
+        "natural_history": "Hiperfiltrasyonİncipient nefropatiOvert nefropatiESRD",
+        "evreleme": {
+          "albuminüri_bazlı": {
+            "A1": "<30 mg/g (normal-hafif artış)",
+            "A2": "30-300 mg/g (orta artış, mikroalbuminüri)",
+            "A3": ">300 mg/g (şiddetli artış, makroalbuminüri)"
+          },
+          "eGFR_bazlı": {
+            "G1": ">90 mL/dk/1.73m² (normal/yüksek)",
+            "G2": "60-89 (hafif azalma)",
+            "G3a": "45-59 (hafif-orta azalma)",
+            "G3b": "30-44 (orta-ileri azalma)",
+            "G4": "15-29 (ileri azalma)",
+            "G5": "<15 (böbrek yetmezliği)"
+          },
+          "CKD_staging": "G ve A kombinasyonu (örn: G3bA3)"
+        }
+      },
+      "tanı": {
+        "spot_idrar_UACR": {
+          "yöntem": "Albumin/kreatinin oranı",
+          "doğrulama": "2/3 örnekte pozitif (3 ay içinde)",
+          "yanlış_pozitif": "İYE, egzersiz, ateş, kalp yetmezliği"
+        },
+        "eGFR": "CKD-EPI formülü (kreatinin, yaş, cinsiyet)",
+        "böbrek_biyopsisi": {
+          "endikasyonlar": [
+            "Atipik bulgular (hızlı GFR kaybı)",
+            "Aktif idrar sedimenti (hematüri, piyüri)",
+            "Albuminüri olmadan GFR azalması",
+            "Sistemik hastalık şüphesi"
+          ],
+          "bulgular": "Kimmelstiel-Wilson nodülleri, diffüz glomerüloskleroz"
+        }
+      },
+      "tedavi": {
+        "glisemik_kontrol": {
+          "hedef_HbA1c": "<7% (genel), gevşetilebilir",
+          "hipoglisemi_riski": "eGFR <30'da bazı ilaçlar kontrendike"
+        },
+        "kan_basıncı_kontrolü": {
+          "hedef": "<130/80 mmHg",
+          "birinci_basamak": "ACEi veya ARB (ZORUNLU)",
+          "renoproteksiyon": {
+            "ACEi": "Ramipril, perindopril, lisinopril",
+            "ARB": "Losartan, valsartan, telmisartan, irbesartan",
+            "mekanizma": "Efferent arteriol dilatasyonu, intraglomerüler basınç azalması, antiproteinürik",
+            "yan_etkiler": "Hiperkalemi (özellikle eGFR <45), akut kreatinin artışı (%30'a kadar kabul edilebilir)"
+          },
+          "kombine_ACEi_ARB": "Artık önerilmiyor (hiperkalemi, hipotansiyon riski)",
+          "aldosteron_antagonisti": {
+            "finerenon": "Yeni non-steroid MRA, albuminüri azaltır, kardiyorenal koruma",
+            "spironolakton": "Dirençli albuminüride, hiperkalemi riski yüksek"
+          }
+        },
+        "SGLT2_inhibitörleri": {
+          "önem": "+++",
+          "renoproteksiyon": [
+            "Albuminüriyi %30-40 azaltır",
+            "eGFR kaybını yavaşlatır",
+            "ESRD riskini %40 azaltır",
+            "Kardiyorenal koruma"
+          ],
+          "örnekler": "Empagliflozin, dapagliflozin, canagliflozin",
+          "başlangıç": "eGFR ≥20'de başlanabilir",
+          "eGFR_düşüşü": "İlk 2-4 haftada geçici eGFR düşüşü (hemodynamic effect) normal, panik yapma",
+          "yan_etkiler": "Genital mantar, DKA riski (nadir)"
+        },
+        "GLP1_agonistleri": {
+          "renoproteksiyon": "Orta, albuminüriyi azaltır",
+          "örnekler": "Semaglutid, dulaglutid, liraglutid",
+          "avantaj": "Kilo kaybı, kardiyovasküler koruma"
+        },
+        "lipid_yönetimi": {
+          "statin": "LDL <70 mg/dL hedef",
+          "ezetimib": "Statin ile kombine"
+        },
+        "diyet": {
+          "protein_kısıtlaması": "0.8 g/kg/gün (G4-5'te)",
+          "sodyum": "<2000 mg/gün",
+          "potasyum": "Hiperkalemi riski varsa kısıtla"
+        },
+        "anemi_yönetimi": {
+          "hedef_hemoglobin": "10-12 g/dL",
+          "ESA": "Eritropoez stimüle edici ajanlar (eGFR <60, Hb <10)",
+          "demir": "Oral veya IV demir desteği"
+        },
+        "kemik_mineral_bozukluğu": {
+          "CKD_MBD": "Sekonder hiperparatiroidi, hiperfosfatemi",
+          "fosfat_bağlayıcılar": "Kalsiyum karbonat, sevelamer",
+          "vitamin_D": "Kalsitriol, parikalcitol"
+        },
+        "asidoz_yönetimi": {
+          "hedef_bikarbonat": ">22 mEq/L",
+          "sodyum_bikarbonat": "Oral supleman"
+        }
+      },
+      "renal_replasman_tedavisi": {
+        "endikasyonlar": {
+          "eGFR": "<15 mL/dk veya <10 (genç, asemptomatik)",
+          "semptomlar": "Üremik sendrom, volüm yükü, refrakter hiperkalemi, asidoz"
+        },
+        "modaliteler": {
+          "hemodiyaliz": {
+            "sıklık": "Haftada 3 kez, 4 saat",
+            "vasküler_erişim": "AV fistül (en iyi), AV graft, santral kateter",
+            "avantajlar": "Hızlı klirens, uzman gözetimi",
+            "dezavantajlar": "Sık hastane/merkez ziyareti, hemodinamik stres"
+          },
+          "periton_diyalizi": {
+            "tip": "CAPD (sürekli) veya APD (gece döngüsü)",
+            "avantajlar": "Evde yapılır, rezidüel böbrek fonksiyonunu korur",
+            "dezavantajlar": "Peritonit riski, protein kaybı"
+          },
+          "böbrek_nakli": {
+            "en_iyi_seçenek": "Mortalite ve yaşam kalitesi açısından en iyi",
+            "canlı_donör": "Kadaverik donöre göre daha iyi sonuçlar",
+            "immünsüpresyon": "Takrolimus/siklosporin + MMF + steroid",
+            "komplikasyonlar": "Rejeksiyon, enfeksiyon, post-transplant diyabet (NODAT)"
+          }
+        }
+      },
+      "takip": {
+        "eGFR_UACR": "Her vizitte",
+        "potasyum_bikarbonat": "eGFR <45'te sık kontrol",
+        "anemi_parametreleri": "Hemoglobin, ferritin, transferrin satürasyonu",
+        "PTH_Ca_P": "CKD-MBD takibi"
+      },
+      "ilaç_dozajı": {
+        "metformin": "eGFR <30 kontrendike",
+        "SGLT2i": "eGFR ≥20'de başlanabilir",
+        "insülin": "eGFR azaldıkça doz azaltma gerekebilir (renal eliminasyon)",
+        "diğer": "Antibiyotikler, analjezikler doz ayarı gerekir"
+      }
+    },
+    "oftalmoloji": {
+      "rol": "Diyabetik retinopati ve diğer oküler komplikasyonların yönetimi",
+      "diyabetik_retinopati": {
+        "tanım": "Retinal mikrovasküler hasar",
+        "prevalans": "20 yıl diyabetten sonra >%60",
+        "risk_faktörleri": [
+          "Diyabet süresi",
+          "Kötü glisemik kontrol",
+          "Hipertansiyon",
+          "Dislipidemi",
+          "Gebelik",
+          "Böbrek yetmezliği"
+        ],
+        "sınıflama": {
+          "nonproliferatif_DR": {
+            "hafif": "Mikroanevrizmalar",
+            "orta": "Mikroanevrizmalar + hemoraji, hard eksudalar, pamuk yumağı lezyonlar",
+            "ileri": "Venöz boncuklanma, IRMA (intraretinal mikrov asküler anomaliler), yaygın hemoraji"
+          },
+          "proliferatif_DR": {
+            "özellik": "Neovaskülarizasyon (anormal damar oluşumu)",
+            "lokalizasyon": "Optik diskte (NVD) veya başka yerde (NVE)",
+            "komplikasyonlar": [
+              "Vitreus kanaması",
+              "Traksiyonel retina dekolmanı",
+              "Neovasküler glokom"
+            ]
+          },
+          "diyabetik_maküla_ödemi": {
+            "tanım": "Maküla bölgesinde sıvı birikimi",
+            "görme_kaybı": "DR'deki görme kaybının ana nedeni",
+            "sınıflama": "Santral vs santral olmayan, fokal vs diffüz"
+          }
+        }
+      },
+      "tanı_ve_değerlendirme": {
+        "fundus_muayenesi": {
+          "dilate_fundoskopi": "Altın standart",
+          "sıklık": "Tanıda, sonra yıllık (nonproliferatif), 3-6 ayda (ileri nonproliferatif), 2-4 ayda (proliferatif)"
+        },
+        "fundus_fotoğrafı": {
+          "7_alan_stereo_fotoğraf": "Standart",
+          "ultra_geniş_alan_görüntüleme": "Periferik retina değerlendirmesi"
+        },
+        "OCT_optical_coherence_tomography": {
+          "kullanım": "Maküla ödemi tanı ve takibi",
+          "ölçüm": "Santral maküla kalınlığı (normal <250 µm)"
+        },
+        "fluorescein_anjiografi": {
+          "endikasyon": "Neovaskülarizasyon, maküler iskemi değerlendirmesi",
+          "bulgular": "Kapiller non-perfüzyon, sızıntı, neovaskülarizasyon"
+        },
+        "OCT_anjiografi": {
+          "avantaj": "Non-invaziv, boya gerektirmez",
+          "kullanım": "Mikrovasküler değişiklikler, neovaskülarizasyon"
+        }
+      },
+      "tedavi": {
+        "sistemik_kontrol": {
+          "glisemik": "HbA1c <7%, sıkı kontrol retinopati progressyonunu %76 azaltır (DCCT)",
+          "kan_basıncı": "<130/80 mmHg",
+          "lipid": "Fenofibrat retinopatide yararlı olabilir (FIELD çalışması)"
+        },
+        "lazer_fotokoagülasyon": {
+          "panretinal_fotokoagülasyon_PRP": {
+            "endikasyon": "Yüksek riskli proliferatif DR",
+            "mekanizma": "Periferik iskemik retinanın ablasyonu → VEGF azalması",
+            "teknik": "1200-2000 burns, periferik retina",
+            "yan_etkiler": "Periferik görme kaybı, gece körlüğü, maküla ödemi"
+          },
+          "fokal_lazer": {
+            "endikasyon": "Fokal maküla ödemi",
+            "hedef": "Sızan mikroanevrizmalar"
+          }
+        },
+        "anti_VEGF_tedavi": {
+          "önem": "+++",
+          "endikasyonlar": [
+            "Santral maküla ödemi",
+            "Proliferatif DR (PRP'ye alternatif veya ek)"
+          ],
+          "ajanlar": {
+            "ranibizumab": "Lucentis, 0.5 mg intravitreal",
+            "bevacizumab": "Avastin, 1.25 mg (off-label)",
+            "aflibercept": "Eylea, 2 mg"
+          },
+          "uygulama": "İntravitreal enjeksiyon, steril koşullar",
+          "sıklık": "Başlangıçta aylık, sonra treat-and-extend veya PRN protokolü",
+          "yan_etkiler": "Endoftalmit (nadir <1/1000), retina dekolmanı, katarakt, oküler hipertansiyon",
+          "sistemik_yan_etki": "Tromboemboli riski (teorik, tartışmalı)"
+        },
+        "kortikosteroid_implantlar": {
+          "deksametazon_implant": "Ozurdex, 0.7 mg, 3-6 ay etki",
+          "fluosinolon_implant": "Iluvien, 0.19 mg, 3 yıl etki",
+          "endikasyon": "Anti-VEGF'ye yanıtsız veya psödofakik maküla ödemi",
+          "yan_etkiler": "Katarakt, glokom"
+        },
+        "vitreoretinal_cerrahi": {
+          "vitrektomi": {
+            "endikasyonlar": [
+              "Vitreus kanaması (temizlenmeyen)",
+              "Traksiyonel retina dekolmanı",
+              "İlerleyen fibrozis"
+            ],
+            "prosedür": "Vitreus jeli çıkarılır, proliferatif membranlar sıyrılır"
+          }
+        }
+      },
+      "diğer_oküler_komplikasyonlar": {
+        "katarakt": {
+          "prevalans": "Erken yaşta, daha sık",
+          "tip": "Posteriyor subkapsüler katarakt",
+          "tedavi": "Cerrahi (fakoemülsifikasyon + IOL)"
+        },
+        "neovasküler_glokom": {
+          "neden": "İleri proliferatif DR → iris neovaskülarizasyonu → trabekular ağ tıkanması",
+          "semptomlar": "Ağrı, görme kaybı, göz içi basınç artışı",
+          "tedavi": "Anti-VEGF + PRP + glokom ilaçları + cerrahi (gerekirse)"
+        },
+        "oküloMotor_nöropati": {
+          "3_6_sinir_paralizisi": "Diplopi, ptosis",
+          "pupil_koruyucu": "Diyabetik 3. sinir felci tipik olarak pupili korur",
+          "prognoz": "Genellikle 3-6 ayda kendiliğinden düzelir"
+        }
+      },
+      "tarama_ve_takip": {
+        "Tip_2_DM": "Tanıda fundoskopi, sonra yıllık",
+        "proliferatif_DR": "2-4 ayda bir",
+        "maküla_ödemi": "Tedavi altında aylık, stabil olunca 3-6 ayda"
+      },
+      "AI_retinopati_taraması": {
+        "otonom_fundus_görüntü_analizi": "FDA onaylı AI sistemleri mevcut",
+        "duyarlılık": ">%85-90",
+        "kullanım": "Primer bakım ortamlarında tarama, oftalmoloji erişimi kısıtlı bölgeler"
+      }
+    },
+    "nöroloji": {
+      "rol": "Diyabetik nöropati ve serebrovasküler komplikasyonlar",
+      "diyabetik_nöropati": {
+        "prevalans": "%50'ye kadar",
+        "patofizyoloji": [
+          "Hiperglisemiye bağlı poliol yolu aktivasyonu",
+          "AGEs birikimi",
+          "Oksidatif stres",
+          "Mikrovasküler iskemi",
+          "Nörotrofik faktör eksikliği"
+        ],
+        "sınıflama": {
+          "periferik_nöropati": {
+            "distal_simetrik_polinöropati": {
+              "en_sık": "+++",
+              "patern": "Stocking-glove distribüsyonu",
+              "semptomlar": [
+                "Uyuşma, karınca basması",
+                "Yanma, batma ağrısı",
+                "Nöropatik ağrı (geceleri kötüleşir)",
+                "Propriosepsiyon kaybı"
+              ],
+              "fizik_muayene": [
+                "Pinprick, hafif dokunma azalmış",
+                "Vibrasyon duyusu azalmış (128 Hz tuning fork)",
+                "Derin tendon refleksleri azalmış/kayıp",
+                "Monofilament testi pozitif (10 g)"
+              ],
+              "komplikasyonlar": "Diyabetik ayak, düşme riski"
+            },
+            "akut_painful_nöropati": {
+              "özellik": "Hızlı glisemik kontrol sonrası paradoksal ağrı (insulin neuritis)",
+              "prognoz": "Genellikle 6-12 ayda düzelir"
+            }
+          },
+          "otonom_nöropati": {
+            "kardiyovasküler": {
+              "kalp_hızı_değişkenliği_azalması": "Parasempatik disfonksiyon",
+              "ortostatik_hipotansiyon": "Ayağa kalkınca >20 mmHg sistolik düşüş",
+              "istirahat_taşikardi": ">100 bpm",
+              "sessiz_miyokard_iskemisi": "Ağrı hissedilmez"
+            },
+            "gastrointestinal": {
+              "gastroparezi": "Mide boşalması gecikir → erken tokluk, bulantı, kusma",
+              "diyabetik_diyare": "Gece, intermittan, sulu",
+              "konstipasyon": "Kolonik dismotilite"
+            },
+            "genitoüriner": {
+              "nörojenik_mesane": "İdrar tutamama, sık enfeksiyon, rezidüel idrar",
+              "erektil_disfonksiyon": "Erkeklerin %50-75'inde"
+            },
+            "sudomotor": {
+              "anhidroz": "Alt ekstremitelerde terleme kaybı",
+              "kompansatuar_hiperhidroz": "Üst vücut"
+            },
+            "pupilMotor": "Pupil anormallikleri, karanlığa adaptasyon bozukluğu"
+          },
+          "fokal_mononöropatiler": {
+            "kranial_nöropati": {
+              "3_sinir": "Ptosis, diplopi, pupil tipik olarak korunur",
+              "6_sinir": "Lateral rektus felci",
+              "7_sinir": "Bell paralizisi (diyabette risk artmış)"
+            },
+            "periferik_mononöropati": {
+              "median_sinir": "Karpal tünel sendromu (diyabette 2-3 kat sık)",
+              "ulnar_peroneal_sinir": "Tuzak nöropatileri"
+            },
+            "radikülopati": "Torakal radikülopati, truncal nöropati"
+          },
+          "proksimal_motor_nöropati": {
+            "diyabetik_amiyotrofi": {
+              "özellik": "Proksimal bacaklarda güçsüzlük, atrofi",
+              "ağrı": "Şiddetli",
+              "prognoz": "Yavaş düzelme (aylar-yıllar)"
+            }
+          }
+        }
+      },
+      "tanı": {
+        "klinik_değerlendirme": {
+          "semptom_skorları": "Michigan Neuropathy Screening Instrument (MNSI)",
+          "nörolojik_muayene": "Monofilament, vibrasyon (tuning fork), refleksler"
+        },
+        "elektrofizyolojik_testler": {
+          "sinir_iletim_çalışması": "Amplitüd azalması, hız yavaşlaması",
+          "EMG": "Denervasyon, reinnervasyonbulguları"
+        },
+        "otonom_testler": {
+          "kalp_hızı_değişkenliği": "Derin nefes testi, Valsalva manevrası",
+          "tilt_table_test": "Ortostatik hipotansiyon",
+          "QSART": "Quantitative sudomotor axon reflex test"
+        },
+        "dışlama": "B12 eksikliği, hipotiroidi, üre mi, alkol, toksinler, inflamatuar nöropatiler"
+      },
+      "tedavi": {
+        "glisemik_kontrol": "HbA1c <7%, nöropati progressyonunu yavaşlatır",
+        "nöropatik_ağrı": {
+          "birinci_basamak": {
+            "pregabalin": "75-600 mg/gün (2-3 bölünmüş doz), NNT=5",
+            "duloksetin": "60-120 mg/gün, NNT=6, SNRI (antidepresan)",
+            "gabapentin": "900-3600 mg/gün (3 bölünmüş doz)"
+          },
+          "ikinci_basamak": {
+            "amitriptilin": "25-150 mg gece, trisiklik antidepresan, NNT=3",
+            "yan_etkiler": "Sedas yon, kuru ağız, ortostatik hipotansiyon, kardiyak aritmiler",
+            "kontrendikasyon": "QT uzaması, blok"
+          },
+          "üçüncü_basamak": {
+            "tramadol": "Opioid, bağımlılık riski",
+            "kapsaisin_krem": "Topikal, yanma hissi"
+          },
+          "kombine_tedavi": "Farklı mekanizmalar kombine edilebilir"
+        },
+        "alfa_lipoik_asit": "Antioksidan, Avrupa'da kullanılıyor (600 mg IV), ABD'de tartışmalı",
+        "otonom_nöropati": {
+          "ortostatik_hipotansiyon": [
+            "Fiziksel önlemler: Yavaş kalkma, kompresyon çorapları",
+            "Tuz ve sıvı alımı artırma",
+            "Fludrokortizon 0.1-0.2 mg/gün",
+            "Midodrin 2.5-10 mg 3x1 (alfa agonist)",
+            "Droxidopa"
+          ],
+          "gastroparezi": [
+            "Küçük sık öğünler, düşük yağ/lif",
+            "Metoklopramid 5-20 mg yemek öncesi (uzun dönem tardif diskinezi riski)",
+            "Domperidon (yurt dışında)",
+            "Eritromisin (prokinetik)"
+          ],
+          "nörojenik_mesane": "Zamanlanmış işeme, temiz aralıklı kateterizasyon",
+          "erektil_disfonksiyon": "PDE5 inhibitörleri (sildenafil, tadalafil), kardiyovasküler değerlendirme gerekli"
+        }
+      },
+      "serebrovasküler_hastalık": {
+        "inme_riski": "2-4 kat artmış",
+        "iskemik_inme": {
+          "subtip": [
+            "Laküner infarkt (küçük damar hastalığı) - sık",
+            "Aterosklerotik büyük damar",
+            "Kardiyoembolik"
+          ],
+          "akut_yönetim": {
+            "IV_tromboliz": "rtPA (alteplase) <4.5 saat içinde",
+            "mekanik_trombektomi": "Büyük damar oklüzyonu, <24 saat",
+            "glukoz_yönetimi": "Hiperglisemi kötü prognoz, hedef 140-180 mg/dL"
+          },
+          "sekonder_korunma": {
+            "antiplatelet": "Aspirin 75-325 mg veya klopidogrel 75 mg",
+            "statin": "Yüksek doz atorvastatin 80 mg",
+            "kan_basıncı": "<130/80 mmHg",
+            "AF_varsa": "Antikoagülasyon (NOAC)"
+          }
+        },
+        "TIA_geçici_iskemik_atak": {
+          "yüksek_risk": "ABCD2 skoru",
+          "acil_görüntüleme": "MRI-DWI, karotis doppler",
+          "acil_müdahale": "Antiplatelet, statin, risk faktörü kontrolü"
+        },
+        "vasküler_demans": {
+          "kronik_mikrovasküler_değişiklikler": "Beyaz cevher hastalığı, multipl laküner infarkt",
+          "klinik": "Steptik kognitif gerileme",
+          "önleme": "Vasküler risk faktörlerinin agresif kontrolü"
+        }
+      },
+      "takip_ve_tarama": {
+        "nöropati_taraması": "Yıllık (tanıda ve sonra), monofilament + tuning fork",
+        "ayak_muayenesi": "Her vizitte"
+      }
+    },
+    "dermatoloji": {
+      "rol": "Diyabete bağlı deri komplikasyonları",
+      "diyabete_özgü_deri_bulguları": {
+        "akantosis_nigrikans": {
+          "özellik": "Koyu, kadifemsi, kalınlaşmış cilt",
+          "lokalizasyon": "Boyun, koltuk altı, kasık, intertriginöz alanlar",
+          "neden": "İnsülin direnci",
+          "klinik_önemi": "Prediyabet/metabolik sendrom göstergesi"
+        },
+        "diyabetik_dermopati": {
+          "özellik": "Hiperpigmente atrofik maküller/yamalar",
+          "lokalizasyon": "Ön tibia (pretibial)",
+          "neden": "Mikrovasküler hasar",
+          "tedavi": "Genellikle gereksiz, kozmetik"
+        },
+        "nekrobiyozis_lipoidika_diabeticorum": {
+          "özellik": "Parlak sarı-kahverengi plaklar, atrofik merkez, telanjiyektazi",
+          "lokalizasyon": "Ön tibia (%85)",
+          "prevalans": "Nadir (%0.3), kadınlarda daha sık",
+          "komplikasyonlar": "Ülserasyon (%30)",
+          "tedavi": [
+            "Güçlü topikal steroidler",
+            "İntralezyonel steroid",
+            "Kalsinörin inhibitörleri (takrolimus)",
+            "Ülsere ise yara bakımı"
+          ]
+        },
+        "skleredema_diabeticorum": {
+          "özellik": "Boyun ve üst sırt derisinde sertleşme, kalınlaşma",
+          "prevalans": "%2-14",
+          "ilişki": "Kötü kontrollü, uzun süreli diyabet",
+          "tedavi": "Glisemik kontrol, fizik tedavi"
+        },
+        "diyabetik_büllöz_hastalık": {
+          "özellik": "Spontan büller (alevler)",
+          "lokalizasyon": "El ve ayak üzerinde",
+          "tedavi": "Genellikle kendiliğinden iyileşir, enfeksiyon önleme"
+        },
+        "granuloma_annulare": {
+          "özellik": "Anüler, eritematöz-mor papüller",
+          "yaygın_form": "Diyabetle ilişkili olabilir",
+          "tedavi": "Topikal steroidler, intralezyonel steroid"
+        }
+      },
+      "enfeksiyonlar": {
+        "bakteriyel": {
+          "sellülit": "S. aureus, Streptococcus, daha sık ve şiddetli",
+          "folikülit_furunküller": "Kötü glisemik kontrolde sık",
+          "eritrazma": "Corynebacterium minutissimum, intertriginöz"
+        },
+        "fungal": {
+          "kandidiyaz": {
+            "lokalizasyon": "İntertriginöz alanlar, genital, oral (thrush)",
+            "risk": "Hiperglisemi, immünsüpresyon",
+            "tedavi": "Topikal/oral antifungal (flukonazol, klotrimazol)"
+          },
+          "tinea": "Dermatofit enfeksiyonları (tinea pedis, cruris, corporis)",
+          "onikomikoz": "Tırnak mantarı, diyabetik ayakta risk faktörü"
+        }
+      },
+      "diyabetik_ayak_derisi": {
+        "kallus_nasır": "Basınç noktalarında, ülser öncüsü",
+        "fissürler": "Kuru cilt, çatlaklar, enfeksiyon girişi",
+        "ülserler": "Nöropati + basınç + travma",
+        "gangren": "İskemik, enfekte"
+      },
+      "kutanöz_yara_iyileşmesi": {
+        "gecikmiş_iyileşme": [
+          "Hiperglisemi → nötrofil disfonksiyonu",
+          "Mikroanjiopati",
+          "Nöropati → tekrarlayan travma",
+          "İskemi"
+        ],
+        "tedavi_prensipleri": [
+          "Glisemik kontrol",
+          "Debridman",
+          "Enfeksiyon kontrolü",
+          "Basıncı azaltma (offloading)",
+          "Nem dengesi",
+          "İleri yara örtüleri (hidrokoloid, hidrojel, köpük)"
+        ]
+      },
+      "pruritus_kaşıntı": {
+        "yaygın": "Kötü kontrollü diyabette",
+        "nedenler": "Kuru cilt (xerosis), fungal enfeksiyon, nöropati",
+        "tedavi": "Nemlendirici, antipruritik (antihistaminik), altta yatan neden tedavisi"
+      },
+      "ilaç_reaksiyonları": {
+        "insülin_lipodistrofisi": {
+          "lipoatrofi": "Enjeksiyon bölgesinde yağ dokusu kaybı (eski insülinlerde)",
+          "lipohipertrofi": "Aynı bölgede tekrar enjeksiyonla yağ dokusu artışı",
+          "önleme": "Enjeksiyon yerini rotasyon"
+        },
+        "metformin": "Nadiren B12 eksikliği → glossit",
+        "sülfanilüre": "Fotosensitivite, döküntü"
+      },
+      "deri_bakımı_önerileri": {
+        "günlük_inspeksiyon": "Ayaklar dahil tüm vücut",
+        "nemlendir me": "Kuru cilt için düzenli nemlendirici",
+        "ayak_hijyeni": "Günlük yıkama, iyice kurutma (parmak araları)",
+        "travmadan_kaçınma": "Yalınayak yürümeme, uygun ayakkabı"
+      }
+    },
+    "genel_cerrahi": {
+      "rol": "Cerrahi komplikasyonlar, diyabetik ayak, metabolik cerrahi",
+      "diyabetik_ayak": {
+        "tanım": "Nöropati ve/veya periferik arter hastalığına bağlı ayak ülserleri ve enfeksiyonları",
+        "prevalans": "Yaşam boyu risk %25",
+        "wagner_sınıflaması": {
+          "grade_0": "Lezyon yok, risk faktörleri var",
+          "grade_1": "Yüzeyel ülser, derin doku tutulumu yok",
+          "grade_2": "Derin ülser, tendon/eklem/kemik tutulumu, apse yok",
+          "grade_3": "Derin ülser + apse/osteomyelit/septik artrit",
+          "grade_4": "Sınırlı gangren (ayak parmağı, topuk)",
+          "grade_5": "Yaygın gangren (tüm ayak)"
+        },
+        "PEDIS_sınıflaması": {
+          "P_perfüzyon": "ABI, nabız değerlendirmesi",
+          "E_extent": "Ülser boyutu",
+          "D_depth": "Yüzeyel vs derin",
+          "I_infection": "Var/yok, şiddet",
+          "S_sensation": "Nöropati varlığı"
+        },
+        "değerlendirme": {
+          "vasküler": "ABI, doppler US, TcPO2 (transkutanöz oksijen basıncı)",
+          "enfeksiyon": "Klinik bulgular, yara kültürü, kemik biyopsisi (osteomyelit)",
+          "görüntüleme": "Ayak grafisi, MRI (osteomyelit)"
+        },
+        "tedavi": {
+          "offloading": {
+            "total_contact_cast": "Altın standart, basıncı eşit dağıtır",
+            "ayak_ortezi": "Özel ayakkabı, plastazote insole",
+            "koltuk_değneği": "Yük azaltma"
+          },
+          "debridman": {
+            "sharp_debridman": "Nekrotik doku, kallus çıkarımı",
+            "sıklık": "Her vizitte gerekebilir"
+          },
+          "enfeksiyon_yönetimi": {
+            "hafif_orta": "Oral antibiyotik (amoksisilin-klavulanat, siprofloksasin + klindamisin)",
+            "şiddetli": "IV antibiyotik (piperasilin-tazobaktam, vankomisin + seftazidim/meropenem)",
+            "MRSA_şüphesi": "Vankomisin veya linezolid",
+            "osteomyelit": "6-12 hafta antibiyotik ± cerrahi debridman",
+            "süre": "Hafif 1-2 hafta, orta 2-4 hafta, şiddetli 4-6 hafta"
+          },
+          "revaskülarizasyon": {
+            "endovasküler": "Anjiyoplasti, stent (tibial/pedal arterler)",
+            "cerrahi_bypass": "Distal bypass (peroneal, pedal arterler)",
+            "endikasyon": "İskemik ülser, kritik ekstremite iskemisi"
+          },
+          "ileri_yara_tedavileri": {
+            "negatif_basınç": "VAC (vacuum-assisted closure)",
+            "hiperbarik_oksijen": "Refrak ter ülserlerde (tartışmalı)",
+            "biyomühendislik_ürünler": "Dermal matriks, büyüme faktörleri"
+          },
+          "amputasyon": {
+            "endikasyonlar": [
+              "İyileşmeyen enfeksiyon/osteomyelit",
+              "Yaygın gangren",
+              "Refrakter iskemik ağrı",
+              "Fonksiyonsuz ekstremite"
+            ],
+            "seviyeler": {
+              "minör": "Parmak, transmetatarsal (TMA)",
+              "majör": "Diz altı (BKA), diz üstü (AKA)"
+            },
+            "hedef": "En distal seviyede iyileşebilir amputasyon"
+          }
+        },
+        "charcot_artropatisi": {
+          "akut_faz": "Kırmızı, sıcak, şişmiş ayak, ağrısız (nöropati)",
+          "tedavi": "Total contact cast, yük vermeme (3-6 ay)",
+          "komplikasyon": "Rocker-bottom deformitesi, ülser riski"
+        }
+      },
+      "perioperatif_yönetim": {
+        "preoperatif": {
+          "glisemik_kontrol": "Elektif cerrahi için HbA1c <8% (ideal <7%)",
+          "kardiyak_değerlendirme": "Yüksek riskli cerrahi öncesi stres testi",
+          "renal_fonksiyon": "Metformin kesilmesi (kontrastlı işlemler)",
+          "ilaç_ayarlaması": [
+            "Metformin: Cerrahi günü sabah kes",
+            "SGLT2i: 3-4 gün önce kes (DKA riski)",
+            "Oral ajanlar: Cerrahi sabahı kes",
+            "İnsülin: Bazal devam, bolus ayarla"
+          ]
+        },
+        "intraoperatif": {
+          "glukoz_monitörizasyonu": "Saatlik ölçüm",
+          "hedef_glukoz": "140-180 mg/dL",
+          "insülin_infüzyonu": "IV insülin (gerekirse)",
+          "sıvı_yönetimi": "Elektrolit dengesi"
+        },
+        "postoperatif": {
+          "glukoz_takibi": "4-6 saatte bir",
+          "yara_iyileşmesi": "Sıkı glukoz kontrolü",
+          "enfeksiyon_önleme": "Antibiyotik proflaksisi, aseptik teknik",
+          "erken_mobilizasyon": "Tromboz proflaksisi"
+        }
+      },
+      "metabolik_bariatrik_cerrahi": {
+        "endikasyonlar": [
+          "BMI ≥40",
+          "BMI ≥35 + tip 2 DM veya komorbidite",
+          "BMI 30-34.9 + kötü kontrollü tip 2 DM (seçilmiş hastalarda)"
+        ],
+        "prosedürler": {
+          "sleeve_gastrektomi": {
+            "teknik": "Mide hacmini %80 azaltma",
+            "diyabet_remisyonu": "%60-70",
+            "avantajlar": "Tek anastomoz, malabsorbsiyon yok",
+            "komplikasyonlar": "Kaçak (%1-2), GERD"
+          },
+          "roux_en_Y_gastrik_bypass": {
+            "teknik": "Küçük gastrik pouch + jejunal bypass",
+            "diyabet_remisyonu": "%75-85",
+            "mekanizma": "Kısıtlayıcı + hafif malabsorptif + nörohormonal (GLP-1↑)",
+            "komplikasyonlar": "Dumping sendromu, vitamin eksiklikleri, internal herni"
+          },
+          "biliopankreatik_diversiyon": {
+            "en_etkili": "Diyabet remisyonu >%90",
+            "malabsorbsiyon": "Yüksek",
+            "komplikasyonlar": "Protein-kalori malnütrisyon, vitamin eksiklikleri",
+            "kullanım": "Sınırlı, süper obezlerde"
+          }
+        },
+        "mekanizmalar": {
+          "kilo_kaybı": "Primer etki",
+          "GLP1_GIP_artışı": "İnkretin etkisi, insülin sekresyonu↑",
+          "ghrelin_azalması": "İştah azalması",
+          "safra_asitleri": "Metabolik sinyal değişimi",
+          "mikrobiyom": "Barsak florası değişimi"
+        },
+        "postoperatif_takip": {
+          "glukoz": "İlk haftalarda sıkça, hipoglisemi riski",
+          "ilaç_azaltma": "Dramatik, genellikle cerrahi sonrası hemen",
+          "vitamin_desteği": "B12, demir, kalsiyum, vitamin D, tiamin",
+          "protein_alımı": "60-80 g/gün hedef",
+          "takip_sıklığı": "İlk yıl 3-6 ayda, sonra yıllık"
+        },
+        "diyabet_remisyonu": {
+          "tanım": "HbA1c <6.5%, ilaçsız, ≥1 yıl",
+          "öngörücüler": "Kısa diyabet süresi, C-peptid yüksekliği, daha fazla kilo kaybı"
+        }
+      },
+      "akut_karın_komplikasyonları": {
+        "diyabetik_ketoasidoz": "Akut karın taklit edebilir",
+        "pankreatit": "Hipertrigliseridemiye bağlı",
+        "kolangit_kolesistit": "Enfeksiyon riski artmış"
+      }
+    },
+    "beslenme_diyetetik": {
+      "rol": "Medikal beslenme tedavisi, kilo yönetimi",
+      "beslenme_tedavisinin_önemi": {
+        "temel": "Tüm diyabetik hastaların tedavisinde temel taş",
+        "HbA1c_azalması": "%0.5-2.0 (MNT ile)",
+        "kilo_kaybı": "%5-10 kilo kaybı glukoz kontrolünü önemli ölçüde iyileştirir"
+      },
+      "makrobesin_dağılımı": {
+        "karbonhidrat": {
+          "oran": "%45-60 enerji (bireyselleştir)",
+          "kaynak": "Kompleks karbonhidratlar, tam tahıllar, sebzeler, baklagiller",
+          "düşük_GI": "Glisemik indeks <55 tercih edilmeli",
+          "lif": "25-30 g/gün (çözünür lif glukoz kontrolü iyileştirir)"
+        },
+        "protein": {
+          "oran": "%15-20 enerji",
+          "miktar": "0.8-1.0 g/kg/gün (normal böbrek fonksiyonu)",
+          "nefropati": "0.8 g/kg/gün (eGFR <60 ise kısıtla)",
+          "kaynak": "Yağsız et, tavuk, balık, baklagiller, düşük yağlı süt"
+        },
+        "yağ": {
+          "oran": "%25-35 enerji",
+          "doymuş_yağ": "<10% (kardiyovasküler hastalık varsa <7%)",
+          "trans_yağ": "Minimumda tut",
+          "MUFA": "Tek doymamış yağ asitleri (zeytinyağı, fındık) %15-20",
+          "PUFA": "Çok doymamış (omega-3, omega-6) %10",
+          "omega_3": "Balık yağı, ceviz, keten tohumu (kardiyovasküler koruma)"
+        }
+      },
+      "diyet_paternleri": {
+        "akdeniz_diyeti": {
+          "özellikler": "Zeytinyağı, sebze, meyve, tam tahıl, balık, fındık",
+          "faydalar": "Kardiyovasküler koruma+++, glisemik kontrol iyileştir ir",
+          "kanıt_seviyesi": "A (güçlü)"
+        },
+        "DASH_diyeti": {
+          "özellikler": "Düşük sodyum, yüksek sebze-meyve, düşük yağlı süt",
+          "faydalar": "Kan basıncı kontrolü, glukoz kontrolü",
+          "kanıt_seviyesi": "A"
+        },
+        "vejetaryen_vegan": {
+          "faydalar": "Kilo kaybı, glukoz kontrolü, lipid profili iyileştir ir",
+          "dikkat": "B12, demir, çinko, omega-3 desteği gerekebilir"
+        },
+        "düşük_karbonhidrat": {
+          "tanım": "<130 g/gün veya <%26 enerji",
+          "kısa_dönem": "HbA1c azalması, kilo kaybı",
+          "uzun_dönem": "Sürdürülebilirlik zor, kardiyovasküler etki tartışmalı",
+          "ketojenik_diyet": "<50 g/gün, DKA riski, dikkatle"
+        },
+        "intermitant_fasting": {
+          "tip": "16:8, 5:2, alternatif gün",
+          "potansiyel_fayda": "Kilo kaybı, insülin duyarlılığı",
+          "risk": "Hipoglisemi (insülin/sülfanilüre kullanan hastalarda)",
+          "kanıt": "Sınırlı, daha fazla araştırma gerekli"
+        }
+      },
+      "karbonhidrat_sayımı": {
+        "tanım": "Yemeklerdeki karbonhidrat miktarını hesaplama",
+        "kullanım": "Multipl insülin kullanan hastalar için kritik",
+        "insülin_karbonhidrat_oranı": "1 Ü insülin kaç gram karbonhidratı karşılar (örn: 1:10)",
+        "porsion_kontrolü": "Standart porsiyonlar öğrenilmeli"
+      },
+      "glisemik_indeks_yük": {
+        "glisemik_indeks": "Gıdanın kan şekerine etkisi (0-100 skala)",
+        "düşük_GI": "<55 (yulaf, baklagiller, çoğu sebze)",
+        "orta_GI": "55-70",
+        "yüksek_GI": ">70 (beyaz ekmek, patates, şekerli içecek)",
+        "glisemik_yük": "GI × karbonhidrat miktarı / 100"
+      },
+      "kilo_yönetimi": {
+        "obezite_prevalansı": "Tip 2 DM'nin %80-90'ı fazla kilolu/obez",
+        "kilo_kaybı_hedefi": {
+          "ilk": "%5-10 kilo kaybı (sağlık faydaları belirgin)",
+          "hız": "0.5-1 kg/hafta (sürdürülebilir)"
+        },
+        "kalori_kısıtlaması": {
+          "orta": "500-750 kkal/gün eksik (BMR'den)",
+          "düşük_kalori": "800-1200 kkal/gün (kadın), 1200-1600 (erkek)",
+          "çok_düşük_kalori": "<800 kkal/gün (VLCDiyet), medikal gözetim gerekli"
+        },
+        "davranışsal_değişiklikler": {
+          "öz_monitörizasyon": "Yemek günlüğü, tartı takibi",
+          "yavaş_yeme": "Tokluk hissi gelişir",
+          "porsion_kontrolü": "Küçük tabak kullanımı",
+          "duygusal_yeme": "Tetikleyici leri tanıma, alternatif başa çıkma"
+        }
+      },
+      "özel_durumlar": {
+        "hipoglisemi_önleme": {
+          "egzersiz_öncesi": "Karbonhidrat alımı (gerekirse)",
+          "alkol": "Yemekle birlikte, hiçbir zaman aç karnına",
+          "gece_hipoglisemisi": "Yatarken hafif atıştırmalık"
+        },
+        "hasta_günü": {
+          "hafif_yemekler": "Çorba, meyve suyu, kraker",
+          "sıvı_alımı": "Dehidrasyon önleme",
+          "glukoz_monitörizasyonu": "Sık ölçüm"
+        },
+        "gebelikte_beslenme": {
+          "kalori": "+300 kkal/gün (2-3. trimester)",
+          "folat": "Yeşil yapraklı sebze, tahıl takviyesi",
+          "demir": "Et, baklagil, takviye",
+          "glukoz_hedefleri": "Daha sıkı (<95 açlık, <140 1 saat pp, <120 2 saat pp)"
+        },
+        "yaşlılarda": {
+          "protein": "Sarkopeni önlemek için yeterli protein (1.0-1.2 g/kg)",
+          "mikro besinler": "Vitamin D, B12, kalsiyum",
+          "tekstür": "Çiğneme/yutma güçlüğü varsa yumuşak gıdalar"
+        }
+      },
+      "vitamin_mineral_takviyeleri": {
+        "rutin_önerilmeyen": "Genel popülasyonda ek fayda gösterilmemiş",
+        "özel_durumlar": {
+          "metformin_kullanımı": "B12 takviyesi",
+          "sınırlı_beslenme": "Multivitamin",
+          "osteoporoz_riski": "Kalsiyum (1200 mg) + vitamin D (800-1000 IU)",
+          "gebelik": "Prenatal vitamin"
+        }
+      },
+      "alkol": {
+        "güvenli_limit": "Kadın ≤1 içki/gün, erkek ≤2 içki/gün",
+        "1_içki": "12 oz bira, 5 oz şarap, 1.5 oz sert içki",
+        "riskler": "Hipoglisemi (özellikle insülin/sülfanilüre ile), trigliserid artışı, kalori yükü",
+        "öneriler": "Yemekle birlikte, aç karnına asla"
+      },
+      "yapay_tatlandırıcılar": {
+        "güvenli": "Sakarin, aspartam, sukraloz, stevya (FDA onaylı)",
+        "kullanım": "Kalori ve karbonhidrat içermeyen alternatif",
+        "tartışma": "Barsak mikrobiyomu etkisi araştırılıyor"
+      },
+      "hasta_eğitimi": {
+        "bireyselleştirilmiş_plan": "Kültürel, ekonomik, kişisel tercihler dikkate alınmalı",
+        "diyetisyen_konsültasyonu": "Tanıda ve periyodik olarak",
+        "grup_eğitimleri": "Diyabet eğitim programları",
+        "yemek_planlaması": "Haftalık menü, market listesi"
+      }
+    },
+    "eczacılık": {
+      "rol": "İlaç yönetimi, hasta eğitimi, yan etki monitörizasyonu",
+      "farmakoterapi_genel_bakış": {
+        "ilaç_sınıfları": [
+          "Biguanidler (Metformin)",
+          "Sülfanilüreler",
+          "Meglitinidler",
+          "Tiyazolidindionlar (TZD)",
+          "DPP-4 inhibitörleri",
+          "GLP-1 reseptör agonistleri",
+          "SGLT2 inhibitörleri",
+          "İnsülinler",
+          "Alfa-glukozidaz inhibitörleri"
+        ]
+      },
+      "ilaç_etkileşimleri": {
+        "metformin": {
+          "kontrast_madde": "Geçici kesinti, kontras t nefropatisi riski",
+          "alkol": "Laktik asidoz riski artırır",
+          "simet idin": "Metformin klirensini azaltır"
+        },
+        "sülfanilüreler": {
+          "warfarin": "Antikoagülan etkisini artırır",
+          "aspirin_NSAİD": "Hipoglisemi riski artar",
+          "beta_blokerler": "Hipoglisemi belirtilerini maskeler"
+        },
+        "insülin": {
+          "beta_blokerler": "Hipoglisemi belirtilerini maskeler, taşikardi olmaz",
+          "ACEi_ARB": "Hipoglisemi riski hafif artabilir",
+          "kortikosteroidler": "Hiperglisemi, insülin ihtiyacı artar"
+        },
+        "SGLT2i": {
+          "loop_diüretikler": "Dehidrasyon, hipotansiyon riski",
+          "NSAİD": "Akut böbrek hasarı riski"
+        }
+      },
+      "ilaç_güvenliği": {
+        "hipoglisemi_riski_yüksek": [
+          "İnsülinler",
+          "Sülfanilüreler",
+          "Meglitinidler"
+        ],
+        "hipoglisemi_riski_düşük": [
+          "Metformin",
+          "DPP-4i",
+          "GLP-1 agonist (monoterapi)",
+          "SGLT2i",
+          "TZD"
+        ],
+        "böbrek_fonksiyonu_doz_ayarı": {
+          "metformin": "eGFR <30 kontrendike",
+          "sülfanilüreler": "eGFR <30 dikkat (kümüle hipoglisemi)",
+          "DPP4i": "Sitagliptin, vildagliptin doz azalt",
+          "GLP1": "Liraglutid dikkat, semaglutid doz ayarı gerekmez",
+          "SGLT2i": "eGFR ≥20'de başlanabilir",
+          "insülin": "Doz azaltma gerekebilir"
+        },
+        "karaciğer_fonksiyonu": {
+          "metformin": "Ciddi karaciğer yetmezliğinde kontrendike",
+          "TZD": "Aktif karaciğer hastalığında kontrendike",
+          "GLP1_SGLT2i": "Genellikle güvenli"
+        }
+      },
+      "insülin_yönetimi": {
+        "saklama": {
+          "kullanım_öncesi": "Buzdolabı (2-8°C), dondurmama",
+          "kullanımda": "Oda sıcaklığı (25°C'ye kadar), 28-42 gün",
+          "seyahatte": "Soğutucu çanta, sıcaktan/soğuktan koruma"
+        },
+        "enjeksiyon_tekniği": {
+          "bölge_rotasyonu": "Abdomen, uyluk, kalça, üst kol",
+          "iğne_boyutu": "4-8 mm (en kısa etkili boy tercih edilmeli)",
+          "enjeksiyon_açısı": "90 derece (ince hastalar 45 derece)",
+          "lipohipertrofi_önleme": "Aynı bölgeyi en az 1 ay kullanma"
+        },
+        "insülin_tipleri_farmakokinetik": {
+          "ultra_hızlı": {
+            "örnekler": "Lispro, aspart, glulisine, faster aspart",
+            "başlangıç": "10-15 dakika",
+            "zirve": "1-2 saat",
+            "süre": "3-5 saat"
+          },
+          "kısa_etkili": {
+            "regular_insülin": "İnsan insülini",
+            "başlangıç": "30-60 dakika",
+            "zirve": "2-4 saat",
+            "süre": "6-8 saat"
+          },
+          "orta_etkili": {
+            "NPH": "Nötral Protamin Hagedorn",
+            "başlangıç": "1-2 saat",
+            "zirve": "4-8 saat",
+            "süre": "12-18 saat"
+          },
+          "uzun_etkili": {
+            "glargin": "Lantus, Toujeo, Basaglar",
+            "detemir": "Levemir",
+            "başlangıç": "1-2 saat",
+            "zirve": "Minimal (düz profil)",
+            "süre": "20-24 saat (glargin >24, detemir ~18)"
+          },
+          "ultra_uzun": {
+            "degludec": "Tresiba",
+            "başlangıç": "1 saat",
+            "zirve": "Yok",
+            "süre": ">42 saat"
+          }
+        }
+      },
+      "ilaç_uyumu": {
+        "uyumsuzluk_nedenleri": [
+          "Yan etkiler",
+          "Hipoglisemi korkusu",
+          "Maliyet",
+          "Karmaşık rejim",
+          "İnkar, kabul etmeme"
+        ],
+        "uyumu_artırma": {
+          "basitleştirme": "Günde 1-2 kez ilaç tercih et",
+          "kombinasyon_tabletler": "Tek tablette çoklu ajan",
+          "hasta_eğitimi": "Neden kullanıldığını anlama",
+          "hatırlatıcılar": "Alarm, hapı kutusu, mobil uygulamalar",
+          "yan_etki_yönetimi": "Alternatif ilaç, doz ayarı"
+        }
+      },
+      "maliyet_yönetimi": {
+        "jenerik_ilaçlar": "Metformin, glimepirid, NPH insülin (ucuz)",
+        "hasta_yardım_programları": "İlaç firması destek programları",
+        "alternatif_seçenekler": "Etkili ama uygun fiyatlı rejimler"
+      },
+      "ilaç_hazırlama": {
+        "GLP1_enjeksiyon_kalem": "Ön dolu kalemler, soğukta sakla",
+        "insülin_karıştırma": "Hızlı + NPH karıştırılabilir (hemen kullan), glargin/detemir/degludec karıştırılmaz"
+      },
+      "yan_etki_monitörizasyonu": {
+        "metformin": "GI şikayetler (ilk 2 hafta), B12 eksikliği (yıllık kontrol)",
+        "sülfanilüre": "Hipoglisemi, kilo artışı",
+        "TZD": "Ödem, kilo artışı, kalp yetmezliği, kemik kırığı riski",
+        "DPP4i": "Genellikle iyi tolere edilir, pankreatit (nadir)",
+        "GLP1": "Bulantı (ilk haftalar), pankreatit, tiroid C-hücre tümörü (hayvanlarda)",
+        "SGLT2i": "Genital mantar, idrar yolu enfeksiyonu, DKA (nadir)",
+        "insülin": "Hipoglisemi, kilo artışı, enjeksiyon bölgesi reaksiyonu"
+      },
+      "yeni_ilaçlar": {
+        "dual_GLP1_GIP": "Tirzepatid (Mounjaro), güçlü HbA1c düşürme, kilo kaybı",
+        "oral_semaglutid": "Rybelsus, ilk oral GLP-1",
+        "finerenon": "Non-steroid MRA, renoprotektif"
+      }
+    },
+    "halk_sağlığı": {
+      "rol": "Önleme, tarama, toplum sağlığı müdahaleleri",
+      "epidemiyoloji": {
+        "global_yük": {
+          "prevalans": "537 milyon (2021), 2045'te 783 milyon tahmin",
+          "mortalite": "Yılda 6.7 milyon diyabete bağlı ölüm",
+          "ekonomik_yük": "Dünya genelinde 966 milyar USD/yıl (direkt + indirekt)"
+        },
+        "türkiye": {
+          "prevalans": "%13-14 (TURDEP-II)",
+          "artış": "Son 15 yılda %90 artış",
+          "farkındalık": "Diyabetiklerin ~%50'si tanı almış"
+        },
+        "risk_faktörleri": {
+          "değiştirilebilir": [
+            "Obezite (%80-90 ilişkili)",
+            "Fiziksel inaktivite",
+            "Kötü beslenme",
+            "Sigara"
+          ],
+          "değiştirilemez": [
+            "Yaş >45",
+            "Aile öyküsü",
+            "Etnik köken",
+            "Gestasyonel diyabet geçmişi",
+            "PCOS"
+          ]
+        }
+      },
+      "önleme_seviyeleri": {
+        "primer_önleme": {
+          "hedef": "Diyabet gelişimini önleme (prediyabet → diyabet)",
+          "yaşam_tarzı_müdahalesi": {
+            "DPP_çalışması": "%58 diyabet riskini azalttı",
+            "egzersiz": "Haftada 150 dakika orta şiddette",
+            "kilo_kaybı": "%5-7 kilo kaybı hedef",
+            "beslenme": "Düşük yağ, yüksek lif"
+          },
+          "farmakolojik": {
+            "metformin": "Prediyabette %31 risk azalması",
+            "endikasyon": "BMI ≥35, yaş <60, gestasyonel diyabet geçmişi"
+          }
+        },
+        "sekonder_önleme": {
+          "hedef": "Erken tanı ve tedavi ile komplikasyonları önleme",
+          "tarama": {
+            "kim": [
+              "Tüm erişkinler ≥45 yaş (3 yılda bir)",
+              "Herhangi yaşta BMI ≥25 + risk faktörü"
+            ],
+            "yöntem": "Açlık glukozu, HbA1c, veya OGTT"
+          }
+        },
+        "tersiyer_önleme": {
+          "hedef": "Komplikasyonların ilerlemesini önleme",
+          "kardiyovasküler": "Statin, antihipertansif, antiplatelet",
+          "retinopati": "Yıllık fundoskopi taraması",
+          "nefropati": "Yıllık albuminüri taraması, ACEi/ARB",
+          "nöropati": "Ayak muayenesi, ağrı yönetimi"
+        }
+      },
+      "toplum_bazlı_müdahaleler": {
+        "eğitim_kampanyaları": {
+          "medya": "TV, radyo, sosyal medya",
+          "okul_programları": "Çocuklarda sağlıklı yaşam alışkanlıkları",
+          "işyeri_programları": "Çalışanlara tarama, egzersiz, beslenme"
+        },
+        "çevresel_değişiklikler": {
+          "aktif_yaşam": "Bisiklet yolları, yürüyüş parkurları, oyun alanları",
+          "sağlıklı_gıda_erişimi": "Okullarda sağlıksız atıştırmalık kısıtlama",
+          "şekerli_içecek_vergisi": "Tüketimi azaltma (Meksika, UK örnekleri)"
+        }
+      },
+      "tarama_programları": {
+        "risk_skorları": {
+          "FINDRISC": "Fin Diyabet Riski Skoru (0-26 puan, >15 yüksek risk)",
+          "ADA_risk_testi": "Online, 7 soru"
+        },
+        "toplum_taraması": {
+          "hedef_populasyon": "Yüksek riskli (obezite, aile öyküsü, etnik azınlık)",
+          "yerler": "Sağlık ocakları, işyerleri, camiler, alışveriş merkezleri",
+          "maliyet_etkinlik": "Hedeflenmiş tarama daha etkili"
+        }
+      },
+      "diyabet_eğitim_programları": {
+        "DSMES": {
+          "tanım": "Diabetes Self-Management Education and Support",
+          "içerik": [
+            "Diyabet patofizyolojisi",
+            "Beslenme yönetimi",
+            "Fiziksel aktivite",
+            "İlaç kullanımı",
+            "Glukoz monitörizasyonu",
+            "Hipoglisemi yönetimi",
+            "Komplikasyon önleme",
+            "Psikososyal destek"
+          ],
+          "format": "Grup veya bireysel, ilk yıl ≥10 saat",
+          "kanıt": "HbA1c %0.5-1.0 azaltma"
+        },
+        "diyabet_okulları": "Multidisipliner ekip (doktor, diyetisyen, hemşire, eczacı)"
+      },
+      "sağlık_politikaları": {
+        "ulusal_diyabet_planları": {
+          "türkiye": "Obezite ve Diyabet Programı (Sağlık Bakanlığı)",
+          "bileşenler": [
+            "Tarama programları",
+            "Eğitim",
+            "İlaç erişimi",
+            "Komplikasyon taraması",
+            "Kayıt sistemleri"
+          ]
+        },
+        "ilaç_erişimi": {
+          "jenerik_teşvik": "Maliyet azaltma",
+          "geri_ödeme": "SGK kapsamı genişletme"
+        },
+        "gıda_etiketleme": "Şeker, yağ, kalori bilgisi (zorunlu)"
+      },
+      "sağlık_eşitsizlikleri": {
+        "sosyoekonomik": {
+          "düşük_gelir": "Daha yüksek prevalans, daha kötü kontrol",
+          "eğitim": "Düşük eğitim seviyesi → bilgi eksikliği"
+        },
+        "coğrafi": {
+          "kırsal": "Sağlık hizmetine erişim kısıtlı",
+          "kentsel_yoksul": "Sağlıksız beslenme, stres"
+        },
+        "etnik_azınlıklar": "Genetik yatkınlık + sosyokültürel faktörler",
+        "müdahaleler": "Hedeflenmiş programlar, mobil klinikler, toplum sağlık görevlileri"
+      },
+      "diyabet_kayıt_sistemleri": {
+        "ulusal_kayıtlar": "Prevalans, tedavi, komplikasyon izleme",
+        "kalite_göstergeleri": [
+          "HbA1c <7% oranı",
+          "Lipid kontrolü oranı",
+          "Kan basıncı kontrolü oranı",
+          "Retinopati taraması oranı",
+          "Ayak muayenesi oranı"
+        ]
+      },
+      "araştırma_ve_gözetim": {
+        "epidemiyolojik_çalışmalar": "TURDEP I, II (Türkiye)",
+        "maliyet_etkinlik_analizleri": "Hangi müdahaleler en etkili?",
+        "impleme ntasyon_bilimi": "Kanıta dayalı uygulamaları pratiğe aktarma"
+      }
+    }
+  }
+}

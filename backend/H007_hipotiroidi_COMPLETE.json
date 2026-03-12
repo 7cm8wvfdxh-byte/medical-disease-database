@@ -1,0 +1,1208 @@
+{
+  "hastalık_id": "H007",
+  "version": "1.0",
+  "son_güncelleme": "2026-01-19",
+  "temel_bilgi": {
+    "isim_tr": "Hipotiroidi",
+    "isim_en": "Hypothyroidism",
+    "kısa_isim": "Hipotiroidi",
+    "diğer_isimler": [
+      "Tiroid yetmezligi",
+      "Miksoedem",
+      "Hashimoto tiroiditi",
+      "Tiroid hipofonksiyonu",
+      "Underactive thyroid"
+    ],
+    "kodlama": {
+      "ICD_10": "E03",
+      "ICD_10_detay": {
+        "E03.0": "Konjenital hipotiroidi diffuz guatr ile birlikte",
+        "E03.1": "Konjenital hipotiroidi guatr olmadan",
+        "E03.2": "Ilac ve diger eksojen maddelerden hipotiroidi",
+        "E03.3": "Postinfeksiyoz hipotiroidi",
+        "E03.4": "Tiroid atrofisi edinilmis",
+        "E03.5": "Miksoedem komasi",
+        "E03.8": "Diger tanimlanmis hipotiroidi",
+        "E03.9": "Hipotiroidi tanimlanmamis",
+        "E06.3": "Otoimmun tiroidit Hashimoto",
+        "E02": "Subklinik iyot eksikligi hipotiroidisi",
+        "E89.0": "Prosedur sonrasi hipotiroidi"
+      },
+      "SNOMED_CT": "40930008",
+      "SNOMED_CT_detay": {
+        "primer": "83664006",
+        "sekonder": "22886006",
+        "hashimoto": "21983002",
+        "konjenital": "190268003",
+        "subklinik": "54823002"
+      },
+      "LOINC": {
+        "TSH": "3016-3",
+        "serbest_T4": "3024-7",
+        "serbest_T3": "3051-0",
+        "anti_TPO": "8099-4",
+        "tiroglobulin": "3013-0"
+      },
+      "ORPHA": {
+        "konjenital": "ORPHA:442",
+        "hashimoto": "ORPHA:228163"
+      }
+    },
+    "tanim": "Hipotiroidi, tiroid bezinin yetersiz tiroid hormonu triiyodotironin T3 ve tiroksin T4 uretimi sonucu gelisen, vucut metabolizmasinin yavasmasi ile karakterize kronik metabolik bir hastaliktir. Primer hipotiroidi tiroid bezinin kendisinden kaynaklanir ve tum vakalarin yuzde 95-99'unu olusturur, en sik nedeni otoimmun tiroidit Hashimoto dur. Sekonder hipotiroidi hipofiz bezinin TSH yetmezliginden, tersiyer hipotiroidi ise hipotalamus TRH yetmezliginden kaynaklanir. Subklinik hipotiroidi TSH yuksek ancak serbest T4 normal oldugu durumu tanimlar ve asikar hipotiroidiye ilerleme riski tasir.",
+    "epidemiyoloji": {
+      "global_prevalans": {
+        "asikar_hipotiroidi": "Yuzde 0.2-2 genel populasyon",
+        "subklinik_hipotiroidi": "Yuzde 4-10 genel populasyon",
+        "hashimoto": "Yuzde 2-5 kadinlarda, en sik otoimmun tiroid hastaligi",
+        "konjenital": "1/2000-4000 canli dogum"
+      },
+      "turkiye_prevalans": {
+        "genel": "Yuzde 3.4 TURDEP-II calismasi 2010",
+        "subklinik": "Yuzde 5.3 ayni calisma",
+        "iyot_eksikligi": "Endemik bolgelerde prevalans daha yuksek Ic Anadolu Dogu Anadolu",
+        "guatr": "Yuzde 30.3 endemik bolgelerde Trabzon calismasi"
+      },
+      "yas_dagilimi": {
+        "pik_yas": "30-60 yas arasi en sik",
+        "yasli": "60 yas ustu kadinlarda prevalans yuzde 7-10, erkeklerde yuzde 3-5",
+        "cocukluk": "Edinsel hipotiroidi 1/500 cocukta"
+      },
+      "cinsiyet": {
+        "kadin_erkek_orani": "5-10 kat kadin",
+        "aciklama": "Otoimmun hastaliklara genetik yatkinlik X kromozomu ile iliskili"
+      },
+      "risk_gruplari": [
+        "Kadinlar ozellikle perimenopozal ve postmenopozal",
+        "60 yas ustu yasli populasyon",
+        "Otoimmun hastalik oykusu olan bireyler Tip 1 DM colyak romatoid artrit vitiligo",
+        "Birinci derece akrabada tiroid hastaligi oykusu",
+        "Down sendromu Turner sendromu",
+        "Gebelik ve postpartum donem ilk 6 ay",
+        "Bas boyun radyoterapisi oykusu nazofarenks larinks lenfoma",
+        "Tiroid cerrahisi gecirmis hastalar",
+        "Radyoaktif iyot tedavisi sonrasi",
+        "Lityum kullanan bipolar bozukluk hastalari",
+        "Amiodaron kullanan kardiyak hastalar",
+        "Interferon alfa hepatit C tedavisi",
+        "Tirozin kinaz inhibitorleri kanser tedavisi",
+        "Immunoterapi PD-1 inhibitorleri",
+        "Iyot eksikligi endemik bolgeler",
+        "Asiri iyot alimi iyotlu kontrast maddeler"
+      ],
+      "cografi_dagilim": {
+        "iyot_eksikligi_bolgeleri": "Daglik ve denizden uzak bolgeler Himalayalar Andlar Alpler Ic Anadolu",
+        "iyot_yeterli_bolgeler": "Kiyisal bolgeler daha dusuk prevalans"
+      }
+    },
+    "patofizyoloji": {
+      "tiroid_hormon_sentezi_normal": {
+        "iyot_alimi": "Besinlerle alinan iyot tiroid bezine tasinir NIS transporter",
+        "tiroglobulin": "Tiroid follikul hucreleri tiroglobulin sentezler kolloidde depolar",
+        "iyodinasyon": "TPO enzimi tirozin rezidulerine iyot ekler MIT DIT olusturur",
+        "kuplasma": "2 DIT T4 olusturur 1 MIT 1 DIT T3 olusturur",
+        "sekresyon": "Proteoliz ile T4 ve T3 kana salverilir",
+        "T4_T3_donusum": "Periferik dokularda deiyodinaz enzimleri T4 u aktif T3 e cevirir"
+      },
+      "primer_hipotiroidi": {
+        "hashimoto_tiroiditi": {
+          "mekanizma": "Tiroid bezine karsi otoimmun yanit",
+          "antikorlar": "Anti-TPO tiroid peroksidaz ve anti-Tg tiroglobulin",
+          "hucresel_hasar": "CD4 ve CD8 T lenfosit infiltrasyonu tiroid follikul hucre apoptozu",
+          "seyir": "Baslangiçta gecici tirotoksikoz hashitoksikoz sonra hipotiroidi",
+          "histoloji": "Lenfositik infiltrasyon germinal merkez olusumu Hurthle hucre metaplazisi"
+        },
+        "iyot_eksikligi": {
+          "mekanizma": "Tiroid hormon sentezi icin substrat yetersizligi",
+          "kompansasyon": "TSH artisi ile tiroid bezinde hiperplazi guatr",
+          "endemik_guatr": "Toplumun yuzde 10 undan fazlasinda guatr",
+          "kretenizm": "Fetal donemde agir iyot eksikligi norolojik hasar"
+        },
+        "iyatrojenik": {
+          "tiroidektomi": "Total tiroidektomide mutlak hipotiroidi subtotalde risk dusuk",
+          "radyoaktif_iyot": "I-131 tedavisi sonrasi yuzde 50-80 hipotiroidi 10 yil icinde",
+          "dis_radyoterapi": "Bas boyun bolgesine 25 Gy ustu dozlarda risk",
+          "ilaclar": {
+            "lityum": "Iyot uptake ve hormon sekresyonunu inhibe eder",
+            "amiodaron": "Iyot yuklenmesi Wolff-Chaikoff etkisi veya tiroidit",
+            "interferon_alfa": "Tiroidit induksiyonu",
+            "tirozin_kinaz_inhibitorleri": "Sunitinib sorafenib",
+            "immunoterapi": "PD-1 inhibitorleri ipilimumab otoimmun tiroidit"
+          }
+        },
+        "infiltratif_hastaliklar": {
+          "amiloidoz": "Amiloid birikimi tiroid fonksiyonunu bozar",
+          "sarkoidoz": "Granulom infiltrasyonu",
+          "hemokromatoz": "Demir birikimi",
+          "riedel_tiroiditi": "Fibrozis tiroid dokusunu yok eder"
+        }
+      },
+      "sekonder_hipotiroidi": {
+        "tanim": "Hipofiz yetmezligi nedeniyle TSH eksikligi",
+        "nedenler": {
+          "hipofiz_adenomu": "Kitle etkisi veya cerrahi radyoterapi sonrasi",
+          "kraniyofarenjiyom": "Cocuklarda en sik hipotalamik hipofizer tumor",
+          "sheehan_sendromu": "Postpartum hipofiz nekrozu yogun kanama sonrasi",
+          "empty_sella": "Hipofiz atrofisi",
+          "infiltratif": "Langerhans histiyositoz sarkoidoz",
+          "enfeksiyoz": "Tuberkukoz fungal",
+          "travma": "Kafa travmasi",
+          "radyoterapi": "Hipofiz veya kranial bolgede"
+        },
+        "klinik_ipucu": "Diger hipofiz hormon eksiklikleri eslik eder ACTH LH FSH GH",
+        "laboratuvar": "TSH dusuk veya uygunsuz normal serbest T4 dusuk"
+      },
+      "tersiyer_hipotiroidi": {
+        "tanim": "Hipotalamus TRH yetmezligi",
+        "nedenler": "Hipotalamik lezyonlar tumor infiltrasyon travma",
+        "nadir": "Tum hipotiroidi vakalarinin yuzde 1 inden az"
+      },
+      "subklinik_hipotiroidi": {
+        "tanim": "TSH hafif yuksek 4.5-10 mIU/L serbest T4 normal",
+        "prevalans": "Yuzde 4-10 genel populasyon daha yuksek yasli ve kadinlarda",
+        "ilerleme_riski": "Yillik yuzde 2-5 asikar hipotiroidiye ilerleme ozellikle anti-TPO pozitifse",
+        "klinik_onemi": "Hafif semptomlar olabilir kardiyovaskuler risk artisi tartismali"
+      },
+      "tiroid_hormon_rezistansi": {
+        "tanim": "Tiroid hormon reseptor mutasyonu",
+        "laboratuvar": "Yuksek T3 T4 uygunsuz normal TSH",
+        "nadir": "1/40000"
+      }
+    },
+    "prognoz": {
+      "tedavi_ile": {
+        "genel": "Mukemmel prognoz normal yasam suresi",
+        "semptom_duzelmesi": "2-4 haftada baslar 3-6 ayda tam duzleme",
+        "uyum": "Hayat boyu tedavi gerekir"
+      },
+      "tedavisiz": {
+        "ilerleme": "Progresif semptom artisi metabolizma yavaslamasi",
+        "komplikasyonlar": "Kardiyovaskuler morbidite kalp yetmezligi hiperlipidemi",
+        "miksoedem_komasi": "Hayati tehlike yuzde 20-50 mortalite"
+      },
+      "subklinik": {
+        "ilerleme": "Yillik yuzde 2-5 asikar hipotiroidiye",
+        "risk_faktorleri": "TSH 10 ustu anti-TPO pozitif ileri yas"
+      },
+      "konjenital": {
+        "tedavisiz": "Irreversibl norolojik hasar mental retardasyon kretenizm",
+        "erken_tedavi": "Ilk 2 haftada baslanan tedavi ile normal gelisim"
+      }
+    }
+  },
+  "klinik_ozellikler": {
+    "genel_belirtiler": {
+      "metabolik_yavasllama": [
+        "Yorgunluk ve halsizlik en sik sikayet",
+        "Enerji azalmasi aktivite intoleransi",
+        "Soguk intoleransi isiya hassasiyet artisi",
+        "Kilo alimi genellikle 2-4 kg istah azalmasina ragmen",
+        "Vucut sicakliginda dusme hipotermiye yatkinlik"
+      ],
+      "deri_ve_ekler": [
+        "Kuru kaba cilt azalmis sebase aktivite",
+        "Soluk sari cilt karotenemi",
+        "Sac dokulmesi kuru kirilgan saclar",
+        "Kaslarin dis ucunda incelme Hertoghe bulgusu",
+        "Tirnakta kirilganlik yavas uzama",
+        "Miksoedem nonpitting odem yuz gorev periorbital",
+        "Geciken yara iyilesmesi"
+      ],
+      "gastrointestinal": [
+        "Konstipasyon azalmis barsak motilitesi",
+        "Abdominal distansiyon",
+        "Karaci ğer enzim yuksekligi hafif",
+        "Safra kesesi dismotilitesi kolestaza yatkinlik"
+      ],
+      "genel": [
+        "Ses kalinlasmasi vokal kord mukoza odemi",
+        "Agir isitme koklea odemi",
+        "Makroglossi dil buyumesi",
+        "Genel odem miksoedem",
+        "Yavas konusma ve dusunme"
+      ]
+    },
+    "kardiyovaskular": {
+      "semptom_ve_bulgular": [
+        "Bradikardi istirahat nabzi 50-60 atim dakika",
+        "Diyastolik hipertansiyon periferik vazokonstruksiyon",
+        "Azalmis kardiyak output",
+        "Egzersiz intoleransi nefes darligi yorgunluk",
+        "Periferik odem"
+      ],
+      "perikard_efuzyonu": {
+        "prevalans": "Yuzde 30-80 uzun sureli hipotiroidide",
+        "ozellik": "Yavas biriken kolesterol icerigi yuksek efuzyon",
+        "tamponad": "Nadir yavas birikimden dolayi",
+        "tedavi_yaniti": "Levotiroksin ile rezolve olur"
+      },
+      "hiperlipidemi": {
+        "mekanizma": "LDL reseptor ekspresyonunda azalma kolesterol klirensi azalir",
+        "bulgular": "Total kolesterol LDL trigliserid artisi",
+        "tedavi_yaniti": "Otiroid durumda normallesir"
+      },
+      "kalp_yetmezligi": {
+        "nadir": "Ileri evre tedavisiz olgularda",
+        "mekanizma": "Miyokard kontraktilitesinde azalma"
+      }
+    },
+    "norolojik": {
+      "kognitif": [
+        "Mental yavasslama bradifreni",
+        "Hafiza bozuklugu ozellikle kisa sure bellek",
+        "Konsantrasyon guclugu dikkat eksikligi",
+        "Demans benzeri tablo yasli hastalarda"
+      ],
+      "psikiyatrik": [
+        "Depresyon en sik psikiyatrik bulgu",
+        "Anksiyete",
+        "Apati ilgisizlik",
+        "Psikoz miksoedem deliryumu nadir"
+      ],
+      "periferik_sinir": [
+        "Parestezi uyusma karincalanma",
+        "Karpal tunel sendromu sik median sinir sıkisması",
+        "Peroneal sinir tutulumu ayak dusme",
+        "Polinöropati nadir"
+      ],
+      "refleksler": {
+        "gec_reelaksasyon_fazı": "Achilles refleksi gecikmesi karakteristik",
+        "tanim": "Refleks kontraksiyonu normal reelaksasyon fazinda uzama"
+      },
+      "serebellar": [
+        "Ataksi nadir",
+        "Nistagmus"
+      ]
+    },
+    "muskuloskeketal": {
+      "kas": [
+        "Miyalji kas agrisi",
+        "Kas sertligi stiffness",
+        "Kas gucsuzlugu proksimal",
+        "Kas krampları",
+        "Miyopati CK yuksekligi",
+        "Rabdomiyoliz nadir agir olgular"
+      ],
+      "eklem": [
+        "Artralji",
+        "Sinovyal efuzyon"
+      ],
+      "kemik": [
+        "Osteoporoz riski degisken veriler"
+      ]
+    },
+    "reprodüktif": {
+      "kadin": [
+        "Menoraji en sik anormal uterin kanama",
+        "Duzensiz adet oligomenore amenore",
+        "Infertilite ovulasyon bozuklugu",
+        "Tekrarlayan dusuk",
+        "Libido azalmasi",
+        "Galaktore prolaktin yukselmesine bagli nadir"
+      ],
+      "erkek": [
+        "Libido azalmasi",
+        "Erektil disfonksiyon",
+        "Oligospermi",
+        "Infertilite"
+      ],
+      "gebelik": {
+        "komplikasyonlar": [
+          "Preeklampsi riski artisi",
+          "Plasenta dekolmani",
+          "Preter dogum",
+          "Dusuk dogum ağırlığı",
+          "Fetal norogelisim bozukluklari IQ dusmesi",
+          "Konjenital anomaliler"
+        ],
+        "onem": "Ozellikle ilk trimesterde fetal tiroid gelismemistir anne hormonuna bagimli"
+      }
+    },
+    "pediatrik_ozellikler": {
+      "yenidogan_konjenital": [
+        "Uzamis sarilik",
+        "Beslenme guclugu",
+        "Konstipasyon",
+        "Hipotoni",
+        "Makroglossi",
+        "Umbilikal herni",
+        "Genis fontanel",
+        "Kaba yuz gorunumu",
+        "Huzursuzluk azligi uyuusu bebek"
+      ],
+      "cocukluk": [
+        "Boy kisaligi buyume geriiği",
+        "Kemik yasi geriliği",
+        "Pubertal gecikme",
+        "Okul basarisinda dusus",
+        "Pseudo precoccious puberty nadir"
+      ],
+      "tarama": "Yenidogan tarama programi topuktan kan TSH"
+    },
+    "miksoedem_komasi": {
+      "tanim": "Hipotiroidinin en agir hayati tehlike yaratan formu",
+      "tetikleyiciler": [
+        "Enfeksiyon ozellikle pnomoni",
+        "Soguk maruziyeti",
+        "Sedatif opioid kullanimi",
+        "Travma cerrahi",
+        "Myokard infarktusu",
+        "Serebrovaskuler olay",
+        "Gastrointestinal kanama",
+        "Tedaviye uyumsuzluk"
+      ],
+      "klinik_bulgular": {
+        "bilinc": "Letarji konfuzyon koma",
+        "termoregulasyon": "Hipotermi 35C alti rektale olmalidir",
+        "kardiyovaskuler": "Bradikardi hipotansiyon",
+        "solunum": "Hipoventilasyon CO2 retansiyonu",
+        "metabolik": "Hiponatremi dilüsyonel hipoglisemi"
+      },
+      "mortalite": "Tedaviye ragmen yuzde 20-50",
+      "tedavi": {
+        "acil": "Yogun bakim unitesi",
+        "tiroid_hormonu": "IV levotiroksin 200-400 mcg yukleme sonra 50-100 mcg gun IV",
+        "hidrokortizon": "100 mg IV her 8 saatte adrenal yetmezlik riski",
+        "destekleyici": [
+          "Mekanik ventilasyon gerekirse",
+          "Pasif isinma aktif isinmadan kacin periferik vazodilatasyon",
+          "IV sivilar dikkatli hiponatremi icin hipertonik salin gerekebilir",
+          "Elektrolit duzeltme",
+          "Altta yatan nedenin tedavisi enfeksiyon vs"
+        ]
+      }
+    }
+  },
+  "tani": {
+    "laboratuvar": {
+      "tiroid_fonksiyon_testleri": {
+        "TSH": {
+          "anlami": "En sensitif test primer hipotiroidi tanisinda ilk basamak",
+          "normal_aralik": "0.4-4.0 mIU/L laboratuvara gore degisir",
+          "primer_hipotiroidi": "Yuksek genellikle 10 mIU/L uzeri",
+          "subklinik": "Hafif yuksek 4.5-10 mIU/L",
+          "sekonder_hipotiroidi": "Dusuk veya uygunsuz normal",
+          "interferans": "Biotin suplementi yanlis sonuc TSH dusuk gorunur"
+        },
+        "serbest_T4": {
+          "anlami": "Aktif olmayan prohormon dolasimdaki ana form",
+          "asikar_hipotiroidi": "Dusuk genellikle 0.8 ng/dL alti",
+          "subklinik": "Normal",
+          "olcum": "Direkt immunoassay veya equilibrium diyaliz"
+        },
+        "serbest_T3": {
+          "anlami": "Aktif hormon",
+          "kullanim": "Rutin degil ileri evre veya atipik olgularda",
+          "bulgu": "Ileri hipotiroidide dusuk bazen T4 dusmeden once normal kalir"
+        },
+        "total_T4_T3": {
+          "kisitlama": "Baglanma proteinlerinden etkilenir TBG",
+          "artiran": "Gebelik ostrojen hepatit",
+          "azaltan": "Nefrotik sendrom siroz androgen"
+        },
+        "reverse_T3": {
+          "anlami": "Inaktif metabolit",
+          "kullanim": "Non-tiroid hastalik ayrimi icin",
+          "NTI": "Non-thyroidal illness rT3 artar T3 azalir"
+        }
+      },
+      "otoimmun_belirtecler": {
+        "anti_TPO": {
+          "anlami": "Tiroid peroksidaz antikoru",
+          "hashimoto": "Yuzde 90-95 duyarlilik",
+          "prognostik": "Pozitiflik subklinikten asikara ilerleme riskini artirir",
+          "diger_durumllar": "Graves basedow gebelik otoimmun hastaliklar"
+        },
+        "anti_tiroglobulin": {
+          "anlami": "Tiroglobulin antikoru",
+          "hashimoto": "Yuzde 60-80 duyarlilik",
+          "kullanim": "Anti-TPO negatifse destekleyici"
+        },
+        "TSH_reseptor_antikoru": {
+          "TRAb": "Genellikle Graves icin ancak blocking antikorlar hipotiroidiye neden olabilir"
+        }
+      },
+      "diger_laboratuvar": {
+        "tam_kan_sayimi": {
+          "anemi": "Normositik veya makrositik anemi sik",
+          "mekanizma": "EPO azalmasi B12 malabsorpsiyonu"
+        },
+        "lipid_profili": {
+          "bulgu": "Total kolesterol LDL trigliserit artmis",
+          "mekanizma": "LDL reseptor downregulasyonu"
+        },
+        "kas_enzimleri": {
+          "CK": "Artmis miyopati gostergesi",
+          "LDH": "Artabilir"
+        },
+        "karaciger": {
+          "AST_ALT": "Hafif yuksek olabilir"
+        },
+        "elektrolitler": {
+          "hiponatremi": "Dilüsyonel ADH etkisi artmis su tutulumu"
+        },
+        "prolaktin": {
+          "bulgu": "Hafif yuksek olabilir",
+          "mekanizma": "TRH prolaktin stimule eder"
+        },
+        "homosistein": "Artmis kardiyovaskuler risk belirteci"
+      },
+      "tani_kriterleri": {
+        "asikar_primer_hipotiroidi": {
+          "TSH": "Yuksek genellikle 10 mIU/L uzeri",
+          "serbest_T4": "Dusuk"
+        },
+        "subklinik_hipotiroidi": {
+          "TSH": "Hafif yuksek 4.5-10 mIU/L en az 2 olcumde",
+          "serbest_T4": "Normal"
+        },
+        "sekonder_hipotiroidi": {
+          "TSH": "Dusuk veya uygunsuz normal",
+          "serbest_T4": "Dusuk"
+        }
+      },
+      "ozel_durumlar": {
+        "NTI": {
+          "tanim": "Non-thyroidal illness hasta otiroid sendromu",
+          "bulgular": "Dusuk T3 normal veya dusuk T4 normal veya dusuk TSH",
+          "neden": "Agir hastalik travma sepsis aclik",
+          "tedavi": "Altta yatan hastalik tedavisi tiroid hormonu verilmez"
+        },
+        "gebelik": {
+          "trimester_TSH": "1. trimester 0.1-2.5 2. 0.2-3.0 3. 0.3-3.0 mIU/L",
+          "onem": "Gebeliğe ozgu referans araliklarini kullan"
+        },
+        "yasli": {
+          "TSH_yorumu": "Hafif yuksek TSH 4-7 yaslanma ile normal olabilir",
+          "dikkat": "Gereksiz tedaviden kacin"
+        }
+      }
+    },
+    "goruntuleme": {
+      "tiroid_ultrasonografi": {
+        "endikasyonlar": [
+          "Palpasyonda anormallik nodul guatr",
+          "Hashimoto tanisi destekleme",
+          "Nodul malignite riski degerlendirmesi",
+          "Boyut takibi"
+        ],
+        "hashimoto_bulgulari": {
+          "parankim": "Heterojen hipoekoik gorunum",
+          "mikronodulasyon": "Psodonoduler yapi",
+          "vaskülarite": "Degisken azalmis veya artmis",
+          "boyut": "Baslangiçta normal veya buyuk ileri evrede atrofik"
+        },
+        "guatr": {
+          "bulgu": "Diffuz veya multinodular buyume",
+          "olcum": "Her lob 3 boyutlu olculur hacim hesaplanir"
+        },
+        "nodul_varsa": {
+          "TIRADS": "ACR TI-RADS skoru kullanilir",
+          "FNA_endikasyonu": "Skora ve boyuta gore belirlenir"
+        },
+        "atrofi": {
+          "bulgu": "Kucuk tiroid son evre Hashimoto",
+          "volum": "Normalde 10-20 mL atrofide 5 mL alti"
+        }
+      },
+      "tiroid_sintigrafisi": {
+        "hipotiroidide": "Genellikle endike degil uptake dusuk",
+        "kullanim_alani": "Hipertiroididen ayirmak icin gerekirse",
+        "I_123": "Tc-99m perteknetat veya I-123"
+      },
+      "diger_goruntuleme": {
+        "hipofiz_MR": {
+          "endikasyon": "Sekonder hipotiroidi supehsi",
+          "bulgular": "Adenom empty sella infiltrasyon"
+        },
+        "EKO": {
+          "endikasyon": "Kardiyak semptomlar perikard efuzyonu supehsi",
+          "bulgular": "Perikard efuzyonu azalmis EF nadir"
+        }
+      }
+    },
+    "ayirici_tani": {
+      "benzer_semptomlar": [
+        "Depresyon",
+        "Kronik yorgunluk sendromu",
+        "Anemi",
+        "Uyku apnesi",
+        "Diyabet",
+        "Menopoz",
+        "Konjestif kalp yetmezligi",
+        "Nefrotik sendrom",
+        "Siroz"
+      ],
+      "sekonder_vs_primer": {
+        "sekonder": "Diger hipofiz hormonlarini da degerlendir kortizol LH FSH GH",
+        "klinik": "Hipofiz kitesi bulguları bası semptomlari"
+      }
+    }
+  },
+  "farmakoloji_ve_tedavi": {
+    "levotiroksin_T4": {
+      "genel_bilgi": {
+        "form": "Sentetik tiroksin sodyum",
+        "ilac_isimleri": "Euthyrox Levotiron Tefor Tiromel",
+        "formlar": "Tablet 25 50 75 88 100 112 125 137 150 175 200 mcg",
+        "yarim_omur": "7 gun kararli durum 6 haftada",
+        "emilim": "Yuzde 70-80 aclikta daha iyi"
+      },
+      "dozlama": {
+        "genc_saglikli": {
+          "baslangiç": "1.6-1.8 mcg kg gun tam doz",
+          "ortalama": "Cok hasta icin 100-150 mcg gun yeterli"
+        },
+        "yasli": {
+          "baslangiç": "25-50 mcg gun",
+          "titrasyon": "4-6 haftada bir 12.5-25 mcg artis",
+          "neden": "Kardiyak komplikasyon riski"
+        },
+        "kardiyak_hasta": {
+          "baslangiç": "12.5-25 mcg gun",
+          "titrasyon": "Cok yavas 4-8 haftada bir artiş",
+          "hedef": "Semptomlari kontrol eden en dusuk doz",
+          "neden": "Anjina MI riski"
+        },
+        "subklinik": {
+          "dusuk_doz": "25-75 mcg gun genellikle yeterli",
+          "hedef_TSH": "Ust normal sinir"
+        },
+        "gebelik": {
+          "preexisting": "Gebelik teyidi ile yuzde 30-50 doz artisi",
+          "yeni_baslangiç": "Trimestere uygun doz",
+          "hedef_TSH": "Trimester spesifik ust sinirin altinda"
+        }
+      },
+      "hedef_TSH": {
+        "genc_yetiskin": "0.5-2.5 mIU/L",
+        "yasli": "1-5 mIU/L daha gevşek",
+        "gebelik": "Trimester spesifik",
+        "tiroid_kanseri": "Risk gurubuna gore 0.1-0.5 veya 0.5-2.0"
+      },
+      "kullanim_sekli": {
+        "zamanlama": "Sabah ac karnina ideal",
+        "yemekten_once": "30-60 dakika bekle",
+        "alternatif": "Yatmadan once yemekten 3 saat sonra",
+        "tutarlilik": "Her gun ayni sekilde al"
+      },
+      "emilimi_azaltan_faktorler": [
+        "Kalsiyum suplementleri 4 saat arayla al",
+        "Demir preparatlari 4 saat arayla",
+        "Aluminyum iceren antasitler",
+        "Sukralfat",
+        "Kolestiramin kolesevalam safra asidi baglayicilar",
+        "PPI H2 blokerler mide asiditesini azaltir",
+        "Kahve ayni anda alinmamalı 1 saat bekle",
+        "Soya urunleri",
+        "Yuksek lifli gıdalar"
+      ],
+      "metabolizmayi_artiranlar": [
+        "Rifampisin",
+        "Fenitoin karbamazepin",
+        "Fenobarbital",
+        "Ritonavir",
+        "Sertarlin"
+      ],
+      "yan_etkiler": {
+        "asiri_doz_tirotoksikoz": [
+          "Carpinti taşikardi",
+          "Tremor",
+          "Terleme",
+          "Kilo kaybi",
+          "Diyare",
+          "Uykusuzluk irritabilite",
+          "Kemik kaybi osteoporoz",
+          "Atriyal fibrilasyon riski"
+        ],
+        "yetersiz_doz": "Hipotiroidi semptomlari devam eder"
+      },
+      "ozel_formülasyonlar": {
+        "sivi": "Tirosint emilim daha tutarli mide asit gerektirmez",
+        "jel_kapsul": "Tirosint-SOL"
+      }
+    },
+    "liyotiroksin_T3": {
+      "kullanim": "Rutin kullanilmaz sadece ozel durumlar",
+      "endikasyonlar": [
+        "Miksoedem komasinda bazen IV LT4 ile kombine",
+        "Tiroid kanseri tanisiinda geçici supresyon testi icin",
+        "LT4 ile yeterli semptom kontrolu saglanamayanlar tartismali"
+      ],
+      "ilac": "Tiromel 25 mcg tablet veya Cytomel",
+      "yarim_omur": "1 gun kisa gunde birkaç doz gerekir",
+      "dezavantajlar": [
+        "Dengesiz T3 seviyeleri",
+        "Kardiyak yan etkiler",
+        "Kemik kaybi riski"
+      ]
+    },
+    "kombine_T4_T3_tedavisi": {
+      "tanim": "LT4 ve LT3 birlikte kullanim",
+      "kanit": "Rutin oneri icin yeterli kanit yok",
+      "deneme": "LT4 monoterapiye cevapsiz hastalarda denenebilir",
+      "oran": "T4 T3 13-16 1 fizyolojik orana yakin"
+    },
+    "dogal_tiroid_ekstraktı": {
+      "tanim": "Dessicated thyroid kurulutulmuş domuz tiroid bezi",
+      "ilac": "Armour Thyroid NP Thyroid",
+      "icerik": "Hem T4 hem T3 icerir T4/T3 ~4:1",
+      "dezavantajlar": [
+        "Standardizasyon sorunlari",
+        "T3 yuksekligi riski",
+        "Kilavuzlarca onerilmez"
+      ]
+    },
+    "takip": {
+      "TSH_kontrolu": {
+        "doz_degisikligi_sonrası": "6-8 hafta bekle",
+        "stabil_hasta": "Yilda 1-2 kez",
+        "gebelik": "Her trimestrede veya doz degisikligi ile 4 haftada"
+      },
+      "serbest_T4": "Sekonder hipotiroidide TSH yerine sT4 takibi",
+      "semptomlar": "Her vizitte semptomlari degerlendir"
+    },
+    "ozel_durumlar": {
+      "subklinik_hipotiroidi": {
+        "tedavi_endikasyonlari": [
+          "TSH 10 mIU/L uzeri",
+          "TSH 4.5-10 + semptomlar",
+          "TSH 4.5-10 + anti-TPO pozitif",
+          "Gebelik planlayan veya gebe kadinlar",
+          "Infertilite",
+          "Ovulasyon induksiyonu",
+          "Guatr"
+        ],
+        "tedavi_tartismali": [
+          "TSH 4.5-10 asemptomatik antikor negatif",
+          "75 yas uzeri"
+        ],
+        "yaklasim": "Bireysellestirilmis karar risk-fayda analizi"
+      },
+      "miksoedem_komasi": {
+        "setting": "Yogun bakim unitesi",
+        "IV_LT4": {
+          "yukleme": "200-400 mcg IV bolus",
+          "idame": "50-100 mcg gun IV"
+        },
+        "IV_T3_opsiyonel": "5-20 mcg yukleme sonra 2.5-10 mcg her 8 saat",
+        "hidrokortizon": "100 mg IV her 8 saat adrenal yetmezlik ekarte edilene kadar",
+        "destekleyici": "Ventilasyon isinma elektrolit duzeltme",
+        "tetikleyici_tedavi": "Enfeksiyonda antibiyotik vs"
+      },
+      "gebelik": {
+        "hedef_TSH": {
+          "1_trimester": "Alt sinir-2.5",
+          "2_trimester": "0.2-3.0",
+          "3_trimester": "0.3-3.0"
+        },
+        "doz_artisi": "Pozitif test ile hemen yuzde 30 arttir veya haftada 2 ekstra doz",
+        "kontrol": "Her 4 haftada TSH 20. haftaya kadar sonra en az 1 kez daha",
+        "postpartum": "Gebelik oncesi doza don"
+      },
+      "kardiyak_hasta": {
+        "dikkat": "Miyokard iskemisi anjina MI riski",
+        "yaklasim": [
+          "Cok dusuk dozla basla 12.5-25 mcg",
+          "Cok yavas arttir 4-8 haftada bir",
+          "Hedef TSH biraz yuksek tutulabilir",
+          "Kardiyoloji ile koordinasyon"
+        ]
+      },
+      "tiroid_kanseri_sonrasi": {
+        "TSH_supresyonu": "Diferansiye tiroid kanserinde rekurrens azaltmak icin",
+        "hedef_TSH": {
+          "yuksek_risk": "0.1 mIU/L alti",
+          "orta_risk": "0.1-0.5 mIU/L",
+          "dusuk_risk": "0.5-2.0 mIU/L"
+        }
+      },
+      "adrenal_yetmezlik": {
+        "uyari": "Tiroid hormonu vermeden once kortizol durumunu degerlendir",
+        "neden": "LT4 kortizol metabolizmasini hizlandirir adrenal kriz tetikleyebilir",
+        "yaklasim": "Once hidrokortizon sonra LT4 basla"
+      }
+    }
+  },
+  "komplikasyonlar": [
+    {
+      "kategori": "Kardiyovaskuler",
+      "komplikasyonlar": [
+        "Ateroskleroz hizlanmasi",
+        "Hiperlipidemi LDL total kolesterol artisi",
+        "Koroner arter hastaligi",
+        "Diyastolik hipertansiyon",
+        "Perikard efuzyonu",
+        "Kalp yetmezligi ileri evrelerde"
+      ]
+    },
+    {
+      "kategori": "Norolojik",
+      "komplikasyonlar": [
+        "Kognitif bozukluk demans benzeri",
+        "Depresyon",
+        "Periferik noropati",
+        "Karpal tunel sendromu",
+        "Miksoedem komasi en agir"
+      ]
+    },
+    {
+      "kategori": "Muskuloskeletal",
+      "komplikasyonlar": [
+        "Miyopati",
+        "Rabdomiyoliz nadir",
+        "Artralji"
+      ]
+    },
+    {
+      "kategori": "Reproduktif",
+      "komplikasyonlar": [
+        "Infertilite",
+        "Tekrarlayan dusuk",
+        "Menstruel duzensizlik",
+        "Erektil disfonksiyon"
+      ]
+    },
+    {
+      "kategori": "Metabolik",
+      "komplikasyonlar": [
+        "Kilo artisi",
+        "Hiponatremi",
+        "Hiperprolaktinemi"
+      ]
+    },
+    {
+      "kategori": "Pediatrik",
+      "komplikasyonlar": [
+        "Buyume gerilligi",
+        "Mental retardasyon tedavisiz konjenital",
+        "Gecikmiş puberte"
+      ]
+    }
+  ],
+  "brans_perspektifleri": {
+    "endokrinoloji": {
+      "rol": "Primer sorumlu brans tani tedavi ve izlem",
+      "klinik_prezentasyon": {
+        "klasik": [
+          "Yorgunluk soguk intoleransi kilo alimi",
+          "Konstipasyon kuru cilt sac dokulmesi",
+          "Mental yavasslama depresif duygudurum"
+        ],
+        "atipik": [
+          "Izole anemi",
+          "Hiperlipidemi tedaviye direncli",
+          "Karpal tunel sendromu",
+          "Infertilite"
+        ]
+      },
+      "tani_yaklasimi": {
+        "algoritma": [
+          "TSH olcumu ilk adim",
+          "TSH yuksekse serbest T4 ekle",
+          "Etiyoloji icin anti-TPO",
+          "Sekonder supehsinde hipofiz hormonlari"
+        ]
+      },
+      "tedavi_protokolu": {
+        "baslangiç": "Yasa ve komorbiditeye gore doz sec",
+        "titrasyon": "6-8 haftada TSH kontrolu",
+        "hedef": "Bireysellestirilmis TSH hedefi",
+        "uzun_vadeli": "Yasam boyu tedavi cogu hastada"
+      },
+      "ozel_populasyonlar": {
+        "gebelik": [
+          "Prekonsepsiyonel optimizasyon TSH 2.5 alti",
+          "Gebelikte doz artisi yuzde 30-50",
+          "Trimester spesifik TSH hedefleri",
+          "Sik izlem"
+        ],
+        "yasli": [
+          "Dusuk dozla basla yavas arttir",
+          "Kardiyak monitorizasyon",
+          "Daha gevşek TSH hedefi"
+        ],
+        "subklinik": [
+          "Tedavi kararini bireyselleştir",
+          "TSH 10 ustu genellikle tedavi",
+          "Semptom ve risk faktorlerine gore karar"
+        ]
+      },
+      "sevk_kriterleri": [
+        "Kompleks komorbiditeler",
+        "Gebelik plani veya gebelik",
+        "Tiroid nodulu veya kanseri",
+        "Sekonder hipotiroidi supehsi",
+        "Tedaviye direnc"
+      ]
+    },
+    "kardiyoloji": {
+      "rol": "Kardiyovaskuler komplikasyonlarin yonetimi",
+      "kardiyak_bulgular": {
+        "EKG": [
+          "Sinuzal bradikardi",
+          "Dusuk voltaj",
+          "T dalga duzlesmesi inversiyonu",
+          "QT uzamasi",
+          "AV blok nadir"
+        ],
+        "EKO": [
+          "Perikard efuzyonu",
+          "Diyastolik disfonksiyon",
+          "Azalmis EF ileri evre"
+        ]
+      },
+      "perikard_efuzyonu": {
+        "ozellik": "Yavas biriken kolesterol zengin efuzyon",
+        "yonetim": "LT4 tedavisi ile rezolve eder",
+        "tamponad": "Nadirdir gerekirse perikardiyosentez"
+      },
+      "koroner_arter_hastaligi": {
+        "risk": "Hiperlipidemi ile artmis risk",
+        "dikkat": "LT4 baslangicinda anjina tetiklenebilir",
+        "yonetim": [
+          "Cok dusuk dozla basla",
+          "Yavas arttir",
+          "Gerekirse revaskularizasyon oncesi",
+          "Beta bloker ile kontrol"
+        ]
+      },
+      "hipertansiyon": {
+        "tip": "Diyastolik hipertansiyon daha sik",
+        "mekanizma": "Artmis periferik vaskuler rezistans",
+        "tedavi_yaniti": "Otiroid olunca genellikle duzlenir"
+      },
+      "kalp_yetmezligi": {
+        "ileri_evre": "Miyokard kontraktilitesi azalir",
+        "tedavi": "LT4 dikkatli dozda kardiyak fonksiyonu iyilestirir"
+      },
+      "lipid_yonetimi": {
+        "yaklasim": "Oncelikle hipotiroidiyi tedavi et",
+        "statin": "Otiroid sonrasi persiste ederse statin ekle",
+        "dikkat": "Hipotiroidide miyopati riski artmis statin dikkatli"
+      }
+    },
+    "kadin_dogum": {
+      "rol": "Gebelik fertilite reprodüktif saglik",
+      "infertilite": {
+        "mekanizma": [
+          "Ovulasyon bozuklugu",
+          "Luteal faz defekti",
+          "Hiperprolaktinemi"
+        ],
+        "tarama": "Infertilite degerlendirmesinde TSH zorunlu",
+        "tedavi": "Otiroid saglaninca fertilite duzlenir"
+      },
+      "gebelik_oncesi": {
+        "optimizasyon": "TSH 2.5 alti hedefle",
+        "folik_asit": "4 mg gun norol tup defekti onleme",
+        "danismanlik": "Gebelikte doz artisi gerekecegini bilgilendir"
+      },
+      "gebelik_yonetimi": {
+        "erken_tani": "Gebelik ogrenilince TSH kontrol",
+        "doz_ayari": "Pozitif test ile yuzde 30 artis veya haftada 2 ekstra doz",
+        "takip": "4 haftada bir TSH 20. haftaya kadar sonra trimesterde 1",
+        "hedef_TSH": {
+          "1_trimester": "Ust sinir 2.5",
+          "2_3_trimester": "Ust sinir 3.0"
+        }
+      },
+      "fetal_etkiler": {
+        "onem": "Ilk trimesterde fetal tiroid calismaz anne hormonuna bagimli",
+        "yetersiz_tedavi": [
+          "Fetal norogelisim bozuklugu IQ dusmesi",
+          "Konjenital anomaliler",
+          "Preter dogum",
+          "Dusuk dogum agirligi"
+        ]
+      },
+      "postpartum": {
+        "doz_ayari": "Gebelik oncesi doza don",
+        "postpartum_tiroidit": "Gecici tablo ayirici tanida dusunulmeli",
+        "emzirme": "LT4 guvenli"
+      },
+      "postpartum_tiroidit": {
+        "tanim": "Dogum sonrasi 1 yil icinde tiroid disfonksiyonu",
+        "fazlar": "Tirotoksik faz hipotiroid faz duzleme veya kalici hipotiroidi",
+        "risk": "Anti-TPO pozitif kadinlarda yuzde 50",
+        "yonetim": "Semptomatik tedavi cogu kendilinden duzlenir"
+      }
+    },
+    "psikiyatri": {
+      "rol": "Noropsikyatrik semptomlarin tani ve yonetimi",
+      "psikiyatrik_bulgular": {
+        "depresyon": {
+          "prevalans": "Yuzde 40-50 hipotiroidide depresif semptomlar",
+          "ozellik": "Klasik depresyondan ayirt etmek zor",
+          "tedavi_yaniti": "LT4 ile duzleme 3-6 ayda"
+        },
+        "anksiyete": "Seyrek olarak",
+        "kognitif": [
+          "Bellek bozuklugu",
+          "Dikkat eksikligi",
+          "Yavas dusunme psikomotor yavasslama"
+        ],
+        "psikoz": {
+          "miksoedem_madness": "Nadir paranoid deluzyon hallusinasyon",
+          "tedavi": "LT4 antipsikotik gerekebilir"
+        }
+      },
+      "tarama_onerileri": {
+        "depresyon": "Tedaviye direncli depresyonda TSH tara",
+        "demans": "Demans ayirici tanisinda tiroid fonksiyonu",
+        "bipolar": "Lityum kullanan hastalarda yillik TSH"
+      },
+      "yaklasim": [
+        "Oncelikle hipotiroidi tedavisi",
+        "Persiste psikiyatrik semptomlarda ek tedavi",
+        "Psikotrop ilac etkilesimlerine dikkat"
+      ]
+    },
+    "noroloji": {
+      "rol": "Norolojik komplikasyonlarin yonetimi",
+      "periferik_sinir": {
+        "karpal_tunel": {
+          "prevalans": "Yuzde 30 hipotiroidide",
+          "mekanizma": "Sinovyal odem median sinir basisi",
+          "tedavi": "LT4 ile duzlme cogu hastada cerrahi gereksiz"
+        },
+        "polinöropati": {
+          "tip": "Aksonal sensorimotor",
+          "tedavi_yaniti": "Parsiyel duzlme"
+        }
+      },
+      "santral_sinir_sistemi": {
+        "kognitif": "Reversibl demans benzeri tablo",
+        "serebellar": "Ataksi nistagmus nadir",
+        "miksoedem_komasi": "En agir norolojik komplikasyon"
+      },
+      "EMG_NCS": "Karpal tunel veya polinöropati taniminda"
+    },
+    "aile_hekimligi": {
+      "rol": "Tarama birinci basamak tani tedavi ve sevk",
+      "tarama_onerileri": {
+        "semptomatik": "Hipotiroidi supehsi semptomlarinda TSH",
+        "risk_gruplari": [
+          "Otoimmun hastalik oykusu",
+          "Aile oykusu",
+          "Gebelik plani",
+          "Postpartum",
+          "Tiroid cerrahisi veya RAI oykusu",
+          "Lityum amiodaron kullananlar"
+        ],
+        "rutin_tarama": "Kanitlanmis fayda yok asemptomatik eriskinlerde"
+      },
+      "tedavi_baslatma": {
+        "uygun_hastalar": [
+          "Asikar primer hipotiroidi TSH yuksek sT4 dusuk",
+          "Subklinik TSH 10 uzeri",
+          "Subklinik semptomatik"
+        ],
+        "dozlama": "Yasa gore baslangic dozu sec"
+      },
+      "takip": {
+        "stabil": "6-12 ayda TSH",
+        "doz_degisikligi": "6-8 hafta sonra TSH"
+      },
+      "sevk_endikasyonlari": [
+        "Sekonder hipotiroidi supehsi",
+        "Gebelik",
+        "Tiroid nodulu",
+        "Tedaviye ragmen kontrol saglanamama",
+        "Kompleks komorbiditeler"
+      ],
+      "hasta_egitimi": [
+        "Ilacin nasil alinacagi ac karna yemekten once",
+        "Etkilesimler kalsiyum demir kahve",
+        "Yasam boyu tedavi gerekliligi",
+        "Doz atlamamak",
+        "Takip oneminin anlatilmasi"
+      ]
+    },
+    "radyoloji": {
+      "rol": "Goruntuleme ile tiroid degerlendirmesi",
+      "ultrasonografi": {
+        "endikasyonlar": [
+          "Palpabl anormallik",
+          "Hashimoto tanisi destekleme",
+          "Nodul karakterizasyonu",
+          "Takip"
+        ],
+        "teknik": {
+          "prob": "7-15 MHz lineer",
+          "hasta_pozisyonu": "Supin boyun ekstansiyonda",
+          "olcumler": "Her lob 3 boyut istmus kalinligi"
+        },
+        "hashimoto_bulgulari": {
+          "parankim": "Heterojen hipoekoik micronodular",
+          "ekojenite": "Infratiroidal kaslara gore azalmis",
+          "vaskülarite": "Baslangiçta artmis inflamasyon sonra azalmis",
+          "boyut": "Degisken baslangiçta normal veya artmis sonra atrofi"
+        },
+        "nodul_varsa": {
+          "ACR_TIRADS": "Kompozisyon ekojenite sekil kenar echogenic foci",
+          "skorlama": "TR1-TR5",
+          "FNA_endikasyonu": "TR3 1.5 cm uzeri TR4 1 cm uzeri TR5 0.5 cm uzeri"
+        },
+        "raporlama": "Boyut ekojenite homojenite nodul varsa ozellikleri lenf nodlari"
+      },
+      "sintigrafi": {
+        "hipotiroidide": "Uptake azalmis genellikle endike degil",
+        "ayirici_tani": "Hipertiroididen ayirmak icin gerekirse"
+      },
+      "FNA": {
+        "endikasyon": "Supheli nodul ACR TIRADS kriterlerine gore",
+        "USG_kilavuzlugu": "Tum FNA islemlerinde USG kilavuzlugu standart",
+        "raporlama": "Bethesda sistemi I-VI"
+      },
+      "BT_MR": {
+        "tiroid": "Nadiren substernal guatr trakeal basi",
+        "hipofiz_MR": "Sekonder hipotiroidide sella goruntuleme"
+      },
+      "kontrast_guvenligi": {
+        "iyotlu_kontrast": "Gecici TSH supresyonu veya tiroidit tetikleyebilir",
+        "hipotiroidide": "Genellikle sorunsuz",
+        "dikkat": "Agir hipotiroidide kontrast nefrropatisi riski"
+      }
+    },
+    "biyokimya_ve_laboratuvar": {
+      "rol": "Tani ve takip testleri",
+      "tiroid_fonksiyon_testleri": {
+        "TSH": {
+          "yontem": "Immunoassay kemiluminesan veya ELISA",
+          "normal": "0.4-4.0 mIU/L laboratuvara gore degisir",
+          "interferans": [
+            "Biotin yanlis dusuk",
+            "Heterofil antikorlar yanlis yuksek veya dusuk",
+            "TSH salgilan adenomlar"
+          ]
+        },
+        "serbest_T4": {
+          "yontem": "Direkt immunoassay veya equilibrium diyaliz",
+          "normal": "0.8-1.8 ng/dL",
+          "yorumlama": "TSH ile birlikte degerlendir"
+        },
+        "serbest_T3": {
+          "yontem": "Immunoassay",
+          "kullanim": "Rutin degil T3 toksikozu veya atipik tablolarda"
+        }
+      },
+      "otoimmun_belirtecler": {
+        "anti_TPO": {
+          "klinik_onemi": "Hashimoto tanisi subklinikten asikara ilerleme riski",
+          "pozitiflik": "Hashimoto yuzde 90-95 Graves yuzde 75"
+        },
+        "anti_Tg": {
+          "kullanim": "Anti-TPO negatif Hashimoto supehsinde"
+        }
+      },
+      "kalite_kontrol": [
+        "Iç kalite kontrol gunluk",
+        "Dis kalite kontrol yillik",
+        "Referans aralik dogrulamasi"
+      ]
+    },
+    "patoloji": {
+      "rol": "Histopatolojik tani FNA yorumlama",
+      "hashimoto_tiroiditi": {
+        "makroskopi": "Diffuz buyume sert lastik kivam lobule yuzey",
+        "mikroskopi": {
+          "lenfositik_infiltrasyon": "Yogun germinal merkez olusumu",
+          "hurthle_hucre_metaplazisi": "Eozinofilik granulllu sitoplazma onkositler",
+          "follikul_atrofisi": "Kolloid azalmis",
+          "fibrozis": "Ileri evrede artmis"
+        },
+        "immuno_histokimya": "CD20 B hucre CD3 T hucre pozitif"
+      },
+      "tiroid_atrofisi": {
+        "bulgu": "Kucuk atrofik tiroid fibrozis hurthle hucreleri"
+      },
+      "FNA_sitoloji": {
+        "hashimoto": "Lenfositler hurthle hucreleri reaktif follikul hucreleri",
+        "bethesda": "Genellikle Bethesda II benign"
+      },
+      "ayirici_tani": {
+        "lenfoma": "Hashimoto zemininde MALT lenfoma riski artmis",
+        "papiller_karsinom": "Hashimoto ile birlikte olabilir"
+      }
+    },
+    "geriatri": {
+      "rol": "Yasli hastalarda ozel yaklasim",
+      "epidemiyoloji": {
+        "prevalans": "60 yas ustu yuzde 7-10 kadın yuzde 3-5 erkek",
+        "subklinik": "Daha yuksek"
+      },
+      "klinik_ozellikler": {
+        "atipik": "Klasik semptomlar olmayabilir",
+        "baskın_bulgular": [
+          "Kognitif bozukluk demans olarak yanlis tani",
+          "Depresyon",
+          "Kalp yetmezligi",
+          "Konstipasyon"
+        ]
+      },
+      "tani": {
+        "TSH_yorumu": "Hafif yuksek TSH 4-7 normal yaslanma olabilir",
+        "dikkat": "Gereksiz tedaviden kacin"
+      },
+      "tedavi": {
+        "baslangiç": "Cok dusuk doz 12.5-25 mcg",
+        "titrasyon": "Cok yavas 6-8 haftada arttir",
+        "hedef": "Daha gevşek TSH 1-5",
+        "dikkat": "Kardiyak komplikasyon kemik kaybi AF riski"
+      },
+      "subklinik": {
+        "yaklasim": "75 yas uzeri cou hastada tedavi gereksiz",
+        "izlem": "6-12 ayda TSH tekrar"
+      }
+    },
+    "pediatri": {
+      "rol": "Cocukluk cagi hipotiroidi yonetimi",
+      "konjenital_hipotiroidi": {
+        "tarama": "Yenidogan tarama programi topuktan kan TSH",
+        "prevalans": "1/2000-4000 canli dogum",
+        "nedenler": [
+          "Tiroid disgenezisi agenezi hipoplazi ektopi yuzde 85",
+          "Dishormonogenez yuzde 10-15",
+          "Gecici maternal antikor ilac iyot eksikligi fazlaligi"
+        ],
+        "klinik": "Uzamis sarilik hipotoni makroglossi umbilikal herni konstipasyon",
+        "tedavi": {
+          "acil_baslama": "Ilk 2 haftada",
+          "doz": "10-15 mcg/kg/gun yuksek doz",
+          "hedef": "Serbest T4 ust yarisinda TSH 0.5-2"
+        },
+        "takip": "Sik TSH sT4 kontrolu ilk yil yuzde 1-2 ayda bir",
+        "prognoz": "Erken tedavi ile normal norolojik gelisim"
+      },
+      "edinsel_hipotiroidi": {
+        "nedenler": "Hashimoto en sik",
+        "bulgular": "Boy kisaligi kemik yasi geriliği puberal gecikme okul basarisi dusme",
+        "tedavi": "4-6 mcg/kg/gun eriskin dozuna gore yuksek",
+        "buyume": "Catch-up buyume beklenir"
+      }
+    },
+    "halk_sagligi": {
+      "rol": "Toplum duuzeyinde onleme ve tarama",
+      "iyot_eksikligi_programlari": {
+        "tuz_iyotlama": "Universal salt iodization en etkili onlem",
+        "turkiye": "1999 dan beri iyotlu tuz zorunlu",
+        "izlem": "Idrar iyot duzeyi populasyon calismalari"
+      },
+      "yenidogan_taramasi": {
+        "tanim": "Konjenital hipotiroidi icin ulusal tarama programi",
+        "yontem": "Topuk kani TSH 3-5. gun",
+        "cutoff": "TSH 20 mIU/L uzeri sorgular",
+        "dogrulama": "Serum TSH ve sT4"
+      },
+      "saglik_egitimi": [
+        "Iyotlu tuz kullanimi",
+        "Hipotiroidi belirtileri farkindaligi",
+        "Risk gruplarinda tarama bilinci"
+      ],
+      "maliyet_etkinlik": {
+        "yenidogan_taramasi": "Cok maliyet etkili mental retardasyon onleme",
+        "tuz_iyotlama": "En ucuz ve etkili halk sagligi mudahalesi"
+      }
+    }
+  }
+}

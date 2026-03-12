@@ -1,0 +1,980 @@
+{
+  "hastalık_id": "H002",
+  "version": "1.0",
+  "son_güncelleme": "2026-01-18",
+  "temel_bilgi": {
+    "isim_tr": "Esansiyel (Primer) Hipertansiyon",
+    "isim_en": "Essential (Primary) Hypertension",
+    "kısa_isim": "HT",
+    "diğer_isimler": [
+      "Yüksek tansiyon",
+      "Kan basıncı yüksekliği"
+    ],
+    "kodlama": {
+      "ICD_10": "I10",
+      "ICD_10_detay": {
+        "I10": "Esansiyel (primer) hipertansiyon",
+        "I11": "Hipertansif kalp hastalığı",
+        "I12": "Hipertansif böbrek hastalığı",
+        "I13": "Hipertansif kalp ve böbrek hastalığı",
+        "I15": "Sekonder hipertansiyon"
+      },
+      "SNOMED_CT": "38341003"
+    },
+    "tanım": "Sistolik kan basıncının ≥130 mmHg ve/veya diyastolik kan basıncının ≥80 mmHg olması. Esansiyel hipertansiyon altta yatan spesifik bir neden olmaksızın gelişir ve tüm hipertansiyon vakalarının %90-95'ini oluşturur.",
+    "epidemiyoloji": {
+      "global_prevalans": "1.28 milyar yetişkin (WHO 2021)",
+      "türkiye_prevalans": "%30-35 (TURDEP-II, PatenT çalışmaları)",
+      "yaş_dağılımı": "Yaşla birlikte artar, >60 yaş %60-70 prevalans",
+      "cinsiyet": "Erkeklerde daha erken başlar, menopoz sonrası kadınlarda artar",
+      "risk_grupları": [
+        "Ailede hipertansiyon öyküsü",
+        "İleri yaş (>65)",
+        "Siyah/Afrikan ırk",
+        "Obezite",
+        "Yüksek tuz tüketimi",
+        "Sedanter yaşam",
+        "Aşırı alkol",
+        "Kronik stres"
+      ]
+    },
+    "sınıflandırma": {
+      "ACC_AHA_2017": {
+        "normal": "Sistolik <120 VE diyastolik <80 mmHg",
+        "elevated": "Sistolik 120-129 VE diyastolik <80 mmHg",
+        "stage_1": "Sistolik 130-139 VEYA diyastolik 80-89 mmHg",
+        "stage_2": "Sistolik ≥140 VEYA diyastolik ≥90 mmHg"
+      },
+      "ESC_ESH_2018": {
+        "optimal": "Sistolik <120 VE diyastolik <80 mmHg",
+        "normal": "Sistolik 120-129 VE diyastolik 80-84 mmHg",
+        "yüksek_normal": "Sistolik 130-139 VEYA diyastolik 85-89 mmHg",
+        "grade_1": "Sistolik 140-159 VEYA diyastolik 90-99 mmHg",
+        "grade_2": "Sistolik 160-179 VEYA diyastolik 100-109 mmHg",
+        "grade_3": "Sistolik ≥180 VEYA diyastolik ≥110 mmHg"
+      },
+      "izole_sistolik_hipertansiyon": "Sistolik ≥140 ve diyastolik <90 (yaşlılarda sık)"
+    },
+    "patofizyoloji": {
+      "ana_mekanizmalar": [
+        "Artmış periferik vasküler direnç",
+        "Artmış kardiyak output",
+        "Renin-anjiotensin-aldosteron sistemi (RAAS) aktivasyonu",
+        "Sempatik sinir sistemi hiperaktivitesi",
+        "Endotel disfonksiyonu",
+        "Sodyum retansiyonu",
+        "Yapısal vasküler değişiklikler (remodeling)"
+      ]
+    },
+    "komplikasyonlar": {
+      "kardiyovasküler": [
+        "Sol ventrikül hipertrofisi",
+        "Koroner arter hastalığı",
+        "Kalp yetmezliği",
+        "Atriyal fibrilasyon"
+      ],
+      "serebrovasküler": [
+        "İskemik inme",
+        "Hemorajik inme",
+        "Vasküler demans"
+      ],
+      "renal": "Hipertansif nefropati, kronik böbrek hastalığı",
+      "vasküler": "Periferik arter hastalığı, aort anevrizması",
+      "oküler": "Hipertansif retinopati"
+    },
+    "prognoz": {
+      "tedavisiz": "İnme, MI, kalp yetmezliği riski çok yüksek",
+      "tedavi_ile": "Risk %30-50 azalır",
+      "mortalite": "Kardiyovasküler mortalite en sık neden"
+    }
+  },
+  "branş_perspektifleri": {
+    "dahiliye": {
+      "rol": "Primer tanı, tedavi ve takip sorumlusu",
+      "tanı": {
+        "ölçüm_tekniği": {
+          "ofis_KB": [
+            "5 dakika istirahat sonrası",
+            "Oturur pozisyonda, sırt destekli",
+            "Kol kalp hizasında",
+            "Uygun manşon boyutu (kol çevresinin %80'i)",
+            "2 ölçüm, 1-2 dakika arayla, ortalaması alınır"
+          ],
+          "beyaz_önlük_hipertansiyonu": "Ofiste yüksek, evde normal",
+          "maskelenmiş_hipertansiyon": "Ofiste normal, evde yüksek"
+        },
+        "ev_KB_monitörizasyonu": {
+          "sabah": "Uyanınca, ilaç almadan önce, kahvaltı öncesi",
+          "akşam": "Yatmadan önce",
+          "süre": "7 gün, günde 2 ölçüm",
+          "hedef": "<135/85 mmHg",
+          "avantajlar": "Beyaz önlük etkisini ortadan kaldırır, tedavi uyumunu artırır"
+        },
+        "ambulatuar_KB_monitörizasyonu": {
+          "ABPM": "24 saat taşınabilir cihaz",
+          "gündüz_hedef": "<135/85 mmHg",
+          "gece_hedef": "<120/70 mmHg",
+          "ortalama_24_saat": "<130/80 mmHg",
+          "non_dipper": "Gece KB düşmüyor (<%10), kötü prognoz",
+          "endikasyonlar": [
+            "Beyaz önlük vs maskelenmiş HT ayırımı",
+            "Dirençli hipertansiyon",
+            "Hipotansiyon semptomları",
+            "Gebelikte"
+          ]
+        },
+        "tanı_kriterleri": {
+          "ofis": "≥140/90 mmHg (2 farklı vizitte, her vizitte 2 ölçüm)",
+          "ev": "≥135/85 mmHg",
+          "ABPM": "Gündüz ≥135/85 veya 24 saat ≥130/80 mmHg"
+        }
+      },
+      "değerlendirme": {
+        "sekonder_neden_taraması": {
+          "endikasyonlar": [
+            "Genç yaş (<30)",
+            "Ani başlangıç/ağır hipertansiyon",
+            "Dirençli hipertansiyon (3 ilaç ile kontrol yok)",
+            "Hipokalemi",
+            "Abdominal üfürüm"
+          ],
+          "nedenler": [
+            "Renal: Renal arter stenozu, kronik böbrek hastalığı, polikistik böbrek",
+            "Endokrin: Primer aldosteronizm, Cushing, feokromasitoma, hipertiroidi",
+            "Vasküler: Aort koarktasyonu",
+            "İlaç: NSAİD, oral kontraseptif, steroid, kokain, amfetamin"
+          ]
+        },
+        "hedef_organ_hasarı": {
+          "kalp": "EKG (SVH), ekokardiyografi",
+          "böbrek": "Kreatinin, eGFR, proteinüri",
+          "beyin": "Kognitif değerlendirme, semptom sorgusu",
+          "retina": "Fundoskopi",
+          "damarlar": "Karotis IMT, PWV (nabız dalga hızı)"
+        },
+        "kardiyovasküler_risk": {
+          "risk_faktörleri": [
+            "Yaş (erkek >55, kadın >65)",
+            "Sigara",
+            "Dislipidemi",
+            "Diyabet",
+            "Obezite",
+            "Aile öyküsü (erkek <55, kadın <65)"
+          ],
+          "risk_hesaplama": "SCORE2, Framingham, ASCVD risk skoru"
+        }
+      },
+      "tedavi": {
+        "hedefler": {
+          "genel": "<130/80 mmHg",
+          "yaşlı_>65": "<140/90 mmHg (tolere edilebilirse <130/80)",
+          "diyabet": "<130/80 mmHg",
+          "KBH": "<130/80 mmHg",
+          "koroner_arter": "<130/80 mmHg"
+        },
+        "yaşam_tarzı_değişiklikleri": {
+          "tuz_kısıtlaması": "<5 g/gün (1 tatlı kaşığı)",
+          "DASH_diyeti": "Sebze, meyve, düşük yağlı süt ürünleri, tam tahıl",
+          "kilo_kaybı": "1 kg kilo kaybı → ~1 mmHg düşüş",
+          "egzersiz": "Haftada 150 dakika orta şiddet aerobik",
+          "alkol": "Erkek ≤2 içki/gün, kadın ≤1 içki/gün",
+          "sigara": "Bırakılmalı (zorunlu)",
+          "stres": "Yoga, meditasyon, relaksasyon"
+        },
+        "farmakolojik_tedavi": {
+          "başlama_endikasyonları": {
+            "stage_2": "Hemen başla (≥140/90)",
+            "stage_1": "ASCVD riski >10% veya hedef organ hasarı varsa başla",
+            "elevated": "Yüksek ASCVD riski varsa düşünülebilir"
+          },
+          "birinci_basamak": {
+            "ACEi_ARB": {
+              "ACEi": [
+                "Ramipril 2.5-10 mg",
+                "Perindopril 4-8 mg",
+                "Lisinopril 10-40 mg"
+              ],
+              "ARB": [
+                "Losartan 50-100 mg",
+                "Valsartan 80-320 mg",
+                "Telmisartan 40-80 mg"
+              ],
+              "tercih": "Diyabet, KBH, SVH, kalp yetmezliği varsa",
+              "yan_etki": "Hiperkalemi, akut kreatinin artışı, ACEi'de kuru öksürük",
+              "kontrendikasyon": "Gebelik, bilateral renal arter stenozu, hiperkalemi"
+            },
+            "kalsiyum_kanal_blokeri": {
+              "dihidropiridin": [
+                "Amlodipin 5-10 mg",
+                "Nifedipin SR 30-60 mg"
+              ],
+              "non_dihidropiridin": [
+                "Diltiazem 180-360 mg",
+                "Verapamil 120-480 mg"
+              ],
+              "tercih": "İzole sistolik HT, yaşlı, siyah ırk",
+              "yan_etki": "Ayak bileği ödemi, başağrısı",
+              "not": "Non-DHP kalp yetmezliğinde kontrendike"
+            },
+            "tiyazid_diüretik": {
+              "örnekler": [
+                "Hidroklorotiazid 12.5-25 mg",
+                "Klorotiazid 12.5-25 mg",
+                "İndapamid 1.5-2.5 mg"
+              ],
+              "tercih": "Yaşlı, volüm yüklü, kalp yetmezliği",
+              "yan_etki": "Hipokalemi, hipomagnezemi, hiperürisemi, hiperglisemi, hiperlipidemi",
+              "monitörizasyon": "Elektrolit, glukoz, ürik asit"
+            },
+            "beta_bloker": {
+              "örnekler": [
+                "Metoprolol 50-200 mg",
+                "Bisoprolol 2.5-10 mg",
+                "Carvedilol 12.5-50 mg"
+              ],
+              "tercih": "Koroner arter hastalığı, kalp yetmezliği, taşikardi, AF",
+              "yan_etki": "Bradikardi, yorgunluk, soğuk ekstremite, erektil disfonksiyon",
+              "kontrendikasyon": "Astım/KOAH (non-selektifler), AV blok, bradikardi",
+              "not": "Monoterapi olarak artık birinci basamak değil"
+            }
+          },
+          "kombine_tedavi": {
+            "dual": {
+              "ACEi_ARB_CCB": "En yaygın kombinasyon",
+              "ACEi_ARB_diüretik": "Volüm yüklü hastalarda",
+              "CCB_diüretik": "Alternatif"
+            },
+            "triple": "ACEi/ARB + CCB + Diüretik",
+            "single_pill_combination": "Uyumu artırır (örn: Perindopril/Amlodipin)"
+          },
+          "dirençli_hipertansiyon": {
+            "tanım": "3 ilaç (ACEi/ARB + CCB + diüretik) ile hedef KB ulaşılamıyor",
+            "4_ilaç": "Spironolakton 25-50 mg eklenir (aldosteron antagonisti)",
+            "5_ilaç": "Alfa-bloker (doksazosin), direkt vazodilatör (hidralazin), santral ajan (klonidin)"
+          }
+        }
+      },
+      "takip": {
+        "KB_ölçümü": {
+          "yeni_tanı": "Ayda 1 (hedef KB'ye ulaşana kadar)",
+          "stabil": "3-6 ayda 1",
+          "ev_KB": "Günlük (başlangıçta), sonra haftada 2-3 kez"
+        },
+        "laboratuvar": {
+          "bazal": "Elektrolit, kreatinin, eGFR, glukoz, lipid profili, TSH, idrar analizi",
+          "takip": "Yıllık (kreatinin, elektrolit), ilaç değişikliğinden 2-4 hafta sonra kontrol"
+        },
+        "EKG": "Yıllık (SVH takibi)",
+        "hedef_organ_değerlendirmesi": "Yıllık (eGFR, proteinüri, fundoskopi)"
+      },
+      "özel_durumlar": {
+        "hipertansif_kriz": {
+          "hipertansif_acil": {
+            "tanım": "KB >180/120 + akut hedef organ hasarı",
+            "bulgular": "Ensefalopati, akut MI, pulmoner ödem, aort diseksiyonu, eklampsi",
+            "tedavi": "IV antihipertansif (labetalol, nitrogliserin, nitroprussid), yoğun bakım"
+          },
+          "hipertansif_urgency": {
+            "tanım": "KB >180/120, hedef organ hasarı yok",
+            "tedavi": "Oral antihipertansif, 24-48 saat içinde düşür, acele etme"
+          }
+        },
+        "gebelik": {
+          "tedavi": "Metildopa, labetalol, nifedipin",
+          "kontrendikasyon": "ACEi, ARB (teratojen)",
+          "preeklampsi": "KB yüksekliği + proteinüri >20 hafta"
+        },
+        "yaşlı": {
+          "hedef": "<140/90 (veya <130/80 tolere edilebilirse)",
+          "ortostatik_hipotansiyon": "Ayağa kalkınca KB düşmesi, dikkat",
+          "yavaş_titrasyon": "Düşme riski"
+        }
+      }
+    },
+    "kardiyoloji": {
+      "rol": "Kardiyovasküler komplikasyonlar, dirençli HT, sekonder nedenler",
+      "hipertansif_kalp_hastalığı": {
+        "sol_ventrikül_hipertrofisi": {
+          "tanı": "EKG (Sokolow-Lyon, Cornell kriterleri), ekokardiyografi (SVH indeksi >115 g/m² erkek, >95 g/m² kadın)",
+          "klinik_önemi": "Bağımsız kardiyovasküler risk faktörü, aritmojenik",
+          "tedavi": "KB kontrolü → SVH regresyonu (ACEi/ARB en etkili)",
+          "prognoz": "SVH varlığında MI, kalp yetmezliği, ani ölüm riski artar"
+        },
+        "diyastolik_disfonksiyon": {
+          "erken_bulgu": "SVH'den önce bile gelişebilir",
+          "eko_bulguları": "E/A oranı azalması, E/e' artışı, LA genişlemesi",
+          "semptomlar": "Eforla dispne, yorgunluk",
+          "tedavi": "KB kontrolü, diüretik (volüm yükü varsa)"
+        },
+        "kalp_yetmezliği": {
+          "HFpEF": "EF korunmuş KY (EF ≥50%), hipertansif kalpte sık",
+          "HFrEF": "EF azalmış KY (EF <40%), ileri evrede",
+          "tedavi": {
+            "HFpEF": "KB kontrolü, diüretik, SGLT2i (empagliflozin)",
+            "HFrEF": "ACEi/ARB/ARNI, beta-bloker, MRA, SGLT2i, diüretik"
+          }
+        }
+      },
+      "koroner_arter_hastalığı": {
+        "ilişki": "Hipertansiyon KAH için majör risk faktörü",
+        "ateroskleroz_hızlanması": "Endotel hasarı, lipid infiltrasyonu",
+        "akut_koroner_sendrom": "KB kontrolü kritik",
+        "tedavi": {
+          "beta_bloker": "MI sonrası zorunlu",
+          "ACEi": "Post-MI, SVH varsa",
+          "hedef_KB": "<130/80 mmHg"
+        }
+      },
+      "atriyal_fibrilasyon": {
+        "risk": "Hipertansiyon AF için en önemli risk faktörü",
+        "CHA2DS2_VASc": "Hipertansiyon 1 puan",
+        "tedavi": {
+          "KB_kontrolü": "AF rekürensini azaltır",
+          "antikoagülasyon": "NOAC (apixaban, rivaroxaban) veya warfarin",
+          "rate_kontrol": "Beta-bloker, non-DHP CCB (diltiazem, verapamil)"
+        }
+      },
+      "dirençli_hipertansiyon_değerlendirmesi": {
+        "kardiyoloji_konsültasyonu": "3 ilaç ile kontrol yok",
+        "renal_arter_stenozu_taraması": "Doppler US, MR/CT anjiyografi",
+        "renal_denervasyon": "Kateter bazlı ablasyon (seçilmiş hastalarda, deneysel)"
+      }
+    },
+    "nefroloji": {
+      "rol": "Hipertansif nefropati, sekonder HT nedenleri, dirençli HT",
+      "hipertansif_nefropati": {
+        "tanım": "Kronik kontrolsüz HT'ye bağlı böbrek hasarı",
+        "patofizyoloji": [
+          "Afferent/efferent arteriol sklerozu",
+          "Glomerüler hipertansiyon",
+          "Tubulointerti siyel fibrozis",
+          "Nefron kaybı"
+        ],
+        "klinik": {
+          "erken": "Asemptomatik, mikroalbuminüri",
+          "ileri": "Proteinüri, eGFR azalması, böbrek yetmezliği"
+        },
+        "tanı": {
+          "proteinüri": "Spot idrar protein/kreatinin >150 mg/g",
+          "eGFR": "Azalma (CKD evresi)",
+          "görüntüleme": "USG - küçük, atrofik böbrekler (ileri evre)",
+          "biyopsi": "Genellikle gerekmez, arteriyolar hyalinozis, glomerüloskleroz"
+        }
+      },
+      "tedavi": {
+        "KB_kontrolü": {
+          "hedef": "<130/80 mmHg (KBH varsa)",
+          "ACEi_ARB": "Renoprotektif, albuminüriyi azaltır, zorunlu",
+          "diüretik": "Loop diüretik (eGFR <30), tiyazid (eGFR >30)"
+        },
+        "proteinüri_azaltma": {
+          "ACEi_ARB": "Primer",
+          "SGLT2i": "Eklenir (dapagliflozin, empagliflozin), renoprotektif",
+          "MRA": "Finerenone (non-steroid), dirençli proteinüride"
+        },
+        "progresyon_yavaşlatma": {
+          "KB": "<130/80",
+          "glukoz": "Diyabet varsa HbA1c <7%",
+          "protein": "0.8 g/kg/gün (eGFR <60)",
+          "tuz": "<5 g/gün"
+        }
+      },
+      "sekonder_hipertansiyon_nedenleri": {
+        "renal_arter_stenozu": {
+          "bulgular": "Ani başlangıç, ağır HT, abdominal üfürüm, hipokalemi, flash pulmoner ödem",
+          "tanı": "Doppler US, MR/CT anjiyografi, renal anjiyografi",
+          "tedavi": "Medikal (ACEi/ARB dikkatli), renal arter stent (seçilmiş olgular)"
+        },
+        "primer_aldosteronizm": {
+          "prevalans": "Dirençli HT'nin %10-20'si",
+          "bulgular": "HT + hipokalemi (spontan <3.5 mEq/L)",
+          "tarama": "Aldosteron/renin oranı (ARR >20-30)",
+          "konfirmasyon": "Tuz yükleme testi, captopril testi",
+          "tedavi": "Spironolakton 25-50 mg, eplerenon, adrenalektomi (adenom varsa)"
+        },
+        "kronik_böbrek_hastalığı": {
+          "mekanizma": "Sodyum retansiyonu, RAAS aktivasyonu, sempatik hiperaktivasyon",
+          "tedavi": "ACEi/ARB, loop diüretik, çoklu ilaç gerekir"
+        }
+      }
+    },
+    "nöroloji": {
+      "rol": "Hipertansif ensefalopati, inme, vasküler demans",
+      "akut_komplikasyonlar": {
+        "hipertansif_ensefalopati": {
+          "tanım": "Ağır HT (>180/120) + akut beyin disfonksiyonu",
+          "semptomlar": "Baş ağrısı, bulantı, kusma, görme değişiklikleri, konfüzyon, nöbet, koma",
+          "patofizyoloji": "Otoregülasyon bozulması → beyin ödemi",
+          "görüntüleme": "MRI - posterior reversibl ensefalopati sendromu (PRES)",
+          "tedavi": {
+            "IV_antihipertansif": "Labetalol, nikardipin",
+            "hedef": "İlk saatte %20-25 düşür, sonra kademeli",
+            "çok_hızlı_düşürme": "Serebral hipoperfüzyon riski"
+          }
+        },
+        "inme": {
+          "risk": "HT en önemli inme risk faktörü (%70 inmeli hastada HT var)",
+          "iskemik": "Ateroskleroz, laküner infarkt",
+          "hemorajik": "İntraserebral kanama, subaraknoid kanama",
+          "akut_inme_KB_yönetimi": {
+            "iskemik": {
+              "trombolitik_öncesi": "KB <185/110 (alteplaz verilebilmesi için)",
+              "trombolitik_sonrası": "KB <180/105 tut",
+              "trombolitik_yok": "KB <220/120 ise tedavi etme (ilk 24-48 saat)"
+            },
+            "hemorajik": {
+              "hedef": "Sistolik 140-180 mmHg",
+              "aşırı_düşürme": "Serebral perfüzyonu bozabilir"
+            }
+          },
+          "sekonder_korunma": {
+            "hedef_KB": "<130/80 mmHg",
+            "tedavi": "ACEi/ARB + tiazid/CCB",
+            "antiplatelet": "Aspirin 75-325 mg veya klopidogrel 75 mg"
+          }
+        }
+      },
+      "kronik_komplikasyonlar": {
+        "vasküler_demans": {
+          "küçük_damar_hastalığı": "Laküner infarktlar, beyaz cevher lezyonları",
+          "kognitif_bozulma": "Yürütücü işlev, işlem hızı, dikkat",
+          "önleme": "Agresif KB kontrolü (<130/80), vasküler risk faktörlerini azalt"
+        },
+        "laküner_infarkt": {
+          "neden": "Lipohyalinozis (küçük penetran arterler)",
+          "lokalizasyon": "Bazal ganglionlar, pons, internal kapsül",
+          "klinik": "Saf motor/sensory sendrom, ataksik hemiparezi",
+          "önleme": "KB kontrolü"
+        }
+      }
+    },
+    "oftalmoloji": {
+      "rol": "Hipertansif retinopati taraması ve tedavisi",
+      "hipertansif_retinopati": {
+        "patofizyoloji": "Retinal arteriyollerde vazospazm, sklerozu, eksüdasyon, iskemi",
+        "Keith_Wagener_Barker_sınıflaması": {
+          "grade_1": "Arteriolar incelme, genişlemiş ışık refleksi",
+          "grade_2": "Arteriyovenöz nicking (AV çaprazlaşma bulgusu), fokal daralma",
+          "grade_3": "Pamuk yumağı lezyonlar, flame hemoraji, hard eksudalar",
+          "grade_4": "Papilödem + Grade 3 bulguları (malign hipertansiyon)"
+        },
+        "klinik_önemi": {
+          "sistemik_hastalık_göstergesi": "Retinopati varlığı sistemik vasküler hasarı gösterir",
+          "prognoz": "Grade 3-4 kötü prognoz (MI, inme, böbrek yetmezliği riski)",
+          "görme_kaybı": "Grade 4'te santral görme etkilenebilir"
+        },
+        "tedavi": {
+          "primer": "KB kontrolü (agresif)",
+          "hedef": "<130/80 mmHg (grade 3-4'te <120/80)",
+          "oftalmolojik": "Grade 4'te acil müdahale gerekir",
+          "prognoz": "Erken tedavi ile retinal bulgular gerileyebilir"
+        }
+      },
+      "fundoskopi_taraması": {
+        "sıklık": "Tanıda, sonra yıllık (kontrolsüz HT'de 6 ayda)",
+        "bulgular": "AV nicking, copper/silver wire arter yansıması, eksudalar, hemoraji, papilödem"
+      },
+      "retinal_ven_tıkanıklığı": {
+        "risk_faktörü": "HT ana risk faktörü",
+        "tedavi": "KB kontrolü + anti-VEGF (ranibizumab, bevacizumab) gerekebilir"
+      }
+    },
+    "radyoloji": {
+      "rol": "Hedef organ hasarı değerlendirmesi, sekonder neden araştırması",
+      "kardiyovasküler_görüntüleme": {
+        "transtorasik_ekokardiyografi": {
+          "SVH_değerlendirmesi": "Sol ventrikül kitle indeksi (LVMI), duvar kalınlığı",
+          "diyastolik_fonksiyon": "E/A oranı, E/e' oranı, LA volümü",
+          "sistolik_fonksiyon": "Ejeksiyon fraksiyonu (EF)",
+          "endikasyon": "Yeni tanı (risk değerlendirmesi), semptomatik hasta"
+        },
+        "karotis_doppler_US": {
+          "intima_media_kalınlığı": ">0.9 mm ateroskleroz göstergesi",
+          "plak_varlığı": "Kardiyovasküler risk artışı",
+          "stenoz": "Kritik stenoz (>70%) cerrahi/stent gerektirebilir"
+        },
+        "koroner_kalsiyum_skoru": {
+          "CT": "Koroner ateroskleroz yükü",
+          "skor_0": "Çok düşük risk",
+          "skor_>400": "Yüksek risk, agresif tedavi"
+        }
+      },
+      "renal_görüntüleme": {
+        "böbrek_US": {
+          "boyut": "Bilateral küçük böbrek (<9 cm) - kronik hasar",
+          "ekogenite": "Artmış - parenkim hasarı",
+          "hidronefroz": "Obstrüksiyon ekarte edilmeli"
+        },
+        "renal_arter_doppler": {
+          "endikasyon": "Renal arter stenozu şüphesi",
+          "bulgular": "Pik sistolik hız >180-200 cm/s, tardus-parvus dalga formu",
+          "sınırlılık": "Operatöre bağlı, obez hastalarda zor"
+        },
+        "MR_CT_anjiyografi": {
+          "altın_standart": "Renal arter anatomisi",
+          "kontrast_dikkat": "eGFR <30'da kontrast nefropatisi riski"
+        }
+      },
+      "beyin_görüntüleme": {
+        "beyin_MRI": {
+          "beyaz_cevher_lezyonları": "FLAIR sekansta hiperintens, küçük damar hastalığı",
+          "laküner_infarkt": "Sessiz infarktlar",
+          "mikrokanamalar": "T2*/SWI'da hipointens, intraserebral hemoraji riski"
+        },
+        "MR_anjiyografi": "İntrakranial arter stenozu, anevrizma taraması"
+      },
+      "torasik_görüntüleme": {
+        "akciğer_grafisi": "Kardiyomegali (kardiyotorasik oran >0.5), pulmoner ödem (akut)",
+        "toraks_BT": "Aort diseksiyonu şüphesinde (kontrast BT anjiyografi)"
+      }
+    },
+    "endokrinoloji": {
+      "rol": "Sekonder hipertansiyon nedenleri (endokrin)",
+      "primer_aldosteronizm": {
+        "prevalans": "HT'nin %5-10'u, dirençli HT'nin %20'si",
+        "neden": "Aldosteron aşırı sekresyonu (adrenal adenom veya hiperplazi)",
+        "klinik": {
+          "HT": "Genellikle orta-ağır",
+          "hipokalemi": "Spontan <3.5 mEq/L (klasik bulgu ama %50'de normal K)"
+        },
+        "tarama": {
+          "endikasyon": [
+            "Dirençli HT (≥3 ilaç)",
+            "HT + hipokalemi",
+            "HT + adrenal insidentaloma",
+            "Genç yaşta ağır HT (<40 yaş)",
+            "AF + HT"
+          ],
+          "test": "Sabah aldosteron/renin oranı (ARR)",
+          "pozitif": "ARR >20-30, aldosteron >15 ng/dL"
+        },
+        "konfirmasyon": {
+          "oral_tuz_yükleme": "3 gün yüksek tuz diyeti, 24 saat idrar aldosteron >12 µg",
+          "IV_salin_infüzyon": "2L salin 4 saatte, aldosteron >10 ng/dL",
+          "captopril_testi": "Captopril sonrası aldosteron/renin"
+        },
+        "alt_tip_belirleme": {
+          "adrenal_CT_MRI": "Adenom (genellikle <2 cm, tek taraflı) vs bilateral hiperplazi",
+          "adrenal_venöz_örnekleme": "Lateralizasyon (cerrahi kararı için gerekli)"
+        },
+        "tedavi": {
+          "adenom": "Laparoskopik adrenalektomi (küratif)",
+          "bilateral_hiperplazi": "Medikal - spironolakton 25-100 mg veya eplerenon 50-100 mg",
+          "KB_ilaçları": "Eklenti olarak amlodipin, hidroklorotiazid"
+        }
+      },
+      "cushing_sendromu": {
+        "neden": "Kortizol fazlalığı (pituiter adenom, adrenal tümör, ektopik ACTH)",
+        "klinik": "Santral obezite, ay yüzü, buffalo hump, purple striae, HT, diyabet, hipokalemi",
+        "tarama": "24 saat idrar serbest kortizol, gece salivary kortizol, deksametazon baskılama testi",
+        "tedavi": "Cerrahi (adenom rezeksiyonu), medikal (metyrapon, ketokonazol)"
+      },
+      "feokromasitoma": {
+        "neden": "Adrenal medulla tümörü, katekolamin (adrenalin/noradrenalin) sekresyonu",
+        "klinik": {
+          "epizodik": "Paroksismal HT atakları, palpitasyon, terleme, baş ağrısı, anksiyete",
+          "sürekli": "Sürekli HT (olguların %50'si)"
+        },
+        "tarama": "Plazma veya 24 saat idrar metanefrinler/normetanefrinler",
+        "görüntüleme": "Adrenal CT/MRI, MIBG sintigrafisi",
+        "tedavi": {
+          "preoperatif": "Alfa-bloker (fenoksibenzamin, doksazosin) → beta-bloker",
+          "cerrahi": "Adrenalektomi (küratif)",
+          "not": "Beta-bloker önce verilirse hipertansif kriz olabilir"
+        }
+      },
+      "tiroid_hastalıkları": {
+        "hipertiroidi": "Sistolik HT artar (diyastolik düşük → geniş nabız basıncı)",
+        "hipotiroidi": "Diyastolik HT artar",
+        "tedavi": "Altta yatan tiroid hastalığını tedavi et"
+      },
+      "akromegali": {
+        "GH_fazlalığı": "İnsülin direnci, HT (%40)",
+        "tedavi": "Transsfenoidal cerrahi, somatostatin analoğu"
+      }
+    },
+    "biyokimya_laboratuvar": {
+      "rol": "Tanı, hedef organ hasarı, sekonder neden taraması",
+      "rutin_testler": {
+        "elektrolit": {
+          "sodyum": "Normal 135-145 mEq/L",
+          "potasyum": {
+            "normal": "3.5-5.0 mEq/L",
+            "hipokalemi": "<3.5, primer aldosteronizm, diüretik yan etkisi",
+            "hiperkalemi": ">5.5, ACEi/ARB, böbrek yetmezliği, spironolakton"
+          },
+          "klorür": "Normal 98-107 mEq/L",
+          "bikarbonat": "Normal 22-28 mEq/L, metabolik alkaloz (primer aldosteronizmde)"
+        },
+        "böbrek_fonksiyonları": {
+          "kreatinin": {
+            "normal": "Erkek 0.7-1.3, kadın 0.6-1.1 mg/dL",
+            "yüksek": "Böbrek yetmezliği, ACEi/ARB yan etkisi"
+          },
+          "eGFR": {
+            "CKD_EPI": "Kreatinin, yaş, cinsiyet, ırk",
+            "kategoriler": "G1 (>90), G2 (60-89), G3a (45-59), G3b (30-44), G4 (15-29), G5 (<15)"
+          },
+          "BUN": "7-20 mg/dL, yüksek - prerenal/renal azotemi"
+        },
+        "proteinüri": {
+          "spot_idrar_protein_kreatinin": "<150 mg/g normal",
+          "mikroalbuminüri": "30-300 mg/g (erken böbrek hasarı)",
+          "makroalbuminüri": ">300 mg/g"
+        },
+        "glukoz": {
+          "açlık": "≥126 mg/dL diyabet",
+          "HbA1c": "≥6.5% diyabet",
+          "nedeni": "HT ve DM sık birlikte"
+        },
+        "lipid_profili": {
+          "total_kolesterol": "<200 mg/dL",
+          "LDL": "Hedef <70-100 mg/dL (risk faktörüne göre)",
+          "HDL": ">40 erkek, >50 kadın",
+          "trigliserid": "<150 mg/dL"
+        },
+        "ürik_asit": {
+          "normal": "Erkek 3.4-7.0, kadın 2.4-6.0 mg/dL",
+          "yüksek": "Gut, metabolik sendrom, tiazid diüretik kullanımı"
+        },
+        "TSH": "0.4-4.0 mIU/L, tiroid fonksiyon değerlendirmesi"
+      },
+      "sekonder_HT_tarama_testleri": {
+        "aldosteron_renin": {
+          "sabah_örneği": "En az 2 saat ayakta duruş sonrası",
+          "aldosteron_renin_oranı": "ARR >20-30 primer aldosteronizm şüphesi",
+          "aldosteron": ">15 ng/dL anlamlı"
+        },
+        "katekolaminler": {
+          "plazma_metanefrin_normetanefrin": "Feokromasitoma taraması",
+          "24_saat_idrar": "Metanefrin, normetanefrin, VMA"
+        },
+        "kortizol": {
+          "24_saat_idrar_serbest_kortizol": "Cushing taraması",
+          "gece_salivary_kortizol": "Alternatif tarama",
+          "1_mg_deksametazon_baskılama": "Sabah kortizol >1.8 µg/dL anormal"
+        }
+      }
+    },
+    "acil_tıp": {
+      "rol": "Hipertansif kriz yönetimi",
+      "hipertansif_acil": {
+        "tanım": "KB >180/120 mmHg + akut hedef organ hasarı",
+        "hedef_organ_manifestasyonları": {
+          "kardiyovasküler": "Akut MI, akut sol ventrikül yetmezliği, pulmoner ödem",
+          "nörolojik": "Hipertansif ensefalopati, intraserebral hemoraji, subaraknoid kanama",
+          "renal": "Akut böbrek hasarı, hematüri",
+          "vasküler": "Aort diseksiyonu",
+          "obstetrik": "Eklampsi, HELLP sendromu"
+        },
+        "acil_değerlendirme": {
+          "anamnez": "Semptom başlangıcı, ilaç uyumu, kokain/amfetamin kullanımı",
+          "fizik_muayene": "Fundoskopi, kardiyopulmoner, nörolojik, periferik nabızlar",
+          "EKG": "Akut iskemi, SVH",
+          "lab": "Kreatinin, troponin, BNP, idrar analizi",
+          "görüntüleme": "Akciğer grafisi, beyin CT (nörolojik bulgular varsa), ekokardiyografi"
+        },
+        "tedavi": {
+          "ortam": "Yoğun bakım, sürekli KB monitörizasyonu",
+          "hedef": "İlk saatte %20-25 KB düşür, sonraki 24 saatte kademeli normalize et",
+          "IV_antihipertansifler": {
+            "labetalol": {
+              "doz": "20 mg IV bolus, sonra 20-80 mg her 10 dakikada veya 0.5-2 mg/dk infüzyon",
+              "başlangıç": "5-10 dakika",
+              "tercih": "Genel amaçlı, çoğu durumda güvenli",
+              "kontrendikasyon": "Astım, AV blok, bradikardi, akut kalp yetmezliği"
+            },
+            "nikardipin": {
+              "doz": "5 mg/saat IV infüzyon, 15 mg/saate kadar titre et",
+              "başlangıç": "5-10 dakika",
+              "tercih": "İskemik inme, postoperatif"
+            },
+            "nitroprussid": {
+              "doz": "0.25-10 µg/kg/dk IV infüzyon",
+              "başlangıç": "Anında",
+              "tercih": "Malign HT, aort diseksiyonu (beta-blokerle birlikte)",
+              "yan_etki": "Siyanid toksisitesi (>48 saat kullanım)",
+              "monitörizasyon": "Arteriyel hat"
+            },
+            "nitrogliserin": {
+              "doz": "5-100 µg/dk IV infüzyon",
+              "tercih": "Akut koroner sendrom, akut kalp yetmezliği",
+              "yan_etki": "Baş ağrısı, tolerans gelişimi"
+            },
+            "enalaprilat": {
+              "doz": "0.625-1.25 mg IV her 6 saatte",
+              "başlangıç": "15-30 dakika",
+              "tercih": "Akut sol ventrikül yetmezliği",
+              "kontrendikasyon": "Bilateral renal arter stenozu"
+            },
+            "hidralazin": {
+              "doz": "10-20 mg IV bolus",
+              "tercih": "Eklampsi/preeklampsi",
+              "yan_etki": "Refleks taşikardi, unpredictable response"
+            }
+          },
+          "özel_durumlar": {
+            "aort_diseksiyonu": {
+              "hedef": "Sistolik <120 mmHg, kalp hızı <60 bpm (ilk saat)",
+              "tedavi": "IV beta-bloker (esmolol, labetalol) + nitroprussid",
+              "not": "Beta-bloker önce başlanmalı (refleks taşikardiyi önlemek için)"
+            },
+            "akut_MI": {
+              "tedavi": "Nitrogliserin, beta-bloker (labetalol)",
+              "hedef": "Miyokardiyal oksijen ihtiyacını azalt"
+            },
+            "iskemik_inme": {
+              "trombolitik_verilecek": "KB <185/110 (labetalol, nikardipin ile düşür)",
+              "trombolitik_verilmeyecek": "KB >220/120'de tedavi et",
+              "hedef": "Çok hızlı düşürme, serebral hipoperfüzyon riski"
+            },
+            "intraserebral_hemoraji": {
+              "hedef": "Sistolik 140-180 mmHg",
+              "tedavi": "Nikardipin, labetalol"
+            },
+            "eklampsi": {
+              "antikonvülzan": "Magnezyum sülfat 4-6 g IV yükleme",
+              "antihipertansif": "Hidralazin, labetalol, nifedipin",
+              "definitif_tedavi": "Doğum"
+            }
+          }
+        }
+      },
+      "hipertansif_urgency": {
+        "tanım": "KB >180/120 mmHg, hedef organ hasarı YOK",
+        "semptomlar": "Başağrısı, burun kanaması, anksiyete (organ hasarı göstergesi değil)",
+        "tedavi": {
+          "oral_antihipertansif": "Captopril 25 mg SL/PO, klonidin 0.1-0.2 mg PO",
+          "hedef": "24-48 saat içinde kademeli düşür",
+          "acele_etme": "Hızlı düşürme gereksiz ve zararlı olabilir",
+          "takip": "Acil servis gözlem 4-6 saat, poliklinik takibi ayarla"
+        }
+      }
+    },
+    "beslenme_diyetetik": {
+      "rol": "Diyet tedavisi, yaşam tarzı değişikliği",
+      "DASH_diyeti": {
+        "tanım": "Dietary Approaches to Stop Hypertension",
+        "prensip": "Yüksek sebze-meyve, düşük yağlı süt ürünleri, tam tahıl, az doymuş yağ",
+        "KB_etkisi": "~11/6 mmHg düşüş",
+        "öneriler": {
+          "sebze_meyve": "8-10 porsiyon/gün",
+          "tam_tahıl": "6-8 porsiyon/gün",
+          "düşük_yağlı_süt": "2-3 porsiyon/gün",
+          "yağsız_et_tavuk_balık": "≤6 porsiyon/gün",
+          "kuruyemiş_tohum_baklagil": "Haftada 4-5 porsiyon",
+          "yağ_yağlı_sos": "2-3 porsiyon/gün (sağlıklı yağlar)",
+          "tatlı": "Haftada ≤5 porsiyon"
+        }
+      },
+      "tuz_kısıtlaması": {
+        "hedef": "<5 g/gün (2000 mg sodyum = 1 tatlı kaşığı tuz)",
+        "KB_etkisi": "~5/3 mmHg düşüş",
+        "kaynaklar": [
+          "İşlenmiş gıdalar (ekmek, peynir, salami, turşu)",
+          "Hazır yemekler, fast food",
+          "Konserve, paketli atıştırmalıklar",
+          "Sofra tuzu"
+        ],
+        "stratejiler": [
+          "Tuzluk kaldır",
+          "Etiket okuma (sodyum içeriği)",
+          "Taze yemek pişir",
+          "Baharat, limon, sirke kullan",
+          "Tuz yerine: K-tuzları (böbrek fonksiyonu normal ise)"
+        ]
+      },
+      "akdeniz_diyeti": {
+        "özellikler": "Zeytinyağı, balık, sebze, meyve, kuruyemiş, tam tahıl",
+        "KB_etkisi": "~3-4 mmHg düşüş",
+        "ekstra_fayda": "Kardiyovasküler koruma, kilo kontrolü"
+      },
+      "kilo_yönetimi": {
+        "hedef": "BMI 18.5-24.9 kg/m²",
+        "KB_etkisi": "1 kg kilo kaybı → ~1 mmHg düşüş",
+        "kalori_açığı": "500-750 kkal/gün (0.5-1 kg/hafta kilo kaybı)",
+        "bel_çevresi": "Erkek <102 cm, kadın <88 cm"
+      },
+      "alkol_sınırlaması": {
+        "erkek": "≤2 standart içki/gün",
+        "kadın": "≤1 standart içki/gün",
+        "1_içki": "12 oz bira, 5 oz şarap, 1.5 oz sert içki",
+        "KB_etkisi": "Aşırı alkol KB'yi yükseltir"
+      },
+      "potasyum": {
+        "hedef": "3500-5000 mg/gün",
+        "KB_etkisi": "~4/2 mmHg düşüş",
+        "kaynaklar": "Muz, portakal, patates, domates, ıspanak, fasulye",
+        "dikkat": "Böbrek yetmezliği veya hiperkalemi varsa kısıtla"
+      },
+      "kalsiyum_magnezyum": {
+        "kalsiyum": "1000-1200 mg/gün (süt ürünleri, yeşil yapraklı sebze)",
+        "magnezyum": "400-420 mg erkek, 310-320 mg kadın (kuruyemiş, tohum, tam tahıl)",
+        "KB_etkisi": "Orta derecede faydalı"
+      },
+      "kafein": {
+        "akut_etki": "Geçici KB artışı (~5-10 mmHg, 1-2 saat)",
+        "kronik": "Tolerans gelişir, uzun dönem etki minimal",
+        "öneri": "Aşırı tüketimden (>4 fincan/gün) kaçın"
+      }
+    },
+    "eczacılık": {
+      "rol": "İlaç yönetimi, uyum, yan etki monitörizasyonu, etkileşimler",
+      "ilaç_seçimi": {
+        "birinci_basamak": "ACEi/ARB, CCB, tiazid diüretik",
+        "kombinasyon_tercih_sırası": [
+          "ACEi/ARB + CCB",
+          "ACEi/ARB + tiazid",
+          "CCB + tiazid"
+        ],
+        "kaçınılacak": "ACEi + ARB (hiperkalemi, hipotansiyon riski)"
+      },
+      "ilaç_etkileşimleri": {
+        "ACEi_ARB": {
+          "K_yükselten_ilaçlar": "Spironolakton, amilorid, NSAİD → Hiperkalemi riski",
+          "litium": "Renal klirens azalır → Litium toksisitesi",
+          "NSAİD": "Antihipertansif etkiyi azaltır, böbrek fonksiyonunu bozabilir"
+        },
+        "diüretikler": {
+          "NSAİD": "Diüretik etkiyi azaltır",
+          "digoksin": "Hipokalemi digoksin toksisitesi riskini artırır",
+          "litium": "Litium klerensi azalır"
+        },
+        "CCB": {
+          "CYP3A4_inhibitörleri": "Ketokonazol, eritromisin, greyfurt suyu → CCB seviyeleri artar",
+          "CYP3A4_indükleyiciler": "Rifampin, karbamazepin → CCB etkisi azalır",
+          "beta_bloker": "Non-DHP CCB + beta-bloker → Bradikardi, AV blok riski"
+        },
+        "beta_bloker": {
+          "kalsiyum_kanal_blokeri": "Diltiazem/verapamil + beta-bloker → Ciddi bradikardi",
+          "insülin": "Hipoglisemi belirtilerini maskeler",
+          "klonidin": "Ani kesme rebound hipertansiyon"
+        }
+      },
+      "yan_etki_yönetimi": {
+        "ACEi_kuru_öksürük": {
+          "prevalans": "%10-20",
+          "mekanizma": "Bradikinin birikimi",
+          "çözüm": "ARB'ye geç"
+        },
+        "CCB_ayak_ödemi": {
+          "prevalans": "%10-30",
+          "mekanizma": "Periferik vazodilatasyon",
+          "çözüm": "Doz azalt, ACEi/ARB ekle (azaltır), loop diüretik EKLEME (işe yaramaz)"
+        },
+        "diüretik_hipokalemi": {
+          "risk": "K <3.5 mEq/L",
+          "çözüm": "K desteği, K-tutucu diüretik (spironolakton, amilorid), ACEi/ARB ekle"
+        },
+        "beta_bloker_yorgunluk": {
+          "prevalans": "%10-20",
+          "çözüm": "Doz azalt, alternatif ajan (ACEi/ARB, CCB)"
+        }
+      },
+      "ilaç_uyumu": {
+        "uyumsuzluk_nedenleri": [
+          "Asemptomatik hastalık (hastalar semptom hissetmiyor)",
+          "Yan etkiler",
+          "Karmaşık rejim (günde 3-4 kez)",
+          "Maliyet"
+        ],
+        "uyumu_artırma": {
+          "basitleştirme": "Günde 1 kez ilaç tercih et",
+          "tek_tablet_kombinasyon": "Uyumu %20-30 artırır",
+          "hatırlatıcılar": "Alarm, hap kutusu, mobil uygulama",
+          "hasta_eğitimi": "Tedavinin önemini anlat",
+          "yan_etki_yönetimi": "Yan etkileri dinle ve çözüm bul"
+        }
+      },
+      "farmakokinetik_özel_durumlar": {
+        "böbrek_yetmezliği": {
+          "ACEi": "Doz azalt (renal eliminasyon)",
+          "ARB": "Dikkatli (hiperkalemi riski)",
+          "diüretik": "Loop diüretik tercih et (eGFR <30)"
+        },
+        "karaciğer_yetmezliği": {
+          "CCB": "Doz azalt (hepatik metabolizma)",
+          "labetalol": "Dikkatli"
+        },
+        "yaşlı": {
+          "başlangıç_dozu": "Düşük, yavaş titrasyon",
+          "ortostatik_hipotansiyon": "Dikkat (düşme riski)",
+          "polifarmasi": "Etkileşim riski yüksek"
+        }
+      }
+    },
+    "halk_sagligi": {
+      "rol": "Toplum düzeyinde önleme, tarama, eğitim",
+      "epidemiyoloji": {
+        "global_yük": "1.28 milyar yetişkin (WHO 2021), önlenebilir ölüm nedeni #1",
+        "türkiye": {
+          "prevalans": "%30-35",
+          "farkındalık": "Hipertansiflerin sadece %50-60'ı tanı almış",
+          "tedavi": "Tanı alanların %40-50'si tedavi alıyor",
+          "kontrol": "Tedavi alanların sadece %30-40'ı kontrol altında"
+        },
+        "ekonomik_yük": "Kardiyovasküler hastalık maliyetlerinin büyük kısmı"
+      },
+      "primer_önleme": {
+        "hedef": "HT gelişimini önleme",
+        "populasyon_stratejisi": [
+          "Tuz tüketimini azaltma (toplum düzeyinde)",
+          "Sağlıklı beslenme kampanyaları",
+          "Fiziksel aktivite teşviki",
+          "Alkol tüketimi sınırlaması",
+          "Sigara kontrolü"
+        ],
+        "yüksek_risk_stratejisi": {
+          "prehipertansiyon": "Sistolik 120-139 veya diyastolik 80-89 mmHg",
+          "müdahale": "Yoğun yaşam tarzı değişikliği, ilaç gerekmez",
+          "takip": "Yılda 1 kez KB ölçümü"
+        }
+      },
+      "tarama": {
+        "kim": "Tüm erişkinler ≥18 yaş",
+        "sıklık": {
+          "normal_KB": "2 yılda 1 (<120/80)",
+          "elevated": "Yılda 1 (120-129/<80)",
+          "risk_faktörü_var": "Yılda 1 (obezite, diyabet, aile öyküsü)"
+        },
+        "toplum_taraması": {
+          "yerler": "Sağlık ocakları, işyerleri, alışveriş merkezleri, eczaneler",
+          "yöntem": "Otomatik KB cihazları, eğitimli personel",
+          "referans": "Yüksek KB saptananlar aile hekimine yönlendirilir"
+        }
+      },
+      "sekonder_önleme": {
+        "erken_tanı_tedavi": "KB kontrolü ile inme %40, MI %25, kalp yetmezliği %50 azalır",
+        "hasta_eğitimi": "Yaşam tarzı, ilaç uyumu, hedef KB",
+        "düzenli_takip": "KB monitörizasyonu, hedef organ değerlendirmesi"
+      },
+      "sağlık_politikaları": {
+        "tuz_azaltma": {
+          "zorunlu_etiketleme": "Gıdalarda sodyum içeriği",
+          "gönüllü_anlaşmalar": "Gıda endüstrisi ile tuz azaltma",
+          "kamu_farkındalığı": "Tuz tüketimi azaltma kampanyaları",
+          "hedef": "Türkiye'de günlük tuz tüketimi ~18 g, hedef <5 g"
+        },
+        "ilaç_erişimi": {
+          "jenerik": "Uygun fiyatlı antihipertansifler",
+          "geri_ödeme": "SGK kapsamı",
+          "tek_tablet_kombinasyon": "Maliyeti azaltır, uyumu artırır"
+        },
+        "ulusal_program": {
+          "türkiye_HT_programı": "Sağlık Bakanlığı, Türk Hipertansiyon ve Böbrek Hastalıkları Derneği",
+          "bileşenler": "Tarama, eğitim, tedavi, kayıt sistemi"
+        }
+      },
+      "sağlık_eşitsizlikleri": {
+        "sosyoekonomik": "Düşük gelir → yüksek prevalans, düşük tedavi oranı",
+        "coğrafi": "Kırsal alan → sağlık hizmetine erişim kısıtlı",
+        "eğitim": "Düşük eğitim → farkındalık az",
+        "müdahaleler": "Hedeflenmiş programlar, mobil klinikler, toplum sağlık görevlileri"
+      },
+      "may_measurement_month": {
+        "global_kampanya": "Mayıs ayı küresel KB tarama kampanyası",
+        "hedef": "Farkındalık artırma, tanı konmamış HT saptama"
+      }
+    }
+  }
+}

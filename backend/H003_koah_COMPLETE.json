@@ -1,0 +1,598 @@
+{
+  "hastalık_id": "H003",
+  "version": "1.0",
+  "son_güncelleme": "2026-01-18",
+  "temel_bilgi": {
+    "isim_tr": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+    "isim_en": "Chronic Obstructive Pulmonary Disease (COPD)",
+    "kısa_isim": "KOAH / COPD",
+    "diğer_isimler": [
+      "Kronik bronşit",
+      "Amfizem"
+    ],
+    "kodlama": {
+      "ICD_10": "J44",
+      "ICD_10_detay": {
+        "J44.0": "KOAH + akut alt solunum yolu enfeksiyonu",
+        "J44.1": "KOAH + akut alevlenme, tanımlanmamış",
+        "J44.9": "KOAH, tanımlanmamış"
+      },
+      "SNOMED_CT": "13645005"
+    },
+    "tanım": "Kalıcı solunum yolu obstrüksiyonu ile karakterize, ilerleyici ve kısmen geri dönüşümsüz hava akımı kısıtlaması olan kronik inflamatuar akciğer hastalığı. Genellikle sigara dumanı gibi zararlı partiküllere uzun süreli maruziyete yanıt olarak gelişir.",
+    "epidemiyoloji": {
+      "global_prevalans": "384 milyon hasta (2010 WHO verisi)",
+      "türkiye_prevalans": "Erkeklerde %19.1, kadınlarda %7.1 (BOLD-Türkiye)",
+      "mortalite": "Dünyada 3. önde gelen ölüm nedeni (yılda 3.2 milyon)",
+      "yaş_dağılımı": "Genellikle >40 yaş, yaşla birlikte artar",
+      "cinsiyet": "Erkeklerde daha sık (sigara içme oranları ile ilişkili)",
+      "risk_faktörleri": [
+        "Sigara içimi (en önemli, %85-90)",
+        "Mesleki maruziyet (toz, kimyasal)",
+        "İç ortam hava kirliliği (biyokütle yakıtları)",
+        "Dış ortam hava kirliliği",
+        "Alfa-1 antitripsin eksikliği (genetik)",
+        "Çocukluk çağı akciğer enfeksiyonları",
+        "Astım"
+      ]
+    },
+    "patofizyoloji": {
+      "ana_mekanizmalar": [
+        "Kronik inflamasyon: Nötrofil, makrofaj, T lenfosit infiltrasyonu",
+        "Oksidatif stres: Reaktif oksijen türleri artışı",
+        "Proteaz-antiproteaz dengesizliği: Elastin yıkımı → amfizem",
+        "Küçük hava yolu hastalığı: Mukus hipersekresyonu, fibrozis, obstrüksiyon",
+        "Parankimal destrüksiyon: Alveol duvarlarında yıkım (amfizem)",
+        "Hava yolu remodeling: Kollajen birikimi, düz kas hipertrofisi"
+      ],
+      "fenotippler": {
+        "amfizem_dominant": "Parankimal destrüksiyon, pembe üfleyici, düşük BMI",
+        "kronik_bronşit_dominant": "Mukus hipersekresyonu, öksürük, balgam, mavi şişkin",
+        "overlap_sendromu": "KOAH + Astım"
+      }
+    },
+    "komplikasyonlar": {
+      "respiratuar": [
+        "Akut alevlenme",
+        "Respiratuar yetmezlik",
+        "Pnömoni",
+        "Pnömotoraks",
+        "Pulmoner hipertansiyon",
+        "Cor pulmonale"
+      ],
+      "sistemik": [
+        "Kilo kaybı, kas zayıflığı (kaşeksi)",
+        "Osteoporoz",
+        "Kardiyovasküler hastalık",
+        "Anksiyete, depresyon",
+        "Akciğer kanseri (risk artışı)"
+      ]
+    },
+    "prognoz": {
+      "doğal_seyir": "İlerleyici akciğer fonksiyonu kaybı",
+      "mortalite": "FEV1 ve alevlenme sıklığı ile ilişkili",
+      "BODE_indeksi": "BMI, Obstrüksiyon (FEV1), Dispne, Egzersiz kapasitesi → mortalite tahmini"
+    }
+  },
+  "branş_perspektifleri": {
+    "dahiliye": {
+      "rol": "İlk tanı, stabilizasyon, yönlendirme",
+      "klinik_prezentasyon": {
+        "semptomlar": [
+          "Kronik öksürük (>3 ay/yıl, >2 yıl)",
+          "Balgam üretimi (sabahları daha fazla)",
+          "Progresif nefes darlığı (eforla kötüleşir)",
+          "Wheezing (hışıltı)",
+          "Göğüs sıkışması"
+        ],
+        "fizik_muayene": [
+          "Uzamış ekspirasyon",
+          "Wheezing, ronküs",
+          "Hiperrezonans (perküsyonda)",
+          "Azalmış solunum sesleri",
+          "Barrel chest (fıçı göğüs)",
+          "Siyanoz (ileri evre)",
+          "Ödem (cor pulmonale varsa)"
+        ]
+      },
+      "tanı": {
+        "klinik_şüphe": "40 yaş üstü + sigara + kronik semptomlar",
+        "spirometri": "Altın standart, post-bronkodilatatör FEV1/FVC <0.70",
+        "ayırıcı_tanı": [
+          "Astım",
+          "Bronşektazi",
+          "Tüberküloz",
+          "Kalp yetmezliği",
+          "İnterstisyel akciğer hastalığı"
+        ]
+      },
+      "evreleme_GOLD": {
+        "GOLD_1_hafif": "FEV1 ≥80% beklenen",
+        "GOLD_2_orta": "FEV1 50-79% beklenen",
+        "GOLD_3_ağır": "FEV1 30-49% beklenen",
+        "GOLD_4_çok_ağır": "FEV1 <30% beklenen"
+      },
+      "semptom_değerlendirmesi": {
+        "mMRC_dispne_skalası": "0-4 (4 = günlük aktivite yapamıyor)",
+        "CAT_skoru": "COPD Assessment Test (0-40, >10 yüksek semptom)"
+      },
+      "tedavi_genel": {
+        "sigara_bırakma": "EN ÖNEMLİ! Progresyonu yavaşlatır",
+        "farmakolojik": "Bronkodilatörler, kortikosteroidler",
+        "non_farmakolojik": "Pulmoner rehabilitasyon, oksijen, aşılar",
+        "cerrahi": "Büllektomi, akciğer volüm azaltma, transplantasyon (seçilmiş olgular)"
+      }
+    },
+    "gogus_hastaliklari": {
+      "rol": "Uzman tanı, tedavi optimizasyonu, takip",
+      "spirometri_ve_akciğer_fonksiyon": {
+        "spirometri": {
+          "FEV1": "1. saniyede zorlu ekspiratuvar volüm",
+          "FVC": "Zorlu vital kapasite",
+          "FEV1_FVC": "<0.70 obstrüksiyon gösterir",
+          "bronkodilatör_yanıt": "FEV1'de >200 mL ve %12 artış"
+        },
+        "akciğer_volümleri": {
+          "TLC": "Total akciğer kapasitesi (amfizemde artmış)",
+          "RV": "Rezidüel volüm (hava trapping)",
+          "FRC": "Fonksiyonel rezidüel kapasite"
+        },
+        "diffüzyon_kapasitesi": {
+          "DLCO": "Amfizemde azalmış (parankimal hasar)"
+        },
+        "oksijen_saturasyonu": {
+          "SpO2": "<88% kronik oksijen endikasyonu"
+        }
+      },
+      "farmakolojik_tedavi": {
+        "GOLD_gruplaması": {
+          "A": "Az semptom, düşük risk → SABA/SAMA PRN",
+          "B": "Yüksek semptom, düşük risk → LABA/LAMA",
+          "E": "Düşük semptom, yüksek risk → LABA/LAMA",
+          "C_D": "Yüksek semptom/risk → LABA+LAMA ± ICS"
+        },
+        "bronkodilatörler": {
+          "SABA": {
+            "ilaçlar": "Salbutamol 100 µg 2-4 puf PRN",
+            "etki": "Hızlı başlangıç (5 dk), kısa süre (4-6 saat)",
+            "kullanım": "Semptomatik rahatlatma"
+          },
+          "SAMA": {
+            "ilaçlar": "İpratropium 20 µg 2-4 puf QID",
+            "etki": "Yavaş başlangıç (15-30 dk), 6-8 saat"
+          },
+          "LABA": {
+            "ilaçlar": "Formoterol 12 µg BID, Salmeterol 50 µg BID, İndakaterol 150 µg OD",
+            "etki": "12-24 saat",
+            "tercih": "Düzenli kullanım, tek başına veya kombine"
+          },
+          "LAMA": {
+            "ilaçlar": "Tiotropium 18 µg OD, Umeklidinium 62.5 µg OD, Glikopirronum 50 µg OD",
+            "etki": "24 saat",
+            "avantaj": "Alevlenmeleri azaltır, semptomları iyileştirir"
+          },
+          "LABA_LAMA_kombinasyon": {
+            "örnekler": "İndakaterol/Glikopirronum, Vilanterol/Umeklidinium",
+            "üstünlük": "Tek ilaçtan daha etkili"
+          }
+        },
+        "inhale_kortikosteroidler": {
+          "endikasyon": "Sık alevlenme (≥2/yıl veya 1 hospitalizasyon), eozinofili >300",
+          "örnekler": "Flutikazon, Budesonid, Beklometazon",
+          "kombine_tedavi": "ICS+LABA+LAMA (triple therapy)",
+          "yan_etkiler": "Pnömoni riski artışı, oral kandidiyaz, ses kısıklığı"
+        },
+        "PDE4_inhibitörü": {
+          "roflumilast": {
+            "endikasyon": "Şiddetli KOAH (FEV1 <50%), kronik bronşit, sık alevlenme",
+            "doz": "500 µg OD",
+            "yan_etki": "Diyare, bulantı, kilo kaybı"
+          }
+        },
+        "mukolitikler": {
+          "N_asetilsistein": "Antioksidan, alevlenmeleri azaltabilir (tartışmalı)",
+          "karboksistein": "Mukus viskozitesini azaltır"
+        },
+        "antibiyotikler_profilaktik": {
+          "azitromisin": "250-500 mg 3x/hafta, sık alevlenmede, anti-enflamatuar etki",
+          "yan_etki": "İşitme kaybı, QT uzaması"
+        }
+      },
+      "oksijen_tedavisi": {
+        "kronik_oksijen": {
+          "endikasyon": [
+            "İstirahat PaO2 ≤55 mmHg veya SpO2 ≤88%",
+            "PaO2 56-59 mmHg + pulmoner hipertansiyon/ödem/polisitemi"
+          ],
+          "hedef": "≥15 saat/gün, PaO2 >60 mmHg veya SpO2 >90%",
+          "fayda": "Mortaliteyi azaltır, yaşam kalitesini artırır",
+          "cihazlar": "Oksijen konsantratörü, sıvı O2, taşınabilir"
+        },
+        "egzersiz_oksijen": "Efor hipoksemisi varsa",
+        "uçuş_oksijen": "PaO2 <70 mmHg"
+      },
+      "non_invaziv_ventilasyon": {
+        "endikasyon": "KOAH + kronik hiperkapni (PaCO2 >52 mmHg)",
+        "BiPAP": "Gece kullanımı, mortalite ve hospitalizasyon azalır",
+        "hedef": "PaCO2'yi düşürmek, solunum kaslarını dinlendirmek"
+      },
+      "pulmoner_rehabilitasyon": {
+        "bileşenler": "Egzersiz, eğitim, nutrisyon, psikososyal destek",
+        "süre": "6-12 hafta, 2-3 gün/hafta",
+        "faydalar": "Dispne azalır, egzersiz kapasitesi artar, yaşam kalitesi iyileşir, hospitalizasyon azalır"
+      },
+      "aşılar": {
+        "influenza": "Yıllık, inaktive aşı",
+        "pnömokok": "PCV13 + PPSV23",
+        "COVID_19": "Önerilen",
+        "tetanoz_difteri_pertussis": "Periyodik"
+      }
+    },
+    "radyoloji": {
+      "rol": "Görüntüleme, ayırıcı tanı, komplikasyon değerlendirmesi",
+      "akciğer_grafisi": {
+        "bulgu lar": [
+          "Hiperinflasyon: Düzleşmiş diyafragma, artmış retrosternal hava aralığı",
+          "Büller: Hava dolu keseler (amfizem)",
+          "Vasküler belirginlik azalması (amfizem)",
+          "Tübüler gölgeler (bronşiektazi)"
+        ],
+        "sınırlılık": "Erken KOAH'ta normal olabilir"
+      },
+      "yüksek_çözünürlüklü_BT": {
+        "amfizem": {
+          "santrilobüler": "Üst lob, sigara içicileri",
+          "paraseptal": "Plevral-septal bölge, büller",
+          "panlobüler": "Yaygın, alfa-1 antitripsin eksikliği",
+          "görünüm": "Düşük attenüasyon alanları, vasküler azalma"
+        },
+        "hava_yolu_hastalığı": "Bronş duvar kalınlaşması, mukoid impaksiyon",
+        "büller": "Boyut, lokalizasyon (cerrahi planlama)",
+        "pulmoner_hipertansiyon": "Genişlemiş pulmoner arterler"
+      },
+      "ventilasyon_perfüzyon_sintigrafisi": {
+        "kullanım": "Pulmoner emboli şüphesi (ayırıcı tanı)",
+        "KOAH_paterni": "Yamalı eksiklikler (matching defects)"
+      }
+    },
+    "kardiyoloji": {
+      "rol": "Pulmoner hipertansiyon, cor pulmonale, kardiyovasküler komorbidite",
+      "pulmoner_hipertansiyon": {
+        "tanım": "Ortalama pulmoner arter basıncı ≥20 mmHg (sağ kalp kateterizasyonu)",
+        "mekanizma": "Kronik hipoksi → pulmoner vazokonstrüksiyon + remodeling",
+        "prevalans": "KOAH'lıların %20-30'u",
+        "ekokardiyografi": "Sistolik PAB tahmini (TR jet hızı), sağ ventrikül fonksiyonu",
+        "tedavi": "Oksijen, vazodilatörler (seçilmiş olgular)"
+      },
+      "cor_pulmonale": {
+        "tanım": "Pulmoner hipertansiyona sekonder sağ ventrikül hipertrofisi/disfonksiyonu",
+        "klinik": "Periferik ödem, juguler venöz distansiyon, hepatomegali",
+        "EKG": "Sağ aks deviasyonu, R dalga V1-V2'de yüksek, P pulmonale",
+        "tedavi": "Altta yatan KOAH tedavisi, oksijen, diüretik"
+      },
+      "iskemik_kalp_hastalığı": {
+        "ilişki": "Ortak risk faktörü (sigara), sistemik inflamasyon",
+        "prevalans": "KOAH'lıların %20-30'u",
+        "beta_bloker_kullanımı": "Kardiyoselektif (bisoprolol, metoprolol) güvenli, önce düşük doz"
+      }
+    },
+    "enfeksiyon_hastaliklari": {
+      "rol": "Akut alevlenme yönetimi, enfeksiyon profilaksisi",
+      "akut_alevlenme": {
+        "tanım": "Nefes darlığı, öksürük, balgam miktarı/renginde akut kötüleşme",
+        "nedenler": {
+          "enfeksiyöz": "Bakteriyel (%50-70), viral (%30), atipik",
+          "non_enfeksiyöz": "Hava kirliliği, pnömotoraks, PE, kalp yetmezliği"
+        },
+        "bakteriyel_patojenler": [
+          "Haemophilus influenzae",
+          "Streptococcus pneumoniae",
+          "Moraxella catarrhalis",
+          "Pseudomonas aeruginosa (ileri evre, sık alevlenme, yakın antibiyotik)"
+        ],
+        "viral_patojenler": "Rhinovirus, influenza, RSV, coronavirus",
+        "antibiyotik_endikasyonları": [
+          "Kardinal semptomların 3'ü (artmış dispne, artmış balgam, pürülan balgam)",
+          "Mekanik ventilasyon gereksinimi",
+          "Kardinal semptomların 2'si + 1 minor (üst solunum yolu enfeksiyonu son 5 gün, ateş, wheezing artışı)"
+        ],
+        "antibiyotik_seçimi": {
+          "hafif_orta": [
+            "Amoксisilin-klavulanat 875/125 mg BID 5-7 gün",
+            "Azitromisin 500 mg OD 3 gün",
+            "Moksif loksan 400 mg OD 5 gün"
+          ],
+          "ağır_pseudomonas_riski": [
+            "Siprofloksasin 500-750 mg BID",
+            "Levofloksasin 750 mg OD",
+            "Piperasilin-tazobaktam IV"
+          ]
+        }
+      },
+      "pnömoni": {
+        "risk": "KOAH hastalarında 4-7 kat artmış",
+        "patojenler": "S. pneumoniae, H. influenzae, M. catarrhalis, Legionella",
+        "antibiyotik": "Ampirik, CURB-65 skoruna göre ayaktan vs hastane"
+      }
+    },
+    "gogus_cerrahisi": {
+      "rol": "Cerrahi tedavi seçenekleri",
+      "büllektomi": {
+        "endikasyon": "Dev büller (akciğerin >1/3'ü), kompresyon, enfekte büller",
+        "yöntem": "VATS (video-assisted thoracoscopic surgery) veya açık",
+        "sonuç": "Dispne azalması, FEV1 artışı (seçilmiş hastalarda)"
+      },
+      "akciğer_volüm_azaltma_cerrahisi": {
+        "LVRS": "Hasarlı akciğer dokusunun rezeksiyonu",
+        "endikasyon": "Şiddetli amfizem (FEV1 20-45%), üst lob dominant, düşük egzersiz kapasitesi",
+        "NETT_çalışması": "Mortalite fayda yok/var (alt gruplara göre)",
+        "alternatif": "Bronkoskopik akciğer volüm azaltma (valv, koil)"
+      },
+      "akciğer_transplantasyonu": {
+        "endikasyon": "Çok ileri KOAH (FEV1 <25%, BODE 7-10, ömür beklentisi <2 yıl)",
+        "yaş": "<65 yaş",
+        "sonuç": "5 yıllık sağkalım %50-60"
+      }
+    },
+    "biyokimya_laboratuvar": {
+      "rol": "Tanı, ayırıcı tanı, takip testleri",
+      "arter_kan_gazı": {
+        "endikasyon": "Stabil dönem (şiddetli KOAH), alevlenme, oksijen tedavisi takibi",
+        "bulgular": {
+          "kronik_hipoксemi": "PaO2 <60 mmHg",
+          "hiperkapni": "PaCO2 >45 mmHg (ileri evre)",
+          "kompanse_respiratuar_asidoz": "pH normal, HCO3 yüksek"
+        }
+      },
+      "alfa_1_antitripsin": {
+        "tarama": "Erken yaş KOAH (<45), ailede KOAH, bazal amfizem",
+        "düşük_seviye": "<11 µM (ZZ fenotipi) → amfizem riski",
+        "tedavi": "Augmentasyon tedavisi (IV alfa-1 antitripsin)"
+      },
+      "hemogram": {
+        "polisitemi": "Hct >52% (kronik hipoksi → eritropoietin artışı)",
+        "aneminin_dışlanması": "Dispne ayırıcı tanısında"
+      },
+      "BNP_NT_proBNP": {
+        "kullanım": "Dispne ayırıcı tanı (KOAH vs kalp yetmezliği)",
+        "yüksek": "Kalp yetmezliği olasılığı"
+      }
+    },
+    "acil_tip": {
+      "rol": "Akut alevlenme yönetimi, respiratuar yetmezlik",
+      "akut_alevlenme_acil": {
+        "değerlendirme": {
+          "semptomlar": "Artan dispne, öksürük, balgam (miktar/renk)",
+          "vital_bulgular": "Taşipne, taşikardi, hipoksi, ateş",
+          "fizik_muayene": "Wheezing, ronküs, azalmış solunum sesi, siyanoz"
+        },
+        "testler": {
+          "arter_kan_gazı": "PaO2, PaCO2, pH",
+          "akciğer_grafisi": "Pnömoni, pnömotoraks, kalp yetmezliği dışlama",
+          "EKG": "İskemi, aritmi",
+          "hemogram_CRP": "Enfeksiyon",
+          "D_dimer": "Pulmoner emboli şüphesi"
+        },
+        "tedavi": {
+          "oksijen": {
+            "hedef": "SpO2 88-92%",
+            "yöntem": "Nazal kanül 1-2 L/dk, Venturi mask",
+            "dikkat": "Hiperoksiden kaçın (hiperkapni riski)"
+          },
+          "bronkodilatörler": {
+            "SABA": "Salbutamol nebül 2.5-5 mg her 20 dk (1 saat) sonra her 4-6 saatte",
+            "SAMA": "İpratropium nebül 0.5 mg, SABA ile kombine",
+            "LABA_LAMA": "Stabil olunca ekle"
+          },
+          "sistemik_kortikosteroid": {
+            "prednizolon": "40 mg PO OD 5-7 gün (veya IV metilprednizolon 40-125 mg)",
+            "fayda": "Alevlenme süresini kısaltır, FEV1'i iyileştirir, relaps azaltır"
+          },
+          "antibiyotik": "Endikasyon varsa (yukarı bakınız)",
+          "sıvı": "Dehidrasyon varsa, dikkatli (kalp yetmezliği riski)"
+        },
+        "hospitalizasyon_kriterleri": [
+          "Ağır semptomlar",
+          "Akut respiratuar asidoz (pH <7.35)",
+          "Ciddi hipoksemi (PaO2 <60 mmHg)",
+          "Yeni korkardiyal bulgular",
+          "Tedaviye yanıtsızlık",
+          "Komorbidite",
+          "Aritmiler",
+          "İleri yaş",
+          "Yetersiz evde destek"
+        ]
+      },
+      "respiratuar_yetmezlik": {
+        "akut_hiperkapnik_yetmezlik": {
+          "tanım": "pH <7.35, PaCO2 >45 mmHg",
+          "nedenleri": "Alevlenme, aşırı oksijen, sedatif ilaçlar, pnömotorak s",
+          "tedavi": {
+            "non_invaziv_ventilasyon": {
+              "endikasyon": "pH 7.25-7.35, PaCO2 45-60 mmHg, solunum sıkıntısı",
+              "BiPAP": "IPAP 12-20, EPAP 4-8 cmH2O",
+              "fayda": "Entübasyon ihtiyacını azaltır, mortaliteyi azaltır",
+              "başarısızlık_kriterleri": "pH <7.25, şuur değişikliği, hemodinamik instabilite"
+            },
+            "invaziv_mekanik_ventilasyon": {
+              "endikasyon": "NIV başarısızlığı, kardiyak arrest, şuur kaybı",
+              "ayarlar": "Düşük tidal volüm, düşük PEEP, permissive hyperkapnia",
+              "weaning": "Zor, SBT (spontaneous breathing trial)"
+            }
+          }
+        }
+      }
+    },
+    "anesteziyoloji": {
+      "rol": "Perioperatif yönetim, ağrı kontrolü",
+      "preoperatif_değerlendirme": {
+        "risk": "KOAH hastalarında cerrahi risk artmış (pulmoner komplikasyonlar)",
+        "spirometri": "FEV1 <50% yüksek risk",
+        "arter_kan_gazı": "Bazal PaCO2 >45 mmHg çok yüksek risk",
+        "kardiyak_değerlendirme": "Koroner arter hastalığı, pulmoner hipertansiyon"
+      },
+      "perioperatif_optimizasyon": {
+        "4_8_hafta_önce": [
+          "Sigara bıraktır",
+          "Bronkodilatör optimize et",
+          "Enfeksiyon tedavi et",
+          "Pulmoner rehabilitasyon"
+        ]
+      },
+      "anestezi_yönetimi": {
+        "rejyonel_vs_genel": "Rejyonel tercih (daha az pulmoner komplikasyon)",
+        "genel_anestezi": {
+          "indüksiyon": "Propofol, etomidate (hemodinamik stabil)",
+          "idame": "Sevofluran, desfluran (bronkodilatör)",
+          "nöromusküler_blok": "Reversal dikkatli (kas zayıflığı relaps)"
+        },
+        "ventilasyon": "Düşük tidal volüm, uzun ekspirasyon zamanı, permissive hyperkapnia"
+      },
+      "postoperatif_yönetim": {
+        "ekstübasyon": "Tam uyanık, yeterli solunum",
+        "ağrı_kontrolü": "Etkili analjezi (derin nefes, öksürük için), epidural/blok tercih",
+        "erken_mobilizasyon": "Atelektazi önleme",
+        "bronkodilatör": "Devam et",
+        "incentive_spirometri": "Akciğer ekspansiyonu"
+      }
+    },
+    "fizik_tedavi_rehabilitasyon": {
+      "rol": "Pulmoner rehabilitasyon, egzersiz programı",
+      "pulmoner_rehabilitasyon": {
+        "tanım": "Dispne ve yorgunlukta azalma, fonksiyonel kapasitede artış sağlayan kapsamlı müdahale",
+        "endikasyon": "Tüm semptomatik KOAH hastaları (GOLD B/E/C/D)",
+        "bileşenler": {
+          "egzersiz_eğitimi": "Aerobik + direnç",
+          "eğitim": "Hastalık, ilaçlar, enerji koruma, nefes teknikleri",
+          "nutrisyon": "Dengeli diyet, kilo yönetimi",
+          "psikososyal_destek": "Anksiyete, depresyon"
+        },
+        "süre": "6-12 hafta, en az 2 gün/hafta, 30-60 dk/seans",
+        "faydalar": [
+          "Dispne azalması (+++)",
+          "Egzersiz kapasitesi artışı (+++)",
+          "Yaşam kalitesi iyileşmesi (+++)",
+          "Hospitalizasyon azalması (++)",
+          "Mortalite azalması (?)"
+        ]
+      },
+      "egzersiz_programı": {
+        "aerobik": {
+          "tip": "Yürüme, bisiklet, yüzme",
+          "yoğunluk": "60-80% maks kalp hızı veya 4-6 Borg skala",
+          "süre": "20-60 dk",
+          "sıklık": "3-5 gün/hafta"
+        },
+        "direnç_eğitimi": {
+          "kaslar": "Üst ekstremite, alt ekstremite, gövde",
+          "yoğunluk": "50-85% 1RM (1 repetition maximum)",
+          "set_tekrar": "2-4 set, 8-12 tekrar"
+        },
+        "nefes_egzersizleri": {
+          "pursed_lip_breathing": "Burun ile içe çek, dudak büzerek yavaş üfle (ekspirasyon uzat)",
+          "diyafragmatik_solunum": "Karın solunumu",
+          "inspiratuar_kas_eğitimi": "Cihaz ile inspiratuar direnç"
+        }
+      },
+      "enerji_koruma_teknikleri": {
+        "aktivite_planlama": "Zorlayıcı aktiviteleri yaymak",
+        "dinlenme_molaları": "Düzenli",
+        "yardımcı_cihazlar": "Yürüteç, tekerlekli sandalye (ileri evre)"
+      },
+      "psikolojik_destek": {
+        "anksiyete_depresyon": "Prevalans %40-50",
+        "müdahaleler": "Bilişsel davranışsal terapi, relaksasyon, destek grupları",
+        "farmakol oji": "SSRI (gerekirse)"
+      }
+    },
+    "beslenme_diyetetik": {
+      "rol": "Nutrisyonel destek, kilo yönetimi",
+      "nutrisyonel_değerlendirme": {
+        "BMI": "<21 kg/m² malnütrisyon riski",
+        "FFM": "Yağsız vücut kütlesi azalması (kas kaybı)",
+        "serum_albumin": "Düşük (<3.5 g/dL) malnütrisyon"
+      },
+      "malnütrisyon": {
+        "prevalans": "%20-35 KOAH hastalarında",
+        "nedenler": [
+          "Artmış enerji harcaması (solunum işi)",
+          "Azalmış alım (dispne, anoreksi)",
+          "Sistemik inflamasyon",
+          "Kas katabolizması"
+        ],
+        "sonuçlar": "Kas zayıflığı, egzersiz kapasitesi azalır, mortalite artar"
+      },
+      "nutrisyonel_destek": {
+        "kalori": "25-30 kkal/kg/gün (ağır: 30-35)",
+        "protein": "1.2-1.7 g/kg/gün (kas kaybını azaltır)",
+        "karbonhidrat_yağ": "Dengeli (yüksek karbonhidrat → CO2 üretimi artar)",
+        "mikrobesinler": "Vitamin D, kalsiyum, antioksidanlar",
+        "sık_küçük_öğün": "6-8 öğün/gün (distansiyon azaltır)",
+        "oral_nutrisyonel_supleman": "Yetersiz oral alımda"
+      },
+      "obezite": {
+        "prevalans": "KOAH'da artan obezite",
+        "paradoks": "Hafif obezite mortaliteyi azaltabilir (obesity paradox)",
+        "kilo_kaybı": "Dikkatli (kas kaybı önle), egzersiz + diyet"
+      }
+    },
+    "eczacilik": {
+      "rol": "İlaç optimizasyonu, inhaler teknik eğitimi",
+      "inhaler_cihaz_seçimi": {
+        "pMDI": "Pressurized metered-dose inhaler, spacer gerekli",
+        "DPI": "Dry powder inhaler, nefes ile aktive",
+        "SMI": "Soft mist inhaler (Respimat)",
+        "nebülizer": "Ağır hastalar, akut alevlenme"
+      },
+      "inhaler_teknik": {
+        "yaygın_hatalar": [
+          "Hızlı inspirasyon (DPI'da yavaş olmalı)",
+          "Nefes tutmama (10 sn tutmalı)",
+          "Çoklu puf arasında beklememek",
+          "Cihazı doğru kullanmama"
+        ],
+        "eğitim": "Eczacı/hemşire gözetiminde pratik, düzenli kontrol"
+      },
+      "ilaç_uyumu": {
+        "düşük_uyum": "%20-60 hastalarda",
+        "nedenler": "Karmaşık rejim, yan etki, maliyet, hastalık farkındalığı düşük",
+        "çözümler": "Basitleştirme (tek ilaç, OD), eğitim, hatırlatıcılar"
+      },
+      "ilaç_etkileşimleri": {
+        "beta_blokerler": "Kardiyoselektif güvenli ama dikkatli",
+        "teofilin": "Dar terapötik aralık, etkileşim çok (makrolid, florokinolon, simet idin)"
+      }
+    },
+    "halk_sagligi": {
+      "rol": "Önleme, sigara kontrolü, toplum sağlığı",
+      "sigara_kontrolü": {
+        "öncelik": "#1 önlenebilir neden",
+        "stratejiler": [
+          "Fiyat artışı (vergi)",
+          "Sigara içilmeyen alanlar",
+          "Reklamların yasaklanması",
+          "Paket üzerinde uyarılar",
+          "Sigarayı bırakma programları"
+        ],
+        "Türkiye": "Sigara içme oranı azalıyor (%43 → %28) ama hala yüksek"
+      },
+      "hava_kalitesi": {
+        "dış_ortam": "PM2.5, SO2, NO2 → KOAH riski",
+        "iç_ortam": "Biyokütle yakıt kullanımı (kırsal alanda), pişirme dumanı",
+        "politikalar": "Temiz enerji, emisyon standartları"
+      },
+      "mesleki_maruziyet": {
+        "risk_meslekleri": "Madencilik, inşaat, tarım, tekstil",
+        "koruma": "Kişisel koruyucu ekipman, ventilasyon"
+      },
+      "tarama": {
+        "tartışmalı": "Asemptomatik popülasyonda spirometri tarama maliyet-etkin değil",
+        "hedefli_tarama": "40 yaş üstü + sigara + semptomlar"
+      },
+      "aşılama": {
+        "influenza": "Yıllık, alevlenmeleri %50 azaltır",
+        "pnömokok": "PCV13 + PPSV23, pnömoni riskini azaltır"
+      }
+    }
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "hastalık_id": "H006",
+  "version": "1.0",
+  "son_güncelleme": "2026-01-19",
+  "temel_bilgi": {
+    "isim_tr": "Gastroözofageal Reflü Hastalığı",
+    "isim_en": "Gastroesophageal Reflux Disease",
+    "kısa_isim": "GERD",
+    "diğer_isimler": [
+      "Reflü özofajit",
+      "Asit reflü hastalığı",
+      "Kronik özofajit"
+    ],
+    "kodlama": {
+      "ICD_10": "K21",
+      "ICD_10_detay": {
+        "K21.0": "Özofajit ile gastroözofageal reflü hastalığı",
+        "K21.9": "Özofajitsiz gastroözofageal reflü hastalığı"
+      },
+      "SNOMED_CT": "235595009",
+      "LOINC": "LP172869-8"
+    },
+    "tanım": "Gastroözofageal reflü hastalığı, mide içeriğinin özofagusa geri akışı sonucu oluşan semptomlar ve/veya özofagus mukoza hasarı ile karakterize kronik bir durumdur. Alt özofageal sfinkter (LES) disfonksiyonu, geçici LES relaksasyonları, hiyatal herni ve mide boşalım gecikmesi başlıca patofizyolojik mekanizmalardır. Tipik semptomlar yanma hissi (heartburn) ve regürjitasyondur.",
+    "epidemiyoloji": {
+      "global_prevalans": "Batı ülkelerinde %10-20, Asya'da %5-10 (Lyon Consensus 2018)",
+      "türkiye_prevalans": "%11.6 (Türkiye GERD çalışması, haftalık semptom)",
+      "yaş_dağılımı": "40-60 yaş en yüksek prevalans, yaşla birlikte artış",
+      "cinsiyet": "Erkek/kadın oranı benzer, gebelikte artış (%30-80)",
+      "risk_grupları": [
+        "Obezite (BMI >30, abdominal obezite)",
+        "Hiyatal herni",
+        "Gebelik (progesteron, intraabdominal basınç artışı)",
+        "Skleroderma, sistemik skleroz",
+        "Gastroparezi, gecikmiş mide boşalımı",
+        "Sigara kullanımı",
+        "Alkol tüketimi",
+        "Yağlı, baharatlı gıda tüketimi"
+      ]
+    },
+    "patofizyoloji": {
+      "ana_mekanizmalar": [
+        "Alt özofageal sfinkter (LES) hipotansiyonu: Normal basınç 10-30 mmHg, <10 mmHg patolojik reflü",
+        "Geçici LES relaksasyonları (TLESR): Mide distansiyonu ile tetiklenir, fizyolojik (gazı atma) ancak sık/uzun TLESR patolojik",
+        "Hiyatal herni: LES'in diyafragma üzerine yer değiştirmesi → antireflü bariyerin bozulması",
+        "Mide boşalımında gecikme: Gastroparezi, mide distansiyonu → reflü artışı",
+        "Özofagus asit klirensi bozukluğu: Peristaltik disfonksiyon, tükürük azalması",
+        "Mide asidi hipersekresyonu: Gastrin artışı, Helicobacter pylori (tartışmalı)"
+      ],
+      "reflü_bileşenleri": {
+        "asidik_reflü": "pH <4, gastrik asit (HCl, pepsin)",
+        "zayıf_asidik_reflü": "pH 4-7",
+        "alkalen_reflü": "Safra asitleri, pankreatik enzimler (duodenogastrik reflü)"
+      },
+      "mukoza_hasarı": [
+        "Asit maruziyeti → epitel bariyeri yıkımı → inflamasyon",
+        "Dilate interselüler aralıklar (DIS): Erken değişiklik, asit penetrasyonu",
+        "Eroziv özofajit: Mukoza defektleri (Los Angeles sınıflaması)",
+        "Barrett özofagus: Metaplastik değişiklik (skuamöz → intestinal tip kolumnar epitel)",
+        "Özofagus adenokarsinom: Kronik inflamasyon → Barrett → displazi → kanser"
+      ]
+    },
+    "klinik_özellikler": {
+      "tipik_semptomlar": [
+        "Yanma hissi (heartburn): Retrosternal, yukarıya doğru yayılan, yemek sonrası veya yatarken kötüleşir",
+        "Regürjitasyon: Mide içeriğinin ağıza gelmesi, ekşi/acı tat",
+        "Disfaji: Yutma güçlüğü (peptik striktür, özofagus motilite bozukluğu)",
+        "Odinofaji: Ağrılı yutma (ciddi özofajit, ülserasyon)"
+      ],
+      "atipik_semptomlar": [
+        "Kronik öksürük (gastrik aspirasyon, vagal refleks)",
+        "Larenjit, ses kısıklığı (posterior laringeal mukoza irritasyonu)",
+        "Astım benzeri semptomlar, wheezing (bronkospazm)",
+        "Kronik boğaz ağrısı, globus hissi (hipofarinks irritasyonu)",
+        "Dental erozyon (asit maruziyeti)",
+        "Non-kardiyak göğüs ağrısı (özofagus spazmı, anjina ile ayırımı zor)"
+      ],
+      "alarm_semptomları": [
+        "Disfaji, odinofaji (striktür, kanser riski)",
+        "Kilo kaybı (>5% 6 ayda)",
+        "Gastrointestinal kanama (hematemez, melena)",
+        "Anemi (kronik kanama)",
+        "Kusma (gastrik çıkış obstrüksiyonu)",
+        ">50 yaş + yeni başlangıç semptomlar (kanser riski)"
+      ],
+      "komplikasyon_belirtileri": {
+        "striktür": "Progresif disfaji (katı gıdalarda başlar)",
+        "barrett_özofagus": "Genellikle asemptomatik, uzun süreli GERD öyküsü",
+        "özofagus_ülseri": "Odinofaji, hematemez, melena"
+      }
+    },
+    "tanı": {
+      "klinik_tanı": [
+        "Tipik semptomlar (yanma hissi + regürjitasyon, haftada ≥2 kez): Klinik tanı yeterli",
+        "Alarm semptomları yok + <50 yaş: Endoskopi gerekmez",
+        "Empirik PPI tedavisi (2-4 hafta) → yanıt ise GERD tanısı desteklenir"
+      ],
+      "üst_gastrointestinal_endoskopi": {
+        "endikasyonlar": [
+          "Alarm semptomları (disfaji, kanama, kilo kaybı, anemi)",
+          ">50 yaş + yeni başlangıç semptomlar",
+          "PPI tedavisine dirençli semptomlar (8-12 hafta)",
+          "Uzun süreli GERD (>5-10 yıl) → Barrett taraması",
+          "Eroziv özofajit + Barrett şüphesi"
+        ],
+        "los_angeles_sınıflaması": {
+          "grade_A": "Bir veya daha fazla mukoza lezyonu, <5 mm",
+          "grade_B": "En az bir mukoza lezyonu >5 mm, mukoza kıvrımları arasında birleşmez",
+          "grade_C": "Mukoza lezyonları 2+ mukoza kıvrımı arasında birleşir ancak sirküferansiyal değil (<75%)",
+          "grade_D": "Sirküferansiyal mukoza lezyonu (≥75%)"
+        },
+        "barrett_özofagus": {
+          "tanı": "Endoskopi: Salmon-pink mukoza (Z çizgisi proksimalinde kolumnar epitel) + biyopsi: İntestinal metaplazi (goblet hücreleri)",
+          "uzunluk": "Kısa segment (<3 cm), uzun segment (≥3 cm)",
+          "displazi": "Low-grade displazi (LGD), high-grade displazi (HGD) → adenokarsinom riski ↑↑"
+        }
+      },
+      "ambulatuar_pH_impedans_monitörizasyonu": {
+        "endikasyon": "PPI tedavisine dirençli semptomlar, operasyon öncesi değerlendirme, atipik semptomlar",
+        "pH_monitörizasyonu": "24 saat pH <4 zamanı: >4% patolojik, DeMeester skoru >14.72",
+        "impedans_monitörizasyonu": "Asidik + non-asidik reflü, proksimal reflü, semptom-reflü korelasyonu",
+        "PPI_altında_test": "Refrakter semptomlar için (PPI kesildikten 7 gün sonra veya PPI altında)"
+      },
+      "özofagus_manometrisi": {
+        "endikasyon": "Pre-operatif değerlendirme (LES basıncı, peristaltik), disfaji ayırıcı tanısı",
+        "LES_basıncı": "<10 mmHg hipotansiyon (GERD riski)",
+        "peristalsis": "Akalazya, skleroderma, özofagus motilite bozuklukları (Chicago Classification v4.0)",
+        "ineffektif_özofagus_motilitesi": "Zayıf peristaltik → asit klirensi ↓"
+      },
+      "üst_gastrointestinal_grafi": [
+        "Baryumlu özofagografi: Hiyatal herni, striktür, özofagus anatomisi",
+        "Günümüzde sınırlı kullanım (endoskopi daha üstün)"
+      ]
+    },
+    "farmakoloji_ve_tedavi": {
+      "genel_prensipler": [
+        "Yaşam tarzı modifikasyonu (ilk basamak)",
+        "Proton pompa inhibitörleri (PPI): Ana tedavi, asit supresyonu",
+        "Tedavi süresi: 4-8 hafta akut tedavi, idame tedavi (kronik/eroziv GERD)",
+        "Step-down yaklaşımı: PPI → H2RA → on-demand tedavi",
+        "Cerrahi tedavi: Refrakter GERD, ilaç yan etkileri, hasta tercihi"
+      ],
+      "yaşam_tarzı_modifikasyonu": {
+        "diyet": [
+          "Tetikleyici gıdalardan kaçınma: Çikolata, kafein, alkol, asitli içecekler, domates, naneli gıdalar, yağlı/kızartılmış gıdalar, baharatlı yemekler",
+          "Porsiyonları küçültme (mide distansiyonu ↓)",
+          "Yemekten 2-3 saat sonra yatma (geç akşam yemeği yok)",
+          "Kilo kaybı: BMI >25 ise %10 kilo kaybı semptomları ↓%40 (HUNT study)"
+        ],
+        "pozisyon": [
+          "Yatakbaşı elevasyonu: 15-20 cm (6-8 inç) yükseltme, yatak bloklarıyla (yastık yetersiz)",
+          "Sol yan yatış pozisyonu (mide anatomisi nedeniyle)",
+          "Sıkı kıyafetlerden kaçınma (intraabdominal basınç ↑)"
+        ],
+        "sigara_alkol": [
+          "Sigara bırakma: LES basıncını artırır, asit klirensi iyileşir",
+          "Alkol kısıtlaması veya kesme"
+        ]
+      },
+      "proton_pompa_inhibitörleri_PPI": {
+        "mekanizma": "H+/K+ ATPaz (proton pompası) irreversibl inhibisyonu → gastrik asit sekresyonu ↓↓",
+        "ilaçlar": [
+          "Omeprazol: 20-40 mg/gün (standart)",
+          "Essomeprazol: 20-40 mg/gün (S-izomeri, daha etkili)",
+          "Lanzoprazol: 30 mg/gün",
+          "Pantoprazol: 40 mg/gün",
+          "Rabeprazol: 20 mg/gün",
+          "Deksrabeprazol: 60 mg/gün (yeni, uzun etkili)"
+        ],
+        "doz_süre": {
+          "non_eroziv_GERD": "Standart doz (omeprazol 20 mg) 4-8 hafta",
+          "eroziv_özofajit": "Standart/çift doz 8 hafta (Grade C-D: 8-12 hafta)",
+          "idame_tedavi": "En düşük etkili doz, on-demand veya sürekli (eroziv GERD)"
+        },
+        "alım_zamanı": "Sabah aç karnına, yemekten 30-60 dakika önce (maksimum etki)",
+        "yan_etkiler": [
+          "Kısa dönem: Baş ağrısı, diyare, konstipasyon, bulantı (genellikle hafif)",
+          "Uzun dönem (>1 yıl): C. difficile enfeksiyonu riski, kemik kırığı riski (osteoporoz, kalsiyum emilimi ↓), B12 vitamin eksikliği, magnezyum eksikliği, kronik böbrek hastalığı riski (tartışmalı), demans riski (tartışmalı)"
+        ],
+        "ilaç_etkileşimleri": [
+          "Klopidogrel: PPI (özellikle omeprazol) → klopidogrel etkinliği ↓ (CYP2C19 inhibisyonu), pantoprazol tercih",
+          "Warfarin: İNR artışı (dikkatli monitörizasyon)",
+          "Metotreksat: Toksisite artışı"
+        ]
+      },
+      "H2_reseptör_antagonistleri_H2RA": {
+        "mekanizma": "Histamin H2 reseptör blokajı → asit sekresyonu ↓",
+        "ilaçlar": [
+          "Ranitidin: 150 mg 2x1 veya 300 mg gece (FDA 2020 çekti, NDMA kontaminasyonu)",
+          "Famotidin: 20-40 mg 2x1",
+          "Simetidin: 400 mg 2x1 (eski, ilaç etkileşimleri çok)"
+        ],
+        "kullanım": "PPI'ya göre daha zayıf, hafif GERD, gece semptomları (nocturnal acid breakthrough), PPI alternatifi",
+        "takifilaksi": "2-4 hafta sonra etkinlik azalır (reseptör upregulation)",
+        "yan_etki": "Genel olarak güvenli, baş ağrısı, diyare (nadir)"
+      },
+      "antasitler_aljinatlar": {
+        "antasitler": {
+          "mekanizma": "Asit nötralizasyonu (Al(OH)3, Mg(OH)2, CaCO3)",
+          "kullanım": "Semptomatik rahatlama (hızlı başlangıç, kısa süre)",
+          "yan_etki": "Diyare (magnezyum), konstipasyon (alüminyum), hipermagnesemi/hiperkalsemi (kronik kullanım)"
+        },
+        "aljinatlar": {
+          "mekanizma": "Gastrik içerik üzerinde koruyucu raft tabakası oluşturur",
+          "kullanım": "Gebelikte güvenli, PPI alternatifi",
+          "etkinlik": "Hafif-orta GERD'de etkili (Gaviscon)"
+        }
+      },
+      "prokinetikler": {
+        "metoklopramid": {
+          "mekanizma": "Dopamin D2 antagonisti → LES basıncı ↑, mide boşalımı hızlanır, antiemetik",
+          "doz": "10 mg 3-4x1, yemeklerden 30 dk önce",
+          "yan_etki": "Ekstrapiramidal semptomlar (distoni, tardif diskinezi), prolaktin artışı",
+          "kontraendikasyon": "Gastrointestinal obstrüksiyon, feokromasitoma",
+          "FDA uyarısı": "Kronik kullanım (<12 hafta) tardif diskinezi riski"
+        },
+        "domperidon": {
+          "mekanizma": "Periferik D2 antagonisti (kan-beyin bariyerini geçmez)",
+          "doz": "10 mg 3x1, yemeklerden önce",
+          "yan_etki": "QT uzaması, kardiyak aritmi (özellikle >60 mg/gün)",
+          "EMA uyarısı": "Kardiyovasküler risk, dikkatli kullanım"
+        },
+        "güncel_kullanım": "Sınırlı, semptom kontrolü sağlamaz, yan etki riski"
+      },
+      "potasyum_rekabetçi_asit_blokerleri_PCAB": {
+        "vonoprazan": {
+          "mekanizma": "K+ rekabetçi H+/K+ ATPaz inhibisyonu (PPI'dan farklı)",
+          "avantaj": "Hızlı etki (2 saat), uzun yarı ömür, pH >4 süresini uzatır, PPI'ya dirençli GERD",
+          "doz": "20 mg/gün",
+          "onay": "Japonya, Asya ülkeleri (FDA onayı yok henüz, 2024 itibariyle)"
+        }
+      },
+      "cerrahi_tedavi": {
+        "endikasyonlar": [
+          "Refrakter GERD: PPI çift doz ile yanıt yok, kalıcı semptomlar",
+          "PPI yan etkileri veya kronik kullanımdan kaçınma",
+          "Genç hastalar (ömür boyu ilaç yerine cerrahi)",
+          "Büyük hiyatal herni (>5 cm), volülus riski",
+          "Barrett özofagus (cerrahi reflüyü durdurur, progresyonu engeller)"
+        ],
+        "laparoskopik_nissen_fundoplikasyonu": {
+          "teknik": "Fundusun özofagus etrafına 360° sarılması → LES basıncı ↑, antireflü bariyeri",
+          "başarı_oranı": "%85-90 semptomları giderir",
+          "komplikasyonlar": "Disfaji (erken dönem %5-10, kronik %3-5), gaz-bloat sendromu (geğirememe, abdominal şişkinlik), rekürren reflü (%10-15, 10 yıl)",
+          "pre-operatif_değerlendirme": "Manometri (motilite değerlendirme), pH monitörizasyonu (reflü kanıtı)"
+        },
+        "parsiyel_fundoplikasyon": {
+          "toupet_270": "Posterior 270° wrap, disfaji riski düşük, skleroderma/motilite bozukluğu",
+          "dor_180": "Anterior 180° wrap"
+        },
+        "LINX_cihazı": {
+          "mekanizma": "Manyetik halka (titanyum boncuklar) özofagus alt ucunda, LES'i güçlendirir, yutkunmada açılır",
+          "avantaj": "Minimal invaziv, reversibl, disfaji düşük",
+          "dezavantaj": "MRI kontrendikasyonu (3 Tesla'ya kadar güvenli)"
+        },
+        "endoskopik_tedaviler": {
+          "stretta_prosedürü": "Radiofrequency ablasyon → LES kalınlaşması",
+          "transoral_incisionless_fundoplication_TIF": "Endoskopik fundoplikasyon",
+          "etkinlik": "Cerrahi kadar etkili değil, uzun dönem sonuçlar belirsiz"
+        }
+      },
+      "barrett_özofagus_yönetimi": {
+        "surveillance": {
+          "displazisiz_barrett": "3-5 yılda bir endoskopi + biyopsi",
+          "low_grade_displazi": "6-12 ayda bir endoskopi",
+          "high_grade_displazi": "Endoskopik eradikasyon tedavisi"
+        },
+        "eradikasyon_tedavileri": [
+          "Endoskopik mukozal rezeksiyon (EMR): Nodüler/visible lezyonlar",
+          "Radiofrequency ablasyon (RFA): Düz Barrett mukozası ablasyonu",
+          "Cryoablation: Alternatif ablasyon yöntemi"
+        ],
+        "PPI_tedavisi": "Yüksek doz PPI ömür boyu (acid suppression → progresyon ↓)"
+      }
+    },
+    "komplikasyonlar": [
+      "Eroziv özofajit (Los Angeles Grade A-D)",
+      "Özofagus striktürü: Peptik striktür (kronik inflamasyon), progresif disfaji",
+      "Barrett özofagus: Metaplazi (skuamöz → intestinal kolumnar epitel), adenokarsinom riski %0.12-0.5/yıl",
+      "Özofagus adenokarsinomu: Barrett → low-grade displazi → high-grade displazi → invaziv karsinom",
+      "Özofagus ülseri, kanama: Hematemez, melena",
+      "Aspirasyon pnömonisi: Nokturnal reflü, aspirasyon",
+      "Kronik laringeal inflamasyon: Ses kısıklığı, vokal kord granülomları",
+      "Dental erozyon: Asit maruziyeti, diş minesinde kayıp"
+    ],
+    "prognoz": {
+      "genel": "Kronik, relaps-remisyon seyreder, iyi tedavi ile kontrol altına alınabilir",
+      "non_eroziv_GERD": "İyi prognoz, semptom kontrolü ile yaşam kalitesi normal",
+      "eroziv_özofajit": "Tedavi ile iyileşme %80-90, idame tedavi gerekir",
+      "barrett_özofagus": "Yıllık kanser riski %0.12-0.5, surveillance ile erken tanı",
+      "özofagus_adenokarsinomu": "Kötü prognoz (5 yıllık sağkalım %15-20), erken tanı kritik",
+      "refrakter_GERD": "%10-20 PPI'ya dirençli, cerrahi başarı %80-90",
+      "yaşam_kalitesi": "Kronik semptomlar yaşam kalitesini ↓, tedavi ile ↑",
+      "nüks_riski": "PPI kesildikten sonra 6 ay içinde %80-90 nüks (eroziv GERD)"
+    }
+  },
+  "branş_perspektifleri": {
+    "gastroenteroloji": {
+      "rol": "Primer sorumlu branş, endoskopi, ileri tedaviler",
+      "yaklaşım": {
+        "tanı": [
+          "Klinik değerlendirme (tipik/atipik semptomlar)",
+          "Üst gastrointestinal endoskopi (alarm semptomları, >50 yaş, PPI direnci)",
+          "Los Angeles sınıflaması (eroziv özofajit)",
+          "Barrett taraması (uzun süreli GERD >5-10 yıl, beyaz erkek >50 yaş, obezite, sigara)"
+        ],
+        "ileri_tanı_testleri": [
+          "Ambulatuar pH-impedans monitörizasyonu (PPI altında/kesilmiş)",
+          "Özofagus manometrisi (pre-operatif, motilite bozuklukları)",
+          "Endoskopik biyopsi (Barrett, displazi gradeleme)"
+        ],
+        "tedavi": [
+          "PPI titrasyonu (standart → çift doz → değiştirme)",
+          "Barrett ablasyon terapileri (RFA, EMR, cryoablation)",
+          "Endoskopik dilatasyonstriktür)",
+          "Endoskopik anti-reflü prosedürleri (Stretta, TIF)"
+        ]
+      },
+      "barrett_surveillance": [
+        "Displazisiz: 3-5 yılda bir",
+        "Low-grade displazi: 6-12 ayda bir",
+        "High-grade displazi: Eradikasyon (RFA/EMR) → 3 ayda bir kontrol"
+      ]
+    },
+    "genel_cerrahi": {
+      "rol": "Anti-reflü cerrahisi, hiyatal herni onarımı",
+      "yaklaşım": {
+        "pre_operatif_değerlendirme": [
+          "Endoskopi (herni boyutu, özofajit derecesi, Barrett)",
+          "Özofagus manometrisi (LES basıncı, peristaltik fonksiyon, akalazya ekarte)",
+          "pH monitörizasyonu (reflü kanıtı, semptom-reflü korelasyonu)",
+          "Baryumlu özofagografi (anatomi, herni, striktür)"
+        ],
+        "cerrahi_endikasyonlar": [
+          "Refrakter GERD (PPI çift doz ile yanıt yok, pH-impedans kanıtlanmış reflü)",
+          "Büyük hiyatal herni (>5 cm, volülus riski)",
+          "PPI yan etkileri, kronik kullanımdan kaçınma",
+          "Barrett özofagus (reflüyü durdurma)",
+          "Genç hastalar (ömür boyu ilaç vs cerrahi)"
+        ],
+        "cerrahi_teknikler": {
+          "laparoskopik_nissen": "360° fundoplikasyon, altın standart, başarı %85-90",
+          "toupet_270": "Parsiyel posterior wrap, motilite bozukluğu varsa",
+          "hiyatal_herni_onarımı": "Herninin redüksiyonu, hiyatusun daraltılması (sütür/mesh)",
+          "LINX": "Manyetik sfinkter augmentasyonu, reversibl"
+        },
+        "komplikasyonlar": [
+          "Disfaji (erken %10, kronik %3-5, balon dilatasyonu ile düzelir)",
+          "Gaz-bloat sendromu (geğirememe, flatulans)",
+          "Wrap migrasyonu (%2-5, re-operasyon)",
+          "Rekürren reflü (%10-15, 10 yıl)"
+        ]
+      }
+    },
+    "kulak_burun_boğaz_KBB": {
+      "rol": "Laryngofaryngeal reflü (LPR), atipik GERD semptomları",
+      "yaklaşım": {
+        "laringofaringeal_reflü_LPR": {
+          "semptomlar": [
+            "Ses kısıklığı (kronik larenjit)",
+            "Kronik boğaz ağrısı, globus hissi",
+            "Kronik öksürük, boğazda temizleme ihtiyacı",
+            "Post-nazal akıntı hissi",
+            "Dispepsi olmadan (sessiz reflü)"
+          ],
+          "laringoskopi_bulguları": [
+            "Posterior larinks eritem ve ödem (interaritenoid bölgesi)",
+            "Vokal kord ödem, granülomlar",
+            "Psödosülkus (vokal kord altı mukoza kalınlaşması)",
+            "Reflux Finding Score (RFS) >7 (Belafsky skoru)"
+          ],
+          "tanı": [
+            "Klinik + laringoskopi bulguları (RFS)",
+            "Empirik PPI tedavisi (2x1 doz, 8-12 hafta)",
+            "pH-impedans monitörizasyonu (faringeal prob ile)",
+            "Reflux Symptom Index (RSI) >13 (subjektif skorlama)"
+          ],
+          "tedavi": [
+            "Yüksek doz PPI: 2x1, 3-6 ay (larinks mukoza iyileşmesi yavaş)",
+            "Yaşam tarzı: Baş elevasyonu, yemekten 3 saat sonra yatma",
+            "Ses terapisi (vokal kord nodül/granülom varsa)",
+            "Cerrahi (refrakter, büyük herni)"
+          ]
+        }
+      }
+    },
+    "göğüs_hastalıkları": {
+      "rol": "GERD ile ilişkili astım, kronik öksürük",
+      "yaklaşım": {
+        "GERD_ile_ilişkili_astım": [
+          "İlişki: GERD → mikroaspirasyon/vagal refleks → bronkospazm",
+          "Prevalans: Astım hastalarında %60-80 GERD birlikteliği",
+          "Semptomlar: Nokturnal astım semptomları (öksürük, wheezing, dispne), postprandiyal kötüleşme",
+          "Tanı: Astım + GERD semptomları, PPI yanıtı, pH-impedans monitörizasyonu",
+          "Tedavi: PPI 2x1 (8-12 hafta), astım kontrolü sağlamazsa cerrahi düşünülebilir",
+          "İnhaler tedavi: Astım tedavisi devam (bronkodilatörler, inhale kortikosteroid)"
+        ],
+        "kronik_öksürük": [
+          "GERD, post-nazal akıntı, astım → kronik öksürük en yaygın 3 nedeni",
+          "GERD'de öksürük: Kuru, irritatif, nokturnal, yemek sonrası",
+          "Tanı: Empirik PPI tedavisi (8 hafta), pH monitörizasyonu",
+          "Tedavi yanıtı yavaş (2-3 ay), kombinasyon tedavi (GERD + astım)"
+        ]
+      }
+    },
+    "kardiyoloji": {
+      "rol": "Non-kardiyak göğüs ağrısı ayırıcı tanısı",
+      "yaklaşım": {
+        "non_kardiyak_göğüs_ağrısı": [
+          "Tanım: Anjinal tarzda göğüs ağrısı, kardiyak patoloji ekarte",
+          "Prevalans: Non-kardiyak göğüs ağrılarının %50-60'ı GERD kaynaklı",
+          "Ayırıcı tanı: EKG, troponin, efor testi, koroner anjiyografi (kardiyak ekarte)",
+          "Özofageal kaynak: GERD, özofagus motilite bozuklukları (nutcracker özofagus, diffüz özofageal spazm)",
+          "Tanı testleri: Üst GİS endoskopi, özofagus manometrisi, pH-impedans",
+          "Empirik PPI: 2x1, 4 hafta (Bernstein test: Asit perfüzyonu → ağrı reproduksiyonu)",
+          "Tedavi: PPI yüksek doz, TCA (imipramin - visseral hipersensitivite), psikoterapi"
+        ]
+      }
+    },
+    "kadın_hastalıkları_ve_doğum": {
+      "rol": "Gebelikte GERD yönetimi",
+      "yaklaşım": {
+        "gebelikte_GERD": {
+          "prevalans": "%30-80 (özellikle 2-3. trimester)",
+          "mekanizma": "Progesteron → LES basıncı ↓, büyüyen uterus → intraabdominal basınç ↑",
+          "semptomlar": "Yanma hissi (ikinci yarı), regürjitasyon",
+          "tedavi": {
+            "yaşam_tarzı": "Sık küçük öğün, baş elevasyonu, yatmadan 3 saat önce yemek yok, tetikleyici gıdalardan kaçınma",
+            "antasit_aljinat": "İlk tercih (Gaviscon, Maalox), güvenli (FDA Kategori B)",
+            "H2RA": "Famotidin (Kategori B), ranitidin çekildi",
+            "PPI": "Gerekirse (omeprazol, lanzoprazol - Kategori C, fetal risk kanıtı yok), 2. trimester sonrası tercih",
+            "kontraendike": "Metoklopramid (ekstrapiramidal risk), bisakodil"
+          },
+          "doğum_sonrası": "Semptomlar genellikle kaybolur (4-6 hafta)"
+        }
+      }
+    },
+    "pediatri": {
+      "rol": "Çocuklarda GERD, infantil regürjitasyon",
+      "yaklaşım": {
+        "infantil_regürjitasyon": [
+          "Fizyolojik: Yenidoğan-infant (0-12 ay), %50-70, LES immatüritesi",
+          "Ayrım: Fizyolojik (ağırlık alımı normal, mutlu bebek) vs patolojik (kilo almama, irritabilite, sandifer sendromu)",
+          "Tedavi: Postural (dik tutma 30 dk), sık küçük beslenme, kalınlaştırılmış mama (AR formülleri)",
+          "İlaç: Nadiren (ciddi özofajit), PPI (omeprazol 1 mg/kg/gün)"
+        ],
+        "çocukluk_GERD": [
+          "Semptomlar: Abdominal ağrı, kusma, büyüme geriliği, kronik öksürük",
+          "Tanı: Üst GİS endoskopi, pH monitörizasyonu (24 saat)",
+          "Tedavi: Yaşam tarzı, PPI (omeprazol 0.5-1 mg/kg, max 20 mg)",
+          "Cerrahi: Nissen fundoplikasyonu (nörolojik bozukluk + ciddi GERD, beslenme tüpü ihtiyacı)"
+        ]
+      }
+    },
+    "diş_hekimliği": {
+      "rol": "Dental erozyon değerlendirmesi",
+      "yaklaşım": {
+        "dental_erozyon": [
+          "Mekanizma: Gastrik asit (pH 1-2) → diş minesi demineralizasyonu (pH <5.5)",
+          "Lokalizasyon: Palatal yüzeyler (üst ön dişler), oklüzal yüzeyler",
+          "Semptomlar: Diş hassasiyeti, renk değişimi (dentinin görünmesi)",
+          "Tanı: Diş muayenesi (BEWE skoru: Basic Erosive Wear Examination)",
+          "GERD taraması: Kronik dental erozyon görülürse GERD sorgulanmalı",
+          "Tedavi: GERD kontrolü (PPI), florid gargara, hassasiyet için desensitize macun, restoratif tedaviler"
+        ]
+      }
+    },
+    "aile_hekimliği": {
+      "rol": "Birinci basamak tanı, ampirik tedavi, yönlendirme",
+      "yaklaşım": {
+        "ilk_değerlendirme": [
+          "Tipik semptomlar (yanma hissi + regürjitasyon, haftada ≥2 kez) → klinik tanı yeterli",
+          "Alarm semptomları sorgulanmalı (disfaji, kilo kaybı, kanama, >50 yaş yeni semptom)",
+          "Risk faktörleri: Obezite, sigara, alkol, hiyatal herni öyküsü"
+        ],
+        "ampirik_tedavi": [
+          "Yaşam tarzı önerileri (kilo kaybı, diyet, baş elevasyonu)",
+          "PPI standart doz 4-8 hafta (omeprazol 20 mg, essomeprazol 20 mg)",
+          "Yanıt iyi ise → step-down (H2RA, on-demand PPI)",
+          "Yanıt yok ise → endoskopi yönlendirme (8-12 hafta sonra)"
+        ],
+        "uzman_yönlendirme": [
+          "Alarm semptomları (acil endoskopi)",
+          ">50 yaş + yeni semptomlar",
+          "PPI 8-12 hafta yanıt yok",
+          "Atipik semptomlar (kronik öksürük, larenjit) → KBB/Göğüs",
+          "Cerrahi düşünülüyorsa → Gastroenteroloji/Genel Cerrahi"
+        ]
+      }
+    },
+    "psikiyatri": {
+      "rol": "Fonksiyonel dispepsi, somatizasyon, anksiyete",
+      "yaklaşım": {
+        "psikolojik_faktörler": [
+          "Anksiyete, depresyon → visseral hipersensitivite (özofageal ağrı eşiği ↓)",
+          "Somatizasyon bozukluğu: Gastrointestinal semptomlara odaklanma",
+          "Fonksiyonel heartburn: Objektif reflü yok, semptom var (pH-impedans negatif)"
+        ],
+        "tedavi": [
+          "SSRI/SNRI: Visseral ağrı modülasyonu (essitalopram, venlafaksin)",
+          "TCA: İmipramin (düşük doz 25-50 mg), visseral hipersensitivite",
+          "Bilişsel davranışçı terapi (CBT): Stres yönetimi, semptom algısı",
+          "Hipnoterapi: Fonksiyonel dispepsi"
+        ]
+      }
+    }
+  },
+  "kaynaklar": [
+    "ACG Clinical Guideline: Diagnosis and Management of Gastroesophageal Reflux Disease, 2022",
+    "Lyon Consensus: Updated definition of GERD, 2018",
+    "AGA Clinical Practice Update on the Personalized Approach to GERD, 2022",
+    "UpToDate: Clinical manifestations and diagnosis of gastroesophageal reflux in adults",
+    "British Society of Gastroenterology guidelines for endoscopy, 2020",
+    "ESGE guidelines on diagnosis and management of Barrett's esophagus, 2022",
+    "SAGES guidelines for surgical treatment of gastroesophageal reflux disease, 2020",
+    "Turkish GERD prevalence study, 2012"
+  ]
+}

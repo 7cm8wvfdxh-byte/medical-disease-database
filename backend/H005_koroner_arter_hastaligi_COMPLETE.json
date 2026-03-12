@@ -1,0 +1,717 @@
+{
+  "hastalık_id": "H005",
+  "version": "1.0",
+  "son_güncelleme": "2026-01-19",
+  "temel_bilgi": {
+    "isim_tr": "Koroner Arter Hastalığı",
+    "isim_en": "Coronary Artery Disease",
+    "kısa_isim": "KAH",
+    "diğer_isimler": [
+      "İskemik kalp hastalığı",
+      "Koroner kalp hastalığı",
+      "Aterosklerotik kalp hastalığı",
+      "Anjina pektoris"
+    ],
+    "kodlama": {
+      "ICD_10": "I25",
+      "ICD_10_detay": {
+        "I25.0": "Aterosklerotik kardiyovasküler hastalık (ASKH)",
+        "I25.1": "Aterosklerotik kalp hastalığı",
+        "I25.10": "Koroner arter hastalığı, damar belirtilmemiş",
+        "I25.11": "Yerli koroner arterine ait aterosklerotik kalp hastalığı",
+        "I25.2": "Eski miyokard enfarktüsü",
+        "I25.5": "İskemik kardiyomiyopati",
+        "I25.6": "Sessiz miyokard iskemisi",
+        "I25.7": "Ateroskleroz, koroner arter baypas grefti",
+        "I25.8": "Kronik iskemik kalp hastalığı, diğer formları",
+        "I25.9": "Kronik iskemik kalp hastalığı, tanımlanmamış"
+      },
+      "SNOMED_CT": "53741008",
+      "LOINC": "LP172845-8"
+    },
+    "tanım": "Koroner arter hastalığı, koroner arterlerde aterosklerotik plak birikimi sonucu damar lümeninde daralma ve miyokard kan akımında azalma ile karakterize kronik bir hastalıktır. Ateroskleroz, lipid birikimi, inflamasyon, endotel disfonksiyonu ve vasküler remodeling ile seyreder. Stabil anjina, akut koroner sendromlar (unstable anjina, NSTEMI, STEMI) ve ani kardiyak ölüm ile sonuçlanabilir.",
+    "epidemiyoloji": {
+      "global_prevalans": "Dünya genelinde 126 milyon kişi (2019 GBD Study), kardiyovasküler mortalitede 1. neden",
+      "türkiye_prevalans": "Yetişkin popülasyonda %3.8-6.8 (TEKHARF çalışması), yıllık 50,000+ miyokard enfarktüsü",
+      "yaş_dağılımı": "Erkeklerde >45 yaş, kadınlarda >55 yaş (menopoz sonrası) ile artış, prevalans 65 yaş üstünde %20",
+      "cinsiyet": "Erkeklerde 2-5 kat daha sık, kadınlarda menopoz sonrası risk artışı, 75 yaş üstünde eşitlenir",
+      "risk_grupları": [
+        "Sigara içenler (20 paket-yıl üzeri)",
+        "Hipertansiyon (>140/90 mmHg)",
+        "Dislipidemi (LDL >160 mg/dL, HDL <40 mg/dL)",
+        "Diabetes mellitus (HbA1c >7%)",
+        "Obezite (BMI >30, abdominal obezite)",
+        "Aile öyküsü (1. derece akraba <55/65 yaş erken KAH)",
+        "Metabolik sendrom",
+        "Kronik böbrek hastalığı",
+        "Sedanter yaşam",
+        "Psikososyal stres"
+      ]
+    },
+    "patofizyoloji": {
+      "ana_mekanizmalar": [
+        "Aterosklerotik plak oluşumu: LDL oksidasyonu → endotel disfonksiyonu → monosit infiltrasyonu → köpük hücreleri → yağlı çizgi → fibröz plak",
+        "Kronik inflamasyon: CRP, IL-6, TNF-alfa yüksekliği, makrofaj aktivasyonu",
+        "Plak rüptürü: İnce fibröz kapsül (<65 μm), geniş lipid çekirdek (>40%), matriks metalloproteinazlar aktivasyonu",
+        "Tromboz: Plak rüptürü → trombosit agregasyonu → akut oklüzyon → akut koroner sendrom",
+        "Vazospazm: Endotel disfonksiyonu → nitrik oksit ↓ → koroner arter spazmı (Prinzmetal anjina)",
+        "Mikrovasküler disfonksiyon: Koroner flow reserve azalması, endotel bağımlı dilatasyon bozukluğu"
+      ],
+      "risk_faktörleri_patofizyoloji": {
+        "geleneksel": [
+          "Hipertansiyon: Endotel hasar, shear stress artışı",
+          "Dislipidemi: LDL artışı → aterojenik, HDL azalması → antiaterojenik etki kaybı",
+          "Diabetes: İleri glikasyon son ürünleri (AGE), oksidatif stres, endotel disfonksiyonu",
+          "Sigara: Endotel toksisitesi, oksidatif stres, tromboz eğilimi"
+        ],
+        "yeni_risk_faktörleri": [
+          "Lipoprotein(a) [Lp(a)]: >50 mg/dL, genetik, aterojenik",
+          "ApoB/ApoA1 oranı: >0.9 yüksek risk",
+          "Homosistein: >15 μmol/L, endotel toksik",
+          "hs-CRP: >3 mg/L, inflamasyon belirteci",
+          "Fibrinojen: >400 mg/dL, tromboz riski"
+        ]
+      },
+      "plak_tipleri": {
+        "stabil_plak": "Kalın fibröz kapsül, küçük lipid çekirdek, düşük inflamasyon",
+        "vulnerable_plak": "İnce fibröz kapsül, geniş lipid çekirdek, yüksek inflamasyon, rüptür riski yüksek",
+        "kalsifik_plak": "Yoğun kalsifikasyon, kronik ateroskleroz"
+      }
+    },
+    "klinik_özellikler": {
+      "belirtiler": {
+        "tipik_anjina": [
+          "Retrosternal göğüs ağrısı (sıkışma, baskı, yanma hissi)",
+          "Sol kol, boyun, çene, sırta yayılım",
+          "Eforla başlama, istirahatle geçme (5-10 dakika)",
+          "Nitrogliserin ile hızlı rahatlama",
+          "Soğuk havada, ağır yemek sonrası, emosyonel stresle tetiklenir"
+        ],
+        "atipik_semptomlar": [
+          "Dispne (efor dispnesi, anjina eşdeğeri)",
+          "Yorgunluk, halsizlik",
+          "Epigastrik rahatsızlık (özellikle kadınlarda, diyabetiklerde)",
+          "Bulantı, terleme",
+          "Sessiz iskemi (diyabetikler, yaşlılar, kadınlar)"
+        ],
+        "akut_koroner_sendrom": [
+          "İstirahat anginası (>20 dakika)",
+          "Yeni başlangıçlı anjina (<2 ay, CCS III-IV)",
+          "Crescendo anjina (şiddet, sıklık, süre artışı)",
+          "Miyokard enfarktüsü: Uzun süreli göğüs ağrısı, terleme, bulantı, dispne"
+        ]
+      },
+      "fizik_muayene": {
+        "stabil_dönem": [
+          "Normal fizik muayene olabilir",
+          "S4 galo (sol ventrikül hipertrofisi)",
+          "Periferik nabızlar zayıf (eşlik eden periferik arter hastalığı)",
+          "Xantelazma (lipid birikimi, hiperkolesterolemi)"
+        ],
+        "akut_dönem": [
+          "Taşikardi veya bradikardi",
+          "Hipotansiyon (kardiyojenik şok riski)",
+          "S3 galo (kalp yetmezliği)",
+          "Mitral regürjitasyon üfürümü (papiller kas disfonksiyonu)",
+          "Akciğer ralleri (pulmoner ödem)"
+        ]
+      },
+      "kanadyan_anjina_sınıflaması": {
+        "CCS_I": "Ağır fiziksel aktivite ile anjina, günlük aktivitede sınırlama yok",
+        "CCS_II": "Günlük aktivitede hafif sınırlama (hızlı yürüme, merdiven çıkma ile anjina)",
+        "CCS_III": "Günlük aktivitede belirgin sınırlama (düz yolda yavaş yürümede anjina)",
+        "CCS_IV": "İstirahat anginası, minimal aktivitede anjina"
+      }
+    },
+    "tanı": {
+      "tanı_algoritması": [
+        "Klinik değerlendirme: Anjinal semptomlar, risk faktörleri",
+        "Pre-test olasılık: Yaş, cinsiyet, semptom karakteri (tipik/atipik/non-anjinal)",
+        "Non-invaziv testler: EKG, ekokardiyografi, efor testi, miyokard perfüzyon sintigrafisi, koroner BT anjio",
+        "İnvaziv testler: Koroner anjiyografi (altın standart), FFR (Fractional Flow Reserve)"
+      ],
+      "elektrokardiyografi": {
+        "istirahat_EKG": [
+          "Normal olabilir (%50 hastada)",
+          "ST-T değişiklikleri (iskemi belirtisi)",
+          "Patolojik Q dalgaları (eski MI)",
+          "Sol ventrikül hipertrofisi",
+          "Efor EKG: ≥1 mm horizontal/downsloping ST depresyonu (iskemi pozitif)"
+        ],
+        "akut_MI": [
+          "ST elevasyonu (STEMI): ≥2 komşu derivasyonda ≥2 mm (prekordiyal) veya ≥1 mm (ekstremite)",
+          "ST depresyonu, T negatifleşmesi (NSTEMI)",
+          "Hiperakut T dalgaları, patolojik Q gelişimi"
+        ]
+      },
+      "laboratuvar": {
+        "kardiyak_biyobelirteçler": [
+          "Troponin I/T: Miyokard nekrozunun altın standardı, 3-6 saatte yükselir, 7-14 gün pozitif",
+          "CK-MB: Miyokard nekrozu, 4-6 saatte yükselir, 48-72 saatte normale döner",
+          "Myoglobin: Erken belirteç (1-4 saat), spesifitesi düşük",
+          "hs-troponin: Yüksek duyarlılık, 0-1-3 saat algoritması (ESC 2020)"
+        ],
+        "lipid_paneli": [
+          "Total kolesterol: İdeal <200 mg/dL",
+          "LDL kolesterol: Hedef <70 mg/dL (çok yüksek risk), <55 mg/dL (ESC 2019)",
+          "HDL kolesterol: >40 mg/dL (erkek), >50 mg/dL (kadın)",
+          "Trigliserit: <150 mg/dL",
+          "Non-HDL kolesterol: <100 mg/dL"
+        ],
+        "diğer": [
+          "hs-CRP: >3 mg/L yüksek kardiyovasküler risk",
+          "HbA1c: Diabetes screening",
+          "Kreatinin, eGFR: Böbrek fonksiyonu",
+          "TSH: Hipotiroidi ekarte"
+        ]
+      },
+      "görüntüleme": {
+        "ekokardiyografi": [
+          "Sol ventrikül fonksiyonu (EF <40% kötü prognoz)",
+          "Bölgesel duvar hareket anormallikleri (iskemi/enfarkt)",
+          "Kapak patolojileri (mitral regürjitasyon)",
+          "Efor ekokardiyografi: İskemi indüksiyonu ile duvar hareket bozukluğu"
+        ],
+        "miyokard_perfüzyon_sintigrafisi": [
+          "SPECT (Tc-99m sestamibi/tetrofosmin): Efor/ilaç stresi, perfüzyon defekti",
+          "PET (Rb-82, N-13 ammonia): Yüksek çözünürlük, mutlak miyokard kan akımı",
+          "Duyarlılık %85-90, özgüllük %70-75"
+        ],
+        "koroner_BT_anjiyografi": [
+          "Non-invaziv koroner anatomi",
+          "Kalsiyum skoru (CAC score): 0 = çok düşük risk, >400 = yüksek risk",
+          "Stenoz derecesi (≥50% anlamlı), plak karakterizasyonu",
+          "Düşük-orta pre-test olasılıkta ilk tercih (ESC 2019)"
+        ],
+        "koroner_anjiyografi": {
+          "altın_standart": "İnvaziv, stenoz derecesi (%50-70-99), TIMI flow",
+          "FFR": "Fractional Flow Reserve, ≤0.80 fonksiyonel stenoz (revaskularizasyon endikasyonu)",
+          "IVUS_OCT": "İntravasküler ultrasound / Optical Coherence Tomography, plak karakterizasyonu"
+        },
+        "kardiyak_MR": [
+          "Miyokard viabilite (geç gadolinium tutulumu)",
+          "Ejeksiyon fraksiyonu, duvar kalınlığı",
+          "Stres MR: Perfüzyon, duvar hareket anormallikleri"
+        ]
+      }
+    },
+    "farmakoloji_ve_tedavi": {
+      "genel_prensipler": [
+        "Semptom kontrolü ve yaşam kalitesi iyileştirmesi",
+        "Major kardiyovasküler olayların (MACE) önlenmesi: MI, inme, kardiyovasküler ölüm",
+        "Risk faktörlerinin modifikasyonu (LDL, kan basıncı, diabet kontrolü)",
+        "Revaskularizasyon endikasyonlarının değerlendirilmesi",
+        "Dual antiplatelet therapy (DAPT) süresinin bireyselleştirilmesi"
+      ],
+      "antiplatelet_tedavi": {
+        "aspirin": {
+          "mekanizma": "COX-1 inhibisyonu → tromboksan A2 azalması → trombosit agregasyonu inhibisyonu",
+          "doz": "75-100 mg/gün (düşük doz), akut MI: 150-300 mg loading",
+          "endikasyon": "Tüm KAH hastaları (kontraendikasyon yoksa), ömür boyu",
+          "yan_etki": "Gastrointestinal kanama, peptik ülser (PPI ile koruma)"
+        },
+        "P2Y12_inhibitörleri": {
+          "klopidogrel": {
+            "mekanizma": "ADP reseptörü (P2Y12) antagonisti",
+            "doz": "75 mg/gün, loading: 300-600 mg",
+            "endikasyon": "Akut koroner sendrom, PCI sonrası, aspirin intoleransı",
+            "süre": "DAPT 6-12 ay (stabil KAH, PCI), 12 ay (AKS)"
+          },
+          "tikagrelor": {
+            "doz": "90 mg 2x1 (idame), loading: 180 mg",
+            "endikasyon": "AKS (klopidogrel üstün), PCI sonrası",
+            "süre": "12 ay, sonra 60 mg 2x1 (yüksek iskemik risk)",
+            "yan_etki": "Dispne (%10-15, geçici), bradikardi"
+          },
+          "prasugrel": {
+            "doz": "10 mg/gün, loading: 60 mg",
+            "endikasyon": "AKS, PCI planlanan (özellikle DM, kompleks lezyonlar)",
+            "kontraendikasyon": "İnme/TIA öyküsü, >75 yaş (5 mg), <60 kg (5 mg)",
+            "süre": "12 ay DAPT"
+          }
+        },
+        "DAPT_süresi": {
+          "kısa_6_ay": "Yüksek kanama riski (HAS-BLED ≥3), stabil KAH + PCI",
+          "standart_12_ay": "AKS, stabil KAH + PCI (çoğu hasta)",
+          "uzun_>12_ay": "Yüksek iskemik risk, düşük kanama riski, kompleks PCI"
+        }
+      },
+      "lipid_düşürücü_tedavi": {
+        "statinler": {
+          "mekanizma": "HMG-CoA redüktaz inhibisyonu → LDL sentezi ↓, LDL reseptör ekspresyonu ↑",
+          "yüksek_yoğunluklu": [
+            "Atorvastatin 40-80 mg",
+            "Rosuvastatin 20-40 mg"
+          ],
+          "hedef": "LDL <70 mg/dL (yüksek risk), <55 mg/dL (çok yüksek risk), <40 mg/dL (ekstrem yüksek risk - ESC 2019)",
+          "pleiotropik_etkiler": "Anti-inflamatuar (CRP ↓), plak stabilizasyonu, endotel fonksiyon düzelme",
+          "yan_etki": "Miyalji/myopati, transaminaz yüksekliği, rabdomiyoliz (nadir <0.1%)",
+          "monitörizasyon": "ALT, AST (başlangıçta, sonra yıllık), CK (semptomatik ise)"
+        },
+        "ezetimib": {
+          "mekanizma": "Kolesterol emilim inhibitörü (NPC1L1 inhibisyonu)",
+          "doz": "10 mg/gün",
+          "endikasyon": "Statin ile hedefe ulaşılamazsa add-on, statin intoleransı",
+          "etki": "LDL %15-20 ek azalma (IMPROVE-IT çalışması)"
+        },
+        "PCSK9_inhibitörleri": {
+          "evolokumab_alirokumab": {
+            "mekanizma": "PCSK9 monoklonal antikoru → LDL reseptör degredasyonunu engeller → LDL ↓↓",
+            "doz": "Evolokumab 140 mg s.c. 2 haftada bir veya 420 mg ayda bir",
+            "endikasyon": "Statin+ezetimib ile hedefe ulaşılamazsa, familyal hiperkolesterolemi, statin intoleransı",
+            "etki": "LDL %50-60 azalma, kardiyovasküler olay ↓%15 (FOURIER, ODYSSEY çalışmaları)",
+            "maliyet": "Yüksek (3000-6000 USD/yıl)"
+          }
+        },
+        "bempedoik_acid": {
+          "mekanizma": "ATP sitrat liyaz inhibitörü (statin benzeri, karaciğer spesifik)",
+          "doz": "180 mg/gün",
+          "endikasyon": "Statin intoleransı, add-on tedavi",
+          "etki": "LDL %15-25 azalma, miyalji riski düşük"
+        }
+      },
+      "beta_blokerler": {
+        "mekanizma": "Beta-1 reseptör blokajı → kalp hızı ↓, kasılma gücü ↓, oksijen tüketimi ↓, anti-aritmik",
+        "kardiyoselektif": [
+          "Metoprolol suksinat 50-200 mg/gün (uzun etkili)",
+          "Bisoprolol 2.5-10 mg/gün",
+          "Nebivolol 5-10 mg/gün (NO salınımı, vasodilatasyon)"
+        ],
+        "endikasyon": "Post-MI, kalp yetmezliği (EF <40%), anjina kontrolü, hipertansiyon",
+        "hedef": "Kalp hızı 55-60 atım/dk (istirahat), <110 atım/dk (efor)",
+        "kontraendikasyon": "Bradikardi (<50/dk), AV blok, dekompanse kalp yetmezliği, astım (göreceli)",
+        "yan_etki": "Yorgunluk, soğuk ekstremiteler, bradikardi, erektil disfonksiyon"
+      },
+      "ACE_inhibitörleri_ARB": {
+        "mekanizma": "ACE inhibisyonu → anjiotensin II ↓ → afterload ↓, kardiyak remodeling ↓",
+        "ACE_inhibitörleri": [
+          "Ramipril 2.5-10 mg/gün",
+          "Perindopril 4-8 mg/gün",
+          "Lisinopril 10-40 mg/gün"
+        ],
+        "ARB": [
+          "Valsartan 80-160 mg 2x1",
+          "Telmisartan 40-80 mg/gün"
+        ],
+        "endikasyon": "Post-MI, kalp yetmezliği, EF <40%, hipertansiyon, diabetes + KAH",
+        "hedef_doz": "Maksimum tolere edilen doz",
+        "yan_etki": "Kuru öksürük (ACE-i, %10), hiperkalemi, renal disfonksiyon",
+        "monitörizasyon": "Kreatinin, potasyum (1 hafta, 1 ay, sonra periyodik)"
+      },
+      "nitratlar": {
+        "kısa_etkili": {
+          "nitrogliserin_sublingual": "0.3-0.6 mg, anjina atağında (5 dakikada tekrar, max 3 doz)",
+          "etki": "Venodilatör → preload ↓, koroner dilatasyon → O2 sunumu ↑"
+        },
+        "uzun_etkili": {
+          "isosorbid_mononitrat": "30-60 mg/gün (retard)",
+          "isosorbid_dinitrat": "40 mg 2-3x1",
+          "nitrat_free_interval": "10-14 saat (tolerans gelişimini önler, gece verilir)"
+        },
+        "endikasyon": "Anjina profilaksisi, akut anjina atağı",
+        "yan_etki": "Baş ağrısı (sık), hipotansiyon, tolerans gelişimi",
+        "kontraendikasyon": "Fosfodiesteraz-5 inhibitörleri (sildenafil, tadalafil) - 24-48 saat içinde"
+      },
+      "kalsiyum_kanal_blokerleri": {
+        "dihidropiridinler": {
+          "amlodipin": "5-10 mg/gün",
+          "nifedipin_retard": "30-60 mg/gün",
+          "mekanizma": "Periferik arteriyel dilatasyon → afterload ↓, koroner dilatasyon",
+          "endikasyon": "Anjina (beta-bloker kontraendikasyonu), hipertansiyon, vazospastik anjina"
+        },
+        "non_dihidropiridinler": {
+          "diltiazem": "180-360 mg/gün (retard)",
+          "verapamil": "120-480 mg/gün",
+          "mekanizma": "Kalp hızı ↓, AV iletim ↓, kasılma gücü ↓",
+          "endikasyon": "Anjina (beta-bloker intoleransı), supraventriküler aritmiler",
+          "kontraendikasyon": "Kalp yetmezliği (EF <40%), AV blok, bradikardi"
+        }
+      },
+      "yeni_antianjinal_ilaçlar": {
+        "ranolazin": {
+          "mekanizma": "Geç sodyum kanalı inhibisyonu → diyastolik relaksasyon ↑",
+          "doz": "500-1000 mg 2x1",
+          "endikasyon": "Kronik anjina (konvansiyonel tedaviye ek), diyabetikler",
+          "yan_etki": "Baş dönmesi, QT uzaması"
+        },
+        "ivabradin": {
+          "mekanizma": "If kanalı inhibisyonu (sinüs nodu) → kalp hızı ↓",
+          "doz": "2.5-7.5 mg 2x1",
+          "endikasyon": "Beta-bloker kontraendikasyonu/intoleransı, sinüs ritmi + KH ≥70/dk",
+          "hedef": "Kalp hızı 55-60/dk",
+          "yan_etki": "Fosfenler (görsel fenomen), bradikardi"
+        },
+        "trimetazidin": {
+          "mekanizma": "Metabolik modülatör (3-ketoacyl CoA tiyolaz inhibisyonu) → glukoz oksidasyonu ↑",
+          "doz": "35 mg 2x1 (modifiye salınım)",
+          "endikasyon": "Anjina (add-on tedavi)",
+          "yan_etki": "Parkinsonizm (nadir, yaşlılarda)"
+        }
+      },
+      "revaskularizasyon": {
+        "perkütan_koroner_girişim_PCI": {
+          "endikasyon": [
+            "Stabil KAH: Optimal medikal tedaviye rağmen semptomatik (CCS II-IV), iskemi kanıtı (>10% miyokard)",
+            "Akut koroner sendrom: STEMI (primer PCI <120 dk), NSTEMI/unstable anjina (erken invaziv strateji)",
+            "Sol ana koroner lezyonları (<32 mm uzunluk, SYNTAX skoru <22)"
+          ],
+          "teknik": "Balon anjiyoplasti + stent (DES - Drug Eluting Stent tercih)",
+          "DES_tipleri": "Everolimus, zotarolimus, biolimus eluting stents (2-3. nesil)",
+          "komplikasyonlar": "Diseksiyon, no-reflow, stent trombozu, kontrast nefropatisi",
+          "takip": "DAPT 6-12 ay, sonra aspirin ömür boyu"
+        },
+        "koroner_arter_baypas_greft_CABG": {
+          "endikasyon": [
+            "Sol ana koroner hastalığı (>50% stenoz)",
+            "3 damar hastalığı (özellikle proksimal LAD tutulumu)",
+            "2 damar hastalığı + proksimal LAD + geniş iskemi alanı",
+            "Sol ventrikül disfonksiyonu (EF 35-50%) + multivessel hastalık",
+            "Diabetes mellitus + multivessel hastalık (PCI'ye üstün - FREEDOM trial)",
+            "Kompleks anatomi (SYNTAX skoru >32)"
+          ],
+          "greft_tipleri": [
+            "LIMA (sol internal mammary artery) → LAD (en iyi açıklık, 10 yıl %90)",
+            "Safen ven greftleri (açıklık 10 yıl %50-60)",
+            "Radial arter (açıklık 10 yıl %80)"
+          ],
+          "cerrahi_teknik": "On-pump (kardiyopulmoner baypas) vs off-pump (beating heart)",
+          "avantaj": "Komplet revaskülarizasyon, uzun süreli açıklık",
+          "dezavantaj": "İnvaziv, iyileşme süresi uzun (4-6 hafta), inme riski (%1-2)"
+        },
+        "heart_team_yaklaşımı": {
+          "karar_verme": "Kardiyolog + kardiyak cerrah, SYNTAX skoru, komorbidite, hasta tercihi",
+          "SYNTAX_skoru": "Anatomik kompleksiteyi skorlar (0-22 düşük, 23-32 orta, >32 yüksek)",
+          "öneriler": "SYNTAX <22: PCI, SYNTAX >32: CABG, SYNTAX 22-32: Bireysel"
+        }
+      },
+      "yaşam_tarzı_modifikasyonu": {
+        "sigara_bırakma": "En etkili önlem, risk %50 azalma (1 yıl), tam risk azalması 15 yıl",
+        "diyet": "Akdeniz diyeti, doymuş yağ <10% kalori, trans yağ sıfır, balık 2x/hafta, sebze-meyve 5 porsiyon/gün",
+        "egzersiz": "Orta yoğunlukta aerobik 150 dk/hafta (yürüyüş, bisiklet), direnç egzersizi 2x/hafta",
+        "kilo_yönetimi": "Hedef BMI 20-25, bel çevresi <94 cm (erkek), <80 cm (kadın)",
+        "alkol": "Orta düzeyde tüketim (1-2 içki/gün), aşırı kullanımdan kaçınma",
+        "stres_yönetimi": "Yoga, meditasyon, psikolojik destek, kardiyak rehabilitasyon"
+      }
+    },
+    "komplikasyonlar": [
+      "Akut miyokard enfarktüsü (STEMI, NSTEMI)",
+      "Ani kardiyak ölüm (ventriküler fibrilasyon, ventriküler taşikardi)",
+      "Konjestif kalp yetmezliği (iskemik kardiyomiyopati, EF <40%)",
+      "Mitral regürjitasyon (papiller kas disfonksiyonu/rüptürü)",
+      "Ventriküler septal rüptür (post-MI, 3-5. gün)",
+      "Sol ventrikül anevrizma (kronik MI sonrası)",
+      "Mural trombüs oluşumu → sistemik embolizasyon",
+      "Perikard effüzyonu, perikardit (Dressler sendromu)",
+      "İnme (atriyal fibrilasyon, kardiyoembolizm)",
+      "Kronik böbrek hastalığı progresyonu"
+    ],
+    "prognoz": {
+      "genel": "Prognoz risk faktörlerine, sol ventrikül fonksiyonuna, hastalık yaygınlığına bağlı",
+      "mortalite": "Yıllık mortalite stabil KAH %1-3, post-MI ilk yıl %5-10, kalp yetmezliği ile %20-30",
+      "iyi_prognoz_faktörleri": [
+        "Tek damar hastalığı",
+        "Normal sol ventrikül fonksiyonu (EF >50%)",
+        "İyi medikal tedavi uyumu",
+        "Risk faktörleri kontrol altında (LDL <55, KB <130/80, HbA1c <7%)",
+        "Düzenli egzersiz, sigara bırakma"
+      ],
+      "kötü_prognoz_faktörleri": [
+        "Sol ana koroner hastalığı, 3 damar hastalığı",
+        "Sol ventrikül disfonksiyonu (EF <35%)",
+        "Diabetes mellitus, kronik böbrek hastalığı",
+        "İleri yaş (>75), kadın cinsiyet (menopoz sonrası)",
+        "Sosyoekonomik düşüklük, sosyal izolasyon",
+        "Post-MI ventriküler aritmiler"
+      ],
+      "risk_skorları": {
+        "GRACE_skoru": "Akut koroner sendrom 6 ay-1 yıl mortalite",
+        "TIMI_risk_skoru": "STEMI/NSTEMI prognoz",
+        "SCORE2": "10 yıllık kardiyovasküler ölüm riski (Avrupa)",
+        "SYNTAX_skoru": "Revaskularizasyon kararı"
+      }
+    }
+  },
+  "branş_perspektifleri": {
+    "kardiyoloji": {
+      "rol": "Primer sorumlu branş, tanı, medikal tedavi, invaziv girişimler",
+      "yaklaşım": {
+        "tanı": [
+          "Ayrıntılı klinik değerlendirme (CCS sınıflaması)",
+          "Non-invaziv testler: Efor testi, ekokardiyografi, miyokard perfüzyon, koroner BT",
+          "Koroner anjiyografi + FFR (fonksiyonel değerlendirme)",
+          "Risk stratifikasyonu (GRACE, TIMI, SCORE2)"
+        ],
+        "tedavi": [
+          "Optimal medikal tedavi (statin, antiplatelet, beta-bloker, ACE-i)",
+          "Perkütan koroner girişim (PCI): Balon anjiyoplasti, DES implantasyonu",
+          "Akut koroner sendrom yönetimi (primer PCI, erken invaziv strateji)",
+          "Kardiyak rehabilitasyon programı"
+        ],
+        "takip": [
+          "İlk 1 yıl: 1-3-6-12 ay kontrolü",
+          "Sonrası: 6-12 ayda bir değerlendirme",
+          "Lipid paneli, EKG, ekokardiyografi (yıllık veya semptomatik ise)",
+          "DAPT uyumu, kanama komplikasyonları"
+        ]
+      },
+      "invaziv_prosedürler": [
+        "Koroner anjiyografi (tanısal)",
+        "PCI: Balon, stent (DES), rotablasyon (kalsifik plaklar)",
+        "FFR ölçümü (fonksiyonel stenoz değerlendirmesi)",
+        "IVUS/OCT (intravoasküler görüntüleme)"
+      ]
+    },
+    "acil_tıp": {
+      "rol": "Akut koroner sendrom ilk müdahalesi, hayat kurtaran tedaviler",
+      "yaklaşım": {
+        "STEMI_yönetimi": [
+          "İlk tıbbi temas-balon süresi <90 dk (primer PCI) veya <120 dk (transfer)",
+          "EKG 10 dakika içinde, troponin",
+          "Dual antiplatelet: Aspirin 150-300 mg + P2Y12 inhibitörü (tikagrelor/prasugrel loading)",
+          "Antikoagülan: Heparin/enoksaparin/fondaparinuks",
+          "Oksijen (SpO2 <90%), morfin (ağrı kontrolü)",
+          "Fibrinolitik (primer PCI yapılamıyorsa <12 saat): Tenekteplaz, alteplaz"
+        ],
+        "NSTEMI_unstable_anjina": [
+          "GRACE risk skoru (erken invaziv <24 saat vs konservatif)",
+          "Dual antiplatelet, antikoagülan",
+          "Beta-bloker, nitrat, oksijen",
+          "Yüksek risk: Hemodinamik instabilite, ventriküler aritmi, rekürren iskemi → acil anjiyografi"
+        ],
+        "komplikasyon_yönetimi": [
+          "Kardiyojenik şok: İnotropik destek (dobutamin, norepinefrin), IABP, mekanik destek",
+          "Ventriküler fibrilasyon/taşikardi: Defibrilasyon, amiodaron",
+          "Bradikardi/AV blok: Atropin, geçici pacemaker",
+          "Pulmoner ödem: Diüretik, nitrat, non-invaziv ventilasyon"
+        ]
+      },
+      "transfer_kriterleri": [
+        "STEMI: Primer PCI merkezi (kateter lab 24/7)",
+        "Kardiyojenik şok, mekanik komplikasyonlar",
+        "PCI başarısız, CABG gereksinimi"
+      ]
+    },
+    "dahiliye": {
+      "rol": "Risk faktörleri yönetimi, komorbidite tedavisi, birinci basamak yönlendirme",
+      "yaklaşım": {
+        "risk_faktörü_kontrolü": [
+          "Hipertansiyon: Hedef <130/80 mmHg (KAH), ACE-i/ARB + CCB/diüretik",
+          "Dislipidemi: Yüksek yoğunluklu statin (atorvastatin 40-80 mg), LDL <55 mg/dL",
+          "Diabetes mellitus: HbA1c <7%, metformin + SGLT2-i/GLP-1 RA (kardiyoprotektif)",
+          "Obezite: Kilo kaybı ≥5-10%, diyet + egzersiz, bariatrik cerrahi (BMI >40)"
+        ],
+        "komorbidite_yönetimi": {
+          "kronik_böbrek_hastalığı": [
+            "eGFR <60 mL/dk: Kontrast dikkatli, doz ayarlaması (LMWH, metformin kontrendike eGFR <30)",
+            "ACE-i/ARB (proteinüri azaltır), anemi tedavisi"
+          ],
+          "KOAH": [
+            "Beta-bloker kardiyoselektif (bisoprolol, nebivolol), non-selektif kontrendike",
+            "Bronkodilatörler, inhale kortikosteroid"
+          ],
+          "atriyal_fibrilasyon": [
+            "Antikoagülan (NOAC: apiksaban, rivaroksaban) + antiplatelet (triple therapy 1-6 ay → dual therapy)",
+            "CHA2DS2-VASc ≥2 (erkek), ≥3 (kadın): Antikoagülasyon zorunlu"
+          ]
+        }
+      }
+    },
+    "göğüs_cerrahisi_kardiyovasküler_cerrahi": {
+      "rol": "Koroner arter baypas greft cerrahisi (CABG), mekanik komplikasyonlar",
+      "yaklaşım": {
+        "CABG_endikasyonları": [
+          "Sol ana koroner >50% stenoz",
+          "3 damar hastalığı (özellikle proksimal LAD)",
+          "2 damar + proksimal LAD + EF <50%",
+          "Diabetes + multivessel (PCI'ye üstün)",
+          "SYNTAX skoru >32 (kompleks anatomi)"
+        ],
+        "cerrahi_teknik": [
+          "On-pump CABG (kardiyopulmoner baypas)",
+          "Off-pump CABG (beating heart, inme riski düşük)",
+          "Minimal invaziv CABG (MIDCAB, LIMA-LAD)",
+          "Hibrid revaskularizasyon (CABG + PCI)"
+        ],
+        "greft_seçimi": [
+          "LIMA → LAD (altın standart, 10 yıl açıklık %90)",
+          "RIMA → RCA/Cx (bilateral IMA, diyabetik dikkatli, sternal yara enfeksiyonu riski)",
+          "Radial arter (açıklık iyi, vazospazm riski)",
+          "Safen ven (en çok kullanılan, açıklık 10 yıl %50-60)"
+        ],
+        "mekanik_komplikasyonlar": [
+          "Ventriküler septal rüptür (post-MI 3-5. gün): Acil cerrahi onarım",
+          "Papiller kas rüptürü: Akut mitral regürjitasyon → kapak tamiri/replasmanı",
+          "Sol ventrikül anevrizma: Cerrahi rezeksiyon + rekonstrüksiyon (Dor prosedürü)"
+        ]
+      }
+    },
+    "endokrinoloji": {
+      "rol": "Diabetes mellitus ve metabolik sendrom yönetimi",
+      "yaklaşım": {
+        "diabetes_yönetimi": [
+          "HbA1c hedefi <7% (genel), <6.5% (yeni tanı, genç), <8% (yaşlı, hipoglisemi riski)",
+          "Metformin: İlk tercih, kardiyoprotektif, GFR >30 mL/dk",
+          "SGLT2 inhibitörleri: Empagliflozin, dapagliflozin (MACE ↓, kalp yetmezliği ↓, EMPA-REG, DECLARE)",
+          "GLP-1 reseptör agonistleri: Liraglutid, semaglutid (MACE ↓, kilo kaybı, LEADER, SUSTAIN-6)",
+          "DPP-4 inhibitörleri: Sitagliptin, linagliptin (kardiyovasküler güvenli, nötral)",
+          "İnsülin: HbA1c >9%, dekompanse, bazal insülin (glargin, degludek)"
+        ],
+        "metabolik_sendrom": [
+          "Tanı: ≥3 kriter (abdominal obezite, trigliserit ≥150, HDL <40/50, KB ≥130/85, açlık glukoz ≥100)",
+          "Tedavi: Yaşam tarzı (kilo kaybı, egzersiz), metformin, statin, ACE-i, orlistat"
+        ]
+      }
+    },
+    "nefroloji": {
+      "rol": "Kronik böbrek hastalığı yönetimi, kontrast nefropatisi önlemi",
+      "yaklaşım": {
+        "kardiyorenal_sendrom": [
+          "Tip 4: KBH → kalp yetmezliği",
+          "eGFR <60 mL/dk: Kardiyovasküler risk ↑↑, anemi, mineral kemik hastalığı",
+          "Tedavi: ACE-i/ARB (proteinüri ↓), anemi (ESA, demir), fosfat bağlayıcı, D vitamini"
+        ],
+        "kontrast_nefropatisi_önlemi": [
+          "Risk faktörleri: eGFR <60, diabetes, yaş >75, kalp yetmezliği, hipovolemi",
+          "Hidrasyon: İzotonik saline 1 mL/kg/saat (12 saat öncesi, 12 saat sonrası)",
+          "Düşük osmolar kontrast (ioheksol, iopromid), volüm minimizasyonu",
+          "N-asetilsistein: 600-1200 mg 2x1 (1 gün öncesi, 1 gün sonrası - tartışmalı)",
+          "Metformin: eGFR <30 kontrendike, eGFR 30-60 dikkatli (48 saat kesme)"
+        ]
+      }
+    },
+    "nöroloji": {
+      "rol": "İnme önleme, kognitif bozukluk değerlendirmesi",
+      "yaklaşım": {
+        "iskemik_inme_önleme": [
+          "Karotis stenoz değerlendirmesi (doppler USG)",
+          "Antiplatelet (aspirin/klopidogrel), antikoagülan (AF varsa)",
+          "Kan basıncı kontrolü (<140/90, inme geçirmişse <130/80)",
+          "Atriyal fibrilasyon taraması (özellikle >65 yaş)"
+        ],
+        "vasküler_demans": [
+          "KAH + multipl laküner infarktlar, kronik iskemi → kognitif bozukluk",
+          "Tedavi: Vasküler risk faktörleri kontrolü, kolinesteraz inhibitörleri (donepezil)"
+        ]
+      }
+    },
+    "anesteziyoloji_ve_reanimasyon": {
+      "rol": "Perioperatif kardiyak risk değerlendirmesi, non-kardiyak cerrahi",
+      "yaklaşım": {
+        "preoperatif_değerlendirme": [
+          "Revised Cardiac Risk Index (RCRI): Majör cerrahi, KAH öyküsü, kalp yetmezliği, DM, KBH, serebrovasküler hastalık",
+          "Fonksiyonel kapasite: <4 MET düşük, >4 MET iyi (günlük aktivite, merdiven çıkma)",
+          "EKG, troponin, BNP (orta-yüksek risk)"
+        ],
+        "perioperatif_beta_bloker": [
+          "Devam: Kronik kullanımda beta-bloker kesme (rebound taşikardi, MI riski)",
+          "Yeni başlama: Tartışmalı, sadece çok yüksek risk (>3 RCRI kriteri), 30 gün önceden başla"
+        ],
+        "stent_hastaları": [
+          "Elektif cerrahi erteleme: Bare metal stent 30 gün, DES 6 ay (ideal 12 ay)",
+          "Acil cerrahi: DAPT devam (aspirin + klopidogrel), kanama riski yönetimi",
+          "Perioperatif DAPT kesme: Stent trombozu riski ↑↑"
+        ]
+      }
+    },
+    "aile_hekimliği": {
+      "rol": "Birinci basamak tanı, risk faktörü taraması, primer koruma",
+      "yaklaşım": {
+        "kardiyovasküler_risk_hesaplama": [
+          "SCORE2 (40-69 yaş): 10 yıllık fatal/non-fatal CV olay riski",
+          "Düşük risk: <5%, orta risk: 5-10%, yüksek risk: 10-20%, çok yüksek risk: >20%",
+          "Framingham risk skoru (alternatif)"
+        ],
+        "tarama": [
+          "Lipid paneli: >40 yaş erkek, >50 yaş kadın (5 yılda bir)",
+          "Kan basıncı: Yıllık (>18 yaş)",
+          "Açlık kan şekeri: 3 yılda bir (>45 yaş veya obez)",
+          "Sigara durumu: Her vizitte"
+        ],
+        "primer_koruma": [
+          "Yaşam tarzı danışmanlığı: Diyet, egzersiz, sigara bırakma",
+          "Aspirin: 10 yıllık risk >10% (primer korumada tartışmalı, kanama riski)",
+          "Statin: 10 yıllık risk >10%, LDL >190 mg/dL, diabetes 40-75 yaş"
+        ]
+      }
+    },
+    "radyoloji": {
+      "rol": "Non-invaziv kardiyak görüntüleme, ateroskleroz değerlendirmesi",
+      "yaklaşım": {
+        "koroner_BT_anjiyografi": [
+          "Endikasyon: Düşük-orta pre-test olasılık, atipik göğüs ağrısı, risk faktörleri",
+          "Kalsiyum skoru (CAC): 0 = çok düşük risk, 1-99 = düşük, 100-399 = orta, >400 = yüksek",
+          "Stenoz derecesi: <50% non-obstrüktif, 50-70% orta, >70% ciddi",
+          "Plak karakterizasyonu: Yumuşak (lipitten zengin), kalsifik, mikst"
+        ],
+        "kardiyak_MR": [
+          "Miyokard viabilite: Geç gadolinium tutulumu (transmural >50% non-viabil)",
+          "Ejeksiyon fraksiyonu, duvar kalınlığı, bölgesel hareket",
+          "Stres MR: Adenozin/dipiridamol perfüzyon, dobutamin stres"
+        ],
+        "miyokard_perfüzyon_sintigrafisi": [
+          "SPECT: Efor/farmakolojik stres (adenozin, dipiridamol, regadenoson)",
+          "PET: Yüksek çözünürlük, mutlak kan akımı (Rb-82, N-13 ammonia)",
+          "Perfüzyon defekti: Reversibl (iskemi), irreversibl (skar)"
+        ]
+      }
+    },
+    "fizik_tedavi_ve_rehabilitasyon": {
+      "rol": "Kardiyak rehabilitasyon, egzersiz programı",
+      "yaklaşım": {
+        "kardiyak_rehabilitasyon_fazları": {
+          "faz_1": "Hastane içi (mobilizasyon, MET <3)",
+          "faz_2": "Süpervizyon altı (8-12 hafta, 3x/hafta, monitörizasyon)",
+          "faz_3": "Uzun dönem (ömür boyu, ev bazlı)"
+        },
+        "egzersiz_reçetesi": [
+          "Aerobik: Orta yoğunlukta (kalp hızı rezervinin %40-80%), 30-60 dk, 5-7 gün/hafta",
+          "Hedef kalp hızı: (220 - yaş) x 0.6-0.8 veya efor testi ile belirlenen",
+          "Direnç egzersizi: 2x/hafta, büyük kas grupları, 10-15 tekrar",
+          "Esneklik: Günlük, 10-15 dk"
+        ],
+        "egzersiz_testleri": [
+          "Kardiyopulmoner egzersiz testi (CPET): VO2 max, VE/VCO2 slope, anarobik eşik",
+          "6 dakika yürüme testi: <300 m kötü prognoz",
+          "MET kapasitesi: <5 MET düşük, >7 MET iyi"
+        ],
+        "faydalar": [
+          "Mortalite ↓%20-30, reinfarkt ↓%25",
+          "Egzersiz kapasitesi ↑, dispne ↓",
+          "Yaşam kalitesi ↑, depresyon/anksiyete ↓",
+          "Kardiyovasküler risk faktörleri ↓ (kilo, LDL, KB)"
+        ]
+      }
+    },
+    "psikiyatri": {
+      "rol": "Depresyon, anksiyete tedavisi, uyum desteği",
+      "yaklaşım": {
+        "depresyon_post_MI": [
+          "Prevalans: %15-30 (post-MI, KAH hastalarında)",
+          "Prognoz: Depresyon → uyum ↓, mortalite ↑ (2-3 kat)",
+          "Tarama: PHQ-9, HADS (Hospital Anxiety and Depression Scale)",
+          "Tedavi: SSRI (sertralin, essitalopram - kardiyovasküler güvenli), psikoterapi (CBT)"
+        ],
+        "anksiyete": [
+          "Panik atak vs anjina ayırımı (genç yaş, hiperventilasyon, tingling)",
+          "Tedavi: SSRI, CBT, relaksasyon teknikleri"
+        ],
+        "ilaç_seçimi": [
+          "Güvenli: SSRI (sertralin, essitalopram), SNRI (venlafaksin - KB monitörize et)",
+          "Kaçınılması gerekenler: TCA (amitiriptilin - QT uzaması, aritmi riski)"
+        ]
+      }
+    }
+  },
+  "kaynaklar": [
+    "ESC Guidelines for the management of chronic coronary syndromes, 2019",
+    "ACC/AHA Guideline on the Management of Patients With Chronic Coronary Disease, 2023",
+    "ESC/EAS Guidelines for the management of dyslipidaemias, 2019",
+    "UpToDate: Stable ischemic heart disease - Overview of management",
+    "2021 ESC Guidelines on cardiovascular disease prevention",
+    "COURAGE Trial: Optimal medical therapy vs PCI",
+    "ISCHEMIA Trial: Invasive vs conservative strategy",
+    "SYNTAX Score: PCI vs CABG decision",
+    "FOURIER Trial: PCSK9 inhibitors and cardiovascular outcomes",
+    "TEKHARF Study: Turkish Adult Risk Factor Study"
+  ]
+}

@@ -1,0 +1,3520 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Search Container */
+.search-container {
+  position: relative;
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #667eea;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.search-bar button:hover {
+  transform: scale(1.05);
+}
+
+/* Live Search Dropdown */
+.live-search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  margin-top: 0.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.live-search-header {
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e1e8ed;
+  font-size: 0.875rem;
+  color: #667eea;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+}
+
+.live-search-item {
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.live-search-item:last-child {
+  border-bottom: none;
+}
+
+.live-search-item:hover {
+  background: #f8f9fa;
+  padding-left: 1.25rem;
+}
+
+.live-search-name {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.live-search-meta {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.live-search-code {
+  color: #667eea;
+  background: #f0f4ff;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+
+.stats span {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: white;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar button {
+  padding: 1rem;
+  background: #f5f7fa;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.sidebar button:hover {
+  background: #e8ecf0;
+}
+
+.sidebar button.active {
+  background: #667eea;
+  color: white;
+}
+
+/* Filtreleme bölümü */
+.filter-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.filter-section h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: #667eea;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px solid #e1e8ed;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-select:hover {
+  border-color: #667eea;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #667eea;
+}
+
+/* Disease List */
+.disease-list h2 {
+  margin-bottom: 1.5rem;
+  color: #667eea;
+}
+
+.disease-card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.disease-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.disease-card h3 {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.disease-en {
+  color: #888;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.disease-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.icd-code {
+  background: #e8ecf0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+}
+
+.branch-count {
+  background: #667eea;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+}
+
+/* Disease Detail */
+.disease-detail h2 {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  background: #e8ecf0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.back-button:hover {
+  background: #d8dce0;
+}
+
+.info-section {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.info-section h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e8ecf0;
+}
+
+.info-section p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+/* Branches */
+.branches-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.branches-section h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.branch-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.branch-button {
+  padding: 0.75rem 1.25rem;
+  background: #f5f7fa;
+  border: 2px solid #e8ecf0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.branch-button:hover {
+  background: #e8ecf0;
+  border-color: #667eea;
+}
+
+.branch-button.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.branch-data {
+  background: #f5f7fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.branch-data h4 {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+/* JSON Rendering */
+.json-object {
+  margin-bottom: 0.5rem;
+}
+
+.json-property {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: white;
+  border-left: 3px solid #667eea;
+  border-radius: 4px;
+}
+
+.json-property strong {
+  color: #667eea;
+  margin-right: 0.5rem;
+}
+
+.json-array {
+  list-style-type: none;
+  margin-left: 1rem;
+}
+
+.json-array li {
+  padding: 0.25rem 0;
+  border-left: 2px solid #e8ecf0;
+  padding-left: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.json-value {
+  color: #333;
+}
+
+/* Search Results */
+.search-results h2 {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.search-result-card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.search-result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.disease-description {
+  color: #666;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+/* ICD-10 Detail Codes */
+.icd-detail-section {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.icd-codes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.icd-code-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e1e8ed;
+  transition: all 0.2s ease;
+}
+
+.icd-code-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+  transform: translateY(-2px);
+}
+
+.icd-code-label {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  color: #667eea;
+  background: #f0f4ff;
+  padding: 0.375rem 0.625rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  min-width: 80px;
+  text-align: center;
+}
+
+.icd-code-desc {
+  color: #4a5568;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .search-bar {
+    flex-direction: column;
+  }
+  
+  .icd-codes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Detail Header with AI Button */
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.ai-assistant-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.ai-assistant-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* AI Assistant Modal */
+.ai-assistant-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.ai-assistant-content {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ai-assistant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.ai-assistant-header h3 {
+  margin: 0;
+  color: #667eea;
+}
+
+.ai-assistant-header button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.2s;
+}
+
+.ai-assistant-header button:hover {
+  color: #333;
+}
+
+.ai-helper-text {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.ai-question-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ai-question-input textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.ai-question-input textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.ai-question-input button {
+  align-self: flex-end;
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.ai-question-input button:hover:not(:disabled) {
+  background: #5568d3;
+  transform: translateY(-1px);
+}
+
+.ai-question-input button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ai-response {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.ai-response strong {
+  display: block;
+  color: #667eea;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.ai-response p {
+  color: #2d3748;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Example Questions */
+.example-questions {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f0f4ff;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.example-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 0.75rem;
+}
+
+.example-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.example-buttons button {
+  padding: 0.625rem;
+  background: white;
+  border: 2px solid #e1e8ed;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.example-buttons button:hover {
+  border-color: #667eea;
+  background: #f8f9fa;
+  transform: translateX(4px);
+}
+
+.new-question-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 2px solid #667eea;
+  color: #667eea;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.new-question-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   KARANLIK MOD (DARK MODE)
+   ============================================ */
+
+/* Karanlık Mod Toggle Butonu */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1) rotate(20deg);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.dark-mode-toggle:active {
+  transform: scale(0.95);
+}
+
+/* Karanlık Mod Ana Renkler */
+body.dark-mode {
+  background: #0f0f23;
+  color: #e0e0e0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Header - Karanlık Mod */
+body.dark-mode header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-bottom: 1px solid #2a2a4e;
+}
+
+body.dark-mode header h1 {
+  color: #e0e0e0;
+  text-shadow: 0 2px 10px rgba(102, 126, 234, 0.5);
+}
+
+body.dark-mode .search-bar input {
+  background: #16213e;
+  border: 1px solid #2a2a4e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .search-bar input::placeholder {
+  color: #888;
+}
+
+body.dark-mode .search-bar input:focus {
+  border-color: #667eea;
+  background: #1a1a2e;
+}
+
+body.dark-mode .search-bar button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+/* Stats - Karanlık Mod */
+body.dark-mode .stats span {
+  background: rgba(102, 126, 234, 0.2);
+  color: #a8b3ff;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+/* Sidebar - Karanlık Mod */
+body.dark-mode .sidebar {
+  background: #16213e;
+  border-right: 1px solid #2a2a4e;
+}
+
+body.dark-mode .sidebar button {
+  background: transparent;
+  color: #b0b0b0;
+  border: 1px solid transparent;
+}
+
+body.dark-mode .sidebar button:hover {
+  background: rgba(102, 126, 234, 0.1);
+  color: #a8b3ff;
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+body.dark-mode .sidebar button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+/* Filtre Select - Karanlık Mod */
+body.dark-mode .filter-select {
+  background: #1a1a2e;
+  color: #e0e0e0;
+  border-color: #2a2a4e;
+}
+
+body.dark-mode .filter-select:focus {
+  border-color: #667eea;
+}
+
+/* Disease List - Karanlık Mod */
+body.dark-mode .disease-list h2 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .disease-card {
+  background: #16213e;
+  border: 1px solid #2a2a4e;
+}
+
+body.dark-mode .disease-card:hover {
+  background: #1a1a2e;
+  border-color: #667eea;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+body.dark-mode .disease-card h3 {
+  color: #a8b3ff;
+}
+
+body.dark-mode .disease-card p {
+  color: #b0b0b0;
+}
+
+body.dark-mode .disease-meta {
+  color: #888;
+}
+
+body.dark-mode .disease-meta span {
+  background: rgba(102, 126, 234, 0.2);
+  color: #a8b3ff;
+}
+
+/* Detail View - Karanlık Mod */
+body.dark-mode .detail-view h2 {
+  color: #a8b3ff;
+}
+
+body.dark-mode .detail-header button {
+  background: rgba(102, 126, 234, 0.2);
+  color: #a8b3ff;
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+body.dark-mode .detail-header button:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+body.dark-mode .detail-section {
+  background: #16213e;
+  border: 1px solid #2a2a4e;
+}
+
+body.dark-mode .detail-section h3 {
+  color: #a8b3ff;
+  border-bottom-color: #2a2a4e;
+}
+
+body.dark-mode .detail-section p,
+body.dark-mode .detail-section li {
+  color: #b0b0b0;
+}
+
+body.dark-mode .detail-section strong {
+  color: #e0e0e0;
+}
+
+/* ICD Codes - Karanlık Mod */
+body.dark-mode .icd-code-item {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4e;
+}
+
+body.dark-mode .icd-code-item:hover {
+  border-color: #667eea;
+  background: #16213e;
+}
+
+body.dark-mode .icd-code-label {
+  background: rgba(102, 126, 234, 0.3);
+  color: #a8b3ff;
+}
+
+body.dark-mode .icd-code-desc {
+  color: #b0b0b0;
+}
+
+/* Branch Buttons - Karanlık Mod */
+body.dark-mode .branch-button {
+  background: rgba(102, 126, 234, 0.2);
+  color: #a8b3ff;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+body.dark-mode .branch-button:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+}
+
+/* Live Search Dropdown - Karanlık Mod */
+body.dark-mode .live-search-dropdown {
+  background: #16213e;
+  border: 1px solid #2a2a4e;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .live-search-header {
+  background: #1a1a2e;
+  color: #a8b3ff;
+  border-bottom-color: #2a2a4e;
+}
+
+body.dark-mode .live-search-item {
+  border-bottom-color: #2a2a4e;
+}
+
+body.dark-mode .live-search-item:hover {
+  background: #1a1a2e;
+}
+
+body.dark-mode .live-search-name {
+  color: #e0e0e0;
+}
+
+body.dark-mode .live-search-meta {
+  color: #888;
+}
+
+body.dark-mode .live-search-code {
+  background: rgba(102, 126, 234, 0.2);
+  color: #a8b3ff;
+}
+
+/* AI Assistant Modal - Karanlık Mod */
+body.dark-mode .ai-assistant-modal {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+body.dark-mode .ai-assistant-content {
+  background: #16213e;
+  border: 1px solid #2a2a4e;
+}
+
+body.dark-mode .ai-assistant-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body.dark-mode .ai-helper-text {
+  color: #b0b0b0;
+}
+
+body.dark-mode .example-questions {
+  background: #1a1a2e;
+  border-left-color: #667eea;
+}
+
+body.dark-mode .example-title {
+  color: #a8b3ff;
+}
+
+body.dark-mode .example-buttons button {
+  background: #0f0f23;
+  border-color: #2a2a4e;
+  color: #b0b0b0;
+}
+
+body.dark-mode .example-buttons button:hover {
+  background: rgba(102, 126, 234, 0.2);
+  border-color: #667eea;
+  color: #a8b3ff;
+}
+
+body.dark-mode .ai-question-input textarea {
+  background: #1a1a2e;
+  border-color: #2a2a4e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .ai-question-input textarea::placeholder {
+  color: #666;
+}
+
+body.dark-mode .ai-question-input textarea:focus {
+  border-color: #667eea;
+}
+
+body.dark-mode .ai-response {
+  background: #1a1a2e;
+  border-color: #2a2a4e;
+  color: #b0b0b0;
+}
+
+body.dark-mode .new-question-btn {
+  background: #0f0f23;
+  border-color: #667eea;
+  color: #a8b3ff;
+}
+
+body.dark-mode .new-question-btn:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+/* Scrollbar - Karanlık Mod */
+body.dark-mode ::-webkit-scrollbar {
+  width: 10px;
+  background: #0f0f23;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+  background: #16213e;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 5px;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Smooth Transitions */
+* {
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ============================================
+   İSTATİSTİK PANELİ (STATISTICS DASHBOARD)
+   ============================================ */
+
+.stats-dashboard {
+  padding: 2rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.stats-dashboard h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Büyük İstatistik Kartları */
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
+}
+
+.stat-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: bounce 2s infinite;
+}
+
+.stat-value {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+  animation: countUp 1s ease-out;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* İstatistik Bölümleri */
+.stats-section {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stats-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+/* Branş Dağılımı */
+.branch-stats-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.branch-stat-item {
+  display: grid;
+  grid-template-columns: 200px 1fr 60px;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.branch-stat-item:hover {
+  background: #f0f0ff;
+  transform: translateX(5px);
+}
+
+.branch-stat-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.branch-stat-bar-container {
+  height: 30px;
+  background: #e9ecef;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.branch-stat-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  transition: width 1s ease;
+  animation: fillBar 1s ease;
+  position: relative;
+}
+
+.branch-stat-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes fillBar {
+  from { width: 0; }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.branch-stat-count {
+  font-weight: 700;
+  color: #667eea;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+/* Hastalık Karşılaştırması */
+.disease-comparison-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.disease-comparison-item {
+  display: grid;
+  grid-template-columns: 250px 1fr 100px;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.disease-comparison-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  transform: scale(1.02);
+}
+
+.disease-comparison-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.disease-comparison-bar-container {
+  height: 35px;
+  background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+  border-radius: 17px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.disease-comparison-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 17px;
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fillBar 1.2s ease;
+  box-shadow: 0 0 15px rgba(102, 126, 234, 0.5);
+}
+
+.disease-comparison-count {
+  font-weight: 700;
+  color: #764ba2;
+  font-size: 1.1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ICD Kategori Grid */
+.icd-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.icd-category-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.icd-category-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  border-color: #667eea;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.icd-category-letter {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.icd-category-name {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.icd-category-count {
+  font-size: 1.1rem;
+  color: #667eea;
+  font-weight: 700;
+}
+
+/* Karanlık Mod - İstatistikler */
+body.dark-mode .stats-dashboard h2 {
+  color: #a8b3ff;
+}
+
+body.dark-mode .stat-card {
+  background: #16213e;
+  border-color: #2a2a4e;
+}
+
+body.dark-mode .stat-card:hover {
+  border-color: #667eea;
+}
+
+body.dark-mode .stat-label {
+  color: #b0b0b0;
+}
+
+body.dark-mode .stats-section {
+  background: #16213e;
+  border: 1px solid #2a2a4e;
+}
+
+body.dark-mode .stats-section h3 {
+  color: #a8b3ff;
+  border-bottom-color: #667eea;
+}
+
+body.dark-mode .branch-stat-item {
+  background: #1a1a2e;
+}
+
+body.dark-mode .branch-stat-item:hover {
+  background: #0f0f23;
+}
+
+body.dark-mode .branch-stat-name {
+  color: #e0e0e0;
+}
+
+body.dark-mode .branch-stat-bar-container {
+  background: #0f0f23;
+}
+
+body.dark-mode .disease-comparison-item {
+  background: #1a1a2e;
+  border-color: #2a2a4e;
+}
+
+body.dark-mode .disease-comparison-item:hover {
+  border-color: #667eea;
+}
+
+body.dark-mode .disease-comparison-name {
+  color: #e0e0e0;
+}
+
+body.dark-mode .disease-comparison-bar-container {
+  background: #0f0f23;
+}
+
+body.dark-mode .icd-category-card {
+  background: #1a1a2e;
+  border-color: #2a2a4e;
+}
+
+body.dark-mode .icd-category-card:hover {
+  border-color: #667eea;
+}
+
+body.dark-mode .icd-category-name {
+  color: #b0b0b0;
+}
+
+/* Responsive - İstatistikler */
+@media (max-width: 768px) {
+  .stats-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .branch-stat-item,
+  .disease-comparison-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .branch-stat-bar-container,
+  .disease-comparison-bar-container {
+    margin: 0.5rem 0;
+  }
+}
+
+/* ============================================
+   3D ANATOMİ (3D ANATOMY)
+   ============================================ */
+
+/* Detail Header Buttons Container */
+.detail-header-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* 3D Anatomi Butonu */
+.anatomy-3d-button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+  transition: all 0.3s ease;
+}
+
+.anatomy-3d-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+}
+
+/* 3D Anatomi Modal */
+.anatomy-3d-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.anatomy-3d-content {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.4s ease;
+}
+
+.anatomy-3d-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #f5576c;
+}
+
+.anatomy-3d-header h3 {
+  font-size: 1.8rem;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.anatomy-3d-header button {
+  background: rgba(245, 87, 108, 0.1);
+  border: 2px solid #f5576c;
+  color: #f5576c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.anatomy-3d-header button:hover {
+  background: #f5576c;
+  color: white;
+  transform: rotate(90deg);
+}
+
+.anatomy-helper-text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Organ Grid */
+.organ-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.organ-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 2px solid #e9ecef;
+  border-radius: 15px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.organ-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.5s ease;
+}
+
+.organ-card:hover::before {
+  left: 100%;
+}
+
+.organ-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(245, 87, 108, 0.3);
+  border-color: #f5576c;
+}
+
+.organ-card.selected {
+  border-color: #f5576c;
+  box-shadow: 0 15px 40px rgba(245, 87, 108, 0.4);
+  transform: scale(1.05);
+}
+
+/* Şiddet Renkleri */
+.organ-card.severity-high {
+  border-left: 5px solid #e74c3c;
+}
+
+.organ-card.severity-medium {
+  border-left: 5px solid #f39c12;
+}
+
+.organ-card.severity-low {
+  border-left: 5px solid #3498db;
+}
+
+/* Organ Görsel */
+.organ-visual {
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.organ-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+.organ-icon {
+  font-size: 5rem;
+  z-index: 2;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Organ Bilgi */
+.organ-info {
+  text-align: center;
+}
+
+.organ-info h4 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-weight: 700;
+}
+
+.severity-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.severity-badge.severity-high {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+}
+
+.severity-badge.severity-medium {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: white;
+}
+
+.severity-badge.severity-low {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+}
+
+/* Organ Açıklama */
+.organ-description {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f093fb15, #f5576c15);
+  border-radius: 10px;
+  border-left: 4px solid #f5576c;
+  animation: slideIn 0.3s ease;
+}
+
+.organ-description p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Legend */
+.anatomy-legend {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.anatomy-legend h4 {
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.legend-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.legend-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-dot.high {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+}
+
+.legend-dot.medium {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+}
+
+.legend-dot.low {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+/* Anatomi Notu */
+.anatomy-note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px dashed #ddd;
+}
+
+/* Karanlık Mod - 3D Anatomi */
+body.dark-mode .anatomy-3d-modal {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+body.dark-mode .anatomy-3d-content {
+  background: #16213e;
+  border: 1px solid #2a2a4e;
+}
+
+body.dark-mode .anatomy-3d-header {
+  border-bottom-color: #f5576c;
+}
+
+body.dark-mode .anatomy-3d-header h3 {
+  color: #f093fb;
+}
+
+body.dark-mode .anatomy-helper-text {
+  color: #b0b0b0;
+}
+
+body.dark-mode .organ-card {
+  background: #1a1a2e;
+  border-color: #2a2a4e;
+}
+
+body.dark-mode .organ-card:hover,
+body.dark-mode .organ-card.selected {
+  border-color: #f5576c;
+  background: #0f0f23;
+}
+
+body.dark-mode .organ-info h4 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .organ-description {
+  background: rgba(240, 147, 251, 0.1);
+  border-left-color: #f5576c;
+}
+
+body.dark-mode .organ-description p {
+  color: #b0b0b0;
+}
+
+body.dark-mode .anatomy-legend {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4e;
+}
+
+body.dark-mode .anatomy-legend h4 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .legend-item {
+  color: #b0b0b0;
+}
+
+body.dark-mode .anatomy-note {
+  background: #1a1a2e;
+  border-color: #2a2a4e;
+  color: #b0b0b0;
+}
+
+/* Responsive - 3D Anatomi */
+@media (max-width: 768px) {
+  .anatomy-3d-content {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .organ-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .detail-header-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .anatomy-3d-button,
+  .ai-assistant-button {
+    width: 100%;
+  }
+}
+
+/* Özel Animasyonlar */
+@keyframes organAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.organ-card {
+  animation: organAppear 0.5s ease;
+  animation-fill-mode: both;
+}
+
+.organ-card:nth-child(1) { animation-delay: 0.1s; }
+.organ-card:nth-child(2) { animation-delay: 0.2s; }
+.organ-card:nth-child(3) { animation-delay: 0.3s; }
+.organ-card:nth-child(4) { animation-delay: 0.4s; }
+.organ-card:nth-child(5) { animation-delay: 0.5s; }
+
+/* ==================== YENİ KATEGORİ SİSTEMİ ==================== */
+
+/* Üst Filtre Konteyneri */
+.top-filters-container {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Kategori Tabları */
+.category-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.category-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #95a5a6;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.category-tab:hover {
+  background: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+  transform: translateY(-2px);
+}
+
+.category-tab.active {
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+}
+
+.cat-icon {
+  font-size: 1.3rem;
+}
+
+.cat-label {
+  font-size: 0.9rem;
+}
+
+/* Branş Filtresi Dropdown */
+.branch-filter-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.branch-filter-dropdown label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+.branch-filter-dropdown select {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-width: 300px;
+}
+
+.branch-filter-dropdown select:hover {
+  border-color: #667eea;
+}
+
+.branch-filter-dropdown select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Kategori İçerik */
+.category-content {
+  margin-top: 1.5rem;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.info-card h3 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.info-card p {
+  line-height: 1.7;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ICD Kod Pilleri */
+.icd-codes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.icd-code-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.icd-code-pill .code {
+  font-weight: bold;
+  padding-right: 0.5rem;
+  border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.icd-code-pill .desc {
+  font-size: 0.8rem;
+}
+
+/* Branş Spesifik İçerik */
+.branch-specific-content {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 3px dashed #e0e0e0;
+}
+
+.branch-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-left: 5px solid #667eea;
+}
+
+.branch-card h3 {
+  color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .category-tabs {
+    gap: 0.3rem;
+  }
+  
+  .category-tab {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .cat-icon {
+    font-size: 1.1rem;
+  }
+  
+  .cat-label {
+    display: none;
+  }
+  
+  .category-tab.active .cat-label {
+    display: inline;
+  }
+  
+  .branch-filter-dropdown {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .branch-filter-dropdown select {
+    max-width: 100%;
+  }
+}
+
+/* Dark Mode */
+.dark-mode .top-filters-container {
+  background: #2c3e50;
+}
+
+.dark-mode .category-tab {
+  color: #bdc3c7;
+}
+
+.dark-mode .category-tab:hover {
+  background: #34495e;
+}
+
+.dark-mode .branch-filter-dropdown label {
+  color: #ecf0f1;
+}
+
+.dark-mode .branch-filter-dropdown select {
+  background: #34495e;
+  color: white;
+  border-color: #4a5f7f;
+}
+
+.dark-mode .info-card {
+  background: #34495e;
+}
+
+.dark-mode .info-card h3 {
+  color: #ecf0f1;
+  border-bottom-color: #4a5f7f;
+}
+
+.dark-mode .info-card p {
+  color: #bdc3c7;
+}
+
+.dark-mode .branch-card {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  border-left-color: #667eea;
+}
+
+/* ==================== BRANŞ SEKMESİ GÜNCELLEMELER ==================== */
+
+.category-tabs-container {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.branch-selector-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.branch-selector-card h3 {
+  color: white;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.helper-text {
+  opacity: 0.9;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.branch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.branch-card-button {
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.branch-card-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  border-color: #667eea;
+}
+
+.branch-card-button.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+  transform: scale(1.05);
+}
+
+.branch-icon {
+  font-size: 1.5rem;
+}
+
+.branch-name {
+  flex: 1;
+  text-align: left;
+}
+
+.branch-content-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-left: 5px solid #667eea;
+  margin-top: 1.5rem;
+}
+
+.branch-content-card h3 {
+  color: #667eea;
+}
+
+.no-selection-message {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #95a5a6;
+}
+
+.no-selection-message .icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.no-selection-message p {
+  font-size: 1.1rem;
+}
+
+.no-data {
+  color: #e67e22;
+  font-style: italic;
+  padding: 1rem;
+  background: #fff3cd;
+  border-radius: 8px;
+  border-left: 4px solid #e67e22;
+}
+
+/* Dark Mode */
+.dark-mode .branch-selector-card {
+  background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+}
+
+.dark-mode .branch-card-button {
+  background: #34495e;
+  color: #ecf0f1;
+}
+
+.dark-mode .branch-card-button:hover {
+  border-color: #667eea;
+}
+
+.dark-mode .branch-card-button.active {
+  background: #667eea;
+  color: white;
+}
+
+.dark-mode .branch-content-card {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.dark-mode .no-data {
+  background: #34495e;
+  color: #f39c12;
+  border-left-color: #f39c12;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .branch-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .branch-card-button {
+    padding: 1rem;
+  }
+}
+
+/* ==================== OKUNAB İLİR İÇERİK RENDER ==================== */
+
+/* Uzun metinler */
+.json-text-long {
+  line-height: 1.8;
+  color: #2c3e50;
+  font-size: 1.05rem;
+  margin: 0.5rem 0;
+  text-align: justify;
+}
+
+.json-string {
+  color: #34495e;
+}
+
+.json-null, .json-empty {
+  color: #95a5a6;
+  font-style: italic;
+}
+
+/* Okunabilir Liste */
+.readable-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.readable-list li {
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  background: #f8f9fa;
+  border-left: 4px solid #667eea;
+  border-radius: 6px;
+  line-height: 1.6;
+  transition: all 0.2s ease;
+}
+
+.readable-list li:hover {
+  background: #e8eaf6;
+  transform: translateX(5px);
+}
+
+/* JSON Objeler */
+.json-object {
+  margin: 0.5rem 0;
+}
+
+.json-object.level-0 {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.property {
+  margin: 1rem 0;
+  padding: 0.8rem 0;
+}
+
+.property.section {
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.property.simple {
+  border-bottom: 1px dashed #ecf0f1;
+}
+
+.prop-key {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+  color: #2c3e50;
+  font-size: 1.05rem;
+}
+
+.bullet {
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+.prop-value {
+  margin-left: 2rem;
+  color: #555;
+}
+
+/* Array Items */
+.array-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  margin: 0.7rem 0;
+  border-radius: 8px;
+  border-left: 3px solid #3498db;
+}
+
+/* Hiyerarşik Renkler */
+.json-object.level-1 {
+  padding-left: 1rem;
+  border-left: 3px solid #e8eaf6;
+}
+
+.json-object.level-2 {
+  padding-left: 1rem;
+  border-left: 2px solid #f1f3f5;
+}
+
+/* Dark Mode */
+.dark-mode .json-text-long {
+  color: #ecf0f1;
+}
+
+.dark-mode .readable-list li {
+  background: #34495e;
+  border-left-color: #667eea;
+  color: #ecf0f1;
+}
+
+.dark-mode .readable-list li:hover {
+  background: #3d566e;
+}
+
+.dark-mode .json-object.level-0 {
+  background: #2c3e50;
+}
+
+.dark-mode .prop-key {
+  color: #ecf0f1;
+}
+
+.dark-mode .prop-value {
+  color: #bdc3c7;
+}
+
+.dark-mode .array-item {
+  background: #34495e;
+  border-left-color: #3498db;
+}
+
+.dark-mode .property.section {
+  border-bottom-color: #4a5f7f;
+}
+
+.dark-mode .property.simple {
+  border-bottom-color: #4a5f7f;
+}
+
+/* ==================== GLOBAL FEATURES ==================== */
+
+/* Global Toolbar */
+.global-toolbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.language-selector {
+  padding: 0.6rem 1rem;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.language-selector:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.compare-mode-btn {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.compare-mode-btn.active {
+  background: #27ae60;
+  border-color: #27ae60;
+}
+
+.compare-mode-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Karşılaştırma Checkbox */
+.compare-checkbox {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Dashboard Stats */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card h3 {
+  font-size: 1.8rem;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* SEO Meta Tags (Görünmez ama önemli) */
+.seo-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .global-toolbar {
+    flex-wrap: wrap;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dark Mode */
+.dark-mode .dashboard-card {
+  background: #34495e;
+}
+
+.dark-mode .dashboard-value {
+  color: #ecf0f1;
+}
+
+/* ==================== OKUNAB İLİRLİK İYİLEŞTİRMESİ ==================== */
+
+/* JSON Property Stilleri - Daha Net */
+.json-object .property {
+  background: rgba(255,255,255,0.05);
+  padding: 1.2rem;
+  margin: 0.8rem 0;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.json-object .property:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateX(5px);
+}
+
+.json-object .prop-key {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ecf0f1;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: 0.5px;
+}
+
+.json-object .prop-key .bullet {
+  font-size: 1.3rem;
+  margin-right: 0.7rem;
+  opacity: 1;
+}
+
+.json-object .prop-value {
+  margin-left: 2.5rem;
+  color: #bdc3c7;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+/* Readable List - Daha Belirgin */
+.readable-list {
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.readable-list li {
+  background: rgba(102, 126, 234, 0.15);
+  padding: 1.2rem 1.5rem;
+  margin: 0.8rem 0;
+  border-left: 5px solid #667eea;
+  border-radius: 10px;
+  color: #ecf0f1;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.readable-list li:hover {
+  background: rgba(102, 126, 234, 0.25);
+  transform: translateX(8px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* String Values - Daha Okunaklı */
+.json-string {
+  color: #ecf0f1;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.json-text-long {
+  color: #ecf0f1;
+  font-size: 1.1rem;
+  line-height: 2;
+  font-weight: 500;
+  background: rgba(255,255,255,0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+  margin: 1rem 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Section Ayırıcıları - Daha Belirgin */
+.property.section {
+  border-bottom: 3px solid rgba(102, 126, 234, 0.4);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.property.section .prop-key {
+  font-size: 1.3rem;
+  color: #667eea;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Array Items - Daha Net */
+.array-item {
+  background: rgba(52, 152, 219, 0.15);
+  padding: 1.3rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+  color: #ecf0f1;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Info Card Başlıkları - Daha Vurgulu */
+.info-card h3 {
+  color: #ecf0f1 !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  border-bottom: 3px solid #667eea !important;
+  padding-bottom: 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Content Section Genel */
+.content-section {
+  color: #ecf0f1;
+}
+
+/* Light Mode (Eğer varsa) */
+.App:not(.dark-mode) .json-object .prop-key {
+  color: #2c3e50;
+  text-shadow: none;
+}
+
+.App:not(.dark-mode) .json-object .prop-value {
+  color: #555;
+}
+
+.App:not(.dark-mode) .readable-list li {
+  background: #f0f3ff;
+  color: #2c3e50;
+}
+
+.App:not(.dark-mode) .json-text-long {
+  background: #f8f9fa;
+  color: #2c3e50;
+  text-shadow: none;
+}
+
+/* Kontrast Artırma */
+.dark-mode .json-object {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Özel Vurgular */
+strong {
+  color: #667eea !important;
+  font-weight: 700;
+}
+
+/* Mobil Optimizasyon */
+@media (max-width: 768px) {
+  .json-object .prop-key {
+    font-size: 1.05rem;
+  }
+  
+  .json-object .prop-value {
+    font-size: 0.95rem;
+    margin-left: 1.5rem;
+  }
+  
+  .readable-list li {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* ==================== GLOBAL DASHBOARD ==================== */
+.global-dashboard {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.hero-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2.5rem;
+  border-radius: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 8px 24px rgba(102,126,234,0.3);
+  transition: transform 0.3s;
+}
+
+.hero-card:hover {
+  transform: translateY(-10px);
+}
+
+.hero-icon {
+  font-size: 4rem;
+}
+
+.hero-value {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.hero-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.hero-sublabel {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.3rem;
+}
+
+.dashboard-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dashboard-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.top-diseases-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.chart-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chart-rank {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #667eea;
+  width: 60px;
+}
+
+.chart-disease-name {
+  font-weight: 600;
+  width: 200px;
+  color: #2c3e50;
+}
+
+.chart-bar-container {
+  flex: 1;
+  height: 50px;
+  background: #ecf0f1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chart-bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: width 0.5s;
+}
+
+.age-risk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.age-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.age-card:hover {
+  transform: scale(1.05);
+}
+
+.age-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.age-label {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.age-diseases {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.viral-stat {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  padding: 3rem;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.viral-stat h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.viral-number {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.viral-text {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Dark Mode */
+.dark-mode .dashboard-section {
+  background: #34495e;
+}
+
+.dark-mode .dashboard-section h3,
+.dark-mode .chart-disease-name,
+.dark-mode .age-label {
+  color: #ecf0f1;
+}
+
+.dark-mode .chart-bar-container {
+  background: #2c3e50;
+}
+
+.dark-mode .age-card {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+/* ==================== KARŞILAŞTIRMA ==================== */
+.compare-view {
+  padding: 2rem;
+}
+
+.compare-table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.compare-header {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  background: #667eea;
+  color: white;
+  font-weight: 700;
+  padding: 1.5rem;
+}
+
+.compare-row {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  border-bottom: 1px solid #ecf0f1;
+  padding: 1rem 1.5rem;
+}
+
+.compare-row:hover {
+  background: #f8f9fa;
+}
+
+.compare-label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.compare-cell {
+  padding: 0 1rem;
+  color: #555;
+}
+
+.diff-highlight {
+  background: #fff3cd;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* ==================== AKILLI FİLTRELER ==================== */
+.filter-panel {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.filter-item label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.filter-item select {
+  width: 100%;
+  padding: 0.7rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.filter-item select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.filter-btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn-apply {
+  background: #667eea;
+  color: white;
+}
+
+.filter-btn-reset {
+  background: #e0e0e0;
+  color: #555;
+}
+
+.filter-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark-mode .compare-table,
+.dark-mode .filter-panel {
+  background: #34495e;
+}
+
+.dark-mode .compare-row:hover {
+  background: #2c3e50;
+}
+
+.dark-mode .compare-label {
+  color: #ecf0f1;
+}
+
+.dark-mode .compare-cell {
+  color: #bdc3c7;
+}
+
+.dark-mode .filter-item select {
+  background: #2c3e50;
+  color: white;
+  border-color: #4a5f7f;
+}
+
+/* ==================== MOBİL UYUMLULUK - GELİŞMİŞ ==================== */
+
+/* Tablet ve Mobil için Genel Ayarlar */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 0.5rem;
+  }
+  
+  .sidebar button {
+    min-width: 150px;
+    white-space: nowrap;
+  }
+  
+  .main-content {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Mobil Telefon - 768px altı */
+@media (max-width: 768px) {
+  /* Header */
+  .header {
+    padding: 1.5rem 1rem;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Global Toolbar */
+  .global-toolbar {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: stretch;
+  }
+  
+  .language-selector,
+  .compare-mode-btn {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    flex-direction: column;
+  }
+  
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+  }
+  
+  /* Stats */
+  .stats {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  /* Dashboard Hero Cards */
+  .dashboard-hero {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .hero-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .hero-icon {
+    font-size: 3rem;
+  }
+  
+  .hero-value {
+    font-size: 2.5rem;
+  }
+  
+  .hero-label {
+    font-size: 1rem;
+  }
+  
+  /* Dashboard Section */
+  .dashboard-section {
+    padding: 1.5rem 1rem;
+  }
+  
+  .dashboard-section h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* Chart Bar Items */
+  .chart-bar-item {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  .chart-rank {
+    font-size: 1.5rem;
+    width: auto;
+  }
+  
+  .chart-disease-name {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+  
+  .chart-bar-container {
+    width: 100%;
+    height: 40px;
+  }
+  
+  .chart-bar {
+    font-size: 0.9rem;
+    padding: 0 0.7rem;
+  }
+  
+  /* Age Risk Grid */
+  .age-risk-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .age-card {
+    padding: 1.5rem;
+  }
+  
+  .age-icon {
+    font-size: 2.5rem;
+  }
+  
+  .age-label {
+    font-size: 1rem;
+  }
+  
+  .age-diseases {
+    font-size: 0.85rem;
+  }
+  
+  /* Viral Stat */
+  .viral-stat {
+    padding: 2rem 1.5rem;
+  }
+  
+  .viral-stat h3 {
+    font-size: 1.5rem;
+  }
+  
+  .viral-number {
+    font-size: 4rem;
+  }
+  
+  .viral-text {
+    font-size: 1.1rem;
+  }
+  
+  /* Compare Table */
+  .compare-table {
+    overflow-x: auto;
+  }
+  
+  .compare-header,
+  .compare-row {
+    grid-template-columns: 150px repeat(auto-fit, minmax(200px, 1fr));
+    font-size: 0.9rem;
+  }
+  
+  .compare-label {
+    font-size: 0.85rem;
+  }
+  
+  .compare-cell {
+    padding: 0 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .compare-actions {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  
+  .compare-btn {
+    width: 100%;
+  }
+  
+  /* Filter Panel */
+  .filter-panel {
+    padding: 1rem;
+  }
+  
+  .filter-panel h3 {
+    font-size: 1.2rem;
+  }
+  
+  .filter-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .filter-item label {
+    font-size: 0.9rem;
+  }
+  
+  .filter-item select {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .filter-actions {
+    flex-direction: column;
+  }
+  
+  .filter-btn {
+    width: 100%;
+    padding: 0.8rem;
+  }
+  
+  /* Disease Cards */
+  .disease-card {
+    padding: 1.2rem;
+  }
+  
+  .disease-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .disease-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  /* Category Tabs */
+  .category-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+  }
+  
+  .category-tab {
+    min-width: 120px;
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .cat-icon {
+    font-size: 1.2rem;
+  }
+  
+  .cat-label {
+    font-size: 0.8rem;
+  }
+  
+  /* Branch Grid */
+  .branch-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .branch-card-button {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Info Cards */
+  .info-card {
+    padding: 1.2rem;
+  }
+  
+  .info-card h3 {
+    font-size: 1.2rem !important;
+  }
+  
+  /* 3D Anatomy Modal */
+  .anatomy-3d-modal {
+    padding: 1rem;
+  }
+  
+  .anatomy-3d-content {
+    max-width: 100%;
+    max-height: 90vh;
+  }
+  
+  .organ-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* AI Assistant Modal */
+  .ai-assistant-modal {
+    padding: 1rem;
+  }
+  
+  .ai-assistant-content {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  
+  .example-buttons {
+    flex-direction: column;
+  }
+  
+  .example-buttons button {
+    width: 100%;
+  }
+}
+
+/* Çok Küçük Ekranlar - 480px altı */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.2rem;
+  }
+  
+  .hero-value {
+    font-size: 2rem;
+  }
+  
+  .hero-label {
+    font-size: 0.9rem;
+  }
+  
+  .dashboard-section h3 {
+    font-size: 1.1rem;
+  }
+  
+  .chart-rank {
+    font-size: 1.2rem;
+  }
+  
+  .chart-disease-name {
+    font-size: 0.85rem;
+  }
+  
+  .age-risk-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .viral-number {
+    font-size: 3rem;
+  }
+  
+  .viral-text {
+    font-size: 1rem;
+  }
+  
+  .compare-header,
+  .compare-row {
+    grid-template-columns: 120px 1fr;
+    font-size: 0.8rem;
+  }
+  
+  .category-tab {
+    min-width: 100px;
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .cat-label {
+    display: none;
+  }
+  
+  .category-tab.active .cat-label {
+    display: inline;
+  }
+}
+
+/* Yatay Mod (Landscape) */
+@media (max-width: 768px) and (orientation: landscape) {
+  .dashboard-hero {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .age-risk-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .hero-card {
+    padding: 1rem;
+  }
+  
+  .hero-value {
+    font-size: 2rem;
+  }
+}
+
+/* Touch-Friendly Improvements */
+@media (hover: none) and (pointer: coarse) {
+  /* Tıklanabilir alanları büyüt */
+  button,
+  .disease-card,
+  .branch-card-button,
+  .category-tab {
+    min-height: 44px; /* iOS/Android minimum dokunma alanı */
+  }
+  
+  /* Hover efektlerini kaldır, active kullan */
+  .disease-card:hover {
+    transform: none;
+  }
+  
+  .disease-card:active {
+    transform: scale(0.98);
+    background: rgba(102, 126, 234, 0.1);
+  }
+  
+  .branch-card-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Scroll bar'ları gizle */
+  .category-tabs::-webkit-scrollbar,
+  .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .category-tabs,
+  .sidebar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* PWA - Safe Area (iPhone notch) */
+@supports (padding: max(0px)) {
+  .header {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+  
+  .main-content {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}

@@ -1,0 +1,612 @@
+{
+  "hastalık_id": "H008",
+  "version": "1.0",
+  "son_güncelleme": "2026-01-19",
+  "temel_bilgi": {
+    "isim_tr": "Migren",
+    "isim_en": "Migraine",
+    "kısa_isim": "Migren",
+    "diğer_isimler": [
+      "Migrenöz baş ağrısı",
+      "Vasküler baş ağrısı",
+      "Hemikranya"
+    ],
+    "kodlama": {
+      "ICD_10": "G43",
+      "ICD_10_detay": {
+        "G43.0": "Auralı migren",
+        "G43.1": "Aurasız migren",
+        "G43.2": "Migren statüsü",
+        "G43.3": "Komplike migren",
+        "G43.7": "Kronik migren",
+        "G43.8": "Diğer migren",
+        "G43.9": "Migren, tanımlanmamış"
+      },
+      "SNOMED_CT": "37796009",
+      "LOINC": "LP173453-1"
+    },
+    "tanım": "Migren, tekrarlayan orta-şiddetli-ağır unilateral (tek taraflı) pulsatil baş ağrısı, 4-72 saat süren, bulantı/kusma, foto/fonofobi ile seyreden, aktivite ile şiddetlenen primer baş ağrısı bozukluğudur. Nörovasküler bir hastalık olup, trigeminovasküler sistem aktivasyonu, kortikale yayılan depresyon (CSD) ve beyin sapı modülasyon bozukluğu ile karakterizedir. Auralı (%25-30) ve aurasız (%70-75) migren olmak üzere iki ana tipi vardır.",
+    "epidemiyoloji": {
+      "global_prevalans": "%14.7 (Global Burden of Disease 2019), dünyada 1 milyar kişi",
+      "türkiye_prevalans": "%16.4 (Türkiye Baş Ağrısı Prevalans Çalışması), kadınlarda %21.4, erkeklerde %10.8",
+      "yaş_dağılımı": "En yüksek 35-45 yaş, çocuklukta başlar (%3-10), pubertede artar, menopoz sonrası azalır",
+      "cinsiyet": "Kadınlarda 3 kat daha sık (hormonal faktörler, östrojen dalgalanmaları)",
+      "risk_grupları": [
+        "Kadınlar (özellikle üreme çağı 18-49 yaş)",
+        "Aile öyküsü (1. derece akraba %50 risk, çok faktörlü genetik)",
+        "Anksiyete, depresyon, panik bozukluk birlikteliği",
+        "Obezite (BMI >30, kronik migren riski ↑)",
+        "Uyku bozuklukları (insomnia, uyku apnesi)",
+        "Stres, düzensiz yaşam tarzı",
+        "Sigara kullanımı"
+      ]
+    },
+    "patofizyoloji": {
+      "ana_mekanizmalar": [
+        "Trigeminovasküler sistem aktivasyonu: Trigeminal sinir uçları (C fibrilleri) → CGRP (Calcitonin Gene-Related Peptide) salınımı → meningeal kan damarları dilatasyonu → ağrı",
+        "Kortikale yayılan depresyon (CSD): Oksipital korteksten başlayan, yavaş ilerleyen (2-6 mm/dk) nöronal depolarizasyon dalgası → aura fenomeni",
+        "Beyin sapı nükleusleri disfonksiyonu: Periakuaduktal gri madde, raphe nükleusleri → serotonerjik/noradrenerjik inhibisyon kaybı",
+        "CGRP yolu: Trigeminal gangliyondan CGRP salınımı → vazodilatasyon, nörojenik inflamasyon, ağrı ileti sensitizasyonu",
+        "Santral sensitizasyon: Tekrarlayan migrenle trigeminal nükleus kaudaliste hipereksitabilite → kronik migren, kutanöz allodini"
+      ],
+      "genetik": [
+        "Ailesel hemiplejik migren (FHM): CACNA1A (Tip 1), ATP1A2 (Tip 2), SCN1A (Tip 3) gen mutasyonları",
+        "Migren yatkınlık: Çok genli (polygenic), 38+ risk lokusu (GWAS çalışmaları)",
+        "İyon kanal bozuklukları (kanallopati): Kalsiyum, sodyum, potasyum kanalları"
+      ],
+      "tetikleyiciler": {
+        "hormonal": "Menstruasyon (östrojen düşüşü), oral kontraseptif, menopoz",
+        "gıdalar": "Çikolata, peynir (tiramin), alkol (kırmızı şarap), kafein (aşırı/kesme), MSG, aspartam, nitritler",
+        "çevresel": "Parlak ışık, gürültü, koku (parfüm), hava değişiklikleri (basınç)",
+        "davranışsal": "Uyku düzensizliği (az/çok), açlık, stres/stres sonrası gevşeme",
+        "diğer": "Fiziksel aktivite (aşırı efor), ilaçlar (vazodilatatörler, nitratlar)"
+      }
+    },
+    "klinik_özellikler": {
+      "ICHD_3_tanı_kriterleri": {
+        "aurasız_migren": [
+          "A. En az 5 atak (B-D kriterlerini karşılayan)",
+          "B. Baş ağrısı 4-72 saat (tedavisiz veya başarısız tedavi)",
+          "C. Baş ağrısı karakteri (en az 2 tanesi): Unilateral (tek taraflı %60), pulsatil (zonklayıcı), orta-ağır şiddet (VAS ≥5/10), rutin aktivite ile kötüleşme",
+          "D. Eşlik eden semptomlar (en az 1 tanesi): Bulantı ve/veya kusma, fotofobi ve fonofobi (her ikisi birlikte)",
+          "E. Sekonder neden ekarte"
+        ],
+        "auralı_migren": [
+          "A. En az 2 atak (B-D kriterlerini karşılayan)",
+          "B. Bir veya daha fazla tam reversibl aura semptom: Görsel (%90), duyusal (%40), konuşma/dil (afazi %10), motor (nadir, hemiplejik migren), beyin sapı, retinal",
+          "C. Aura özellikleri (en az 3 tanesi): En az 1 aura semptom kademeli gelişir (≥5 dakika), ≥2 aura semptom sırayla gelir, her aura 5-60 dakika sürer, en az 1 aura unilateral, en az 1 aura pozitif özellik (ışık parlaması, iğnelenme), aura ile baş ağrısı birlikte veya <60 dakika içinde",
+          "D. Sekonder neden ekarte"
+        ]
+      },
+      "baş_ağrısı_fazları": {
+        "prodrom_24_48_saat_öncesi": [
+          "Yorgunluk, esneme, boyun sertliği",
+          "İştah değişikliği (aşırı yeme, belirli gıda isteği)",
+          "Konsantrasyon güçlüğü, irritabilite",
+          "Duygu değişiklikleri (öfori, depresyon)"
+        ],
+        "aura_fazı_5_60_dakika": {
+          "görsel_aura": "Pozitif: Zig-zag çizgiler (fortifikasyon spektrumu), ışık parlamaları (fotopsiler), Negatif: Skotoma (görme kaybı, kör nokta)",
+          "duyusal_aura": "Pozitif: Parestezi (iğnelenme, karıncalanma, el→kol→yüz), Negatif: Uyuşma (marş paterni)",
+          "konuşma_auráısı": "Afazi (kelime bulma güçlüğü), dizartri (konuşma bozukluğu)",
+          "motor_aura": "Hemiplejik migren (nadir, tek taraflı güçsüzlük)",
+          "beyin_sapı_aura": "Diplopi, disartri, vertigo, tinitus, ataksi, bilinç değişikliği"
+        },
+        "baş_ağrısı_fazı_4_72_saat": [
+          "Unilateral (%60), frontotemporal, periorbital",
+          "Pulsatil (zonklayıcı, kalp atışı ile senkron)",
+          "Orta-ağır şiddet (VAS 5-10/10)",
+          "Aktivite ile kötüleşme (yürüme, merdiven çıkma)",
+          "Bulantı (%90), kusma (%30)",
+          "Fotofobi (ışığa duyarlılık), fonofobi (sese duyarlılık), osmofobi (kokuya duyarlılık)",
+          "Kutanöz allodini (%80, fırçalama, dokunma ağrılı)"
+        ],
+        "postdrom_24_48_saat": [
+          "Yorgunluk, bitkinlik (hangover)",
+          "Konsantrasyon güçlüğü, depresif duygu",
+          "Boyun sertliği, baş hareketleri ile ağrı"
+        ]
+      },
+      "migren_varyantları": {
+        "kronik_migren": {
+          "tanı": "≥15 gün/ay baş ağrısı (son 3 ay), ≥8 gün/ay migren karakteristikleri",
+          "özellik": "İlaç aşırı kullanımı (%50-80 birlikteliği), yüksek yeti kaybı"
+        },
+        "menstruel_migren": {
+          "tanı": "Menstruasyon ±2 gün içinde migren (en az 2/3 siklusda)",
+          "mekanizma": "Östrojen düşüşü tetikleyici",
+          "tedavi": "Profilaktik: Mini-periyod NSAID/triptan, hormonosupresyon"
+        },
+        "retinal_migren": {
+          "tanı": "Tam reversibl monoküler (tek göz) görme kaybı <60 dakika + baş ağrısı",
+          "ayırıcı": "Amaurosis fugax (TIA), CRVO ekarte edilmeli"
+        },
+        "vestibüler_migren": {
+          "tanı": "Vertigo (orta-ağır, 5 dk-72 saat) + migren öyküsü",
+          "prevalans": "%1 genel popülasyon, migrenlilerde %10"
+        },
+        "abdominal_migren": {
+          "tanı": "Çocuklarda, tekrarlayan karın ağrısı (orta hat, 1-72 saat) + bulantı/kusma + iştahsızlık",
+          "prognoz": "Pubertal dönemde tipik migrene dönüşebilir"
+        }
+      }
+    },
+    "tanı": {
+      "klinik_tanı": [
+        "ICHD-3 (International Classification of Headache Disorders) kriterleri",
+        "Anamnez: Atak sıklığı, süre, karakter, lokalizasyon, şiddet, tetikleyiciler",
+        "Nörolojik muayene: Normal (interiktal dönem)",
+        "Baş ağrısı günlüğü (headache diary): 3 ay takip, tetikleyici, ilaç yanıtı"
+      ],
+      "red_flag_semptomları": [
+        "Ani başlangıç, thunderclap baş ağrısı (subaraknoid kanama)",
+        "Yeni başlangıç baş ağrısı >50 yaş",
+        "Progresif kötüleşen baş ağrısı (tümör, hematom)",
+        "Sistemik semptomlar: Ateş, kilo kaybı (infeksiyon, malignite)",
+        "Fokal nörolojik defisit (kalıcı, >1 saat): İnme, tümör",
+        "Papilödem (intrakraniyal basınç artışı)",
+        "İmmünsüpresyon, HIV, kanser öyküsü",
+        "Gebelikte yeni başlangıç/kötüleşme (preeklampsi, serebral ven trombozu)"
+      ],
+      "görüntüleme": {
+        "endikasyon": "Red flag semptomları, atipik özellikler, fokal defisit, ilk kez ciddi baş ağrısı",
+        "beyin_MRG": "Tercih edilen (sekonder nedenleri ekarte, beyaz cevher lezyonları migrende %30-50, klinik önemi yok)",
+        "beyin_BT": "Akut red flag (kanama, inme), MRG kontrendikasyonu",
+        "MR_anjiyografi_MRA": "Diseksiyon, anevrizma, vasküler malformasyon şüphesi",
+        "MR_venografi_MRV": "Serebral ven trombozu şüphesi"
+      },
+      "laboratuvar": [
+        "Rutin gerekli değil (tipik migren)",
+        "TSH: Hipotiroidi ekarte (yorgunluk, baş ağrısı)",
+        "Vitamin D, B12, magnezyum: Eksiklik migreni tetikleyebilir",
+        "ESR, CRP: Dev hücreli arterit (>50 yaş, temporal arter hassasiyeti)"
+      ],
+      "ayırıcı_tanı": [
+        "Gerilim tipi baş ağrısı: Bilateral, sıkıştırıcı, hafif-orta şiddet, aktivite ile kötüleşmez, foto/fonofobi yok",
+        "Küme baş ağrısı: Unilateral, periorbital, çok şiddetli (10/10), kısa süre (15-180 dk), otonom belirtiler (gözyaşı, burun tıkanıklığı, konjunktival enjeksiyon), erkeklerde sık",
+        "İlaç aşırı kullanım baş ağrısı (MOH): ≥15 gün/ay baş ağrısı, ≥10-15 gün/ay akut ilaç kullanımı (3+ ay)",
+        "Trigeminal nevralji: Elektrik çarpması tarzı, saniyeler sürer, trigger zone",
+        "Temporal arterit: >50 yaş, temporal arter hassasiyeti, çene klavzikasyonu, ESR >50",
+        "Sekonder baş ağrıları: Subaraknoid kanama, menenjit, ensefalit, beyin tümörü, intrakraniyal hipertansiyon"
+      ]
+    },
+    "farmakoloji_ve_tedavi": {
+      "genel_prensipler": [
+        "Akut tedavi (atak anında) + profilaktik tedavi (atak sıklığını azalt)",
+        "Stratifikasyon: Hafif atak → NSAID/analjezik, orta-ağır → triptan",
+        "Erken tedavi: Atak başlangıcında (ilk 1-2 saat), aura bittiğinde",
+        "İlaç aşırı kullanımından kaçın: ≤9 gün/ay (triptan), ≤15 gün/ay (NSAID)",
+        "Yaşam tarzı modifikasyonu: Tetikleyici kaçınma, düzenli uyku/egzersiz"
+      ],
+      "akut_tedavi": {
+        "hafif_orta_atak": {
+          "NSAID": [
+            "İbuprofen: 400-600 mg (max 1200 mg/gün)",
+            "Naproksen: 500-550 mg",
+            "Deksketoprofen: 25-50 mg",
+            "Diklofenak potasyum: 50-100 mg (hızlı emilim)"
+          ],
+          "parasetamol": "1000 mg (etkililik NSAID'den düşük)",
+          "aspirin": "900-1000 mg (effervescent tablet, hızlı etki)"
+        },
+        "orta_ağır_atak": {
+          "triptanlar": {
+            "mekanizma": "5-HT1B/1D agonisti → vazokonstriksyon, CGRP salınımı inhibisyonu, nöral iletim blokajı",
+            "sumatriptan": {
+              "oral": "50-100 mg (etki 30-60 dk)",
+              "subkutan": "6 mg (en hızlı etki, 10-15 dk, etkililik %70-80)",
+              "nazal_sprey": "20 mg (etki 15-30 dk)"
+            },
+            "rizatriptan": "10 mg (ODT, hızlı emilim)",
+            "eletriptan": "40-80 mg (en uzun etki, 24 saat)",
+            "zolmitriptan": "2.5-5 mg (oral/nazal)",
+            "almotriptan": "12.5 mg (iyi tolere, yan etki az)",
+            "frovatriptan": "2.5 mg (uzun yarı ömür, menstruel migren)"
+          },
+          "triptan_seçimi": [
+            "Hızlı etki gerekli: Subkutan sumatriptan, rizatriptan ODT",
+            "Uzun atak: Eletriptan, frovatriptan",
+            "Bulantı/kusma: Nazal/subkutan formülasyon, zolmitriptan ODT",
+            "Menstruel migren: Frovatriptan (uzun yarı ömür)"
+          ],
+          "triptan_yan_etkileri": [
+            "Göğüste sıkışma/basınç hissi (%4, kardiyak değil)",
+            "Boğaz sertliği, baş dönmesi, yorgunluk",
+            "Serotonin sendromu (nadir, SSRI ile kombinasyon)"
+          ],
+          "triptan_kontraendikasyonları": [
+            "Kardiyovasküler hastalık: Koroner arter hastalığı, MI öyküsü, uncontrolled hipertansiyon (>140/90)",
+            "Serebrovasküler hastalık: İnme, TIA",
+            "Periferik vasküler hastalık",
+            "Hemiplejik/basilar tip migren",
+            "MAO inhibitörü kullanımı (14 gün içinde)"
+          ]
+        },
+        "antiemetikler": {
+          "metoklopramid": "10 mg IV/oral (bulantı + gastrik staz, prokinetik)",
+          "proklorperazin": "10 mg IV/IM (güçlü antiemetik, sedatif)",
+          "domperidon": "10 mg oral (periferik, ekstrapiramidal yan etki düşük)",
+          "ondansetron": "4-8 mg IV/oral (5-HT3 antagonisti)",
+          "kullanım": "NSAID/triptan ile kombinasyon, emilimi artırır"
+        },
+        "kombinasyon_tedaviler": [
+          "Aspirin + metoklopramid (etkili, ucuz, triptan alternatifi)",
+          "Sumatriptan + naproksen (Treximet): Sinerjistik etki, nüks azalması",
+          "Triptan + NSAID kombinasyonu"
+        ],
+        "yeni_akut_ilaçlar": {
+          "CGRP_antagonistleri_gepantlar": {
+            "ubrogepant": "50-100 mg (FDA 2019), kardiyovasküler kontrendikasyonu yok",
+            "rimegepant": "75 mg ODT (akut + profilaksi, FDA 2020)",
+            "avantaj": "Triptan kontraendikasyonu, kardiyak güvenli, medication overuse riski düşük"
+          },
+          "5HT1F_agonistleri_ditanlar": {
+            "lasmiditan": "50-200 mg (FDA 2019), vazokonstriksyon yok",
+            "avantaj": "Kardiyovasküler güvenli, triptan kontraendikasyonu",
+            "yan_etki": "Baş dönmesi, yorgunluk (2-8 saat araba kullanma yasak)"
+          }
+        }
+      },
+      "profilaktik_tedavi": {
+        "endikasyonlar": [
+          "≥4 atak/ay (veya ≥8 atak günü/ay)",
+          "Uzun süren/şiddetli ataklar (>12 saat, yeti kaybı yüksek)",
+          "Akut tedaviye yanıtsızlık/kontraendikasyon/yan etki",
+          "İlaç aşırı kullanımı riski (sık akut ilaç)",
+          "Özel formlar: Hemiplejik migren, basilar tip migren, migren statüsü"
+        ],
+        "hedefler": [
+          "Atak sıklığı ↓%50 (başarı kriteri)",
+          "Atak şiddeti ve süresi azalması",
+          "Akut ilaç kullanımı azalması",
+          "Yeti kaybı azalması, yaşam kalitesi artışı"
+        ],
+        "birinci_basamak_ilaçlar": {
+          "beta_blokerler": {
+            "propranolol": "80-240 mg/gün (uzun salınımlı)",
+            "metoprolol": "50-200 mg/gün",
+            "etkinlik": "%50 atak azalması (%40-60 hastada)",
+            "yan_etki": "Yorgunluk, bradikardi, hipotansiyon, cinsel disfonksiyon",
+            "kontraendikasyon": "Astım, bradikardi, AV blok, hipotansiyon"
+          },
+          "antidepresanlar": {
+            "amitriptilin": "10-150 mg gece (TCA, etkili aynı zamanda kronik ağrı, insomnia)",
+            "venlafaksin_XR": "75-150 mg/gün (SNRI, depresyon/anksiyete birlikteliği)",
+            "etkinlik": "%50 atak azalması (%40-50 hastada)",
+            "yan_etki": "Amitriptilin: Sedatif, ağız kuruluğu, kilo alımı, konstipasyon; Venlafaksin: Bulantı, hipertansiyon"
+          },
+          "antikonvülzanlar": {
+            "topiramat": "25-200 mg/gün (25 mg başla, yavaş artır)",
+            "valproat": "500-1500 mg/gün (divalproeks sodyum)",
+            "etkinlik": "%50 atak azalması (topiramat %47, valproat %50)",
+            "yan_etki": "Topiramat: Parestezi, kilo kaybı, kognitif yavaşlama, nefrolitiazis; Valproat: Kilo alımı, tremor, saç dökülmesi, teratojen (gebelikte kontrendike)",
+            "özel": "Topiramat kilo kaybı yapar (obez migrenli ideal)"
+          },
+          "kalsiyum_kanal_blokerleri": {
+            "flunarizin": "5-10 mg gece (Avrupa'da yaygın, FDA onayı yok)",
+            "etkinlik": "%50 atak azalması",
+            "yan_etki": "Sedatif, kilo alımı, depresyon, parkinsonizm (yaşlılarda)"
+          }
+        },
+        "yeni_profilaktik_ilaçlar": {
+          "CGRP_monoklonal_antikorları": {
+            "erenumab": "70-140 mg s.c. ayda bir (CGRP reseptör antagonisti, FDA 2018)",
+            "fremanezumab": "225 mg s.c. ayda bir veya 675 mg 3 ayda bir (CGRP ligand)",
+            "galcanezumab": "120 mg s.c. ayda bir (loading 240 mg)",
+            "eptinezumab": "100-300 mg IV 3 ayda bir (tek IV CGRP mAb)",
+            "etkinlik": "%50 atak azalması (%40-60 hastada), kronik migrende etkili",
+            "avantaj": "Yüksek etkililik, az yan etki, hızlı etki (1 ay), ilaç-ilaç etkileşimi yok",
+            "yan_etki": "Enjeksiyon yeri reaksiyonu, konstipasyon, hipertansiyon (erenumab)",
+            "maliyet": "Yüksek (6000-8000 USD/yıl)"
+          },
+          "rimegepant": "75 mg oral her 2 günde bir (akut + profilaksi, FDA 2021)",
+          "atogepant": "10-60 mg/gün oral (ilk oral CGRP antagonisti profilaksi, FDA 2021)"
+        },
+        "botulinum_toksin_A": {
+          "endikasyon": "Kronik migren (≥15 gün/ay baş ağrısı)",
+          "protokol": "OnabotulinumtoxinA (Botox) 155-195 ünite, 31-39 enjeksiyon noktası (alın, temporal, oksipital, boyun, omuz), 12 haftada bir",
+          "etkinlik": "%50 baş ağrısı günü azalması (%50 hastada)",
+          "yan_etki": "Boyun ağrısı, kas güçsüzlüğü, ptosis (nadir)"
+        },
+        "non_farmakolojik": [
+          "Magnezyum: 400-600 mg/gün (magnezyum oksit), menstruel migren",
+          "Riboflavin (B2 vitamini): 400 mg/gün (mitokondriyal disfonksiyon)",
+          "Coenzyme Q10: 100 mg 3x1",
+          "Feverfew (tanacetum parthenium): Bitkisel, etkinlik tartışmalı",
+          "Butterbur (Petasites hybridus): Hepatotoksisite riski, FDA uyarısı"
+        ]
+      },
+      "kronik_migren_tedavisi": [
+        "İlaç aşırı kullanımı varsa: Önce detoksifikasyon (ilaç kesme, geçiş tedavisi)",
+        "Birinci basamak: Topiramat, botulinum toksin A, CGRP mAb",
+        "Kombinasyon: Oral profilaktik + botulinum toksin veya CGRP mAb",
+        "Davranışçı tedavi: CBT, biyofeedback, relaksasyon"
+      ],
+      "ilaca_dirençli_migren": [
+        "Kombinasyon tedavisi: 2-3 profilaktik ilaç (farklı mekanizma)",
+        "CGRP mAb geçiş: Oren profilaktiklardan biri yanıtsız ise",
+        "Greater occipital nerve block: Lokal anestezik + steroid enjeksiyonu",
+        "Neuromodülasyon: TMS (transkraniyal manyetik stimülasyon), vagal sinir stimülasyonu, TENS"
+      ],
+      "yaşam_tarzı_modifikasyonu": [
+        "Düzenli uyku: 7-8 saat, aynı saatlerde yatma-kalkma",
+        "Düzenli öğün: 3-4 saat ara ile, açlıktan kaçın",
+        "Egzersiz: Aerobik 30 dk, 3-5 gün/hafta (aşırı efor tetikleyici olabilir)",
+        "Stres yönetimi: Meditasyon, yoga, gevşeme teknikleri, CBT",
+        "Tetikleyici kaçınma: Baş ağrısı günlüğü, kişisel tetikleyiciler belirleme",
+        "Hidrasyon: Yeterli sıvı alımı (2-3 L/gün)"
+      ]
+    },
+    "komplikasyonlar": [
+      "Kronik migren: ≥15 gün/ay baş ağrısı (>3 ay), yüksek yeti kaybı",
+      "İlaç aşırı kullanım baş ağrısı (MOH): ≥10-15 gün/ay akut ilaç (>3 ay), tedavi direnci",
+      "Migren statüsü: >72 saat süren, şiddetli migren atağı, dehidratasyon, hastaneye yatış",
+      "Migren aura statüsü: >1 saat süren aura, serebral infarkt riski",
+      "Migren infarktu: Kalıcı nörolojik defisit (aura sırasında iskemik inme), nadir (%0.8/100,000)",
+      "Aura tetikli nöbet: Migrenöz aura sonrası epileptik nöbet (migralepsi)",
+      "Depresyon, anksiyete: %20-30 birliktelik, yaşam kalitesi ↓",
+      "Patent foramen ovale (PFO): Auralı migrende daha sık (%48 vs %23), PFO kapatma tartışmalı"
+    ],
+    "prognoz": {
+      "genel": "Kronik, lifelong, ataklar azalabilir (menopoz sonrası kadınlarda)",
+      "tedavi_ile": "Profilaksi ile %50-70 atak azalması, yaşam kalitesi artışı",
+      "kronik_migren": "Daha kötü prognoz, yüksek yeti kaybı, tedavi direnci",
+      "çocukluk_migreni": "%20-30 remisyon (erişkin çağda), %50-60 devam eder",
+      "menopoz": "Kadınlarda migren sıklığı azalır (%50-60), bazılarında kötüleşme",
+      "kardiyovasküler_risk": "Auralı migren → iskemik inme riski 2 kat (özellikle genç kadınlarda, sigara + OKS kullanımı ile ↑↑)",
+      "yaşam_kalitesi": "Atak sırasında yeti kaybı yüksek (yatak istirahati), kronik migrende sürekli etkilenme"
+    }
+  },
+  "branş_perspektifleri": {
+    "nöroloji": {
+      "rol": "Primer sorumlu branş, tanı, tedavi, refrakter vaka yönetimi",
+      "yaklaşım": {
+        "tanı": [
+          "ICHD-3 kriterleri (auralı/aurasız migren)",
+          "Baş ağrısı günlüğü (3 ay takip)",
+          "Red flag değerlendirmesi, nörolojik muayene",
+          "Beyin MRG (atipik, red flag, ilk kez ciddi baş ağrısı)"
+        ],
+        "tedavi_algoritması": [
+          "Akut: Hafif → NSAID, Orta-ağır → Triptan (stratifikasyon)",
+          "Profilaksi endikasyonu: ≥4 atak/ay, ≥8 atak günü/ay",
+          "Birinci basamak: Beta-bloker (propranolol), TCA (amitriptilin), antikonvülzan (topiramat)",
+          "İkinci basamak: CGRP mAb (erenumab, fremanezumab), botulinum toksin (kronik migren)"
+        ],
+        "refrakter_migren": [
+          "Kombinasyon profilaksi (2-3 ilaç)",
+          "CGRP mAb, botulinum toksin",
+          "Greater occipital nerve block",
+          "Neuromodülasyon: TMS, vagal sinir stimülasyonu"
+        ]
+      },
+      "özel_durumlar": [
+        "Hemiplejik migren: Genetik test (FHM), triptan kontrendike, dikkat",
+        "Basilar tip migren: Beyin sapı semptomları, triptan kontrendike",
+        "Vestibüler migren: Vertigo tedavisi, profilaksi"
+      ]
+    },
+    "acil_tıp": {
+      "rol": "Akut ağır atak, migren statüsü, red flag baş ağrısı ayırıcı tanısı",
+      "yaklaşım": {
+        "akut_tedavi": [
+          "IV hidrasyon: Sıvı replasmanı (bulantı, kusma, dehidratasyon)",
+          "IV antiemetik: Metoklopramid 10 mg, proklorperazin 10 mg",
+          "IV NSAID: Ketorolak 30 mg (güçlü analjezik)",
+          "IV/IM triptan: Sumatriptan 6 mg s.c. (hızlı etki)",
+          "IV magnezyum: 1-2 g (15-30 dk infüzyon, auralı migren)",
+          "IV deksametazon: 10-24 mg (nüks önleme, erken taburculuk)",
+          "IV valproat: 500-1000 mg (migren statüsü, dirençli atak)"
+        ],
+        "migren_statüsü": [
+          "Tanım: >72 saat şiddetli baş ağrısı",
+          "Tedavi: IV hidrasyon, IV antiemetik, IV ketorolak, IV valproat, IV deksametazon",
+          "Yatış: Dehidratasyon, intraktabl kusma, yeti kaybı yüksek"
+        ],
+        "red_flag_baş_ağrısı": [
+          "Thunderclap (ani, şiddetli): SAH → BT non-kontrast, lomber ponksiyon",
+          "Fokal defisit: İnme → BT/MRG, nöroloji konsültasyonu",
+          "Ateş + boyun sertliği: Menenjit → lomber ponksiyon",
+          "Papilödem: İntrakraniyal hipertansiyon → BT/MRG, göz dibi muayenesi"
+        ]
+      }
+    },
+    "kadın_hastalıkları_ve_doğum": {
+      "rol": "Menstruel migren, gebelikte migren yönetimi, hormonosupresyon",
+      "yaklaşım": {
+        "menstruel_migren": {
+          "tanı": "Menstruasyon ±2 gün içinde migren (en az 2/3 siklusda)",
+          "tedavi": [
+            "Akut: Triptan (frovatriptan uzun yarı ömür), NSAID",
+            "Mini-periyod profilaksi: Frovatriptan 2.5 mg 2x1 (menstruasyondan 2 gün önce, 6 gün)",
+            "Sürekli profilaksi: Beta-bloker, topiramat, CGRP mAb",
+            "Hormonosupresyon: Sürekli oral kontraseptif (28 gün, menstruasyon kesme), GnRH agonisti"
+          ]
+        },
+        "oral_kontraseptif_OKS": [
+          "Aurasız migren: OKS kullanılabilir (düşük doz östrojen <35 µg)",
+          "Auralı migren: OKS kontrendike (WHO kategori 4, inme riski ↑)",
+          "Alternatif: Progestin-only pill (POP), LNG-IUS (Mirena), implanon"
+        ],
+        "gebelikte_migren": {
+          "seyir": "%50-80 hastada düzelme (2-3. trimester), %10-20 kötüleşme, postpartum nüks sık",
+          "akut_tedavi": [
+            "Güvenli: Parasetamol (Kategori B), metoklopramid",
+            "İkinci seçenek: İbuprofen (1-2. trimester, Kategori B/D 3. trimester), sumatriptan (Kategori C, düşük risk)"
+          ],
+          "kontraendike": "Aspirin (3. trimester, kanama riski), NSAID (3. trimester, PDA erken kapanması), ergotamin",
+          "profilaksi": "Güvenli: Magnezyum, riboflavin, beta-bloker (propranolol, metoprolol Kategori C)"
+        }
+      }
+    },
+    "kardiyoloji": {
+      "rol": "Triptan kontraendikasyonu değerlendirmesi, kardiyovasküler risk",
+      "yaklaşım": {
+        "triptan_kontraendikasyonları": [
+          "Koroner arter hastalığı, MI öyküsü",
+          "Uncontrolled hipertansiyon (>140/90 mmHg)",
+          "İnme, TIA öyküsü",
+          "Periferik vasküler hastalık",
+          "Yaş >65 + kardiyovasküler risk faktörleri (sigara, DM, HT, dislipidemi)"
+        ],
+        "alternatif_tedaviler": [
+          "CGRP antagonistleri (ubrogepant, rimegepant): Vazokonstriksyon yok, kardiyak güvenli",
+          "5-HT1F agonisti (lasmiditan): Vazokonstriksyon yok",
+          "NSAID + antiemetik kombinasyonu"
+        ],
+        "kardiyovasküler_risk": [
+          "Auralı migren → iskemik inme riski 2 kat (genç kadınlarda)",
+          "Risk faktörleri: Sigara, oral kontraseptif, hipertansiyon",
+          "Patent foramen ovale (PFO): Auralı migrende ↑ (kapatma tartışmalı)"
+        ]
+      }
+    },
+    "göz_hastalıkları_oftalmoloji": {
+      "rol": "Görsel aura, retinal migren ayırıcı tanısı",
+      "yaklaşım": {
+        "görsel_aura": [
+          "Pozitif fenomenler: Zig-zag çizgiler (fortifikasyon), ışık parlamaları (fotopsiler)",
+          "Negatif fenomenler: Skotoma (kör nokta), hemianopsi",
+          "Marş paterni: Kademeli gelişim (5-30 dk), yayılma",
+          "Tam reversibl: <60 dakika"
+        ],
+        "retinal_migren": {
+          "tanı": "Monoküler görme kaybı <60 dk + baş ağrısı",
+          "ayırıcı_tanı": [
+            "Amaurosis fugax (TIA): Perde inme, >50 yaş, vasküler risk faktörleri → karotis doppler, kardiyoloji",
+            "Santral retinal arter/ven oklüzyonu: Ani, kalıcı görme kaybı → funduskopi (cherry-red spot, kanama)",
+            "Geçici görme kaybı: Papilödem, optik nörit"
+          ],
+          "değerlendirme": "Fundoskopi, optik koherens tomografi (OCT), karotis doppler, kardiyoloji konsültasyonu"
+        }
+      }
+    },
+    "psikiyatri": {
+      "rol": "Komorbid depresyon/anksiyete tedavisi, somatizasyon",
+      "yaklaşım": {
+        "psikiyatrik_komorbidite": [
+          "Depresyon: %20-30 birliktelik, migren + depresyon → kötü prognoz, yeti kaybı ↑",
+          "Anksiyete: %25-50, panik bozukluk %10",
+          "Bipolar bozukluk: Migren prevalansı 2-3 kat ↑"
+        ],
+        "tedavi": [
+          "SSRI/SNRI: Venlafaksin (migren profilaksi + depresyon), essitalopram, sertralin",
+          "TCA: Amitriptilin (migren profilaksi + depresyon + insomnia), nortriptilin",
+          "SNRI: Duloksetin (kronik ağrı + depresyon)",
+          "CBT: Bilişsel davranışçı terapi (stres yönetimi, baş etme stratejileri)",
+          "Mindfulness, relaksasyon teknikleri"
+        ],
+        "serotonin_sendromu": [
+          "Risk: Triptan + SSRI/SNRI kombinasyonu (nadir)",
+          "Semptomlar: Ajitasyon, konfüzyon, tremor, hiperrefleksi, diaforez, hipertermi",
+          "Önlem: Düşük doz SSRI, triptan sık kullanımdan kaçın"
+        ]
+      }
+    },
+    "aile_hekimliği": {
+      "rol": "Birinci basamak tanı, akut tedavi, profilaksi başlangıcı, yönlendirme",
+      "yaklaşım": {
+        "tanı": [
+          "ICHD-3 kriterleri (auralı/aurasız migren)",
+          "Baş ağrısı günlüğü (3 ay takip)",
+          "Red flag sorgulanmalı"
+        ],
+        "akut_tedavi": [
+          "Hafif-orta: NSAID (ibuprofen 400-600 mg), aspirin 1000 mg",
+          "Orta-ağır: Triptan (sumatriptan 50-100 mg, rizatriptan 10 mg)",
+          "Antiemetik: Metoklopramid 10 mg (bulantı + gastroparezi)"
+        ],
+        "profilaksi_başlangıcı": [
+          "Endikasyon: ≥4 atak/ay",
+          "Birinci basamak: Propranolol 80-240 mg, amitriptilin 10-75 mg, topiramat 25-100 mg",
+          "Takip: 3 ay deneme, yanıt değerlendirme (%50 atak azalması)"
+        ],
+        "nöroloji_yönlendirmesi": [
+          "Red flag semptomları",
+          "İki profilaktik ilaca yanıtsız",
+          "Auralı migren (özellikle ilk kez, >40 yaş)",
+          "Kronik migren (≥15 gün/ay)",
+          "Hemiplejik, basilar tip, retinal migren"
+        ]
+      }
+    },
+    "radyoloji": {
+      "rol": "Sekonder baş ağrısı ekartesi, görüntüleme",
+      "yaklaşım": {
+        "beyin_MRG": [
+          "Endikasyon: Red flag, atipik özellikler, fokal defisit, ilk kez ciddi baş ağrısı, >40 yaş auralı migren",
+          "Bulgular (tipik migren): Normal veya beyaz cevher hiperintensiteleri (T2/FLAIR, küçük, non-spesifik, %30-50)",
+          "Ayırıcı tanı: Tümör, AVM, inme, demyelinizasyon (MS)"
+        ],
+        "beyin_BT": [
+          "Endikasyon: Akut red flag (thunderclap → SAH), MRG kontrendikasyonu",
+          "Bulgular: Normal (tipik migren)"
+        ],
+        "MR_anjiyografi_MRA": [
+          "Endikasyon: Fokal defisit, thunderclap baş ağrısı",
+          "Ayırıcı: Anevrizma, diseksiyon, vaskülit, RCVS (reversibl serebral vazokonstriksyon sendromu)"
+        ],
+        "MR_venografi_MRV": [
+          "Endikasyon: Yeni başlangıç baş ağrısı (özellikle postpartum, oral kontraseptif), papilödem",
+          "Ayırıcı: Serebral ven trombozu"
+        ]
+      }
+    },
+    "kulak_burun_boğaz_KBB": {
+      "rol": "Vestibüler migren, sinüzit ayırıcı tanısı",
+      "yaklaşım": {
+        "vestibüler_migren": {
+          "tanı": [
+            "Vertigo (orta-ağır, 5 dk-72 saat) + migren öyküsü (ICHD-3)",
+            "En az 5 atak, migrenöz özellikler (fotofobi, fonofobi, görsel aura) eşlik eder"
+          ],
+          "ayırıcı_tanı": "Meniere hastalığı (işitme kaybı, tinitus), BPPV (pozisyonel, kısa süreli), vestibüler nörit",
+          "tedavi": [
+            "Akut: Antivertiginöz (betahistin 16-48 mg, meklizin 25-50 mg), antiemetik",
+            "Profilaksi: Beta-bloker (propranolol), TCA (amitriptilin), topiramat, CGRP mAb"
+          ]
+        },
+        "sinüzit_vs_migren": [
+          "Sinüzit: Pürul...ent akıntı, ateş, yüz ağrısı (bası, eğilince artar), CT sinüs (opasifikasyon)",
+          "Migren: Unilateral, pulsatil, bulantı, foto/fonofobi, rinore (otonom semptom)",
+          "Not: 'Sinüs baş ağrısı' tanılı hastaların %80-90'ı aslında migren"
+        ]
+      }
+    },
+    "pediatri": {
+      "rol": "Çocukluk migreni tanı ve tedavisi",
+      "yaklaşım": {
+        "çocukluk_migreni": {
+          "özellikler": [
+            "Daha kısa süreli (2-72 saat vs 4-72 saat)",
+            "Bilateral (çift taraflı) daha sık (%60 vs %40)",
+            "Frontotemporal lokalizasyon",
+            "Abdominal semptomlar belirgin (karın ağrısı, bulantı, kusma)"
+          ],
+          "periodik_sendromlar": [
+            "Siklik kusma sendromu: Tekrarlayan kusma atakları (1 saat-10 gün), aralarında asemptomatik",
+            "Abdominal migren: Orta hat karın ağrısı (1-72 saat) + bulantı/kusma, migren aile öyküsü",
+            "Benign paroksismal vertigo: Kısa süreli vertigo atakları (dakikalar-saatler), küçük çocuklarda"
+          ],
+          "tedavi": [
+            "Akut: İbuprofen 10 mg/kg (max 600 mg), parasetamol 15 mg/kg",
+            "Triptan: >6 yaş (rizatriptan, sumatriptan nazal), FDA onayı >12 yaş",
+            "Profilaksi: Topiramat 2-3 mg/kg/gün, propranolol 2-4 mg/kg/gün, amitriptilin 1 mg/kg gece",
+            "Davranışçı tedavi: Düzenli uyku/öğün, stres yönetimi, biyofeedback"
+          ]
+        }
+      }
+    }
+  },
+  "kaynaklar": [
+    "International Classification of Headache Disorders, 3rd edition (ICHD-3), 2018",
+    "American Headache Society (AHS) Acute Migraine Treatment Guidelines, 2021",
+    "American Academy of Neurology (AAN) Migraine Prevention Guidelines, 2021",
+    "European Headache Federation (EHF) Guidelines, 2022",
+    "UpToDate: Pathophysiology, clinical manifestations, and diagnosis of migraine in adults",
+    "UpToDate: Acute treatment of migraine in adults",
+    "UpToDate: Preventive treatment of migraine in adults",
+    "Turkish Headache Prevalence Study, 2012",
+    "CGRP Clinical Trials: ARISE, EVOLVE, CONQUER (Erenumab), HALO, FOCUS (Fremanezumab)"
+  ]
+}

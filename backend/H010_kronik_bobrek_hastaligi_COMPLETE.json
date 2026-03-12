@@ -1,0 +1,571 @@
+{
+  "hastalık_id": "H010",
+  "version": "1.0",
+  "son_güncelleme": "2026-01-19",
+  "temel_bilgi": {
+    "isim_tr": "Kronik Böbrek Hastalığı",
+    "isim_en": "Chronic Kidney Disease",
+    "kısa_isim": "KBH",
+    "diğer_isimler": [
+      "Kronik böbrek yetmezliği",
+      "Kronik renal yetmezliği",
+      "End-stage renal disease (ESRD - son evre)"
+    ],
+    "kodlama": {
+      "ICD_10": "N18",
+      "ICD_10_detay": {
+        "N18.1": "Kronik böbrek hastalığı, evre 1",
+        "N18.2": "Kronik böbrek hastalığı, evre 2 (hafif azalma)",
+        "N18.3": "Kronik böbrek hastalığı, evre 3 (orta azalma)",
+        "N18.30": "Evre 3a (eGFR 45-59)",
+        "N18.31": "Evre 3b (eGFR 30-44)",
+        "N18.4": "Kronik böbrek hastalığı, evre 4 (ciddi azalma)",
+        "N18.5": "Kronik böbrek hastalığı, evre 5 (böbrek yetmezliği)",
+        "N18.6": "Son evre böbrek hastalığı (ESRD)",
+        "N18.9": "Kronik böbrek hastalığı, tanımlanmamış"
+      },
+      "SNOMED_CT": "709044004",
+      "LOINC": "LP173448-2"
+    },
+    "tanım": "Kronik böbrek hastalığı, ≥3 ay süren böbrek yapı veya fonksiyon bozukluğu olup, eGFR (tahmini glomerüler filtrasyon hızı) <60 mL/dk/1.73m² ve/veya böbrek hasarı belirteçleri (albuminüri, idrar sediment anomalisi, tübüler bozukluklar, histolojik anormallik, görüntülemede yapısal anormallik, böbrek transplant öyküsü) ile tanımlanır. KDIGO (Kidney Disease: Improving Global Outcomes) sınıflaması eGFR ve albuminüri kombinasyonu ile evreleme yapar (G1-G5, A1-A3).",
+    "epidemiyoloji": {
+      "global_prevalans": "%9.1 (GBD 2017), 700+ milyon kişi, diyaliz ihtiyacı 2 milyondan fazla",
+      "türkiye_prevalans": "%15.7 (CREDIT çalışması 2008-2010), diyaliz hasta sayısı ~90,000 (2023)",
+      "yaş_dağılımı": "Yaşla artar: <40 yaş %3, 40-64 yaş %10, >65 yaş %30-40",
+      "cinsiyet": "Erkeklerde hafif daha sık (%10 vs %8), ancak kadınlarda diyalize ilerleme daha yavaş",
+      "risk_grupları": [
+        "Diabetes mellitus (KBH nedeni #1, %30-40, diyabetik nefropati)",
+        "Hipertansiyon (neden #2, %25-30, hipertansif nefroskleroz)",
+        "Glomerülonefritler (primer: IgA nefropatisi, fokal segmental glomeruloskleroz; sekonder: lupus nefrit)",
+        "Polikistik böbrek hastalığı (ADPKD, genetik, %5-10 KBH nedeni)",
+        "İleri yaş (>65 yaş, nefron kaybı, ateroskleroz)",
+        "Obezite (BMI >30, glomerüler hiperfiltrasyon, ateroskleroz)",
+        "Kardiyovasküler hastalık (MI, kalp yetmezliği, kardiyorenal sendrom)",
+        "Ailesel böbrek hastalığı (ADPKD, Alport sendromu)",
+        "Akut böbrek hasarı (AKI) öyküsü (kronikleşme riski ↑)",
+        "Nefrotoksik ilaçlar (NSAID, PPI uzun süreli, kontrastlı görüntüleme sık)"
+      ]
+    },
+    "patofizyoloji": {
+      "ana_mekanizmalar": [
+        "Nefron kaybı: İlk hasar (DM, HT, glomerülonefrit) → nefron kaybı → kalan nefronlarda hiperfiltrasyon → glomerüler hipertansiyon → skleroz → daha fazla nefron kaybı (kısır döngü)",
+        "Glomerüler skleroz: Mezangial genişleme, podosit hasarı, bazal membran kalınlaşması → proteinüri",
+        "Tübülointerstisyel fibrozis: İnflamasyon (TGF-β, angiotensin II) → fibroblast aktivasyonu → kollajen birikimi",
+        "Vasküler hastalık: Arteriyoloskleroz, endotel disfonksiyonu → iskemi",
+        "Metabolik asidoz: Bikarbonat reabsorpsiyon ↓, asit atılımı ↓",
+        "Mineral kemik bozukluğu (CKD-MBD): Fosfat retansiyonu → PTH ↑ (sekonder hiperparatiroidizm), vitamin D aktivasyonu ↓ (1,25-dihidroksi D3), kalsiyum ↓",
+        "Anemi: Eritropoetin üretimi ↓ (peritübüler hücreler), demir eksikliği, inflamasyon (hepsidin ↑)",
+        "Üremik toksinler: İndoksil sülfat, p-krezil sülfat, β2-mikroglobulin → kardiyovasküler hastalık, ensefalopati"
+      ],
+      "progresyon_faktörleri": [
+        "Kontrolsüz hipertansiyon (hedef <130/80 mmHg)",
+        "Proteinüri (>500 mg/gün, progresyonu hızlandırır)",
+        "Hiperglisemi (HbA1c >7%, diyabetik nefropati)",
+        "Obezite (glomerüler hiperfiltrasyon)",
+        "Hiperfosfatemi (mineral kemik bozukluğu)",
+        "Metabolik asidoz (proteinüri ↑, kemik hastalığı)",
+        "Sigara (endotel disfonksiyonu, vasküler hastalık)",
+        "Akut böbrek hasarı episodları (AKI)"
+      ]
+    },
+    "klinik_özellikler": {
+      "erken_evre_1_3a": [
+        "Genellikle asemptomatik (böbrekler fonksiyonel rezervi yüksek)",
+        "Rastlantısal tespit (rutin kan/idrar testi)",
+        "Hafif hipertansiyon, nocturia (gece idrar sıklığı)"
+      ],
+      "orta_evre_3b_4": [
+        "Yorgunluk, halsizlik (anemi, üremik toksinler)",
+        "Ödem (ayak bileği, bacak, yüz - sodyum retansiyonu)",
+        "Hipertansiyon kötüleşmesi",
+        "Dispne (sıvı yükü, asidoz, anemi)",
+        "Nocturia, poliüri (konsantrasyon yeteneği ↓)",
+        "Kaşıntı (pruritus - üremik toksinler, kalsiyum-fosfat birikimi)"
+      ],
+      "ileri_evre_5_üremik_sendrom": [
+        "Gastrointestinal: İştahsızlık, bulantı, kusma, metalik tat, üremik ülser (gastrit, kolit), GI kanama",
+        "Nörolojik: Ensefalopati (konfüzyon, letarji, koma), periferik nöropati (parestezi, ayaklarda yanma), restless leg sendromu, myoklonus, nöbet",
+        "Kardiyovasküler: Perikarditis (üremik perikarditis, sürtünme sesi), aritmiler, kalp yetmezliği, hızlanmış ateroskleroz",
+        "Pulmoner: Pulmoner ödem (sıvı yükü), üremik pnömonit",
+        "Hematolojik: Anemi (eritropoetin ↓), kanama eğilimi (trombosit disfonksiyonu)",
+        "Dermatolojik: Kaşıntı, sarı-kahverengi ten (ürokrom birikimi), üremik frost (üre kristalleri cilt), kalsifılaksi (vasküler kalsifikasyon, nadir, mortal)",
+        "Kas-iskelet: Kemik ağrısı (renal osteodistrofi), kas güçsüzlüğü, eklem hassasiyeti"
+      ],
+      "fizik_muayene": [
+        "Hipertansiyon (>140/90 mmHg)",
+        "Periferal ödem (pretibial, periorbital)",
+        "Soluk görünüm (anemi)",
+        "Sarımtrak ten (üremik pigmentasyon)",
+        "Kardiyak: Taşikardi, S3 galo (volüm yüklü), perikardial friksiyon sesi",
+        "Pulmoner: Raller (pulmoner ödem), plevral effüzyon",
+        "Abdominal: Palpe edilebilen böbrekler (polikistik böbrek hastalığı)",
+        "Nörolojik: Asteriksis (flapping tremor), hiperrefleksi, periferik nöropati"
+      ]
+    },
+    "tanı": {
+      "KDIGO_sınıflaması": {
+        "eGFR_evreleri": {
+          "G1": "≥90 mL/dk/1.73m² (normal/yüksek) + böbrek hasarı kanıtı",
+          "G2": "60-89 mL/dk/1.73m² (hafif azalma) + böbrek hasarı kanıtı",
+          "G3a": "45-59 mL/dk/1.73m² (hafif-orta azalma)",
+          "G3b": "30-44 mL/dk/1.73m² (orta-ileri azalma)",
+          "G4": "15-29 mL/dk/1.73m² (ciddi azalma)",
+          "G5": "<15 mL/dk/1.73m² (böbrek yetmezliği, diyaliz/transplant)"
+        },
+        "albuminüri_kategorileri": {
+          "A1": "<30 mg/g (<3 mg/mmol) - Normal/hafif artmış",
+          "A2": "30-300 mg/g (3-30 mg/mmol) - Orta artmış (mikroalbuminüri)",
+          "A3": ">300 mg/g (>30 mg/mmol) - İleri artmış (makroalbuminüri)"
+        },
+        "risk_sınıflaması": "eGFR + albuminüri heat map: Yeşil (düşük risk) → Sarı (orta) → Turuncu (yüksek) → Kırmızı (çok yüksek)"
+      },
+      "eGFR_hesaplama": {
+        "CKD_EPI_denklem": "En doğru (2021 versiyonu ırk faktörü kaldırıldı), serum kreatinin, yaş, cinsiyet",
+        "MDRD": "Eski denklem, artık önerilmiyor",
+        "Cockcroft_Gault": "Kreatinin klirensi (ilaç dozlama)",
+        "çocuklar": "Schwartz denklemi (boy, serum kreatinin)"
+      },
+      "laboratuvar": {
+        "böbrek_fonksiyonu": [
+          "Serum kreatinin: Yüksek (>1.2 mg/dL erkek, >1.0 mg/dL kadın), ancak eGFR daha doğru",
+          "eGFR: KDIGO evreleme",
+          "BUN (Blood Urea Nitrogen): Yüksek (>20 mg/dL), BUN/Cr oranı (prerenal vs renal)",
+          "Sistatın C: Alternatif böbrek fonksiyon belirteci (kas kütlesinden bağımsız)"
+        ],
+        "idrar_analizi": {
+          "albuminüri_proteinüri": "Spot idrar albumin/kreatinin oranı (UACR, tercih edilen), 24 saatlik idrar proteini",
+          "mikroskopi": "Eritrosit silindiri (glomerülonefrit), lökosit silindiri (interstisyel nefrit), granüler silindir (ATN)",
+          "hematüri": "Glomerüler (dismorfik eritrositler, akantositler) vs non-glomerüler",
+          "lökositüri": "Enfeksiyon, interstisyel nefrit"
+        },
+        "elektrolit_asit_baz": [
+          "Hiperkalemi (K >5.5 mEq/L, eGFR <30, ACE-i/ARB kullanımı)",
+          "Metabolik asidoz (HCO3 <22 mEq/L, AG normal - tip 4 RTA)",
+          "Hiponatremi (<135 mEq/L, sıvı yükü)",
+          "Hipokalsemi (<8.5 mg/dL), hiperfosfatemi (>4.5 mg/dL)"
+        ],
+        "anemi": [
+          "Hemoglobin: <13 g/dL (erkek), <12 g/dL (kadın), normositer-normokromik",
+          "Demir profili: Ferritin, transferrin saturasyonu (TSAT), tibc",
+          "Eritropoetin düzeyi: Uygunsuz düşük (üretim ↓)"
+        ],
+        "mineral_kemik": [
+          "Kalsiyum (total, iyonize), fosfat",
+          "PTH (intact PTH): >65 pg/mL (evre 3), >110 pg/mL (evre 4-5), hedef 2-9x üst sınır (evre 5)",
+          "25-hidroksivitamin D: <30 ng/mL eksiklik",
+          "Alkalen fosfataz: Kemik turnover belirteci"
+        ]
+      },
+      "görüntüleme": {
+        "böbrek_ultrasonografisi": [
+          "Endikasyon: Her KBH hastası (boyut, yapı, obstrüksiyon)",
+          "Bulgular: Küçük böbrekler (<9 cm uzun aks, kronik hastalık), artmış ekojenisite (fibrozis), kortikal incelme, kist (ADPKD), hidronefroz (obstrüksiyon)",
+          "Normal boyutlu böbrek: DM nefropati (erken), amiloidoz, HIV nefropatisi"
+        ],
+        "doppler_USG": "Renal arter stenozu (aterosklerotik, fibromüsküler displazi), renal ven trombozu",
+        "BT_MRG": [
+          "Endikasyon: Kitle şüphesi, karmaşık kistler, vasküler anomali",
+          "DİKKAT: İyotlu kontrast nefrotoksik (kontrast nefropatisi riski ↑, eGFR <30 kaçın), gadolinium (NSF riski - nefrojenik sistemik fibrozis, eGFR <30 kontraendike)"
+        ]
+      },
+      "böbrek_biyopsisi": {
+        "endikasyon": [
+          "Hızlı ilerleyen KBH (RPGN - rapid progressive GN)",
+          "Nefrotik sendrom (proteinüri >3.5 g/gün, hipoalbuminemi, ödem, hiperlipidemi)",
+          "Nefritik sendrom (hematüri, hipertansiyon, ödem, azotemi)",
+          "Belirsiz etyoloji (genç, akut başlangıç, atipik seyir)",
+          "Sistemik hastalık (SLE, vaskülit, amiloidoz)"
+        ],
+        "histopatoloji": [
+          "Işık mikroskopisi: Glomerül, tübül, interstisyum, damar",
+          "İmmünfloresan: IgG, IgA, IgM, C3, C4 birikimi",
+          "Elektron mikroskopisi: Podosit foot process efacement, bazal membran kalınlığı"
+        ]
+      },
+      "ayırıcı_tanı": [
+        "Akut böbrek hasarı (AKI): Hızlı yükselme (<48 saat), reversibl (çoğu), prerenal/renal/postrenal",
+        "Prerenal azotemi: Dehidratasyon, kalp yetmezliği, BUN/Cr >20, FENa <1%",
+        "Postrenal obstrüksiyon: Hidronefroz (USG), anüri, akut (taş, pıhtı)",
+        "Nefrotik sendrom: Proteinüri >3.5 g/gün, hipoalbuminemi, ödem, hiperlipidemi (minimal change, FSGS, membranöz GN)",
+        "Hızlı ilerleyen glomerülonefrit (RPGN): Hilaller (biyopsi), hızlı eGFR düşüşü (haftalar), ANCA vaskülit, Goodpasture, lupus"
+      ]
+    },
+    "farmakoloji_ve_tedavi": {
+      "genel_prensipler": [
+        "Progresyonu yavaşlatma (eGFR düşüş hızı ↓)",
+        "Komplikasyonları önleme/tedavi (anemi, mineral kemik bozukluğu, asidoz)",
+        "Kardiyovasküler risk azaltma (KBH'de #1 mortalite nedeni)",
+        "Renal replasman tedavisine hazırlık (evre 4-5)"
+      ],
+      "progresyonu_yavaşlatma": {
+        "kan_basıncı_kontrolü": {
+          "hedef": "<130/80 mmHg (KDIGO 2021), albuminüri varsa <120/80 mmHg",
+          "ACE_inhibitörleri": [
+            "Ramipril 2.5-10 mg/gün",
+            "Lisinopril 10-40 mg/gün",
+            "Perindopril 4-8 mg/gün"
+          ],
+          "ARB": [
+            "Losartan 50-100 mg/gün",
+            "Valsartan 80-320 mg/gün",
+            "Telmisartan 40-80 mg/gün"
+          ],
+          "mekanizma": "Efferent arteriyol dilatasyonu → glomerüler hipertansiyon ↓, proteinüri ↓, anti-fibrotik",
+          "endikasyon": "İlk seçenek (özellikle DM nefropati, proteinüri >30 mg/g)",
+          "yan_etki": "Hiperkalemi (K >5.5, monitörize et), akut eGFR düşüşü (%30'a kadar kabul edilebilir, 2 hafta sonra kontrol), öksürük (ACE-i, %10)",
+          "kontraendikasyon": "Bilateral renal arter stenozu, gebelik",
+          "kombinasyon": "ACE-i + ARB kombine önerilmez (ONTARGET trial, hiperkalemi ve AKI riski ↑)",
+          "ek_antihipertansifler": "Kalsiyum kanal blokerleri (amlodipin, nifedipin), diüretikler (furosemid loop, eGFR <30), beta-blokerler, alfa-blokerler"
+        },
+        "SGLT2_inhibitörleri": {
+          "ilaçlar": [
+            "Empagliflozin 10-25 mg/gün",
+            "Dapagliflozin 10 mg/gün",
+            "Canagliflozin 100 mg/gün"
+          ],
+          "mekanizma": "Proksimal tübülde glukoz reabsorpsiyonunu engeller → glukozüri, tübüloglomerüler feedback → glomerüler basınç ↓, natriüretik",
+          "endikasyon": "Diyabetik KBH (eGFR ≥20-25), albuminüri >30 mg/g (KDIGO 2022 güçlü öneri)",
+          "kardiyorenal_etki": "eGFR progresyonu ↓%30-40, kardiyovasküler olaylar ↓, kalp yetmezliği ↓ (EMPA-REG, DAPA-CKD trials)",
+          "yan_etki": "Genital mantar enfeksiyonu (%5-10, özellikle kadınlarda), ürosepsis (nadir), euglisemik ketoasidoz (nadir), hipovolemi (yaşlı, diüretik kombine)",
+          "özel": "Non-diyabetik KBH'de de etkili (DAPA-CKD trial, albuminüri >200 mg/g)"
+        },
+        "glisemik_kontrol": {
+          "hedef": "HbA1c <7% (diyabetik nefropati), aşırı sıkı kontrol (HbA1c <6.5%) hipoglisemi riski ↑",
+          "metformin": "eGFR ≥30 güvenli (doz azaltma gerekmez), eGFR <30 kontrendike (laktik asidoz riski)",
+          "SGLT2_inhibitörleri": "İlk seçenek (kardiyorenal koruma)",
+          "GLP1_reseptör_agonistleri": "Liraglutid, semaglutid (kardiyovasküler + kilo kaybı, albuminüri ↓, LEADER, SUSTAIN trials)",
+          "DPP4_inhibitörleri": "Sitagliptin, linagliptin (doz azaltma gerekebilir, kardiyorenal nötral)",
+          "insülin": "eGFR <30'da doz azaltma (hipoglisemi riski, renal klirens ↓)"
+        },
+        "proteinüri_azaltma": [
+          "ACE-i/ARB (temel tedavi)",
+          "SGLT2 inhibitörleri (ek fayda)",
+          "Mineralokortikoid reseptör antagonisti (MRA): Finerenon 10-20 mg/gün (yeni, FIDELIO-DKD trial, albuminüri ↓, kardiyovasküler olay ↓, hiperkalemi riski)",
+          "Protein kısıtlaması: 0.8 g/kg/gün (evre 3-5, tartışmalı)"
+        ]
+      },
+      "komplikasyonların_yönetimi": {
+        "anemi": {
+          "hedef": "Hemoglobin 10-11.5 g/dL (KDIGO), aşırı hedef (>13 g/dL) kardiyovasküler risk ↑",
+          "demir_replasmanı": {
+            "oral_demir": "Ferrous sulfate 325 mg 1-3x/gün (ferritin <100 ng/mL, TSAT <20%), yan etki: konstipasyon, bulantı",
+            "IV_demir": "Ferric carboxymaltose (Ferinject) 500-1000 mg, iron sucrose (Venofer) - eGFR <30, diyaliz hastası, oral demir intoleransı/emilim bozukluğu"
+          },
+          "eritropoiez_stimülan_ajanlar_ESA": {
+            "epoetin_alfa_beta": "Subkutan 3x/hafta, başlangıç 50-100 IU/kg",
+            "darbepoetin": "Uzun etkili, 2 haftada bir, 0.45 µg/kg",
+            "endikasyon": "Hemoglobin <10 g/dL + demir replasmanı yeterli değilse",
+            "hedef": "Hemoglobin 10-11.5 g/dL, aşırı hedef stroke/tromboz riski ↑ (TREAT trial)",
+            "yan_etki": "Hipertansiyon, tromboz, saf kırmızı hücre aplazisi (nadir, PRCA)"
+          },
+          "HIF_prolyl_hydroxylase_inhibitörleri": {
+            "roxadustat_daprodustat": "Oral ESA alternatifi, hipoksi indükleyici faktör (HIF) stabilizasyonu → endojen eritropoetin ↑",
+            "avantaj": "Oral, demir kullanımı ↑, inflamasyon varlığında etkili",
+            "onay": "Çin, Japonya, Avrupa (2021), FDA henüz onaylamadı"
+          }
+        },
+        "mineral_kemik_bozukluğu_CKD_MBD": {
+          "fosfat_kontrolü": {
+            "hedef": "3.5-5.5 mg/dL (evre 3-5)",
+            "diyet_kısıtlaması": "800-1000 mg/gün (süt ürünleri, işlenmiş et, kola, kahverengi gıdalar sınırlı)",
+            "fosfat_bağlayıcılar": [
+              "Kalsiyum_bazlı: Kalsiyum karbonat 500-1500 mg 3x1 (yemekle), kalsiyum asetat (daha az kalsiyum yükü)",
+              "Kalsiyumsuz: Sevelamer (Renagel) 800-1600 mg 3x1, lanthanum karbonat, ferro-kalsiyum sitrat (Auryxia)",
+              "Alüminyum_hidroksit: Kısa süreli (hiperfosfatemi krizi), kronik kullanım alüminyum toksisitesi (demans, osteomalazi)"
+            ],
+            "yan_etki": "Kalsiyum-bazlı → vasküler kalsifikasyon (>2000 mg/gün kalsiyum alımı), sevelamer → GI yan etki (konstipasyon)"
+          },
+          "PTH_kontrolü": {
+            "hedef": "2-9x üst normal sınır (evre 5), <110 pg/mL (evre 4)",
+            "aktif_vitamin_D": [
+              "Kalsitriol 0.25-0.5 µg/gün",
+              "Parikalsitol (Zemplar) 1-2 µg/gün (daha az hiperkalsemi)",
+              "Doxercalciferol"
+            ],
+            "endikasyon": "PTH yüksek + 25-OH vitamin D yeterli (>30 ng/mL)",
+            "yan_etki": "Hiperkalsemi, hiperfosfatemi → vasküler kalsifikasyon (FGF23 ↑)",
+            "kalsimy...etikler": [
+              "Cinacalcet (Sensipar) 30-180 mg/gün: Kalsiyum-sensing reseptör agonisti → PTH ↓",
+              "Endikasyon: Sekonder hiperparatiroidizm (diyaliz), PTH >300 pg/mL + hiperkalsemi/hiperfosfatemi",
+              "Yan etki: Bulantı, hipokalsemi"
+            ]
+          },
+          "kalsiyum_kontrolü": {
+            "hedef": "Düzeltilmiş kalsiyum 8.5-10.5 mg/dL",
+            "hipokalsemi": "Kalsiyum suplemantasyonu (oral), aktif vitamin D",
+            "hiperkalsemi": "Fosfat bağlayıcı değiştir (kalsiyumsuz), cinacalcet"
+          },
+          "renal_osteodistrofi": [
+            "Osteitis fibrosa cystica: Yüksek turnover (yüksek PTH), subperiostal rezorpsiyon, brown tümörler",
+            "Adynamic bone disease: Düşük turnover (aşırı PTH supresyonu), kırık riski",
+            "Osteomalazia: Vitamin D eksikliği, alüminyum toksisitesi"
+          ]
+        },
+        "metabolik_asidoz": {
+          "hedef": "Serum bikarbonat >22 mEq/L",
+          "tedavi": "Sodyum bikarbonat 650-1300 mg 2-3x/gün (oral tablet), hedef HCO3 22-26 mEq/L",
+          "fayda": "Progresyon yavaşlatma, kemik sağlığı, kas katabolizması ↓ (UBI trial)"
+        },
+        "hiperkalemi": {
+          "hedef": "Potasyum <5.5 mEq/L",
+          "diyet": "Düşük potasyum (<2000 mg/gün, muz, portakal, domates, patates, kuru meyveler sınırlı)",
+          "loop_diüretik": "Furosemid (potasyum atılımı ↑, eGFR <30)",
+          "potasyum_bağlayıcılar": [
+            "Patiromer (Veltassa) 8.4-25.2 g/gün (oral, yemekten 3 saat ara)",
+            "Sodium zirconium cyclosilicate (Lokelma) 10 g/gün (oral)",
+            "Kayeksalat: Eski, kolon nekrozu riski (artık önerilmiyor)"
+          ],
+          "akut_hiperkalemi_>6.5": [
+            "Kalsiyum glukonat 10% 10-20 mL IV (kardiyak koruma, 5 dk)",
+            "İnsülin + dekstroz (10 ünite regular insülin + D50 50 mL IV, potasyum hücre içine alımı)",
+            "Salbutamol nebul 10-20 mg (beta-agonist, potasyum hücre içine)",
+            "Sodyum bikarbonat 50-100 mEq IV (asidoz varsa)",
+            "Diyaliz (acil, hiperkalemi >7 veya EKG değişiklikleri)"
+          ]
+        },
+        "sıvı_yükü_ödem": [
+          "Diyet: Sodyum <2 g/gün, sıvı kısıtlaması (evre 5, oligo-anüri)",
+          "Loop diüretikler: Furosemid 40-240 mg/gün (eGFR <30 yüksek doz gerekir), torasemid",
+          "Diyaliz: Ultrafiltrasyon (sıvı fazlası çekilir)"
+        ]
+      },
+      "kardiyovasküler_risk_azaltma": [
+        "Statin: Atorvastatin 20-80 mg (tüm KBH hastası, LDL hedef <100 mg/dL, diyaliz hastası tartışmalı)",
+        "Aspirin: Kardiyovasküler olay riski yüksek (KAH, DM), diyaliz hastası kanama riski (dikkatli)",
+        "Sigara bırakma, egzersiz, kilo kontrolü"
+      ],
+      "renal_replasman_tedavisi_RRT": {
+        "endikasyonlar": [
+          "eGFR <15 mL/dk (evre 5) + üremik semptomlar (bulantı, kusma, ensefalopati, perikarditis, kanama)",
+          "Sıvı yükü (diüretiklere dirençli, pulmoner ödem)",
+          "Refrakter hiperkalemi (>6.5 mEq/L, medikal tedaviye yanıtsız)",
+          "Refrakter metabolik asidoz (HCO3 <10 mEq/L)",
+          "Üremik komplikasyonlar (ensefalopati, perikardit, kanama)"
+        ],
+        "hemodiyaliz": {
+          "teknik": "Arteriyovenöz fistül (AVF, tercih edilen, 6-8 hafta matürasyon) veya greft veya santral kateter (geçici)",
+          "sıklık": "Haftada 3 kez, 4 saat/seans",
+          "avantaj": "Etkili toksin klirensi, sıvı kontrolü",
+          "dezavantaj": "Vasküler erişim komplikasyonları (enfeksiyon, tromboz), hipotansiyon, diyaliz disequilibrium sendromu (ilk diyaliz)"
+        },
+        "periton_diyalizi": {
+          "teknik": "Tenckhoff kateteri (karına), diyalizat periton boşluğuna → difüzyon → 4-6 saat dren",
+          "tip": "CAPD (sürekli ambulatuar, 4 değişim/gün), APD (otomatik, gece makine)",
+          "avantaj": "Ev bazlı, vasküler erişim gerekmez, rezidüel böbrek fonksiyonu korunur",
+          "dezavantaj": "Peritonit riski (%0.5/hasta-yıl), ultrafiltrasyon yetersizliği (yüksek transportör)"
+        },
+        "böbrek_transplantasyonu": {
+          "avantaj": "En iyi yaşam kalitesi, sağkalım (diyaliz vs transplant: 10 yıl %50 vs %85)",
+          "donör": "Canlı donör (1. derece akraba, eş, altruistik) > kadavra",
+          "immünsüpresyon": "Takrolimus/siklosporin + mikofenolat + kortikosteroid",
+          "komplikasyon": "Rejeksiyon (akut, kronik), enfeksiyon (CMV, BK virüs), malignite (lenfoma, cilt kanseri), nefrotoksisite (kalsinörin inhibitörleri)",
+          "sağkalım": "Greft sağkalımı 5 yıl %80-90 (canlı), %70-80 (kadavra)"
+        }
+      },
+      "konservatif_böbrek_yönetimi": [
+        "Endikasyon: Yaşlı (>80 yaş), ağır komorbidite, kısıtlı yaşam beklentisi, hasta tercihi (diyaliz istememe)",
+        "Yaklaşım: Semptom kontrolü (palyatif), komplikasyon yönetimi, yaşam kalitesi odaklı",
+        "Sonuç: Bazı hastalarda diyaliz kadar iyi yaşam kalitesi, daha az hastane yatışı"
+      ]
+    },
+    "komplikasyonlar": [
+      "Kardiyovasküler hastalıklar: MI, kalp yetmezliği, inme, aritmiler (#1 mortalite nedeni, %40-50)",
+      "Vasküler kalsifikasyon: Koroner arterler, kalp kapakları (aortik stenoz), periferik arterler",
+      "Anemi: Yorgunluk, dispne, kalp yetmezliği kötüleşmesi",
+      "Mineral kemik bozukluğu: Renal osteodistrofi, kırık riski ↑, vasküler kalsifikasyon",
+      "Enfeksiyonlar: İmmün disfonksiyon, diyaliz kateteri enfeksiyonu, peritonit",
+      "Malnutrisyon: Protein-enerji malnutrisyonu (%30-50 diyaliz hastası), kas kaybı (sarcopenia)",
+      "Kognitif bozukluk: Vasküler demans, üremi",
+      "Depresyon: %25-30 prevalans, yaşam kalitesi ↓"
+    ],
+    "prognoz": {
+      "genel": "eGFR ve albuminüri ile progresyon riski belirlenir (KDIGO heat map)",
+      "progresyon_hızı": "Ortalama 2-5 mL/dk/yıl eGFR düşüşü, DM nefropati daha hızlı (5-10 mL/dk/yıl)",
+      "iyi_prognoz": [
+        "Erken tanı (evre 1-2), minimal albuminüri (A1)",
+        "İyi kan basıncı/glisemik kontrol",
+        "ACE-i/ARB + SGLT2 inhibitörü kullanımı",
+        "Kardiyovasküler olay yok"
+      ],
+      "kötü_prognoz": [
+        "Ağır proteinüri (A3, >1 g/gün)",
+        "Kontrolsüz hipertansiyon/hiperglisemi",
+        "Kardiyovasküler hastalık, kalp yetmezliği",
+        "Hipoalbuminemi (<3.5 g/dL), inflamasyon (CRP ↑)"
+      ],
+      "mortalite": [
+        "Evre 3a: Genel popülasyondan 1.2x",
+        "Evre 4-5: 5-10x kardiyovasküler mortalite riski",
+        "Diyaliz: 5 yıllık sağkalım %50 (kardiyovasküler ölüm #1)"
+      ],
+      "transplant": "En iyi sonuç, 10 yıl sağkalım %85 (canlı donör), yaşam kalitesi en yüksek"
+    }
+  },
+  "branş_perspektifleri": {
+    "nefroloji": {
+      "rol": "Primer sorumlu branş, tanı, progresyonu yavaşlatma, RRT yönetimi",
+      "yaklaşım": {
+        "tanı_evreleme": [
+          "eGFR (CKD-EPI), UACR, KDIGO sınıflaması (G1-G5, A1-A3)",
+          "Etyoloji: Diyabet, hipertansiyon, glomerülonefrit, polikistik böbrek",
+          "Böbrek USG (boyut, yapı), biyopsi (belirsiz etyoloji, hızlı progresyon)"
+        ],
+        "progresyon_yavaşlatma": [
+          "ACE-i/ARB (ilk seçenek, proteinüri ↓)",
+          "SGLT2 inhibitörleri (diyabetik + non-diyabetik KBH, KDIGO 2022)",
+          "Kan basıncı hedefi <130/80 mmHg",
+          "Glisemik kontrol (HbA1c <7%)"
+        ],
+        "komplikasyon_yönetimi": [
+          "Anemi: ESA, IV demir, hedef Hb 10-11.5 g/dL",
+          "Mineral kemik: Fosfat bağlayıcı, aktif vitamin D, cinacalcet",
+          "Asidoz: Sodyum bikarbonat (HCO3 >22 mEq/L)",
+          "Hiperkalemi: Diyet, loop diüretik, potasyum bağlayıcı"
+        ],
+        "RRT_hazırlığı": [
+          "eGFR <20: Vasküler erişim (AVF oluşturma, 6-8 hafta matürasyon)",
+          "Eğitim: Hemodiyaliz, periton diyalizi, transplant seçenekleri",
+          "Transplant listesi: Canlı donör arama, kadavra listesine kayıt"
+        ]
+      }
+    },
+    "endokrinoloji": {
+      "rol": "Diyabetik nefropati yönetimi, glisemik kontrol",
+      "yaklaşım": {
+        "diyabetik_nefropati": [
+          "Tanı: DM öyküsü + albuminüri + diyabetik retinopati (birlikte %90)",
+          "Progresyon: Mikroalbuminüri (30-300 mg/g) → makroalbuminüri (>300 mg/g) → eGFR düşüşü",
+          "Tarama: Yıllık UACR (Tip 1 DM 5 yıl sonra, Tip 2 DM tanıda)"
+        ],
+        "glisemik_kontrol": [
+          "HbA1c hedefi <7% (genel), <8% (yaşlı, hipoglisemi riski)",
+          "SGLT2 inhibitörleri: İlk tercih (kardiyorenal koruma)",
+          "GLP-1 RA: İkinci tercih (kilo kaybı, kardiyovasküler fayda)",
+          "Metformin: eGFR ≥30 güvenli, <30 kontrendike",
+          "İnsülin: eGFR <30 doz azaltma (renal klirens ↓)"
+        ]
+      }
+    },
+    "kardiyoloji": {
+      "rol": "Kardiyovasküler risk yönetimi, kardiyorenal sendrom",
+      "yaklaşım": {
+        "kardiyovasküler_risk": [
+          "KBH = KAH risk eşdeğeri (10 yıllık olay riski >20%)",
+          "Statin: Tüm KBH hastası (evre 3-5, diyaliz tartışmalı)",
+          "Aspirin: Kardiyovasküler olay riski yüksek ise (dikkatli, kanama riski)"
+        ],
+        "kardiyorenal_sendrom": {
+          "tip_2": "Kronik kalp yetmezliği → KBH (azalmış kardiyak output, venöz konjesyon)",
+          "tip_4": "KBH → kalp yetmezliği (volüm yükü, hipertansiyon, üremi, CKD-MBD)",
+          "tedavi": "SGLT2 inhibitörleri (kalp yetmezliği + KBH), ACE-i/ARB, diüretikler, sıvı yönetimi"
+        },
+        "vasküler_kalsifikasyon": [
+          "Mekanizma: Fosfat ↑, kalsiyum ↑, PTH ↑, vitamin D aşırı → vasküler düz kas hücresi osteojen transformasyon",
+          "Sonuç: Koroner arter kalsifikasyonu (CAC skor ↑↑), aortik stenoz, periferel arter hastalığı",
+          "Önleme: Fosfat kontrolü, kalsiyumsuz fosfat bağlayıcı, PTH kontrolü, aşırı kalsiyum/vitamin D'den kaçınma"
+        ]
+      }
+    },
+    "hematoloji": {
+      "rol": "Anemi yönetimi, demir eksikliği, kanama diyatezi",
+      "yaklaşım": {
+        "anemi_of_CKD": [
+          "Mekanizma: Eritropoetin ↓, demir kısıtlaması (hepsidin ↑), inflamasyon, kısa eritrosit ömrü",
+          "Hedef: Hemoglobin 10-11.5 g/dL (aşırı hedef kardiyovasküler risk)",
+          "Demir: Ferritin >100 ng/mL, TSAT >20% (IV demir tercih, eGFR <30)",
+          "ESA: Epoetin alfa/beta, darbepoetin (Hb <10 g/dL + demir yeterli)"
+        ],
+        "kanama_eğilimi": [
+          "Mekanizma: Trombosit disfonksiyonu (üremik toksinler → von Willebrand faktör bozukluğu, GP IIb/IIIa reseptör defekti)",
+          "Klinik: Ekimoz, epistaksis, GI kanama, uzamış kanama zamanı (BT)",
+          "Tedavi: DDAVP (desmopressin 0.3 µg/kg IV, geçici etki 4-8 saat), konjuge östrojen, kriyopresipitat (akut), diyaliz (üremik toksin temizleme)"
+        ]
+      }
+    },
+    "gastroenteroloji": {
+      "rol": "GI komplikasyonlar, nütrisyon",
+      "yaklaşım": {
+        "GI_komplikasyonlar": [
+          "Üremik gastrit/kolit: Bulantı, kusma, iştahsızlık, GI kanama",
+          "Angiodisplazi: Vasküler malformasyon (özellikli kolon), GI kanama",
+          "Konstipasyon: Fosfat bağlayıcı yan etki, sıvı kısıtlaması, hipomotilite",
+          "Tedavi: PPI (üremik gastrit), laksatif, diyaliz (üremik toksinler ↓)"
+        ],
+        "nütrisyon": [
+          "Protein-enerji malnutrisyonu: %30-50 diyaliz hastası, iştahsızlık, inflamasyon, diyaliz protein kaybı",
+          "Hedef: Protein 0.8 g/kg/gün (konservatif evre 3-5), 1.2 g/kg/gün (diyaliz)",
+          "Enerji: 30-35 kkal/kg/gün",
+          "Oral nütrisyonel supleman: Protein tozu, IDPN (intradiyalitik parenteral nütrisyon)"
+        ]
+      }
+    },
+    "radyoloji": {
+      "rol": "Görüntüleme, vasküler erişim değerlendirmesi",
+      "yaklaşım": {
+        "böbrek_ultrasonografi": [
+          "Rutin: Boyut (küçük böbrekler <9 cm → kronik), ekojenisite ↑ (fibrozis)",
+          "Doppler: Renal arter stenozu (akselere sistolik hız >180 cm/s), renal ven trombozu",
+          "Vasküler erişim: AVF matürasyon değerlendirmesi, greft trombozu"
+        ],
+        "kontrast_güvenliği": [
+          "İyotlu kontrast: Kontrast nefropatisi riski (eGFR <30), hidrasyon (izotonik salin 1 mL/kg/saat 12 saat), volüm minimal",
+          "Gadolinium: NSF riski (eGFR <30, kontraendike), linear gadolinium kaçın, makrosiklik tercih"
+        ],
+        "renal_osteodistrofi": [
+          "Radyolojik bulgular: Subperiostal rezorpsiyon (el falanks, radyal taraf 2. parmak metakarp), brown tümör (fibröz osteit), rugger jersey omurga (vertebra endplate skleroz)"
+        ]
+      }
+    },
+    "nöroloji": {
+      "rol": "Üremik ensefalopati, periferik nöropati",
+      "yaklaşım": {
+        "üremik_ensefalopati": [
+          "Semptomlar: Konfüzyon, letarji, asteriksis (flapping tremor), myoklonus, nöbet, koma",
+          "Mekanizma: Üremik toksinler (üre, kreatinin, guanidin bileşikleri), elektrolit bozuklukları (hiperkalemi, hipokalsemi)",
+          "Tedavi: Acil diyaliz (toksin temizleme)",
+          "Ayırıcı: Diyaliz disequilibrium sendromu (ilk diyaliz, hızlı üre düşüşü → serebral ödem)"
+        ],
+        "üremik_periferik_nöropati": [
+          "Tip: Distal simetrik sensorimotor polinöropati (sock-glove), restless leg sendromu",
+          "Semptomlar: Parestezi (ayak, bacak), his azalması, yanma, kas zayıflığı (drop foot)",
+          "Mekanizma: Üremik toksinler (β2-mikroglobulin), segmental demyelinizasyon, aksonal dejenerasyon",
+          "Tedavi: Düzenli diyaliz, transplant (reversibl), gabapentin/pregabalin (semptomatik)"
+        ]
+      }
+    },
+    "aile_hekimliği": {
+      "rol": "Birinci basamak tarama, risk faktörü yönetimi, yönlendirme",
+      "yaklaşım": {
+        "tarama": [
+          "Risk grupları: DM, HT, KVH, >60 yaş, obezite, aile öyküsü",
+          "Testler: Serum kreatinin (eGFR hesaplama), spot idrar albumin/kreatinin oranı (UACR)",
+          "Sıklık: Yıllık (DM, HT), 1-2 yılda bir (düşük risk)"
+        ],
+        "risk_faktörü_yönetimi": [
+          "Hipertansiyon: Hedef <130/80 mmHg, ACE-i/ARB ilk seçenek",
+          "Diabetes: HbA1c <7%, SGLT2 inhibitörü",
+          "Kilo kaybı: BMI >25 ise %5-10 hedef",
+          "Sigara bırakma, egzersiz"
+        ],
+        "nefroloji_yönlendirmesi": [
+          "eGFR <30 mL/dk (evre 4)",
+          "Albuminüri >300 mg/g (A3)",
+          "Hızlı eGFR düşüşü (>5 mL/dk/yıl)",
+          "Belirsiz etyoloji (genç, akut başlangıç, hematüri)"
+        ]
+      }
+    }
+  },
+  "kaynaklar": [
+    "KDIGO (Kidney Disease: Improving Global Outcomes) Clinical Practice Guideline for CKD, 2021",
+    "KDIGO CKD-MBD (Mineral and Bone Disorder) Guidelines, 2017",
+    "KDIGO Anemia in CKD Guidelines, 2012",
+    "KDIGO Blood Pressure in CKD Guideline, 2021",
+    "KDIGO Diabetes Management in CKD, 2022",
+    "UpToDate: Overview of chronic kidney disease-mineral and bone disorder (CKD-MBD)",
+    "UpToDate: Treatment of anemia in nondialysis chronic kidney disease",
+    "CREDIT Study (Chronic Renal Disease in Turkey), 2008-2010",
+    "EMPA-REG, DAPA-CKD, FIDELIO-DKD trials (SGLT2i, Finerenone)",
+    "TREAT, CHOIR trials (ESA anemia management)"
+  ]
+}

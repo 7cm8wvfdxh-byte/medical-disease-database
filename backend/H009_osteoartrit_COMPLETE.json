@@ -1,0 +1,614 @@
+{
+  "hastalık_id": "H009",
+  "version": "1.0",
+  "son_güncelleme": "2026-01-19",
+  "temel_bilgi": {
+    "isim_tr": "Osteoartrit",
+    "isim_en": "Osteoarthritis",
+    "kısa_isim": "OA",
+    "diğer_isimler": [
+      "Dejeneratif artrit",
+      "Dejeneratif eklem hastalığı",
+      "Aşınma artriti"
+    ],
+    "kodlama": {
+      "ICD_10": "M15-M19",
+      "ICD_10_detay": {
+        "M15": "Poliosteoartrit",
+        "M16": "Kalça osteoartriti (koksartrit)",
+        "M17": "Diz osteoartriti (gonartrit)",
+        "M18": "Başparmak CMC (karpometakarpal) eklem osteoartriti",
+        "M19": "Diğer osteoartrit",
+        "M19.0": "Primer osteoartrit, tanımlanmamış bölge",
+        "M19.9": "Osteoartrit, tanımlanmamış"
+      },
+      "SNOMED_CT": "396275006",
+      "LOINC": "LP173571-0"
+    },
+    "tanım": "Osteoartrit, eklem kıkırdağının progresif dejenerasyonu, subkondral kemik değişiklikleri (osteofit, skleroz, kistler), sinovyal inflamasyon ve periartiküler yumuşak doku tutulumu ile karakterize kronik, yavaş ilerleyen dejeneratif eklem hastalığıdır. Ağrı, sertlik, fonksiyon kaybı ve eklem deformitesi ile seyreder. En sık diz, kalça, el (DIP, PIP, CMC), omurga (servikal, lumbal) eklemlerini tutar.",
+    "epidemiyoloji": {
+      "global_prevalans": "Dünyada 528 milyon kişi (2019 GBD), >65 yaş %50, en yaygın eklem hastalığı",
+      "türkiye_prevalans": "%19.4 (TURKCOCOS çalışması), kadınlarda %24.3, erkeklerde %13.1",
+      "yaş_dağılımı": "Yaşla artar: <45 yaş %2, 45-65 yaş %30, >65 yaş %50-60, radyolojik OA >80 yaş %80",
+      "cinsiyet": "Kadınlarda daha sık ve şiddetli (özellikle diz, el OA), erkeklerde kalça OA daha sık",
+      "risk_grupları": [
+        "İleri yaş (>50 yaş, en önemli risk faktörü)",
+        "Kadın cinsiyet (postmenopozal östrojen azalması)",
+        "Obezite (BMI >30, diz OA riski 4-5 kat, mekanik yük + adipokinler)",
+        "Eklem travması (ön çapraz bağ rüptürü, menisküs yırtığı → post-travmatik OA %50)",
+        "Meslek (ağır yük taşıma, çömelme, diz çökme → diz OA, klavye kullanımı → el OA)",
+        "Spor (uzun mesafe koşu, futbol, basketbol → diz/kalça OA)",
+        "Genetik yatkınlık (ailesel OA %40-65 kalıtım, çok genli)",
+        "Eklem malalignmentı (varus/valgus deformitesi → diz OA)",
+        "Kas zayıflığı (quadriceps zayıflığı → diz OA progresyonu)"
+      ]
+    },
+    "patofizyoloji": {
+      "ana_mekanizmalar": [
+        "Kıkırdak dejenerasyonu: Kondrosit apoptozu, matriks metalloproteinaz (MMP) aktivasyonu → tip II kollajen ve proteoglikan yıkımı → kıkırdak fibrilasyonu, erozyonu",
+        "Subkondral kemik değişiklikleri: Mikrofraktürler, skleroz (yoğunlaşma), kistler (genoditler), osteofit formasyonu (eklem kenarlarında kemik büyümesi)",
+        "Sinovyal inflamasyon (sinovit): IL-1β, TNF-α, IL-6 salınımı → ağrı, effüzyon, kıkırdak yıkımı ↑",
+        "Menisküs dejenerasyonu: Yaşla yıpranma, yırtık → eklem stabilizasyonu ↓, yük dağılımı bozulması",
+        "Ligaman laksitesi: Eklem instabilitesi → mekanik stres ↑",
+        "Adipokin etkisi: Obezitede leptin, adiponektin → inflamasyon, kıkırdak katabolizması"
+      ],
+      "kıkırdak_dejenerasyonu_aşamaları": {
+        "erken": "Yüzeyel fibrilasyon, proteoglikan kaybı, su içeriği ↑",
+        "orta": "Dikey çatlaklar, kıkırdak incelme, kondrosit klonları (onarım çabası)",
+        "ileri": "Tam kat kıkırdak kaybı, subkondral kemik maruziyeti (kemik-kemik teması)"
+      },
+      "risk_faktörleri_mekanizma": {
+        "obezite": "Mekanik yük ↑ (her 5 kg → diz yükü 15-20 kg artar), adipokinler (leptin, adiponektin) → inflamasyon, MMP aktivasyonu",
+        "travma": "Akut: ACL rüptürü, menisküs yırtığı → eklem instabilitesi, anormal yük dağılımı → 10-20 yıl içinde post-travmatik OA",
+        "genetik": "Çok genli (GWAS: GDF5, COL11A1, SMAD3), tip II kollajen gen mutasyonları (nadir)",
+        "yaş": "Kondrosit rejenerasyon kapasitesi ↓, senescence, oksidatif stres ↑, mitokondriyel disfonksiyon"
+      }
+    },
+    "klinik_özellikler": {
+      "belirtiler": {
+        "ağrı": [
+          "Kullanımla artan, istirahatle azalan (mekanik ağrı)",
+          "Sabah sertliği <30 dakika (inflamatuar artritten ayırım, RA'da >60 dk)",
+          "İleri evrede istirahat ağrısı, gece ağrısı",
+          "Merdiven inme-çıkma, çömelme, sandalyeden kalkma ile kötüleşme (diz OA)",
+          "Yürüme, uzun süreli ayakta durma (kalça OA)"
+        ],
+        "sertlik": [
+          "Sabah sertliği <30 dakika (kısa süreli)",
+          "Jel fenomeni: Hareketsizlik sonrası sertlik (sinema, araba yolculuğu)"
+        ],
+        "fonksiyon_kaybı": [
+          "Günlük aktivite kısıtlılığı (yürüme mesafesi ↓, merdiven çıkamama)",
+          "Eklem hareket açıklığı azalması (ROM restriction)",
+          "Topallama (antaljik yürüyüş)",
+          "Kavrama gücü azalması (el OA)"
+        ],
+        "eklem_değişiklikleri": [
+          "Eklem şişliği (effüzyon, sinovit)",
+          "Krepitasyon (eklem hareketi ile çıtırtı, sürtünme hissi)",
+          "Deformite: Diz varus/valgus, Heberden nodülleri (DIP), Bouchard nodülleri (PIP), başparmak kare deformitesi (CMC)"
+        ]
+      },
+      "fizik_muayene": {
+        "inspeksiyon": [
+          "Eklem şişliği, effüzyon",
+          "Deformite: Diz varus (O bacak), valgus (X bacak)",
+          "Heberden nodülleri (DIP eklemler, kemiksi büyümeler)",
+          "Bouchard nodülleri (PIP eklemler)",
+          "Kas atrofisi (quadriceps atrofisi - diz OA)"
+        ],
+        "palpasyon": [
+          "Eklem hassasiyeti (eklem çizgisi)",
+          "Krepitasyon (patella sürtme testi - diz OA)",
+          "Effüzyon (patellar tap testi, suprapatellar effüzyon)",
+          "Osteofitler (palpe edilebilir kemik büyümesi)"
+        ],
+        "hareket": [
+          "Eklem hareket açıklığı (ROM) azalması",
+          "Pasif hareket sonunda ağrı",
+          "Krepitasyon ile hareket",
+          "Quadriceps kas gücü testi (diz ekstansiyon gücü)"
+        ]
+      },
+      "anatomik_bölgelere_göre": {
+        "diz_OA": {
+          "semptomlar": "Anterior diz ağrısı, merdiven inme ağrısı, çömelme güçlüğü, sabah sertliği",
+          "muayene": "Eklem çizgisi hassasiyeti, effüzyon, krepitasyon, varus/valgus deformitesi, quadriceps atrofisi",
+          "kompartmanlar": "Medial tibiofemoral (en sık, %75), lateral tibiofemoral, patellofemoral"
+        },
+        "kalça_OA": {
+          "semptomlar": "Kasık ağrısı (75%), lateral kalça ağrısı, uyluk ağrısı, yürüme kısıtlılığı, çorap giyme güçlüğü",
+          "muayene": "İç rotasyon kısıtlılığı (en erken bulgu), FABER testi pozitif, Trendelenburg yürüyüşü, bacak kısalığı (ileri evre)",
+          "özel": "Ağrı kasıkta ise kalça OA, lateral ise trokanterik bursit ayırımı"
+        },
+        "el_OA": {
+          "semptomlar": "Parmak ağrısı, sertlik, kavrama gücü azalması, ince motor beceri güçlüğü",
+          "muayene": "Heberden nodülleri (DIP), Bouchard nodülleri (PIP), başparmak CMC OA (kare deformitesi, grind testi pozitif)",
+          "özel": "DIP tutulumu OA karakteristik (RA'da DIP tutulumu nadir)"
+        },
+        "omurga_OA": {
+          "semptomlar": "Boyun/bel ağrısı, sertlik, radiküler ağrı (sinir basısı)",
+          "muayene": "Hareket kısıtlılığı, paravertebral spazm, radikülopati bulguları",
+          "komplikasyon": "Spinal stenoz (nörojenik claudicatio)"
+        }
+      }
+    },
+    "tanı": {
+      "klinik_tanı": [
+        "Klinik + radyolojik kriterler (ACR criteria)",
+        "Diz OA: Diz ağrısı + yaş >50 + sabah sertliği <30 dk + krepitasyon (sensitivite %95, spesifite %69)",
+        "Kalça OA: Kalça ağrısı + iç rotasyon <15° + kalça fleksiyon <115° (veya ESR <20 mm/h + radyolojik osteofitler)",
+        "El OA: El ağrısı/ache + ≥3 şişmiş eklem + ≥2 Heberden nodülü"
+      ],
+      "radyoloji": {
+        "konvansiyonel_grafi": {
+          "teknik": "Ağırlık taşıma pozisyonunda (standing, weight-bearing) - diz: AP, lateral, skyline; kalça: AP pelvis, lateral",
+          "kellgren_lawrence_sınıflaması": {
+            "grade_0": "Normal",
+            "grade_1": "Şüpheli eklem aralığı daralması, minimal osteofit",
+            "grade_2": "Kesin osteofit, şüpheli eklem aralığı daralması",
+            "grade_3": "Orta osteofit, kesin eklem aralığı daralması, hafif skleroz, olası deformite",
+            "grade_4": "Büyük osteofit, belirgin eklem aralığı daralması, ciddi skleroz, kesin deformite"
+          },
+          "radyolojik_bulgular": [
+            "Eklem aralığı daralması (asimetrik, yük taşıyan bölgede)",
+            "Osteofitler (eklem kenarlarında kemik büyümesi)",
+            "Subkondral skleroz (kemik yoğunluk artışı)",
+            "Subkondral kistler (genoditler, kemik içi sıvı koleksiyonu)",
+            "Deformite (varus, valgus)"
+          ]
+        },
+        "MRG": {
+          "endikasyon": "Atipik semptomlar, genç hasta, cerrahi planlama, yumuşak doku değerlendirmesi",
+          "WORMS_skoru": "Whole-Organ MRI Score (kıkırdak, kemik iliği ödemi, menisküs, ligaman, sinovit)",
+          "bulgular": [
+            "Kıkırdak morfolojisi (fibrilasyon, defekt, tam kat kayıp)",
+            "Kemik iliği ödemi (bone marrow edema, subkondral, ağrı ile korele)",
+            "Menisküs yırtığı, dejenerasyonu",
+            "Sinovit (kontrastlı MRG, sinovyal kalınlaşma)",
+            "Ligaman lezyonları",
+            "Baker kisti, effüzyon"
+          ]
+        },
+        "ultrasonografi": {
+          "kullanım": "Point-of-care, sinovit değerlendirmesi, effüzyon, Baker kisti, osteofitler",
+          "avantaj": "Ucuz, radyasyon yok, dinamik değerlendirme",
+          "bulgular": "Effüzyon, sinovyal kalınlaşma, osteofitler (hiperekojenik gölgeli yapı), kıkırdak incelme"
+        }
+      },
+      "laboratuvar": [
+        "Rutin laboratuvar normal (OA inflamatuar değil)",
+        "ESR, CRP: Normal veya hafif yüksek (<20 mg/L)",
+        "RF, anti-CCP: Negatif (RA ekartesi)",
+        "Sinovyal sıvı analizi: Non-inflamatuar (<2000 WBC/µL, %25 PMN), berrak sarı, iyi viskozite"
+      ],
+      "ayırıcı_tanı": [
+        "Romatoid artrit (RA): Simetrik, sabah sertliği >60 dk, MCP/PIP tutulumu, RF/anti-CCP pozitif, ESR/CRP yüksek",
+        "Gut artriti: Akut monoartrit, podagra (1. MTP), tophi, serum ürik asit ↑, sinovyal sıvı kristal (monosodyum ürat)",
+        "Psöriatik artrit: Daktilitis, DIP tutulumu + psöriazis, asimetrik",
+        "Avascular nekroz (AVN): Ani ağrı, MRG (subkondral kresen sign), risk faktörleri (steroid, alkol, travma)",
+        "Menisküs yırtığı: Akut travma, kilitlenme, McMurray testi pozitif",
+        "Bursit: Lokalize şişlik (prepatellar, anserine, trokanterik), palpasyonla hassasiyet",
+        "Tendinit: Palpasyon ile tendon hassasiyeti, hareketle ağrı"
+      ]
+    },
+    "farmakoloji_ve_tedavi": {
+      "genel_prensipler": [
+        "Multimodal yaklaşım: Farmakolojik + non-farmakolojik",
+        "Kademeli tedavi (step-up approach): Yaşam tarzı → topikal/oral analjezik → intraartiküler enjeksiyonlar → cerrahi",
+        "Bireyselleştirilmiş tedavi: Yaş, komorbidite, eklem, semptom şiddeti",
+        "Semptom kontrolü + fonksiyon iyileştirme (hastalık modifiye eden ajan yok)",
+        "Kilo kaybı + egzersiz = temel"
+      ],
+      "non_farmakolojik": {
+        "kilo_kaybı": {
+          "hedef": "BMI >25 ise %5-10 kilo kaybı",
+          "etki": "Diz OA'da her 1 kg kilo kaybı → 4 kg diz yükü azalması, ağrı ↓%20-30 (Messier study)",
+          "yöntem": "Diyet (kalori kısıtlama 500-750 kkal/gün) + egzersiz"
+        },
+        "egzersiz": {
+          "aerobik": "Yürüyüş, bisiklet, yüzme 30 dk, 5 gün/hafta (düşük impakt)",
+          "kuvvetlendirme": "Quadriceps, hamstring, gluteus kuvvetlendirme 2-3x/hafta (direnç bantları, ağırlık)",
+          "ROM_esneklik": "Germe egzersizleri, yoga",
+          "etki": "Ağrı ↓%30-40, fonksiyon ↑, cerrahi ihtiyacı ↓ (Fransen meta-analiz)",
+          "özel": "Aquatic exercises (hidroterapı) - eklem yükü minimal, obez/ağır OA ideal"
+        },
+        "fizik_tedavi": [
+          "TENS (Transcutaneous Electrical Nerve Stimulation): Ağrı modülasyonu",
+          "Termal tedavi: Sıcak (subakut), soğuk (akut effüzyon)",
+          "Ultrason, lazer (düşük kanıt düzeyi)",
+          "Taping (patellar taping - diz OA)"
+        ],
+        "yardımcı_cihazlar": [
+          "Baston: Kontrlateral el, %20-30 yük azaltma (kalça/diz OA)",
+          "Walker/rollator: Bilateral destek",
+          "Diz bracing: Unloader brace (varus/valgus OA için), patellar brace",
+          "Ortezler: El splint (CMC OA), ayakkabı modifikasyonu (topuk kama - wedge)"
+        ]
+      },
+      "farmakolojik_tedavi": {
+        "topikal_NSAID": {
+          "ilaçlar": "Diklofenak jel %1, ketoprofen jel, piroksikam jel",
+          "endikasyon": "Hafif-orta ağrı, yüzeyel eklemler (diz, el), GI yan etki riski yüksek (yaşlı, komorbid)",
+          "uygulama": "Günde 3-4 kez, etkilenen eklem üzerine",
+          "etkinlik": "Plasebo üstün, oral NSAID kadar etkili (diz/el OA), sistemik yan etki düşük",
+          "OARSI_öneri": "İlk tercih (diz/el OA), güçlü öneri"
+        },
+        "oral_analjezikler": {
+          "parasetamol": {
+            "doz": "3-4 g/gün (1g 4x1 veya 650 mg 6x1)",
+            "etkinlik": "Zayıf (NNT ~10), plaseboya minimal üstünlük",
+            "güvenlik": "İyi tolere, hepatotoksisite >4 g/gün, alkol kullanıcılarında dikkat",
+            "öneriler": "OARSI şartlı öneri (düşük etkinlik), ACR öneri yok (2019), yaşlı/komorbid hastalarda düşünülebilir"
+          }
+        },
+        "oral_NSAID": {
+          "ilaçlar": [
+            "İbuprofen: 400-600 mg 3x1 (max 2400 mg/gün)",
+            "Naproksen: 500 mg 2x1",
+            "Diklofenak: 50 mg 3x1 veya 75 mg 2x1",
+            "Selektif COX-2: Celecoxib 200 mg/gün"
+          ],
+          "etkinlik": "Ağrı ↓%30, fonksiyon ↑, topikal kadar etkili (diz/el), kalça OA'da daha etkili",
+          "yan_etkiler": [
+            "GI: Dispepsi, ülser, kanama (risk ↑: >65 yaş, PPI kullanımı olmayan, GI kanama öyküsü)",
+            "Kardiyovasküler: MI, inme riski (diklofenak, yüksek doz ibuprofen > naproksen, celecoxib)",
+            "Renal: Akut böbrek hasarı, hipertansiyon kötüleşmesi, eGFR <60 dikkat",
+            "Allerjik: Bronkospazm (aspirine duyarlı astım)"
+          ],
+          "öneriler": "En düşük etkili doz, en kısa süre (<2 hafta intermittan), GI koruma (PPI), kardiyovasküler risk değerlendirmesi",
+          "kontraendikasyon": "Aktif peptik ülser, GI kanama, ciddi kalp yetmezliği, ciddi böbrek yetmezliği (eGFR <30)"
+        },
+        "opioidler": {
+          "zayıf_opioid": "Tramadol 50-100 mg 2-4x1 (max 400 mg/gün), tramadol/parasetamol kombinasyon",
+          "endikasyon": "Orta-ağır ağrı, NSAID kontraendikasyonu/yetersiz, cerrahi öncesi geçici",
+          "yan_etkiler": "Bulantı, konstipasyon, sersemlik, düşme riski (yaşlı), bağımlılık, nöbet (tramadol >300 mg)",
+          "öneriler": "Kısa süreli (<3 ay), düşük doz, güçlü opioid (oksikodon, morfin) OA'da önerilmez (OARSI, ACR)"
+        },
+        "duloksetin": {
+          "mekanizma": "SNRI (serotonin-norepinefrin reuptake inhibitör), santral ağrı modülasyonu",
+          "doz": "30-60 mg/gün (30 mg başla, 1 hafta sonra 60 mg)",
+          "endikasyon": "Kronik OA ağrısı (diz, kalça), özellikle santral sensitizasyon, depresyon/anksiyete birlikteliği",
+          "etkinlik": "Ağrı ↓%20-30 (plasebo üstü), fonksiyon ↑ (Cymbalta OA trials)",
+          "yan_etki": "Bulantı, ağız kuruluğu, konstipasyon, baş dönmesi, hipertansiyon (monitörizasyon)",
+          "öneriler": "OARSI şartlı öneri (diz/kalça OA)"
+        }
+      },
+      "intraartiküler_enjeksiyonlar": {
+        "kortikosteroid": {
+          "ilaçlar": "Triamsinolon asetonid 40 mg, metilprednizolon 40 mg, betametazon 6 mg",
+          "endikasyon": "Akut alevlenme, effüzyon, sinovit, oral tedaviye yanıtsız",
+          "etkinlik": "Kısa süreli ağrı azalması (2-8 hafta), plasebo üstün",
+          "teknik": "Aseptik koşullar, effüzyon varsa önce aspirasyon, lateral suprapatellar yaklaşım (diz)",
+          "yan_etkiler": "Post-enjeksiyon alevlenme (24-48 saat, %2-5), septik artrit (nadir <1:10,000), kıkırdak hasarı (tekrarlayan enjeksiyon)",
+          "sıklık": "En fazla 3-4 enjeksiyon/yıl (3 ay ara), sık enjeksiyon kıkırdak hasarı ↑",
+          "öneriler": "OARSI şartlı öneri (diz/kalça/el OA)"
+        },
+        "hyaluronik_asit_HA": {
+          "mekanizma": "Viskosuplementasyon (eklem sıvısı viskozitesi ↑), mekanoreseptör modülasyonu, anti-inflamatuar",
+          "preparatlar": "Düşük molekül ağırlık (500-730 kDa, 3-5 enjeksiyon), yüksek molekül (6000 kDa, tek enjeksiyon - Synvisc, Durolane)",
+          "endikasyon": "Orta evre diz OA (Kellgren-Lawrence 2-3), kortikosteroid alternatifi",
+          "etkinlik": "Tartışmalı, meta-analizler çelişkili, ağrı azalması plasebo üstü ancak küçük etki, etki 3-6 ay",
+          "yan_etki": "Post-enjeksiyon ağrı/şişlik (%5-10), allerjik reaksiyon (nadir, kuş ürünü kökenli ise)",
+          "maliyet": "Yüksek (kortikosteroid'den 10-20 kat pahalı)",
+          "öneriler": "OARSI belirsiz (2019), ACR koşullu önermeme (2019), bazı ülkelerde yaygın (Avrupa, Asya)"
+        },
+        "platelet_rich_plasma_PRP": {
+          "mekanizma": "Büyüme faktörleri (PDGF, TGF-β, IGF-1) → kondrosit proliferasyonu, anti-inflamatuar",
+          "teknik": "Hastadan kan alımı → santrifüj → trombosit konsantre → intraartiküler enjeksiyon (1-3 doz)",
+          "etkinlik": "Tartışmalı, bazı RCT'lerde HA ve kortikosteroid üstün, bazılarında fark yok",
+          "öneriler": "OARSI belirsiz, ACR yetersiz kanıt, deneysel"
+        }
+      },
+      "cerrahi_tedavi": {
+        "artroskopi": {
+          "debridman_lavaj": "Gevşek cisim çıkarma, menisküs parsiyel rezeksiyon, yıkama",
+          "endikasyon": "Mekanik semptomlar (kilitlenme, gevşek cisim), genç hasta",
+          "etkinlik": "Plaseboya üstün değil (Moseley trial 2002, Kirkley trial 2008), kılavuzlar önermez",
+          "komplikasyon": "Tromboz, enfeksiyon, semptom kötüleşmesi",
+          "öneriler": "AAOS güçlü önermeme, OARSI önermeme (dejeneratif menisküs için)"
+        },
+        "osteotomi": {
+          "tip": "Yüksek tibial osteotomi (HTO - varus diz OA), periasetuler osteotomi (valgus diz OA)",
+          "mekanizma": "Malalignment düzeltme → yükü sağlam kompartmana kaydırma",
+          "endikasyon": "Genç hasta (<60 yaş), unicompartmental OA (medial veya lateral), aktif",
+          "avantaj": "Kendi eklem korunur, artroplasti ertelenir (10-15 yıl)",
+          "komplikasyon": "İyileşme uzun (3-6 ay), enfeksiyon, düzeltme kaybı",
+          "öneriler": "OARSI şartlı öneri (genç, unikondiler OA)"
+        },
+        "total_eklem_artroplastisi": {
+          "total_diz_artroplastisi_TKA": {
+            "endikasyon": "Ağır semptomatik OA (Kellgren-Lawrence 3-4), konservatif tedaviye yanıtsız, fonksiyon kaybı, yaşam kalitesi ↓",
+            "teknik": "Femoral ve tibial komponentler (metal/polietilen), patellar resurfacing",
+            "başarı_oranı": "%80-90 tatmin, 15-20 yıl implant sağkalımı",
+            "komplikasyon": "Enfeksiyon (%1-2), tromboz (DVT/PE, profilaksi gerekir), aseptik gevşeme, instabilite, periprostetik kırık",
+            "iyileşme": "Hastane yatış 2-4 gün, tam iyileşme 3-6 ay, fizik tedavi esastır"
+          },
+          "total_kalça_artroplastisi_THA": {
+            "endikasyon": "Ağır kalça OA, AVN, kalça kırığı (yaşlı)",
+            "teknik": "Femoral stem + asetabular komponent (seramik, metal, polietilen kombinasyonları)",
+            "yaklaşımlar": "Posterior, anterolateral, direkt anterior (minimal invaziv)",
+            "başarı_oranı": "%90-95 tatmin, 20-25 yıl implant sağkalımı",
+            "komplikasyon": "Dislokasyon (%2-5, posterior yaklaşımda ↑), enfeksiyon, avasküler nekroz, bacak uzunluk farkı",
+            "iyileşme": "Hızlı mobilizasyon (1. gün yürüme), 6 hafta tam yük, 3 ay normal aktivite"
+          },
+          "unikondiler_diz_artroplastisi_UKA": {
+            "endikasyon": "Unikondiler OA (medial veya lateral), ligaman intakt, yaş >60",
+            "avantaj": "Daha az invaziv, hızlı iyileşme, propriosepsİyon korunur, kemik stok korunur (revizyon kolaylığı)",
+            "dezavantaj": "Daha yüksek revizyon oranı (%10-15, 10 yıl), hasta seçimi kritik"
+          }
+        }
+      },
+      "yeni_tedaviler_gelecek": [
+        "Hastalık modifiye eden ilaçlar (DMOADs): Sprifermin (FGF-18, kıkırdak rejenerasyon, faz 2), tanezumab (NGF inhibitörü, ağrı, FDA onaylanmadı - hızlı OA progresyonu riski)",
+        "Gen tedavisi: Kondrosit gen transfer (IL-1RA, IGF-1)",
+        "Kök hücre tedavisi: Mezenkimal kök hücre (MSC) enjeksiyonu, deneysel",
+        "Doku mühendisliği: Otolog kondrosit implantasyonu (ACI), osteokondral greftler"
+      ]
+    },
+    "komplikasyonlar": [
+      "Kronik ağrı: Santral sensitizasyon, opioid bağımlılığı riski",
+      "Fonksiyonel bozukluk: Mobilite kaybı, günlük aktivite kısıtlılığı, bağımsızlık kaybı (yaşlı)",
+      "Düşme riski: Denge bozukluğu, kas zayıflığı → kırık riski",
+      "Psikolojik: Depresyon (%20), anksiyete, yaşam kalitesi ↓",
+      "Cerrahi komplikasyonlar: Enfeksiyon, tromboz, implant gevşemesi, revizyon ihtiyacı"
+    ],
+    "prognoz": {
+      "genel": "Yavaş ilerleyici, kronik, küratif tedavi yok",
+      "progresyon": "Değişken, bazı hastalar stabil kalır (yıllar), bazıları hızlı ilerler (5-10 yıl)",
+      "iyi_prognoz_faktörleri": [
+        "Genç yaş, hafif evre (Kellgren-Lawrence 1-2)",
+        "Kilo kaybı, egzersiz programı uyumu",
+        "Düşük inflamatuar belirteçler (CRP, sinovit yok)"
+      ],
+      "kötü_prognoz_faktörleri": [
+        "İleri yaş, obezite, malalignment (varus/valgus)",
+        "Kemik iliği ödemi (MRG), ciddi kıkırdak kaybı",
+        "Komorbidite (DM, KBH), depresyon"
+      ],
+      "yaşam_kalitesi": "Ağır OA yaşam kalitesini ciddi etkiler (kronik ağrı, mobilite kaybı), TKA/THA ile %80-90 düzelme"
+    }
+  },
+  "branş_perspektifleri": {
+    "ortopedi": {
+      "rol": "Cerrahi tedavi, artroplasti, artroskopi",
+      "yaklaşım": {
+        "konservatif_tedavi": [
+          "Kilo kaybı + fizik tedavi (ilk 3-6 ay deneme)",
+          "İntraartiküler kortikosteroid (alevlenme)",
+          "Yardımcı cihazlar (baston, brace)"
+        ],
+        "cerrahi_endikasyonlar": [
+          "Ağır semptomatik OA (Kellgren-Lawrence 3-4)",
+          "Konservatif tedaviye yanıtsız (>6 ay)",
+          "Fonksiyon kaybı, yaşam kalitesi ↓",
+          "Hasta cerrahi açısından uygun (yaş, komorbidite, beklentiler)"
+        ],
+        "cerrahi_seçenekleri": {
+          "genç_hasta_<60": "Osteotomi (HTO), unikondiler artroplasti (seçilmiş vakalar)",
+          "yaşlı_hasta_>60": "Total eklem artroplastisi (TKA, THA)",
+          "mekanik_semptomlar": "Artroskopik debridman (gevşek cisim, menisküs yırtığı - sınırlı endikasyon)"
+        },
+        "total_diz_artroplastisi_TKA": [
+          "Pre-operatif: Dental kontrol, idrar kültürü, deri lezyonu yok, anestezi konsültasyonu",
+          "Teknik: Posterior stabilize, cruciate-retaining, kemik kesim (femur, tibia, patella)",
+          "Post-operatif: DVT profilaksisi (LMWH/NOAC), fizik tedavi (ROM, quadriceps), 3-6 ay iyileşme"
+        ],
+        "total_kalça_artroplastisi_THA": [
+          "Yaklaşımlar: Posterior (en sık), anterolateral, direkt anterior (minimal invaziv, hızlı iyileşme)",
+          "Bearings: Seramik-seramik (genç, aşınma ↓), metal-polietilen (standart)",
+          "Post-operatif: Erken mobilizasyon (1. gün), kalça fleksiyon <90° (6 hafta, dislokasyon önleme)"
+        ]
+      }
+    },
+    "romatoloji": {
+      "rol": "Tanı, farmakolojik tedavi, inflamatuar artrit ayırıcı tanısı",
+      "yaklaşım": {
+        "tanı": [
+          "Klinik + radyolojik (ACR criteria)",
+          "İnflamatuar artrit ekartesi (RA, PsA, gut)",
+          "Sinovyal sıvı analizi (non-inflamatuar, <2000 WBC)"
+        ],
+        "farmakolojik_tedavi": [
+          "Basamak 1: Topikal NSAID (diz/el OA)",
+          "Basamak 2: Oral NSAID (en düşük doz, kısa süre, GI koruma)",
+          "Basamak 3: Duloksetin (kronik ağrı), tramadol (kısa süreli)",
+          "İntraartiküler: Kortikosteroid (alevlenme, effüzyon), HA (tartışmalı)"
+        ],
+        "özel_durumlar": [
+          "Eroziv el OA: Hydroxychloroquine (düşük kanıt), intraartiküler steroid",
+          "Kristal artropati birlikteliği: Gut, CPPD (pseudogout) → kolşisin, urat düşürücü"
+        ]
+      }
+    },
+    "fizik_tedavi_ve_rehabilitasyon": {
+      "rol": "Egzersiz programı, fizik tedavi modaliteleri, yardımcı cihazlar",
+      "yaklaşım": {
+        "egzersiz_reçetesi": [
+          "Aerobik: Yürüyüş, bisiklet, yüzme 30 dk, 5 gün/hafta (kalp hızı hedefi %60-70)",
+          "Kuvvetlendirme: Quadriceps, hamstring, gluteus 2-3x/hafta (direnç bantları, ağırlık), 10-15 tekrar, 2-3 set",
+          "Esneklik: Germe egzersizleri 5-10 dk (hamstring, quadriceps, kalça fleksörleri)",
+          "Propriosepsİyon: Denge egzersizleri (tek ayak durma, wobble board)"
+        ],
+        "aquatic_therapy": [
+          "Hidroterapı: Sıcak havuz (32-34°C), eklem yükü minimal",
+          "Endikasyon: Obezite, ağır OA, kardiyopulmoner komorbidite",
+          "Protokol: 45-60 dk, 2-3x/hafta, aerobik + kuvvetlendirme + ROM"
+        ],
+        "fizik_tedavi_modaliteleri": [
+          "TENS: Ağrı modulasyonu (Gate control theory), 20-30 dk/gün",
+          "Termal: Sıcak uygulama (subakut), soğuk (akut effüzyon)",
+          "Ultrason: Derin ısı (1 MHz, 1-2 W/cm²), kolajen elastikiyeti ↑",
+          "Laser (LLLT): Düşük düzey laser, anti-inflamatuar (kanıt zayıf)"
+        ],
+        "yardımcı_cihazlar": [
+          "Baston: Kontralateral el, %20-30 yük azaltma, doğru boy (trochanter major hizası)",
+          "Diz brace: Unloader brace (varus OA → valgus stres, medial yük ↓), patellar stabilizasyon",
+          "Ayakkabı: Lateral/medial kama (wedge), yumuşak taban, ark desteği",
+          "El ortezi: Başparmak CMC splint (immobilizasyon, ağrı ↓)"
+        ]
+      }
+    },
+    "radyoloji": {
+      "rol": "Tanı, evreleme, cerrahi planlama",
+      "yaklaşım": {
+        "konvansiyonel_grafi": [
+          "Teknik: Ağırlık taşıma (standing), bilateral karşılaştırma",
+          "Diz: AP (standing), lateral, skyline (patellofemoral), Rosenberg (30° fleksiyon, posterior eklem aralığı)",
+          "Kalça: AP pelvis, lateral (frog-leg)",
+          "El: PA her iki el (DIP, PIP, CMC değerlendirmesi)",
+          "Omurga: AP, lateral (servikal/lumbal)"
+        ],
+        "Kellgren_Lawrence": "Grade 0-4 (radyolojik evreleme)",
+        "ölçümler": [
+          "Eklem aralığı (Joint Space Width - JSW): Medial/lateral, minimal JSW <3 mm ciddi",
+          "Mekanik aks: Anatomik aks (femur-tibia açısı), varus/valgus deformitesi"
+        ],
+        "MRG_protokolü": [
+          "Sekanslar: T1 (anatomi), T2 FS (ödem, effüzyon), PD FS (kıkırdak), GRE (kemik)",
+          "Skorlama: WORMS, MOAKS (kıkırdak, kemik, menisküs, ligaman)",
+          "Endikasyon: Genç hasta, atipik semptomlar, cerrahi planlama, yumuşak doku patolojisi"
+        ],
+        "ultrasonografi": [
+          "Point-of-care, enjeksiyon rehberi",
+          "Bulgular: Effüzyon, sinovit, osteofitler, kıkırdak, Baker kisti",
+          "Doppler: Sinovial inflamasyon (vaskülarite ↑)"
+        ]
+      }
+    },
+    "ağrı_yönetimi_anestezi": {
+      "rol": "Kronik ağrı yönetimi, girişimsel prosedürler",
+      "yaklaşım": {
+        "multimodal_analjezi": [
+          "Farmakolojik: NSAID + duloksetin + tramadol (kademeli)",
+          "Girişimsel: İntraartiküler enjeksiyonlar, bloklar",
+          "Psikolojik: CBT, mindfulness"
+        ],
+        "girişimsel_prosedürler": [
+          "İntraartiküler enjeksiyon: Kortikosteroid, HA (US/fluoroskopi rehberliğinde)",
+          "Periferik sinir bloğu: Genicular nerve RF ablasyon (diz OA, dirençli ağrı)",
+          "Spinal: Epidural steroid (omurga OA, radikülopati)"
+        ],
+        "genicular_nerve_RF_ablasyon": {
+          "endikasyon": "Kronik diz OA ağrısı, konservatif tedaviye dirençli, cerrahi adayı değil/reddediyor",
+          "teknik": "Fluoroskopi rehberliğinde süperior lateral, süperior medial, inferior medial genicular sinir RF ablasyon",
+          "etkinlik": "Ağrı ↓%50-70 (6-12 ay), tekrarlanabilir",
+          "komplikasyon": "Nörit (geçici), hematom, enfeksiyon (nadir)"
+        }
+      }
+    },
+    "dahiliye": {
+      "rol": "Komorbidite yönetimi, ilaç yan etki takibi",
+      "yaklaşım": {
+        "NSAID_güvenliği": [
+          "GI risk: PPI profilaksisi (>65 yaş, GI kanama öyküsü, antikoagülan/kortikosteroid kullanımı)",
+          "Kardiyovasküler risk: Diklofenak, yüksek doz ibuprofen kaçın, naproksen tercih",
+          "Renal risk: eGFR <60 dikkat, hidrasyon, NSAID dozu azalt veya kes (eGFR <30)"
+        ],
+        "komorbidite_yönetimi": [
+          "Hipertansiyon: NSAID kan basıncı ↑ (5-10 mmHg), ACE-i etkisi ↓, monitörize et",
+          "Diabetes: Steroid enjeksiyonu → hiperglisemi (2-3 gün), glukoz takibi",
+          "Kalp yetmezliği: NSAID sıvı retansiyonu → dekompansasyon, kaçın",
+          "Kronik böbrek hastalığı: NSAID nefrotoksik, tramadol dozu azalt (birikir)"
+        ]
+      }
+    },
+    "geriatri": {
+      "rol": "Yaşlı hasta yönetimi, polifarmasi, düşme önleme",
+      "yaklaşım": {
+        "yaşlıda_OA": [
+          "Prevalans: >65 yaş %50-60, multimorbidite sık (HT, DM, KAH, KBH)",
+          "Özellikler: Ağrı algısı değişken, fonksiyonel bozukluk belirgin, düşme riski ↑"
+        ],
+        "ilaç_seçimi": [
+          "Topikal NSAID: İlk tercih (sistemik yan etki az)",
+          "Oral NSAID: Dikkatli, en düşük doz, kısa süre, PPI, renal fonksiyon takip",
+          "Opioid: Kaçınılmalı (düşme, konfüzyon, konstipasyon riski), zorunlu ise tramadol düşük doz",
+          "Duloksetin: Kullanılabilir, hipertansiyon monitörize et"
+        ],
+        "düşme_önleme": [
+          "Egzersiz: Denge, kuvvetlendirme (tai chi, denge çalışması)",
+          "Yardımcı cihaz: Baston, walker",
+          "Ev modifikasyonu: Kayma önleyici matlar, tutunma çubukları, aydınlatma",
+          "İlaç gözden geçirme: Polifarmasi azaltma, sedatif/opioid elimine"
+        ],
+        "cerrahi": [
+          "TKA/THA yaşlıda güvenli (>80 yaş bile), fonksiyon ↑, ağrı ↓",
+          "Pre-operatif optimizasyon: Kardiyak, pulmoner, nütrisyon, anemi düzeltme",
+          "Post-operatif: Delirium önleme, erken mobilizasyon, DVT profilaksisi"
+        ]
+      }
+    },
+    "endokrinoloji": {
+      "rol": "Obezite yönetimi, metabolik sendrom",
+      "yaklaşım": {
+        "obezite_ve_OA": [
+          "İlişki: BMI >30 → diz OA riski 4-5 kat, kalça OA 2-3 kat",
+          "Mekanizma: Mekanik yük + adipokinler (leptin, adiponektin, resistin) → inflamasyon",
+          "Hedef: %5-10 kilo kaybı → ağrı ↓%20-30, fonksiyon ↑"
+        ],
+        "kilo_kaybı_stratejileri": [
+          "Diyet: Kalori kısıtlama 500-750 kkal/gün, Akdeniz diyeti, düşük glisemik indeks",
+          "Egzersiz: Aerobik + direnç, 150-300 dk/hafta",
+          "Davranışçı terapi: Hedef belirleme, günlük tutma, destek grupları",
+          "Farmakolojik: GLP-1 RA (liraglutid, semaglutid), orlistat (seçilmiş vakalar)",
+          "Bariatrik cerrahi: BMI >40 (veya >35 + komorbidite), diz OA'da ağrı ↓, fonksiyon ↑ (meta-analiz)"
+        ],
+        "metabolik_sendrom": [
+          "Birliktelik: OA + metabolik sendrom (obezite, hipertansiyon, dislipidemi, hiperglisemi)",
+          "Tedavi: Kilo kaybı, egzersiz, metformin (insulin direnci), statin (dislipidemi)"
+        ]
+      }
+    },
+    "psikiyatri": {
+      "rol": "Depresyon, anksiyete, kronik ağrı psikolojisi",
+      "yaklaşım": {
+        "psikolojik_faktörler": [
+          "Depresyon: %20-30 birliktelik, ağrı algısını artırır, tedavi uyumunu azaltır",
+          "Anksiyete: Kineziyofobi (hareket korkusu) → aktiviteden kaçınma → dekondisyon → ağrı ↑",
+          "Katastrofizasyon: Ağrı algısını artırır, fonksiyonu azaltır"
+        ],
+        "tedavi": [
+          "Farmakolojik: Duloksetin (SNRI, kronik ağrı + depresyon), SSRI (essitalopram, sertralin)",
+          "Psikoterapi: CBT (bilişsel davranışçı terapi, ağrı yönetimi, baş etme stratejileri)",
+          "Mindfulness, meditasyon, relaksasyon teknikleri",
+          "Multidisipliner: Ağrı kliniği (romatoloji + fizik tedavi + psikiyatri + anestezi)"
+        ]
+      }
+    },
+    "aile_hekimliği": {
+      "rol": "Birinci basamak tanı, ilk tedavi, uzman yönlendirmesi",
+      "yaklaşım": {
+        "tanı": [
+          "Klinik öykü: Ağrı (kullanımla artan), sabah sertliği <30 dk, eklem deformitesi",
+          "Fizik muayene: Eklem hassasiyeti, krepitasyon, ROM azalması, effüzyon",
+          "Radyoloji: Konvansiyonel grafi (weight-bearing)"
+        ],
+        "ilk_tedavi": [
+          "Yaşam tarzı: Kilo kaybı (%5-10), egzersiz (aerobik + kuvvetlendirme)",
+          "Farmakolojik: Topikal NSAID (diz/el), oral NSAID (kısa süreli, GI koruma)",
+          "Yardımcı cihaz: Baston önerisi"
+        ],
+        "uzman_yönlendirmesi": [
+          "Ortopedi: Ağır OA (Kellgren-Lawrence 3-4), cerrahi düşünülüyor",
+          "Romatoloji: İnflamatuar artrit şüphesi (simetrik, sabah sertliği >60 dk, ESR/CRP ↑)",
+          "Fizik tedavi: Egzersiz programı, fizik tedavi modaliteleri",
+          "Radyoloji: Atipik bulgular, MRG gereksinimi"
+        ]
+      }
+    }
+  },
+  "kaynaklar": [
+    "OARSI (Osteoarthritis Research Society International) Guidelines for Non-Surgical Management, 2019",
+    "ACR (American College of Rheumatology) Guidelines for Hand, Hip, Knee OA, 2020",
+    "AAOS (American Academy of Orthopaedic Surgeons) Clinical Practice Guidelines, 2021",
+    "NICE (National Institute for Health and Care Excellence) Osteoarthritis Guidelines, 2022",
+    "EULAR (European Alliance of Associations for Rheumatology) Recommendations, 2018",
+    "UpToDate: Clinical manifestations and diagnosis of osteoarthritis",
+    "UpToDate: Management of osteoarthritis",
+    "Kellgren-Lawrence Classification System",
+    "TURKCOCOS (Turkish Knee Osteoarthritis Prevalence Study)",
+    "Fransen M et al. Exercise for osteoarthritis of the knee. Cochrane Database Syst Rev 2015",
+    "Moseley JB et al. A controlled trial of arthroscopic surgery for osteoarthritis of the knee. N Engl J Med 2002"
+  ]
+}

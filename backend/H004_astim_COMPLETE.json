@@ -1,0 +1,838 @@
+{
+  "hastalık_id": "H004",
+  "version": "1.0",
+  "son_güncelleme": "2026-01-19",
+  "temel_bilgi": {
+    "isim_tr": "Bronşiyal Astım",
+    "isim_en": "Bronchial Asthma",
+    "kısa_isim": "Astım",
+    "diğer_isimler": [
+      "Bronş astımı",
+      "Alerjik astım",
+      "Egzersiz ile tetiklenen bronkospazm"
+    ],
+    "kodlama": {
+      "ICD_10": "J45",
+      "ICD_10_detay": {
+        "J45.0": "Ağırlıklı alerjik astım",
+        "J45.1": "Nonalerjik astım",
+        "J45.8": "Karışık astım",
+        "J45.9": "Tanımlanmamış astım",
+        "J46": "Status astmatikus"
+      },
+      "SNOMED_CT": "195967001",
+      "LOINC": "30954-2"
+    },
+    "tanım": "Hava yollarının kronik inflamasyonu ile karakterize, değişken ve geriye dönüşümlü hava akımı obstrüksiyonuna ve bronşiyal hiperreaktiviteye neden olan heterojen bir hastalıktır. Tekrarlayan hırıltı, nefes darlığı, göğüs sıkışması ve öksürük ataklarıyla kendini gösterir.",
+    "epidemiyoloji": {
+      "global_prevalans": "262 milyon kişi, tüm yaş gruplarında %1-18 arası (GINA 2023)",
+      "türkiye_prevalans": "Çocuklarda %8-12, yetişkinlerde %3-5 (TURKастер çalışması)",
+      "yaş_dağılımı": "Çocukluk çağında başlangıç sık (%50 5 yaş altı), pubertede azalma, 30-40 yaşlarda yeniden artış",
+      "cinsiyet": "Çocuklarda erkeklerde 2:1 daha sık, yetişkinlikte kadınlarda daha fazla",
+      "risk_grupları": [
+        "Atopik yapıda olanlar (alerjik rinit, egzama)",
+        "Ailede astım/alerji öyküsü",
+        "Sigara içenler ve pasif içiciler",
+        "Obezler (BMI >30)",
+        "Düşük sosyoekonomik düzey",
+        "Kentsel yaşam",
+        "Prematüre doğanlar",
+        "Anne sigara kullanımı (gebelikte)"
+      ]
+    },
+    "patofizyoloji": {
+      "ana_mekanizmalar": [
+        "Kronik hava yolu inflamasyonu: Eozinofiller, T-lenfositler, mast hücreleri aktivasyonu",
+        "Bronşiyal hiperreaktivite: Düz kas hücrelerin aşırı duyarlılığı",
+        "Hava yolu remodelingi: Epitel hasarı, bazal membran kalınlaşması, düz kas hipertrofisi",
+        "Mukus hipersekresyonu: Goblet hücre hiperplazisi",
+        "IgE aracılı (Tip I) hipersensitivite reaksiyonu"
+      ],
+      "tetikleyiciler": [
+        "Allerjenler: Polen, ev tozu akarı, hayvan tüyleri, küf",
+        "İnfeksiyonlar: Viral (RSV, rinovirüs)",
+        "Egzersiz: Özellikle soğuk havada",
+        "Hava kirliliği: SO2, NO2, partikül madde",
+        "İlaçlar: Aspirin, NSAİİ, beta blokerler",
+        "Duygusal stres",
+        "Gastroözofageal reflü"
+      ],
+      "inflamatuar_medyatörler": [
+        "Histamin",
+        "Lökotrienler (LTC4, LTD4, LTE4)",
+        "Prostaglandinler",
+        "IL-4, IL-5, IL-13 (Th2 sitokinleri)",
+        "TNF-alfa"
+      ]
+    },
+    "klinik_özellikler": {
+      "belirtiler": [
+        "Tekrarlayan hırıltılı solunum (wheezing)",
+        "Nefes darlığı (dispne)",
+        "Göğüs sıkışması hissi",
+        "Öksürük (özellikle gece ve sabah erken saatlerde)",
+        "Prodüktif olmayan öksürük",
+        "Egzersizle artan semptomlar"
+      ],
+      "fizik_muayene": {
+        "stabil_dönem": [
+          "Normal fizik muayene olabilir",
+          "Oskültasyonda hafif ekspiratuvar wheezing",
+          "Ekspiryum uzaması"
+        ],
+        "atak_dönemi": [
+          "Taşipne, taşikardi",
+          "Yaygın ekspiratuar wheezing",
+          "Dispne, konuşamama",
+          "Yardımcı solunum kasları kullanımı",
+          "Pulsus paradoksus (>10 mmHg)",
+          "Siyanoz (ciddi atak)"
+        ]
+      },
+      "astım_atağı_şiddeti": {
+        "hafif": "Normal aktivite, konuşabilir, PEF >80%",
+        "orta": "Aktivite kısıtlı, cümlelerle konuşur, PEF 60-80%",
+        "ağır": "İstirahat halinde dispne, kelimelerle konuşur, PEF <60%",
+        "hayatı_tehdit_eden": "Konfüzyon, sessiz akciğer, PEF <33%, SpO2 <92%"
+      }
+    },
+    "tanı": {
+      "tanı_kriterleri": [
+        "Değişken solunum semptomları (hırıltı, nefes darlığı, göğüs sıkışması, öksürük)",
+        "Ekspiratuvar hava akımı kısıtlanmasının gösterilmesi",
+        "Zamana ve tedaviye göre değişkenlik"
+      ],
+      "solunum_fonksiyon_testleri": {
+        "spirometri": {
+          "FEV1_FVC_oranı": "<0.75-0.80 (obstrüksiyon)",
+          "bronkodilatör_yanıtı": "FEV1'de ≥12% ve ≥200 mL artış (pozitif)",
+          "FEV1_değişkenlik": "Günlük >20% varyasyon (astım lehine)"
+        },
+        "peak_flow_metre": {
+          "sabah_akşam_variabilite": ">20% (2 hafta takip)",
+          "egzersiz_provokasyon": "FEV1'de ≥10% düşüş"
+        },
+        "metakolin_bronş_provokasyon": {
+          "PC20": "<8 mg/mL (hiperreaktivite)"
+        }
+      },
+      "laboratuvar": {
+        "kan": [
+          "Eozinofil sayısı: >300-400/µL",
+          "Total IgE: Yüksek (alerjik astım)",
+          "Spesifik IgE: Alerjen paneli"
+        ],
+        "balgam": "Eozinofil >3%",
+        "FeNO": "Fraksiyone eksale nitrik oksit >50 ppb (tip 2 inflamasyon)"
+      },
+      "radyoloji": {
+        "akciğer_grafisi": [
+          "Genellikle normal",
+          "Hiperinflasyon (ağır vakalarda)",
+          "Komplikasyonları ekarte (pnömoni, pnömotoraks)"
+        ],
+        "toraks_BT": "Bronş duvar kalınlaşması, müköz impaksiyon (ağır astım)"
+      },
+      "deri_testleri": [
+        "Prick test: Alerjen duyarlılığı",
+        "Patch test: Gerekirse"
+      ]
+    },
+    "farmakoloji_ve_tedavi": {
+      "genel_prensipler": [
+        "Kronik inflamasyonun kontrolü",
+        "Semptom kontrolü ve alevlenmelerin önlenmesi",
+        "Normal akciğer fonksiyonunun korunması",
+        "Basamaklı tedavi yaklaşımı",
+        "İnhaler ilaç kullanımı tercih edilir"
+      ],
+      "kontrol_edici_ilaçlar": {
+        "inhale_kortikosteroidler_ICS": {
+          "mekanizma": "Hava yolu inflamasyonunu azaltır, en etkili kronik tedavi",
+          "ilaçlar": [
+            "Budesonid (Pulmicort) 200-800 µg/gün",
+            "Flutikason propiyonat (Flixotide) 100-500 µg/gün",
+            "Beklometazon dipropiyonat (Becloforte) 200-800 µg/gün",
+            "Ciclesonid (Alvesco) 80-320 µg/gün"
+          ],
+          "yan_etkiler": "Oral kandidiyaz, ses kısıklığı, ağız çalkalama ile önlenir"
+        },
+        "uzun_etkili_beta2_agonistler_LABA": {
+          "mekanizma": "Bronkodilatör etki, 12-24 saat sürer",
+          "ilaçlar": [
+            "Formoterol (12 µg x2/gün)",
+            "Salmeterol (50 µg x2/gün)",
+            "Vilanterol (25 µg 1x/gün)"
+          ],
+          "önemli": "Tek başına ASLA kullanılmaz, mutlaka ICS ile kombinasyon!"
+        },
+        "kombinasyon_inhaler_ICS_LABA": {
+          "ilaçlar": [
+            "Budesonid/Formoterol (Symbicort) 160/4.5 µg",
+            "Flutikason/Salmeterol (Seretide) 250/25 µg",
+            "Flutikason furoat/Vilanterol (Relvar) 92/22 µg",
+            "Beklometazon/Formoterol (Foster) 100/6 µg"
+          ],
+          "avantaj": "Hem antiinflamatuar hem bronkodilatör, kullanım kolaylığı"
+        },
+        "lökotrien_reseptör_antagonistleri_LTRA": {
+          "mekanizma": "Lökotrien reseptörlerini bloke eder, inflamasyonu azaltır",
+          "ilaçlar": [
+            "Montelukast (Singulair) 10 mg/gün (4 mg çocuk)",
+            "Zafirlukast 20 mg x2/gün"
+          ],
+          "endikasyon": "Alerjik rinit birlikteliği, egzersiz astımı, aspirin duyarlılığı"
+        },
+        "uzun_etkili_muskarinik_antagonistler_LAMA": {
+          "mekanizma": "Antikolinerjik, bronkodilatör",
+          "ilaçlar": [
+            "Tiotropium (Spiriva Respimat) 2.5 µg/gün"
+          ],
+          "endikasyon": "ICS+LABA'ya rağmen kontrolsüz astım (add-on)"
+        },
+        "biyolojik_ajanlar": {
+          "anti_IgE": {
+            "ilaç": "Omalizumab (Xolair)",
+            "doz": "150-375 mg s.c. 2-4 haftada bir",
+            "endikasyon": "Ciddi alerjik astım, total IgE 30-1500 IU/mL"
+          },
+          "anti_IL5": {
+            "ilaçlar": [
+              "Mepolizumab (Nucala) 100 mg s.c. ayda bir",
+              "Reslizumab (Cinqair) IV infüzyon",
+              "Benralizumab (Fasenra) 30 mg s.c. ilk 3 ay 4 haftada, sonra 8 haftada"
+            ],
+            "endikasyon": "Ciddi eozinofilik astım (≥300/µL)"
+          },
+          "anti_IL4_IL13": {
+            "ilaç": "Dupilumab (Dupixent) 200-300 mg s.c. 2 haftada bir",
+            "endikasyon": "Ciddi tip 2 astım, FeNO yüksek"
+          }
+        }
+      },
+      "rahatlatıcı_ilaçlar": {
+        "kısa_etkili_beta2_agonistler_SABA": {
+          "mekanizma": "Hızlı bronkodilatör etki (5-15 dakika), 4-6 saat sürer",
+          "ilaçlar": [
+            "Salbutamol (Ventolin) 100-200 µg, gerektiğinde",
+            "Terbutalin (Bricanyl) 250-500 µg"
+          ],
+          "kullanım": "Semptom olduğunda, egzersiz öncesi profilaksi",
+          "uyarı": "Haftada >2 kez kullanım = kötü kontrol, tedavi gözden geçirilmeli"
+        },
+        "kısa_etkili_antikolinerjikler_SAMA": {
+          "ilaç": "İpratropium bromür 20-40 µg",
+          "kullanım": "Astım atağında SABA ile kombinasyon"
+        }
+      },
+      "basamaklı_tedavi_GINA": {
+        "basamak_1": {
+          "tercih": "ICS-formoterol (düşük doz) gerektiğinde",
+          "alternatif": "SABA gerektiğinde (>2 kez/hafta değil)"
+        },
+        "basamak_2": {
+          "tercih": "Düşük doz ICS düzenli + SABA gerektiğinde",
+          "alternatif": "Düşük doz ICS-formoterol gerektiğinde"
+        },
+        "basamak_3": {
+          "tercih": "Düşük doz ICS-LABA",
+          "alternatif": "Orta doz ICS veya düşük doz ICS + LTRA"
+        },
+        "basamak_4": {
+          "tercih": "Orta doz ICS-LABA",
+          "add_on": "LAMA (tiotropium) eklenebilir"
+        },
+        "basamak_5": {
+          "tercih": "Yüksek doz ICS-LABA + LAMA",
+          "add_on": "Oral kortikosteroid (prednizolon 5-10 mg/gün) veya biyolojik ajan",
+          "değerlendirme": "Ciddi astım kliniğine yönlendir, fenotipleme yap"
+        }
+      },
+      "astım_atağı_tedavisi": {
+        "acil_müdahale": [
+          "Oksijen: SpO2 >94%'ü hedefle",
+          "SABA: Nebülize salbutamol 2.5-5 mg veya 4-10 puff MDI+spacer, 20 dk'da tekrar",
+          "İpratropium bromür: 500 µg nebül, SABA ile beraber (orta-ağır atak)",
+          "Sistemik kortikosteroid: Prednizolon 40-50 mg p.o. veya metilprednizolon 40 mg IV (erken başla!)",
+          "Magnezyum sülfat: 2 g IV 20 dakikada (life-threatening atak)"
+        ],
+        "yanıt_yok_ise": [
+          "Aminofillin IV infüzyon (kontrollü ortamda)",
+          "Yoğun bakım konsültasyonu",
+          "Mekanik ventilasyon hazırlığı"
+        ],
+        "taburculuk_kriterleri": [
+          "PEF >60-80% beklenen",
+          "SpO2 >94% oda havasında",
+          "Semptomlar minimal",
+          "Oral kortikosteroid reçetesi 5-7 gün",
+          "ICS tedavi başla/optimize et",
+          "Astım eylem planı ver"
+        ]
+      },
+      "non_farmakolojik": [
+        "Tetikleyicilerden kaçınma (allerjen, sigara, hava kirliliği)",
+        "Influenza ve pnömokok aşıları",
+        "Düzenli egzersiz (astım kontrolü iyi ise)",
+        "Obezite kontrolü (kilo kaybı semptomları azaltır)",
+        "Solunum fizyoterapisi",
+        "Astım eğitimi ve eylem planı",
+        "İnhaler tekniği eğitimi (kritik!)"
+      ]
+    },
+    "komplikasyonlar": [
+      "Status astmatikus (hayatı tehdit eden atak)",
+      "Pnömotoraks, pnömomediastinum",
+      "Atelektazi, mukus tıkacı",
+      "Respiratuar yetmezlik",
+      "Kronik hava akımı obstrüksiyonu (irreversibl)",
+      "Bronşektazi (ciddi astımda)",
+      "Pulmoner hipertansiyon (nadir)",
+      "Büyüme geriliği (kontrolsüz astım, yüksek doz steroid)"
+    ],
+    "prognoz": {
+      "genel": "İyi kontrol ile normal yaşam kalitesi, çoğu hastada iyi prognoz",
+      "çocukluk_astımı": "%30-50 pubertede remisyon, %25-30 yetişkinlikte nüks",
+      "yetişkin_başlangıç": "Daha persistan seyir, tam remisyon nadir",
+      "mortalite": "Yıllık 250.000 ölüm (dünyada), çoğu önlenebilir",
+      "kötü_prognoz_faktörleri": [
+        "Geç tanı, yetersiz tedavi",
+        "Sigara kullanımı",
+        "Sık alevlenmeler, hastane yatışları",
+        "Yüksek doz ICS + oral steroid ihtiyacı",
+        "Düşük sosyoekonomik durum",
+        "Komorbidite (obezite, GERD, nazal polip)"
+      ]
+    }
+  },
+  "branş_perspektifleri": {
+    "göğüs_hastalıkları": {
+      "rol": "Primer sorumlu branş, tanı ve tedavi yönetimi",
+      "yaklaşım": {
+        "tanı": [
+          "Solunum fonksiyon testleri (spirometri, bronkodilatör yanıtı)",
+          "Bronş provokasyon testleri (metakolin)",
+          "FeNO ölçümü (fraksiyone eksale nitrik oksit)",
+          "Astım kontrol testleri (ACT, ACQ)",
+          "Fenotipleme: Alerjik, eozinofilik, nötrofilik, obesite ilişkili"
+        ],
+        "tedavi_optimizasyonu": [
+          "İnhaler tekniği değerlendirmesi ve eğitimi",
+          "Basamaklı tedavi (GINA kılavuzu)",
+          "Biyolojik ajan endikasyonu değerlendirmesi",
+          "Ciddi astım yönetimi (refraktör vakalar)",
+          "Bronkoskopi (mukus tıkacı, bronşial termoablasyon)"
+        ],
+        "takip": [
+          "3-6 ayda kontrol (stabil hastalar)",
+          "Alevlenme sıklığı, hastane yatışları",
+          "Spirometri yılda 1-2 kez",
+          "İnhaler kullanım uyumu"
+        ]
+      },
+      "özel_durumlar": [
+        "Ciddi kontrol altına alınamayan astım",
+        "Astım-KOAH overlap sendromu",
+        "Aspirin exacerbated respiratory disease (AERD)",
+        "Alerjik bronkopulmoner aspergilloz (ABPA)"
+      ]
+    },
+    "pediatri": {
+      "rol": "Çocukluk çağı astım tanı ve takibi",
+      "yaklaşım": {
+        "tanı_zorlukları": [
+          "5 yaş altı spirometri güvenilmez",
+          "Klinik tanı ağırlıklı (wheezing epizodları)",
+          "Astım prediktif indeks (API) kullanımı",
+          "Prematürite, bronşiolit öyküsü ayırımı"
+        ],
+        "yaş_gruplarına_göre_tedavi": {
+          "0_5_yaş": [
+            "SABA gerektiğinde (nebül veya MDI+maske+spacer)",
+            "İntermittan semptomlar: Düşük doz ICS (budesonid nebül 0.25-0.5 mg)",
+            "Persistan astım: Düşük doz ICS düzenli",
+            "Montelukast alternatif (özellikle alerjik rinit varsa)"
+          ],
+          "6_11_yaş": [
+            "Düşük doz ICS (budesonid 200 µg, flutikason 100 µg)",
+            "ICS-formoterol kombinasyonu (kontrol + rahatlatıcı)",
+            "LTRA add-on (egzersiz astımı)",
+            "Büyüme takibi önemli (boy ölçümü)"
+          ],
+          "12_18_yaş": [
+            "Yetişkin tedavi protokolleri uygulanır",
+          "Adölesan uyum sorunları (inhaler kullanımı, kontrole gelmeme)",
+            "Sigara başlangıcı riski (eğitim)"
+          ]
+        },
+        "özel_konular": [
+          "Büyüme eğrisi takibi (steroid yan etkisi)",
+          "Aşılama (grip, pnömokok)",
+          "Okul performansı, devamsızlık",
+          "Aile eğitimi ve astım eylem planı",
+          "Alerjik komorbidite (atopik dermatit, gıda allerjisi)",
+          "Pasif sigara maruziyeti engellenmesi"
+        ]
+      },
+      "prognoz": [
+        "Erken kontrol ile normal gelişim",
+        "%50 pubertede remisyon (özellikle erkeklerde)",
+        "Persistan wheezing → pubertede de devam riski yüksek"
+      ]
+    },
+    "alerji_ve_immünoloji": {
+      "rol": "Alerjik tetikleyicilerin belirlenmesi ve immünoterapi",
+      "yaklaşım": {
+        "allerjen_tanımlama": [
+          "Deri prick testleri (ev tozu akarı, polenler, hayvan epiteli, küf)",
+          "Serum spesifik IgE (alerjen paneli)",
+          "Komponent bazlı allerji tanısı (CRD - Component Resolved Diagnostics)",
+          "Patch testler (kontakt allerjenler)"
+        ],
+        "allerjen_immunoterapi_AIT": {
+          "subkutan_SCIT": [
+            "Endikasyon: Allerjen duyarlılığı kanıtlanmış orta-ağır astım",
+            "Protokol: Haftalık doz artırımı → 3-5 yıl idame",
+            "Etkili allerjenler: Ev tozu akarı, çimen poleni, ağaç poleni",
+            "Yan etkiler: Lokal reaksiyon, anafilaksi riski (%0.1-0.2)"
+          ],
+          "sublingual_SLIT": [
+            "Günlük tablet/damla formu",
+            "Daha güvenli (anafilaksi riski düşük)",
+            "Ev tozu akarı, çimen poleni",
+            "3 yıl tedavi öneriliyor"
+          ],
+          "etkinlik": "Semptom skorunda %30-40 azalma, ilaç ihtiyacında azalma, yeni allerji gelişimini engelleme"
+        },
+        "anti_IgE_tedavi": {
+          "omalizumab": [
+            "Alerjik astım (IgE 30-1500 IU/mL, pozitif aeroallerjen)",
+            "≥6 yaş, orta-ağır persistan astım",
+            "ICS+LABA'ya rağmen kontrolsüz",
+            "Doz: Vücut ağırlığı ve bazal IgE'ye göre hesaplanır",
+            "Etki: 3-6 ayda değerlendirilir, alevlenmeleri %50 azaltır"
+          ]
+        },
+        "allerjen_kaçınma": [
+          "Ev tozu akarı: Anti-allerjen yatak kılıfı, %50 altı nem, sık temizlik",
+          "Polen: Pencere kapalı, dışarı çıkışlarda maske",
+          "Hayvan epiteli: Evcil hayvan uzaklaştırılması",
+          "Küf: Nem kontrolü, havalandırma"
+        ]
+      },
+      "komorbid_atopik_hastalıklar": [
+        "Alerjik rinit (%80 birliktelik) - kombine tedavi önemli",
+        "Atopik dermatit (%30)",
+        "Gıda allerjisi (%4-8, özellikle küçük çocuklarda)",
+        "Oral allerji sendromu"
+      ]
+    },
+    "acil_tıp": {
+      "rol": "Akut astım atağı yönetimi, hayat kurtaran müdahale",
+      "yaklaşım": {
+        "triyaj_değerlendirmesi": [
+          "Yaşamsal bulgular: Nabız, solunum sayısı, SpO2, tansiyon",
+          "Konuşabilme yeteneği (cümle, kelime, konuşamama)",
+          "Yardımcı kas kullanımı",
+          "Mental durum (konfüzyon, ajitasyon = kötü)",
+          "Peak flow ölçümü (mümkünse)"
+        ],
+        "şiddet_sınıflaması": {
+          "hafif_orta": [
+            "Konuşabilir, PEF >50%",
+            "SpO2 >90%",
+            "Nabız <120/dk (yetişkin)"
+          ],
+          "ağır": [
+            "Kelimelerle konuşur, PEF 33-50%",
+            "SpO2 88-90%",
+            "Nabız >120/dk, solunum sayısı >30/dk"
+          ],
+          "hayatı_tehdit_eden": [
+            "Sessiz akciğer (wheezing yok!)",
+            "Siyanoz, SpO2 <88%",
+            "Bradikardi, hipotansiyon",
+            "Konfüzyon, koma",
+            "PEF <33%"
+          ]
+        },
+        "acil_tedavi_algoritması": {
+          "ilk_1_saat": [
+            "Oksijen: Nazal kanül veya maske, SpO2 ≥94% hedefi",
+            "SABA nebül: Salbutamol 2.5-5 mg, 20 dakikada bir (3 doz)",
+            "İpratropium bromür: 500 µg nebül, SABA ile birlikte",
+            "Sistemik steroid: Prednizolon 40-50 mg PO veya metilprednizolon 40-125 mg IV",
+            "Magnezyum sülfat IV: 2 g 20 dakikada (ağır atak)"
+          ],
+          "yanıt_değerlendirme_1_saat": {
+            "iyi_yanıt": [
+              "Semptomlar azaldı, wheezing azaldı",
+              "PEF >60-80%, SpO2 >94%",
+              "Taburculuk düşünülebilir (oral steroid + ICS reçetesi)"
+            ],
+            "kısmi_yanıt": [
+              "Hafif iyileşme, PEF 40-60%",
+              "Tedavi devam, gözlem odasında izlem",
+              "Aminofillin IV infüzyonu düşünülebilir"
+            ],
+            "yanıtsız_kötüleşme": [
+              "PEF <40%, SpO2 düşmeye devam",
+              "Konfüzyon, siyanoz",
+              "Yoğun bakım konsültasyonu ACİL",
+              "Entübasyon hazırlığı"
+            ]
+          },
+          "göğüs_hastalıkları_kardiyoloji_konsültasyonu": [
+            "Yanıtsız ağır atak",
+            "Eşlik eden kardiyak patoloji",
+            "Pnömotoraks şüphesi"
+          ]
+        },
+        "taburculuk_kriterleri": [
+          "En az 1 saat stabil (PEF >60%, SpO2 >94%)",
+          "İnhaler SABA kullanımında 4 saatten fazla ihtiyaç yok",
+          "Taburcu reçetesi: Prednizolon 40-50 mg 5-7 gün, ICS başla/arttır",
+          "Astım eylem planı, 48-72 saat içinde kontrole çağrı",
+          "Hastane yatış: Yanıtsız atak, sosyal endikasyon, komorbidite"
+        ]
+      },
+      "özel_durumlar": [
+        "Gebelik: Oksijen ve steroid çekinmeden, fetal hipoksi daha riskli",
+        "Yaşlı: Kardiyak komorbidite, beta-bloker kullanımı",
+        "KOAH birlikteliği: Ayrım zor, kombine tedavi"
+      ]
+    },
+    "dahiliye": {
+      "rol": "Yetişkin astım takibi, komorbidite yönetimi",
+      "yaklaşım": {
+        "birinci_basamak_yönetimi": [
+          "Astım tanısı şüphesi → Göğüs hastalıklarına yönlendirme",
+          "Tanı konmuş astım takibi (stabil hastalar)",
+          "İnhaler tedavi reçetelenmesi ve uyum takibi",
+          "Alevlenme sıklığının değerlendirilmesi"
+        ],
+        "komorbidite_taraması": {
+          "GERD": [
+            "Astım hastalarında %60-80 sıklık",
+            "Gece öksürüğü, göğüs yanması",
+            "PPI tedavisi (pantoprazol 40 mg)"
+          ],
+          "obezite": [
+            "BMI >30: Astım kontrolünü zorlaştırır",
+            "Kilo kaybı önerisi, diyet programı",
+            "5-10% kilo kaybı semptomları iyileştirir"
+          ],
+          "hipertansiyon": [
+            "Beta-bloker KULLANMA (bronkospazm)",
+            "ACE inhibitörü dikkatli (öksürük)",
+            "ARB, kalsiyum kanal blokeri tercih"
+          ],
+          "diabetes_mellitus": [
+            "Oral/sistemik steroid kullanımında glisemi takibi",
+            "ICS yüksek doz: HbA1c'yi hafif artırabilir"
+          ],
+          "hipotiroidi": [
+            "Astım kontrolünü bozabilir",
+            "TSH takibi, levotiroksin replasman"
+          ]
+        },
+        "ilaç_etkileşimleri": [
+          "Aspirin/NSAİİ: %10-20 hastada astım alevlenmesi (AERD)",
+          "Beta-bloker: Bronkospazm, KONTRENDİKE",
+          "ACE inhibitörü: Öksürük (% 10-20)",
+          "Makrolid antibiyotikler: Teofilin ile etkileşim"
+        ]
+      },
+      "yaşlı_hasta": [
+        "Tanı zorlukları: KOAH ayırıcı tanısı, overlap sendrom",
+        "Polifarmasi: İlaç etkileşimleri",
+        "İnhaler tekniği: El becerisi, kognitif fonksiyon",
+        "Osteoporoz riski: Uzun süreli steroid kullanımı"
+      ]
+    },
+    "aile_hekimliği": {
+      "rol": "Birinci basamak tanı, takip ve aile eğitimi",
+      "yaklaşım": {
+        "toplum_sağlığı": [
+          "Risk faktörlerinin belirlenmesi (aile öyküsü, sigara, allerjen)",
+          "Erken tanı ve uzman yönlendirme",
+          "Aşılama (influenza, pnömokok)",
+          "Sigara bırakma programları"
+        ],
+        "hasta_eğitimi": [
+          "Astım hastalığı hakkında bilgilendirme",
+          "İnhaler kullanım tekniği eğitimi (MDI, DPI, spacer)",
+          "Peak flow metre kullanımı",
+          "Astım eylem planı oluşturma",
+          "Tetikleyicilerden kaçınma stratejileri"
+        ],
+        "ilaç_tedavisi": [
+          "Stabil hastalar için reçete tekrarları",
+          "İnhaler uyum kontrolü",
+          "Yan etki takibi (oral kandidiyaz, ses kısıklığı)",
+          "Kontrolsüz astım → uzman yönlendirme"
+        ],
+        "izlem": [
+          "Astım kontrol testi (ACT) skorlama",
+          "Semptom sıklığı, gece uyanmaları",
+          "SABA kullanım sıklığı (haftada >2 = kötü kontrol)",
+          "Alevlenme sayısı",
+          "Okul/iş devamsızlığı"
+        ]
+      },
+      "aile_yaklaşımı": [
+        "Genetik danışmanlık (kardeş riski %25-35)",
+        "Ev ortamı değerlendirmesi (allerjen, sigara)",
+        "Sosyal destek, ekonomik yardım"
+      ]
+    },
+    "kardiyoloji": {
+      "rol": "Kardiyopulmoner etkileşim, ayırıcı tanı",
+      "yaklaşım": {
+        "ayırıcı_tanı": {
+          "kardiyak_astım": [
+            "Sol kalp yetmezliği → pulmoner ödem",
+            "Paroksismal nokturnal dispne",
+            "EKO: EF düşük, dilate LA",
+            "BNP/NT-proBNP yüksek",
+            "Diüretik tedaviye yanıt"
+          ],
+          "iskemik_kalp_hastalığı": [
+            "Angina eforla, nefes darlığı ile karışabilir",
+            "EKG, troponin, koroner anjiyografi"
+          ]
+        },
+        "kardiyopulmoner_etkileşim": [
+          "Ciddi astım atağı: Pulsus paradoksus >10 mmHg",
+          "Hipoksemi → pulmoner vazokonstrüksiyon → sağ kalp yükü",
+          "Kronik hipoksemi: Pulmoner hipertansiyon (nadir)",
+          "Beta-bloker kullanımı KONTRENDİKE (kardiyoselektif olanlar bile riskli)"
+        ],
+        "ilaç_seçimi": {
+          "hipertansiyon": "ARB, kalsiyum kanal blokeri tercih, beta-bloker YOK",
+          "kalp_yetmezliği": "ACE-i/ARB, spironolakton, diüretik (beta-bloker dikkatli)",
+          "atriyal_fibrilasyon": "Diltiazem, verapamil (beta-bloker YOK)"
+        }
+      },
+      "özel_durumlar": [
+        "Astım + koroner arter hastalığı: Beta-bloker yerine alternatif",
+        "Post-MI astım hastası: Kardiyak rehabilitasyon, astım kontrolü önemli"
+      ]
+    },
+    "kulak_burun_boğaz": {
+      "rol": "Üst solunum yolu patolojilerinin yönetimi",
+      "yaklaşım": {
+        "alerjik_rinit": {
+          "birliktelik": "Astım hastalarının %80'inde alerjik rinit",
+          "one_airway_one_disease": "Üst-alt hava yolu bütünlük",
+          "tedavi": [
+            "İntranazal kortikosteroid (flutikason, mometazon)",
+            "Antihistaminikler (setirizin, desloratadin)",
+            "Nazal dekongestan (kısa süreli)",
+            "Allerjen immunoterapi"
+          ],
+          "etki": "Rinit tedavisi astım kontrolünü iyileştirir"
+        },
+        "kronik_rinosinüzit": {
+          "nazal_polip": [
+            "Astım hastalarında %13-50 sıklık",
+            "Aspirinle alevlenen solunum hastalığı (AERD/Samter triadı)",
+            "Semptomlar: Burun tıkanıklığı, koku kaybı, post-nazal akıntı",
+            "Tedavi: İntranazal steroid, oral steroid kür, endoskopik sinüs cerrahisi",
+            "Biyolojik ajan: Dupilumab (CRSwNP endikasyonu)"
+          ],
+          "sinüzit": [
+            "Astım alevlenmelerini tetikler",
+            "Antibiyoterapi, nazal steroid",
+            "Kronik: CT, endoskopik cerrahi"
+          ]
+        },
+        "vokal_kord_disfonksiyonu_VCD": {
+          "klinik": "Astıma benzer wheezing, nefes darlığı (inspiratuar)",
+          "ayırıcı_tanı": "Laringoskopi (inspiryonda vokal kord adduksiyonu)",
+          "tedavi": "Solunum terapisi, psikoterapi, bronkodilatöre yanıt yok"
+        }
+      }
+    },
+    "dermatoloji": {
+      "rol": "Atopik dermatit ve alerjik hastalık spektrumu",
+      "yaklaşım": {
+        "atopik_dermatit": {
+          "birliktelik": "Astım hastalarının %30'unda atopik dermatit",
+          "atopik_yürüyüş": "Atopik dermatit → Gıda allerjisi → Alerjik rinit → Astım",
+          "tedavi": [
+            "Topikal kortikosteroid (mometazon, betametazon)",
+            "Topikal kalsinörin inhibitörleri (takrolimus, pimekrolimus)",
+            "Sistemik: Dupilumab (orta-ağır atopik dermatit + astım)",
+            "Nemlendiriciler, trigger kaçınma"
+          ]
+        },
+        "kontakt_dermatit": [
+          "Meslek hastalığı (fırıncı astımı, latex allerjisi)",
+          "Patch test, allerjen kaçınma"
+        ]
+      }
+    },
+    "fizyoterapi_ve_rehabilitasyon": {
+      "rol": "Solunum rehabilitasyonu ve egzersiz programı",
+      "yaklaşım": {
+        "solunum_fizyoterapisi": {
+          "diafragmatik_solunum": [
+            "Yavaş derin nefes alma tekniği",
+            "Ekspiryumun uzatılması",
+            "Anksiyete ve nefes darlığını azaltır"
+          ],
+          "pursed_lip_breathing": [
+            "Dudak büzerek ekspiryum",
+            "Hava yollarını açık tutar",
+            "Dinamik hiperinflasyonu azaltır"
+          ],
+          "postüral_drenaj": [
+            "Mukus drenajı",
+            "Göğüs fizyoterapisi",
+            "Vibrasyon, perkusyon"
+          ]
+        },
+        "egzersiz_programı": {
+          "aerobik_egzersiz": [
+            "Yürüyüş, bisiklet, yüzme (astım dostu)",
+            "Haftada 3-5 gün, 30-60 dakika",
+            "Orta şiddet (kalp hızı %60-70 maksimum)",
+            "Isınma ve soğuma önemli"
+          ],
+          "direnç_egzersizi": [
+            "Hafif ağırlıklar, elastik bantlar",
+            "Üst ekstremite kaslarını güçlendirir",
+            "Solunum kaslarının dayanıklılığını artırır"
+          ],
+          "egzersiz_öncesi_önlemler": [
+            "Egzersizden 15 dakika önce SABA",
+            "Isınma egzersizleri 10-15 dakika",
+            "Soğuk havada maske kullanımı",
+            "Astım kontrol altında olmalı"
+          ]
+        },
+        "solunum_kas_eğitimi": [
+          "İnspiratuar kas eğitimi (IMT)",
+          "Threshold cihazı kullanımı",
+          "Kas gücü ve dayanıklılığını artırır"
+        ]
+      },
+      "faydalar": [
+        "Egzersiz toleransı artışı",
+        "Dispne skorunda azalma",
+        "Yaşam kalitesinde iyileşme",
+        "Alevlenme sıklığında azalma",
+        "Psikolojik iyilik hali"
+      ]
+    },
+    "enfeksiyon_hastalıkları": {
+      "rol": "Astım alevlenmelerinde enfeksiyöz tetikleyiciler",
+      "yaklaşım": {
+        "viral_infeksiyonlar": {
+          "rinovirüs": "Astım alevlenmelerinin %50-80'i",
+          "RSV": "Bebeklik dönemi bronşiolit → astım riski",
+          "influenza": "Ciddi alevlenme, pnömoni riski",
+          "korona_virüsler": "COVID-19 astım hastalarında daha ağır seyir",
+          "önleme": [
+            "İnfluenza aşısı (yıllık)",
+            "COVID-19 aşısı",
+            "Hijyen önlemleri",
+            "Viral infeksiyon döneminde astım kontrolü sıkı"
+          ]
+        },
+        "bakteriyel_infeksiyonlar": {
+          "atipik_bakteriler": [
+            "Mycoplasma pneumoniae: Kronik astım alevlenmesi",
+            "Chlamydia pneumoniae: Astım patogenezinde rol",
+            "Tedavi: Makrolid antibiyotik (azitromisin)",
+            "Kronik azitromisin: Anti-inflamatuar etki (seçilmiş vakalarda)"
+          ],
+          "sinopulmoner_infeksiyonlar": [
+            "Rekürren sinüzit → astım alevlenmesi",
+            "Pnömoni komplikasyonu",
+            "Antibiyoterapi, astım tedavisi optimizasyonu"
+          ]
+        },
+        "fungal_infeksiyonlar": {
+          "ABPA": [
+            "Aspergillus fumigatus'a karşı IgE aracılı yanıt",
+            "Semptomlar: Wheezing, kahverengi balgam, ateş",
+            "Tanı: Serum IgE >1000 IU/mL, aspergillus spesifik IgE pozitif, eozinofili, akciğer infiltrasyonu",
+            "Tedavi: Oral kortikosteroid + itrakonazol/vorikonazol"
+          ],
+          "fungal_sensitizasyon": [
+            "Aspergillus, Alternaria duyarlılığı",
+            "Astım şiddetini artırır",
+            "Anti-fungal tedavi + astım kontrolü"
+          ]
+        }
+      },
+      "aşılama": [
+        "İnfluenza (yıllık, ekim-kasım)",
+        "Pnömokok (PCV13 + PPSV23, kronik steroid kullananlar)",
+        "COVID-19 (tüm astım hastaları)",
+        "Pertussis (boğmaca, çocuklarda)"
+      ]
+    },
+    "radyoloji": {
+      "rol": "Görüntüleme yöntemleri, ayırıcı tanı ve komplikasyonlar",
+      "yaklaşım": {
+        "akciğer_grafisi_PA_lateral": {
+          "normal_bulgular": "Çoğu astım hastasında normal",
+          "akut_atak": [
+            "Hiperinflasyon (düzleşmiş diyafragma, artmış retrosternal hava)",
+            "Peribronşiyal kalınlaşma (bronş duvarları belirgin)",
+            "Atelektazi (mukus tıkacı)"
+          ],
+          "komplikasyonlar": [
+            "Pnömotoraks (spontan, yüksek basınçlı öksürük)",
+            "Pnömomediastinum",
+            "Pnömoni (süperinfeksiyon)",
+            "Atelektazi (lobüler, segmental)"
+          ],
+          "ayırıcı_tanı": [
+            "Kardiyak yetmezlik (kardiyomegali, Kerley B çizgileri)",
+            "KOAH (amfizem, bül)",
+            "Bronşektazi (kistik değişiklikler)",
+            "İnterstisyel akciğer hastalığı"
+          ]
+        },
+        "yüksek_çözünürlüklü_toraks_BT_HRCT": {
+          "endikasyonlar": [
+            "Tedaviye dirençli astım (ayırıcı tanı)",
+            "ABPA şüphesi (santral bronşektazi)",
+            "Pnömotoraks, komplikasyon şüphesi",
+            "Bronşektazi değerlendirmesi"
+          ],
+          "bulgular": [
+            "Bronş duvar kalınlaşması (>2 mm)",
+            "Müköz impaksiyon (toothpaste sign)",
+            "Air trapping (ekspiratuvar BT'de mozaik patern)",
+            "Santral bronşektazi (ABPA)",
+            "Ağaç tomurcuklanması (tree-in-bud)"
+          ]
+        },
+        "sinüs_BT": [
+          "Kronik rinosinüzit değerlendirmesi",
+          "Nazal polip",
+          "Endikasyon: Medikal tedaviye yanıtsız, cerrahi planlama"
+        ]
+      },
+      "nükleer_tıp": [
+        "Ventilasyon-perfüzyon sintigrafisi (nadir, PE ayırıcı tanısı)",
+        "PET-BT: Malignite ayırıcı tanısı (şüpheli lezyon)"
+      ]
+    }
+  },
+  "kaynaklar": [
+    "Global Initiative for Asthma (GINA) 2023 Report",
+    "British Thoracic Society (BTS)/Scottish Intercollegiate Guidelines Network (SIGN) Guideline 2019",
+    "National Asthma Education and Prevention Program (NAEPP) Expert Panel Report 4, 2020",
+    "European Respiratory Society (ERS) Guidelines",
+    "Turkish Thoracic Society Asthma Consensus Report 2022",
+    "TURKASTER Study (Turkish Asthma Epidemiology Study)",
+    "Uptodate: Asthma in Adults - Treatment and Prognosis",
+    "New England Journal of Medicine - Severe Asthma Review 2023"
+  ]
+}
