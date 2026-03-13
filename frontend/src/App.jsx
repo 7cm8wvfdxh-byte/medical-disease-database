@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://medical-disease-api.onrender.com';
 
 function App() {
   const [diseases, setDiseases] = useState([]);
